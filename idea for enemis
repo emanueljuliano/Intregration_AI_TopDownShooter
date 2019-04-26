@@ -1,45 +1,43 @@
-1- Antony the ant: sozinha - anda em circulos, em grupo ataca, conta a quantidade
+1- ## Antony (Formiga): Sozinho: Anda tentando encontrar outras formigas. Em Grupo: Reúne com as formigas encontradas e ataca o player
 
-2- bebel abelha anda próximo de onde ela tiver e quando ta perto, muda de cor e vush e morre no primeiro obstáculo
+2- ## Bebel (Abelha): Ao detectar o player, avança sem parar na direção dele e morre no primeiro obstáculo
 
-3- cupim rainha-> boss
+3- Caio (Cupim): Atravessa obstáculos. Rainha-> boss
 
-4- margaret mariposa : lanterna pode ser usada contra a mariposa e ataca quando iluminada
+4- ## Margaret (Mariposa): Ao ser iluminada, avança em direção do player
 
-5- Mônica mosca: anda em círculos até o player
+5- ## Mônica (Mosca): Anda em círculos em volta do player e se aproxima devagar para atacar 
 
-6- Arnaldo a aranha: player fica mais lento/imobilizado por causa da teia e aranha vai até jogador
+6- Arnaldo (Aranha): Joga teia no player, que fica mais lento/imobilizado, e ataca quando ele estiver imobilizado
 
-7- larissa lacraia: rápida, e tenta desviar em zigzag fugindo da mira
+7- ## Larissa (Lacraia): Rápida, tenta desviar da luz, avança em zigue-zague na direção do player
 
-8- barbara barata: foge do jogador e serve de vida para insetos (lacraia, aranha e formiga em colônia)
+8- Bárbara (Barata): Foge da luz, dá vida ao morrer
 
-9- beto o bisoro: vida e é usado pelos 
+9- Beto (Besouro): Tem muita vida, avança na direção do player 
 
-10- rolandinho o rola bosta: esconde atrás de obstáculos e atira bosta
+10- Rolandinho (Rola-Bosta): Esconde atrás de obstáculos e atira bosta que atravessa obstáculos
 
-11- leonardo o louva-deus: anda na direção, esquiva ou defende e ataca em dash
+11- Leonardo (Louva-a-Deus): Anda na direção do player, esquiva ou defende de ataques e ataca em dash
 
-12- mauricio mosquito: gira fixamente e para e avança como a babel
+12- Maurício (Mosquito): Gira fixamente em torno do player, para e avança (como a Bebel)
 
-13- joelma a joaninha 
+13- Joelma (Joaninha)
 
-14 - grilo
+14- Greg (Grilo): Move em dash, apático, dá vida ao morrer
 
-15- escorpião
+15- Estuart (Escorpião)
 
-16- centopeia
+16- Sônia (Centopeia)
 
-17- libelola
+17- Lívia (Libélula)
 
-18- cigarra
+18- Célia (Cigarra): Faz barulho, dá vida ao morrer
 
-19- carrapato
+19- Carlos (Carrapato): Anda devagar, gruda no player e dá dano com o tempo
 
-20 - vagalume
+20 - Vagner (Vagalume): Emite luz e pisca, dá vida ao morrer
 
-21- lagarta
-22- borboleta
+21- Laerte (Lagarta): Nasce do ovo, move e ataca tudo rapidamente, vira casulo
 
-23- libelola
-
+22- Brenda (Borboleta): Nasce do casulo, bota ovos, foge
