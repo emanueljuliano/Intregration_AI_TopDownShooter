@@ -111,6 +111,7 @@ position = Vector2( 43, 0 )
 scale = Vector2( 20, 20 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lateral"]
+visible = false
 position = Vector2( 10, 0 )
 rotation = -1.57079
 scale = Vector2( 1.93347, 1.93347 )

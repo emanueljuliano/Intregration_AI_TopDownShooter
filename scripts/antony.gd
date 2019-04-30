@@ -32,11 +32,8 @@ func _process(delta):
 		set_collision_mask_bit(0, false)
 		remove_from_group(game.INIMIGO)
 		get_node("anim").play("morrer")
-	var i = 0
-	while i < len(amigos):
-		if amigos[i].vida <= 0:
-			amigos.remove(i)
-		i = i + 1
+		
+	morreu_coitado()
 	atualizar_amigos()
 	raio_grupo = 100 + len(amigos)*25
 	if len(amigos) < quantos_amigos:
@@ -45,8 +42,8 @@ func _process(delta):
 func _physics_process(delta):
 	if vida > 0:
 		# TIRAR DO COMENTÁRIO SE QUISER QUE ANTONY FIQUE PARADO AO CHEGAR AO PONTO MÉDIO
-		#if not (agrupado and not todos_agrupados()) or atacando:
-		move_and_slide((get_node("frente").get_global_position() - get_global_position()) * vel)
+		if not (agrupado and not todos_agrupados() and get_global_position().distance_to(ponto_medio(amigos)) <= 10) or atacando:
+			move_and_slide((get_node("frente").get_global_position() - get_global_position()) * vel)
 		if len(amigos) >= quantos_amigos:
 			if todos_agrupados() or atacando:
 				#MODO DE ATAQUE
@@ -146,5 +143,13 @@ func atualizar_amigos():
 			if not amigos[i].amigos.has(amigos[n]) and amigos[i] != amigos[n]:
 				amigos[i].add_amigo(amigos[n])
 			n = n + 1
+		i = i + 1
+	pass
+
+func morreu_coitado():
+	var i = 0
+	while i < len(amigos):
+		if amigos[i].vida <= 0:
+			amigos.remove(i)
 		i = i + 1
 	pass
