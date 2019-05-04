@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://title_screen/Death.gd" type="Script" id=1]
+[ext_resource path="res://title_screen/death/Death.gd" type="Script" id=1]
 [ext_resource path="res://title_screen/system failure.png" type="Texture" id=2]
 [ext_resource path="res://title_screen/Fonts/vt323_20.tres" type="DynamicFont" id=3]
 [ext_resource path="res://title_screen/Fonts/miltown2_30.tres" type="DynamicFont" id=4]
 [ext_resource path="res://title_screen/Continue.gd" type="Script" id=5]
+[ext_resource path="res://title_screen/death/Exit.gd" type="Script" id=6]
 
 [node name="DeathScreen" type="Control"]
 anchor_right = 1.0
@@ -69,4 +70,7 @@ custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 1, 0.243137, 1 )
 text = "Exit"
 flat = true
+script = ExtResource( 6 )
 
+[connection signal="pressed" from="Menu/Decisions/Buttons/Continue" to="Menu/Decisions/Buttons/Continue" method="_on_Continue_pressed"]
+[connection signal="pressed" from="Menu/Decisions/Buttons/Exit" to="Menu/Decisions/Buttons/Exit" method="_on_Exit_pressed"]

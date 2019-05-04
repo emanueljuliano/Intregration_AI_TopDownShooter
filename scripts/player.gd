@@ -30,7 +30,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("clickD") or Input.is_action_just_pressed("e"):
 		lanterna = not lanterna
 		atualizar_lanterna()
-	
+		
 	get_node("luz").set_visible(lanterna)
 	
 	pass
@@ -112,4 +112,8 @@ func dano_player(valor, posicao_inimigo):
 	move_and_slide((get_global_position() - posicao_inimigo) * empurrao)
 	get_node("anim").stop()
 	get_node("anim").play("dano")
+	
+	if vida <= 0:
+		get_tree().change_scene("res://title_screen/death/Death.tscn")
+
 	pass
