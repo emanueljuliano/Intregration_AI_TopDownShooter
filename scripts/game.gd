@@ -1,6 +1,8 @@
 extends Node2D
 
 const INIMIGO = "inimigo"
+var mortes = 0
+var level = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

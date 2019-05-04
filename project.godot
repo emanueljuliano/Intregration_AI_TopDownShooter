@@ -23,6 +23,11 @@ config/icon="res://icon.png"
 
 game="*res://scripts/game.gd"
 
+[display]
+
+window/size/width=1280
+window/size/height=720
+
 [input]
 
 cima={

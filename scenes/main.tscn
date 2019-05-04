@@ -30,8 +30,10 @@ position = Vector2( 456.956, 217.211 )
 scale = Vector2( 1.01524, 0.887534 )
 
 [node name="parede" type="KinematicBody2D" parent="."]
+editor/display_folded = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="parede"]
+position = Vector2( 10.7216, 16.1333 )
 polygon = PoolVector2Array( -5.64532, 611.625, -5.64532, -9.63962, 1026.7, -6.54875, 1026.7, 599.262, 1014.56, 599.631, 1014.56, 643.357, 1067.72, 643.357, 1075.02, -70.1968, -86.5001, -73.4504, -73.4859, 674.865, 994.776, 644.441, 1005.36, 600.458 )
 
 [node name="bebel" parent="." instance=ExtResource( 5 )]
