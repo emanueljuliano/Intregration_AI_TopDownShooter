@@ -9,6 +9,7 @@ var impulso
 var lanterna = true
 
 var vida = 100
+var vida_max = 100
 var empurrao = 100
 
 # Called when the node enters the scene tree for the first time.
@@ -117,5 +118,9 @@ func dano_player(valor, posicao_inimigo):
 		game.deaths += 1
 		game.save_game()
 		get_tree().change_scene("res://title_screen/death/Death.tscn")
+	
+	pass
 
+func add_vida(valor):
+	vida = clamp(vida + valor, 0, vida_max)
 	pass

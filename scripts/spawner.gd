@@ -1,13 +1,14 @@
 extends Node2D
 
-var intervalo = 7
+var intervalo = 2
 var tempo = 0
 var pre_antony = preload("res://scenes/antony.tscn")
 var pre_monica = preload("res://scenes/monica.tscn")
 var pre_larissa = preload("res://scenes/larissa.tscn")
 var pre_margaret = preload("res://scenes/margaret.tscn")
 var pre_bebel = preload("res://scenes/bebel.tscn")
-var lista_inimigos = [pre_larissa]
+var pre_barbara = preload("res://scenes/barbara.tscn")
+var lista_inimigos = [pre_barbara]
 #_antony, pre_monica, pre_larissa, pre_margaret, pre_bebel]
 var spawn_pos = Vector2()
 var rand_n

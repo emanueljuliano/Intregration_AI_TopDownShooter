@@ -71,6 +71,5 @@ custom_colors/font_color = Color( 0, 1, 0.243137, 1 )
 text = "Exit"
 flat = true
 script = ExtResource( 6 )
-
 [connection signal="pressed" from="Menu/Decisions/Buttons/Continue" to="Menu/Decisions/Buttons/Continue" method="_on_Continue_pressed"]
 [connection signal="pressed" from="Menu/Decisions/Buttons/Exit" to="Menu/Decisions/Buttons/Exit" method="_on_Exit_pressed"]

@@ -51,4 +51,3 @@ position = Vector2( 214.12, 404.479 )
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
 scale = Vector2( 1.01524, 0.887534 )
 occluder = SubResource( 1 )
-

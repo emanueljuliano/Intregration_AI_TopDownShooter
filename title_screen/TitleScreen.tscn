@@ -111,6 +111,5 @@ custom_constants/shadow_offset_y = 2
 
 [node name="FadeIn" parent="." instance=ExtResource( 9 )]
 visible = false
-
 [connection signal="pressed" from="Menu/CenterRow/Buttons/QuitButton" to="Menu/CenterRow/Buttons/QuitButton" method="_on_QuitButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
