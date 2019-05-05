@@ -1,10 +1,16 @@
 extends Control
 
 var scene_path_to_load
+var data = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	game.load_game()
+		
+	$Menu/VersionLabel.set_text('Version ' + str(game.level) + '.' + str(game.deaths) +
+								'\nManel e Marrocos Studio')
 	$Menu/CenterRow/Buttons/ContinueButton.grab_focus()
+	
 	for button in $Menu/CenterRow/Buttons.get_children():
 		button.connect("pressed", self, "_on_Button_pressed", [button.scene_to_load])
 

@@ -114,6 +114,8 @@ func dano_player(valor, posicao_inimigo):
 	get_node("anim").play("dano")
 	
 	if vida <= 0:
+		game.deaths += 1
+		game.save_game()
 		get_tree().change_scene("res://title_screen/death/Death.tscn")
 
 	pass
