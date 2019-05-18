@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://title_screen/title_screen.gd" type="Script" id=1]
 [ext_resource path="res://title_screen/system failure.png" type="Texture" id=2]
@@ -8,7 +8,8 @@
 [ext_resource path="res://title_screen/buttons/QuitButton.tscn" type="PackedScene" id=6]
 [ext_resource path="res://title_screen/buttons/QuitButton.gd" type="Script" id=7]
 [ext_resource path="res://title_screen/Fonts/vt323_20.tres" type="DynamicFont" id=8]
-[ext_resource path="res://fade_in/FadeIn.tscn" type="PackedScene" id=9]
+[ext_resource path="res://title_screen/Story.gd" type="Script" id=9]
+[ext_resource path="res://fade_in/FadeIn.tscn" type="PackedScene" id=10]
 
 [node name="TitleScreen" type="Control"]
 anchor_right = 1.0
@@ -97,6 +98,7 @@ text = "FADE IN ON:
 
 					MAN (V.O.)
 			Hello?"
+script = ExtResource( 9 )
 
 [node name="VersionLabel" type="Label" parent="Menu"]
 margin_top = 513.0
@@ -109,7 +111,7 @@ custom_colors/font_color_shadow = Color( 0, 0.521569, 0.0980392, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 2
 
-[node name="FadeIn" parent="." instance=ExtResource( 9 )]
+[node name="FadeIn" parent="." instance=ExtResource( 10 )]
 visible = false
 
 [connection signal="pressed" from="Menu/CenterRow/Buttons/QuitButton" to="Menu/CenterRow/Buttons/QuitButton" method="_on_QuitButton_pressed"]
