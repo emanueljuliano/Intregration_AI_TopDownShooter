@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SOUNTRACK1.ogg-637f0374c08d14e3b8d9b4d6add4284e.oggstr"
+
+[deps]
+
+source_file="res://samples/musicas/SOUNTRACK1.ogg"
+dest_files=[ "res://.import/SOUNTRACK1.ogg-637f0374c08d14e3b8d9b4d6add4284e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

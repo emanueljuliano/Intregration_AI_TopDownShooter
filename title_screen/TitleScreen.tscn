@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://title_screen/title_screen.gd" type="Script" id=1]
 [ext_resource path="res://title_screen/system failure.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://title_screen/Fonts/vt323_20.tres" type="DynamicFont" id=8]
 [ext_resource path="res://title_screen/Story.gd" type="Script" id=9]
 [ext_resource path="res://fade_in/FadeIn.tscn" type="PackedScene" id=10]
+[ext_resource path="res://samples/musicas/THEME.ogg" type="AudioStream" id=11]
 
 [node name="TitleScreen" type="Control"]
 anchor_right = 1.0
@@ -113,6 +114,10 @@ custom_constants/shadow_offset_y = 2
 
 [node name="FadeIn" parent="." instance=ExtResource( 10 )]
 visible = false
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true
 
 [connection signal="pressed" from="Menu/CenterRow/Buttons/QuitButton" to="Menu/CenterRow/Buttons/QuitButton" method="_on_QuitButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

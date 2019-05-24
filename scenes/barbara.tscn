@@ -2,9 +2,10 @@
 
 [ext_resource path="res://scripts/barbara.gd" type="Script" id=1]
 [ext_resource path="res://sprites/PNG/Parts/cockpitGreen_5.png" type="Texture" id=2]
-[ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
+[ext_resource path="res://samples/musicas/MORTE INSETO MEDIO.wav" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 6.18038
 
 [sub_resource type="Animation" id=2]
 resource_name = "dano"
@@ -158,3 +159,7 @@ process_material = SubResource( 7 )
 
 [node name="audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 200, 0 )

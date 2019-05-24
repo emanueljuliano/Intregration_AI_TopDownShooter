@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/larissa.gd" type="Script" id=1]
 [ext_resource path="res://scenes/larissa_cabeca.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/larissa_corpo.tscn" type="PackedScene" id=3]
-[ext_resource path="res://samples/explosion.wav" type="AudioStream" id=4]
+[ext_resource path="res://samples/musicas/MORTE INSETO GRANDE 2.wav" type="AudioStream" id=4]
+[ext_resource path="res://samples/musicas/CRAWLING.wav" type="AudioStream" id=5]
 
 [sub_resource type="Animation" id=1]
 resource_name = "morrer"
@@ -76,3 +77,7 @@ anims/morrer = SubResource( 1 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 
+[node name="crawl" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -20.0
+autoplay = true

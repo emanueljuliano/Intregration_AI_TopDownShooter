@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/spawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/bebel.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/margaret.tscn" type="PackedScene" id=6]
+[ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=7]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( 588.578, 32.9576, 583.219, 293.527, 778.853, 295.06, 781.533, 256.741, 624.757, 252.142, 626.097, 32.9576, 1005.31, 36.0231, 1003.97, 249.077, 868.63, 256.741, 864.61, 304.256, 1036.12, 305.789, 1028.09, 16.0973, 117.998, 1.10766, 256.226, 291.525, 377.527, 20.4688 )
@@ -51,3 +52,7 @@ position = Vector2( 214.12, 404.479 )
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
 scale = Vector2( 1.01524, 0.887534 )
 occluder = SubResource( 1 )
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true

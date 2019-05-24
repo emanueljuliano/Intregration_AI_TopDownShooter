@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CORACAO.wav-61adcbd96ba4885cd4ae0646891e34ba.sample"
+
+[deps]
+
+source_file="res://samples/musicas/CORACAO.wav"
+dest_files=[ "res://.import/CORACAO.wav-61adcbd96ba4885cd4ae0646891e34ba.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

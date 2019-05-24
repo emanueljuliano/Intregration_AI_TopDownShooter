@@ -8,4 +8,3 @@
 [node name="NewGame" parent="Screen/Options" index="0"]
 text = "./Continue"
 script = ExtResource( 2 )
-

@@ -1,16 +1,26 @@
 extends KinematicBody2D
 
 var vel = 300
+var vel_base = 300
+var vel_dash = 1500
 var pre_tiro = preload("res://scenes/tiro.tscn")
 var reload = 0
 var tempo = 0.1
 var impulso
 
-var lanterna = true
+var lanterna = false
+var tempo_espera_dash_max = 2
+var tempo_espera_dash = 0
+var tempo_dash_max = 0.2
+var tempo_dash = 0
+var dashando = false
 
-var vida = 100
-var vida_max = 100
+export(bool) var imobilizado
+
+var vida = 100.0
+var vida_max = 100.0
 var empurrao = 100
+var tempo_vida = 1.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,8 +29,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	look_at(get_global_mouse_position())
-	print(vida)
+	
+	if not imobilizado:
+		look_at(get_global_mouse_position())
 	
 	if Input.is_action_pressed("clickE"):
 		atirar()
@@ -28,54 +39,76 @@ func _process(delta):
 	if reload > 0:
 		reload = reload - delta
 	
-	if Input.is_action_just_pressed("clickD") or Input.is_action_just_pressed("e"):
-		lanterna = not lanterna
-		atualizar_lanterna()
+	if not imobilizado:
+		if Input.is_action_just_pressed("clickD") or Input.is_action_just_pressed("e"):
+			lanterna = not lanterna
+			atualizar_lanterna()
 		
 	get_node("luz").set_visible(lanterna)
+	
+	if vida<=(vida_max/2):
+		if tempo_vida<=0:
+			get_node("coracao").play()
+			tempo_vida = 0.5 + 1*(vida/(vida_max/2))
+		else:
+			tempo_vida = tempo_vida - delta
+	
 	
 	pass
 	
 	
 func _physics_process(delta):
-	
-	
-	if Input.is_action_pressed("cima"):
-		if Input.is_action_pressed("esquerda") or Input.is_action_pressed("direita"):
-			move_and_slide(Vector2(0, -sin(45)) * vel)
+	if not imobilizado:
+		if not dashando:
+			if Input.is_action_just_pressed("dash") and tempo_espera_dash<=0:
+				vel = vel_dash
+				dashando = true
+				tempo_dash = tempo_dash_max
+			tempo_espera_dash = tempo_espera_dash - delta
 		else:
-			move_and_slide(Vector2(0,-1) * vel)
-	
-	if Input.is_action_pressed("baixo"):
-		if Input.is_action_pressed("esquerda") or Input.is_action_pressed("direita"):
-			move_and_slide(Vector2(0, sin(45)) * vel)
-		else:
-			move_and_slide(Vector2(0,1) * vel)
+			tempo_dash = tempo_dash - delta
+			tempo_espera_dash = tempo_espera_dash_max
+			
+		if tempo_dash<=0 and dashando:
+			vel = vel_base
+			dashando = false
 		
-	if Input.is_action_pressed("direita"):
-		if Input.is_action_pressed("cima") or Input.is_action_pressed("baixo"):
-			move_and_slide(Vector2(cos(45), 0) * vel)
-		else:
-			move_and_slide(Vector2(1,0) * vel)
 		
-	if Input.is_action_pressed("esquerda"):
-		if Input.is_action_pressed("cima") or Input.is_action_pressed("baixo"):
-			move_and_slide(Vector2(-cos(45), 0) * vel)
-		else:
-			move_and_slide(Vector2(-1,0) * vel)
-	
-	
-	pass
+		
+		if Input.is_action_pressed("cima"):
+			if Input.is_action_pressed("esquerda") or Input.is_action_pressed("direita"):
+				move_and_slide(Vector2(0, -sin(45)) * vel)
+			else:
+				move_and_slide(Vector2(0,-1) * vel)
+		
+		if Input.is_action_pressed("baixo"):
+			if Input.is_action_pressed("esquerda") or Input.is_action_pressed("direita"):
+				move_and_slide(Vector2(0, sin(45)) * vel)
+			else:
+				move_and_slide(Vector2(0,1) * vel)
+			
+		if Input.is_action_pressed("direita"):
+			if Input.is_action_pressed("cima") or Input.is_action_pressed("baixo"):
+				move_and_slide(Vector2(cos(45), 0) * vel)
+			else:
+				move_and_slide(Vector2(1,0) * vel)
+			
+		if Input.is_action_pressed("esquerda"):
+			if Input.is_action_pressed("cima") or Input.is_action_pressed("baixo"):
+				move_and_slide(Vector2(-cos(45), 0) * vel)
+			else:
+				move_and_slide(Vector2(-1,0) * vel)
 
 
 func atirar():
-	if reload <= 0:
-		var tiro = pre_tiro.instance()
-		tiro.set_global_position(get_node("mira").get_global_position())
-		get_owner().add_child(tiro)
-		tiro.set_rotation(get_rotation())
-		get_node("audio").play()
-		reload = tempo
+	if not imobilizado:
+		if reload <= 0:
+			var tiro = pre_tiro.instance()
+			tiro.set_global_position(get_node("mira").get_global_position())
+			get_owner().add_child(tiro)
+			tiro.set_rotation(get_rotation())
+			get_node("atirar").play()
+			reload = tempo
 
 
 func _on_lanterna_body_entered(body):

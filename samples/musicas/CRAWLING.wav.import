@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CRAWLING.wav-841aca44637d4a201f8ec424d8a773dd.sample"
+
+[deps]
+
+source_file="res://samples/musicas/CRAWLING.wav"
+dest_files=[ "res://.import/CRAWLING.wav-841aca44637d4a201f8ec424d8a773dd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

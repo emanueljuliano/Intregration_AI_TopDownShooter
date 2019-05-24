@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://sprites/PNG/playerShip3_green.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://sprites/PNG/Effects/fire01.png" type="Texture" id=4]
 [ext_resource path="res://sprites/flash.png" type="Texture" id=5]
 [ext_resource path="res://sprites/escuro_mundo.png" type="Texture" id=6]
+[ext_resource path="res://samples/musicas/CORACAO.wav" type="AudioStream" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -87,7 +88,7 @@ position = Vector2( 48, 0 )
 anims/dano = SubResource( 2 )
 anims/idle = SubResource( 3 )
 
-[node name="audio" type="AudioStreamPlayer" parent="."]
+[node name="atirar" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 
 [node name="lanterna" type="Area2D" parent="."]
@@ -131,5 +132,8 @@ scale = Vector2( 4.13418, 3.32 )
 texture = ExtResource( 6 )
 energy = 2.27
 mode = 1
+
+[node name="coracao" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
 [connection signal="body_entered" from="lanterna" to="." method="_on_lanterna_body_entered"]
 [connection signal="body_exited" from="lateral" to="." method="_on_lateral_body_exited"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MORTE INSETO GRANDE 1.wav-f958c6a4c0c4a6e0b6e42d5bc7740d5f.sample"
+
+[deps]
+
+source_file="res://samples/musicas/MORTE INSETO GRANDE 1.wav"
+dest_files=[ "res://.import/MORTE INSETO GRANDE 1.wav-f958c6a4c0c4a6e0b6e42d5bc7740d5f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

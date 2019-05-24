@@ -40,8 +40,11 @@ func _process(delta):
 		tempo = tempo - delta
 	if tempo <= 0:
 		destino = random_point(get_global_position(), raio)
-		look_at(destino)
-		tempo = tempo_espera
+		get_node("RayCast2D").look_at(destino)
+		get_node("RayCast2D").force_raycast_update()
+		if (not get_node("RayCast2D").is_colliding()):
+			look_at(destino)
+			tempo = tempo_espera
 
 func _physics_process(delta):
 	if vida > 0:
@@ -62,8 +65,8 @@ func dano(valor):
 func random_point(centro, raio):
 	var x = rand_range(centro.x - raio, centro.x + raio)
 	var y = rand_range(centro.y - raio, centro.y + raio)
-	if Vector2(x, y).distance_to(centro) <= raio:
-		return Vector2(x, y)
-	else:
+	if(Vector2(x, y).distance_to(centro) > raio):
 		return random_point(centro, raio)
+	else:
+		return Vector2(x, y)
 	pass

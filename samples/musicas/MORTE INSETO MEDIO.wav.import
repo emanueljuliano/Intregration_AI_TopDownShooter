@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MORTE INSETO MEDIO.wav-71b01bcec085f3d982a2f725a8292bb6.sample"
+
+[deps]
+
+source_file="res://samples/musicas/MORTE INSETO MEDIO.wav"
+dest_files=[ "res://.import/MORTE INSETO MEDIO.wav-71b01bcec085f3d982a2f725a8292bb6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
