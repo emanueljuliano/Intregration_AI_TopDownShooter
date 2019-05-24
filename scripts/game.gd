@@ -5,6 +5,8 @@ const FILE = "user://save.data"
 var deaths = 0
 var level = 1
 
+var inimigos_mortos = 0
+
 var gameData={
 	deaths = 0,
 	level = 0

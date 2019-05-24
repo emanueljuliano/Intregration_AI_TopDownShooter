@@ -9,7 +9,7 @@ var pre_margaret = preload("res://scenes/margaret.tscn")
 var pre_bebel = preload("res://scenes/bebel.tscn")
 var pre_barbara = preload("res://scenes/barbara.tscn")
 var pre_greg = preload("res://scenes/greg.tscn")
-var lista_inimigos = [pre_greg, pre_barbara, pre_larissa]#, pre_antony, pre_monica, pre_larissa, pre_margaret, pre_bebel]
+var lista_inimigos = [pre_barbara, pre_antony, pre_monica, pre_larissa, pre_margaret, pre_bebel, pre_greg]
 # pre_barbara, pre_antony, pre_monica, pre_larissa, pre_margaret, pre_bebel, pre_greg
 var spawn_pos = Vector2()
 var rand_n

@@ -1,7 +1,6 @@
 extends KinematicBody2D
 
-var vel = 125
-
+var vel = 405
 var vida = 40
 var dano = 10
 
@@ -20,6 +19,7 @@ func _process(delta):
 		set_collision_mask_bit(0, false)
 		remove_from_group(game.INIMIGO)
 		get_node("anim").play("morrer")
+		game.inimigos_mortos += 1
 	look_at(game.get_player().get_position())
 
 func _physics_process(delta):

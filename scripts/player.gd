@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-var vel = 300
-var vel_base = 300
-var vel_dash = 1500
+var vel
+var vel_base = 400 * scale.x
+var vel_dash = 5
 var pre_tiro = preload("res://scenes/tiro.tscn")
 var reload = 0
 var tempo = 0.1
@@ -15,7 +15,10 @@ var tempo_dash_max = 0.2
 var tempo_dash = 0
 var dashando = false
 
-export(bool) var imobilizado
+export var mover = true
+export var atirar = true
+export var dashar = true
+export var iluminar = true
 
 var vida = 100.0
 var vida_max = 100.0
@@ -24,14 +27,14 @@ var tempo_vida = 1.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	vel = vel_base
 	get_node("anim").play("idle")
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	
-	if not imobilizado:
-		look_at(get_global_mouse_position())
+	look_at(get_global_mouse_position())
 	
 	if Input.is_action_pressed("clickE"):
 		atirar()
@@ -39,7 +42,7 @@ func _process(delta):
 	if reload > 0:
 		reload = reload - delta
 	
-	if not imobilizado:
+	if iluminar:
 		if Input.is_action_just_pressed("clickD") or Input.is_action_just_pressed("e"):
 			lanterna = not lanterna
 			atualizar_lanterna()
@@ -58,10 +61,10 @@ func _process(delta):
 	
 	
 func _physics_process(delta):
-	if not imobilizado:
+	if dashar:
 		if not dashando:
 			if Input.is_action_just_pressed("dash") and tempo_espera_dash<=0:
-				vel = vel_dash
+				vel = vel_base * vel_dash
 				dashando = true
 				tempo_dash = tempo_dash_max
 			tempo_espera_dash = tempo_espera_dash - delta
@@ -74,7 +77,7 @@ func _physics_process(delta):
 			dashando = false
 		
 		
-		
+	if mover:
 		if Input.is_action_pressed("cima"):
 			if Input.is_action_pressed("esquerda") or Input.is_action_pressed("direita"):
 				move_and_slide(Vector2(0, -sin(45)) * vel)
@@ -101,7 +104,7 @@ func _physics_process(delta):
 
 
 func atirar():
-	if not imobilizado:
+	if atirar:
 		if reload <= 0:
 			var tiro = pre_tiro.instance()
 			tiro.set_global_position(get_node("mira").get_global_position())

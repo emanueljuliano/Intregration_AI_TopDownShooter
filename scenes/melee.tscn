@@ -159,4 +159,3 @@ process_material = SubResource( 7 )
 
 [node name="audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
-
