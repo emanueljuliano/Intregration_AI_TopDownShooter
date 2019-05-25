@@ -2,6 +2,7 @@ extends Area2D
 
 var vel = 800
 var dano = 10
+var res = Vector2(1024,600)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -10,7 +11,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	
-	if get_position().x > 1024 or get_position().x < 0 or get_position().y > 600 or get_position().y < 0:
+	if get_position().x > game.get_camera().get_global_position().x + (res.x/2) or get_position().x < game.get_camera().get_global_position().x - (res.x/2) or get_position().y > game.get_camera().get_global_position().y + (res.y/2) or get_position().y < game.get_camera().get_global_position().y - (res.y/2):
 		queue_free()
 	
 	set_position(get_position() + (get_node("frente").get_global_position() - get_global_position()) * vel * delta)

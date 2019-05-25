@@ -41,6 +41,18 @@ func get_player():
 	return get_tree().get_root().get_node("main").get_node("player")
 	pass
 
+func get_camera():
+	var nome = "camera1"
+	var valor = 1
+	if get_main().get_node(nome).is_current():
+		return get_main().get_node(nome)
+	else:
+		while not get_main().get_node(nome).is_current():
+			valor = valor + 1
+			nome.erase(nome.length()-1, 1)
+			nome = nome + String(valor)
+		return get_main().get_node(nome)
+	pass
 func save_game():
 	var save = File.new()
 	save.open(FILE, File.WRITE)

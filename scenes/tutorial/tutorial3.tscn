@@ -1,29 +1,83 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/tutorial/tutorial3.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
-[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=4]
-[ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=5]
-[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/useful/trap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=5]
+[ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=6]
+[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=7]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Area2D
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+func _on_ativador_body_entered(body):
+	if body == game.get_player():
+		get_parent().get_node(\"trap\").atirar_flecha()
+	pass # Replace with function body.
+"
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 71.5044, 328.413 )
 
 [node name="main" type="Node2D"]
 script = ExtResource( 1 )
+
+[node name="trap" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4334.5, 67.062 )
+scale = Vector2( 1.14402, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 640.041, 355.532 )
 scale = Vector2( 19.8208, 10.9991 )
 z_index = -1
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
-[node name="player" parent="." instance=ExtResource( 3 )]
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 4353.37, 336.518 )
+scale = Vector2( 19.8208, 10.9991 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 5615.96, 350.495 )
+scale = Vector2( 19.8208, 10.9991 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 6873.88, 350.495 )
+scale = Vector2( 19.8208, 10.9991 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 651.025, 362.661 )
 dashar = false
 iluminar = false
 
-[node name="camera1" parent="." instance=ExtResource( 4 )]
+[node name="camera1" parent="." instance=ExtResource( 5 )]
 position = Vector2( 639.943, 360.609 )
 scale = Vector2( 8.54311, 6.61094 )
+
+[node name="camera2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4353.27, 341.595 )
+scale = Vector2( 8.54311, 6.61094 )
+current = false
+segue = true
 
 [node name="parede" type="KinematicBody2D" parent="."]
 
@@ -32,24 +86,40 @@ position = Vector2( 78.6645, 61.1839 )
 scale = Vector2( 1.14402, 1 )
 polygon = PoolVector2Array( -40.2609, 607.976, -42.5774, -30.6821, 1018.34, -30.6821, 1026.7, 599.262, 1014.56, 599.631, 1014.56, 643.357, 1067.72, 643.357, 1050.77, -65.1326, -86.5001, -73.4504, -72.6908, 647.727, 1018.34, 637.127, 1005.36, 600.458 )
 
+[node name="parede2" type="KinematicBody2D" parent="."]
+position = Vector2( 3713.33, -19.0139 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="parede2"]
+position = Vector2( 78.6645, 61.1839 )
+scale = Vector2( 1.14402, 1 )
+polygon = PoolVector2Array( -40.2609, 607.976, -42.5774, -30.6821, 3243.02, -2.21063, 3251.17, 575.504, 1014.56, 599.631, 1014.56, 643.357, 3287.82, 626.753, 3279.67, -30.1646, -86.5001, -73.4504, -72.6908, 647.727, 1018.34, 637.127, 1005.36, 600.458 )
+
 [node name="musica" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
 autoplay = true
 
 [node name="PORTA_CIMA" type="Position2D" parent="."]
 position = Vector2( 636.009, 66.2509 )
 
-[node name="PORTA2" parent="." instance=ExtResource( 6 )]
+[node name="PORTA2" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1132.3, 368.178 )
 rotation = -3.14159
 camera_atual = "camera1"
-camera_destino = "camera1"
+camera_destino = "camera2"
 destino = "PORTA"
 
-[node name="PORTA" parent="." instance=ExtResource( 6 )]
-position = Vector2( 151.474, 384.834 )
-camera_atual = "camera1"
+[node name="PORTA" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3854.38, 348.883 )
+camera_atual = "camera2"
 camera_destino = "camera1"
 destino = "PORTA2"
-trocar_fase = true
 nova_fase = "res://scenes/tutorial/tutorial.tscn"
+
+[node name="ativador" type="Area2D" parent="."]
+position = Vector2( 4158.03, 283.059 )
+script = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ativador"]
+position = Vector2( 36.9199, 47.4684 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="ativador" to="ativador" method="_on_ativador_body_entered"]
