@@ -12,6 +12,11 @@ var distancia = 50
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_to_group(game.INIMIGO)
+	$anim.play("idle")
+	if segmento == get_parent().segmentos:
+		get_node("sprite").set_texture(load("res://sprites/Artesanal/Larissa/cabeca.png"))
+		get_node("sprite").get_node("Sprite").set_visible(true)
+		get_node("sprite").get_node("Sprite2").set_visible(true)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://sprites/PNG/playerShip3_green.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://sprites/flash.png" type="Texture" id=5]
 [ext_resource path="res://sprites/escuro_mundo.png" type="Texture" id=6]
 [ext_resource path="res://samples/musicas/CORACAO.wav" type="AudioStream" id=7]
+[ext_resource path="res://sprites/aurea.png" type="Texture" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -94,7 +95,7 @@ stream = ExtResource( 3 )
 
 [node name="lanterna" type="Area2D" parent="."]
 position = Vector2( 43, 0 )
-scale = Vector2( 20, 20 )
+scale = Vector2( 40, 40 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lanterna"]
 position = Vector2( 10, 0 )
@@ -110,17 +111,17 @@ texture = ExtResource( 4 )
 
 [node name="lateral" type="Area2D" parent="."]
 position = Vector2( 43, 0 )
-scale = Vector2( 20, 20 )
+scale = Vector2( 40, 40 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lateral"]
 position = Vector2( 10, 0 )
 rotation = -1.57079
-scale = Vector2( 1.93347, 1.93347 )
+scale = Vector2( 2, 2 )
 shape = SubResource( 5 )
 
 [node name="luz" type="Light2D" parent="."]
-visible = false
 position = Vector2( 48, 0 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 5 )
 offset = Vector2( 250, 0 )
 shadow_enabled = true
@@ -136,5 +137,11 @@ mode = 1
 
 [node name="coracao" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
+
+[node name="aurea" type="Light2D" parent="."]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+energy = 0.75
+shadow_enabled = true
 [connection signal="body_entered" from="lanterna" to="." method="_on_lanterna_body_entered"]
 [connection signal="body_exited" from="lateral" to="." method="_on_lateral_body_exited"]

@@ -2,7 +2,7 @@ extends Area2D
 
 var vel = 800
 var dano = 10
-var res = Vector2(1024,600)
+var res = Vector2(1280,720)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

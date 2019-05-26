@@ -55,12 +55,13 @@ script = ExtResource( 1 )
 
 [node name="larissa_cabeca" parent="." instance=ExtResource( 2 )]
 
-[node name="larissa_corpo" parent="." instance=ExtResource( 3 )]
-position = Vector2( -90.5885, 1 )
+[node name="larissa_corpo1" parent="." instance=ExtResource( 3 )]
+position = Vector2( -90, 1 )
 segmento = 1
 
 [node name="larissa_corpo2" parent="." instance=ExtResource( 3 )]
 position = Vector2( -180, 0 )
+rotation = 3.14159
 segmento = 2
 
 [node name="larissa_corpo3" parent="." instance=ExtResource( 3 )]
@@ -69,6 +70,7 @@ segmento = 3
 
 [node name="larissa_corpo4" parent="." instance=ExtResource( 3 )]
 position = Vector2( -360, 0 )
+rotation = 3.14159
 segmento = 4
 
 [node name="anim" type="AnimationPlayer" parent="."]

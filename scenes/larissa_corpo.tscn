@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/larissa_corpo.gd" type="Script" id=1]
-[ext_resource path="res://sprites/PNG/Enemies/enemyRed4.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Artesanal/Larissa/corpo.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Artesanal/Larissa/antena.png" type="Texture" id=3]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 45.8037
+[sub_resource type="CircleShape2D" id=4]
 
 [sub_resource type="Animation" id=2]
 resource_name = "dano"
@@ -42,6 +42,8 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "idle"
+length = 0.4
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:modulate")
 tracks/0/interp = 1
@@ -61,10 +63,25 @@ script = ExtResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
 rotation = -1.5708
+scale = Vector2( 10, 10 )
 texture = ExtResource( 2 )
 
+[node name="Sprite" type="Sprite" parent="sprite"]
+visible = false
+position = Vector2( 3.27732, -4.75209 )
+rotation = -1.5708
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="sprite"]
+visible = false
+position = Vector2( -3.52938, -4.62606 )
+rotation = 1.5708
+texture = ExtResource( 3 )
+flip_h = true
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+scale = Vector2( 4.5, 4.5 )
+shape = SubResource( 4 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )
@@ -75,4 +92,3 @@ position = Vector2( 0, 1 )
 [node name="anim" type="AnimationPlayer" parent="."]
 anims/dano = SubResource( 2 )
 anims/idle = SubResource( 3 )
-
