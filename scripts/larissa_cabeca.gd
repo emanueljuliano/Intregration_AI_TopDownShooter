@@ -49,11 +49,12 @@ func dano(valor):
 	pass
 
 func na_luz():
+	if not iluminado:
+		if randi()%2 == 0:
+			direcao = 1
+		else:
+			direcao = -1
 	iluminado = true
-	if randi()%2 == 0:
-		direcao = 1
-	else:
-		direcao = -1
 	pass
 
 func no_escuro():

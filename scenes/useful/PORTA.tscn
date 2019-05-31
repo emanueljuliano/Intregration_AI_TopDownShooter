@@ -14,7 +14,7 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( -120, 0 )
+position = Vector2( -64, 0 )
 rotation = -1.5708
 texture = ExtResource( 2 )
 

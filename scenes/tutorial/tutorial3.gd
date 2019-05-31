@@ -25,7 +25,6 @@ func _process(delta):
 		
 	if game.inimigos_mortos >= 1:
 		get_node("PORTA").aberta = true
-		get_node("PORTA2").aberta = true
 		
 		
 	#REPETIR FASE SE MORRER

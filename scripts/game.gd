@@ -6,6 +6,7 @@ var deaths = 0
 var level = 1
 
 var inimigos_mortos = 0
+var auxiliar = 0
 
 var gameData={
 	deaths = 0,
@@ -53,6 +54,8 @@ func get_camera():
 			nome = nome + String(valor)
 		return get_main().get_node(nome)
 	pass
+	
+
 func save_game():
 	var save = File.new()
 	save.open(FILE, File.WRITE)

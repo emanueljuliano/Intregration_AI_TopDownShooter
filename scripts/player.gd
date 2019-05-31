@@ -6,6 +6,7 @@ var vel_dash = 5
 var pre_tiro = preload("res://scenes/tiro.tscn")
 var reload = 0
 var tempo = 0.1
+
 var impulso
 
 var lanterna = false
@@ -19,21 +20,23 @@ export var mover = true
 export var atirar = true
 export var dashar = true
 export var iluminar = true
+export var imortal = false
 
 var vida = 100.0
 var vida_max = 100.0
-var empurrao = 100
+var empurrao = 2000
+var knockback = Vector2()
 var tempo_vida = 1.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	look_at(get_global_mouse_position())
 	vel = vel_base
 	get_node("anim").play("idle")
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
 	look_at(get_global_mouse_position())
 	
 	if Input.is_action_pressed("clickE"):
@@ -45,11 +48,12 @@ func _process(delta):
 	if iluminar:
 		if Input.is_action_just_pressed("clickD") or Input.is_action_just_pressed("e"):
 			lanterna = not lanterna
-			atualizar_lanterna()
+			#atualizar_lanterna()
 		
 	get_node("luz").set_visible(lanterna)
+	atualizar_lanterna()
 	
-	if vida<=(vida_max/2):
+	if vida<=(vida_max/2) and not imortal:
 		if tempo_vida<=0:
 			get_node("coracao").play()
 			tempo_vida = 0.5 + 1*(vida/(vida_max/2))
@@ -101,6 +105,13 @@ func _physics_process(delta):
 				move_and_slide(Vector2(-cos(45), 0) * vel)
 			else:
 				move_and_slide(Vector2(-1,0) * vel)
+	
+	if knockback != Vector2(0,0):
+		move_and_slide(knockback*empurrao)
+		knockback = knockback/2
+	
+	
+	pass
 
 
 func atirar():
@@ -133,8 +144,19 @@ func atualizar_lanterna():
 	if lanterna:
 		var i = 0
 		while i < len(get_node("lanterna").get_overlapping_bodies()):
+			get_node("RayCast2D").set_global_rotation(0)
+			get_node("RayCast2D").set_cast_to(get_node("lanterna").get_overlapping_bodies()[i].get_global_position() - get_global_position())
+			get_node("RayCast2D").add_exception(get_node("lanterna").get_overlapping_bodies()[i])
+			get_node("RayCast2D").force_raycast_update()
+			while get_node("RayCast2D").get_collider() != null and get_node("RayCast2D").get_collider().is_in_group(game.INIMIGO):
+				get_node("RayCast2D").add_exception(get_node("RayCast2D").get_collider())
+				get_node("RayCast2D").force_raycast_update()
+			get_node("RayCast2D").force_raycast_update()
 			if get_node("lanterna").get_overlapping_bodies()[i].has_method("na_luz"):
-				get_node("lanterna").get_overlapping_bodies()[i].na_luz()
+				if (not get_node("RayCast2D").is_colliding()):
+					get_node("lanterna").get_overlapping_bodies()[i].na_luz()
+				else:
+					get_node("lanterna").get_overlapping_bodies()[i].no_escuro()
 			i = i + 1
 	else:
 		var i = 0
@@ -146,15 +168,18 @@ func atualizar_lanterna():
 
 func dano_player(valor, posicao_inimigo):
 	vida = vida - valor
-	move_and_slide((get_global_position() - posicao_inimigo) * empurrao)
+	var direcao = get_global_position() - posicao_inimigo
+	if direcao != Vector2(0,0):
+		var alpha = 1/(sqrt(direcao.x*direcao.x + direcao.y*direcao.y))
+		knockback = knockback + alpha*direcao
 	get_node("anim").stop()
 	get_node("anim").play("dano")
 	
-	if vida <= 0:
+	if vida <= 0 and not imortal:
 		game.deaths += 1
 		game.save_game()
 		get_tree().change_scene("res://title_screen/death/Death.tscn")
-	
+		
 	pass
 
 func add_vida(valor):

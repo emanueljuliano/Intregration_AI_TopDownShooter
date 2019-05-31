@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Backgrounds/tutorial_background.png" type="Texture" id=2]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/spawner.tscn" type="PackedScene" id=5]
@@ -15,8 +15,8 @@
 tile_data = PoolIntArray( 0, 0, 0, 1, 0, 3, 2, 0, 65539, 3, 0, 327683, 4, 0, 196610, 5, 0, 3, 6, 0, 1, 7, 0, 2, 8, 0, 4, 9, 0, 1, 10, 0, 3, 11, 0, 1, 12, 0, 3, 13, 0, 1, 14, 0, 1, 15, 0, 5, 65536, 0, 65536, 65537, 262145, 0, 65538, 0, 262147, 65539, 0, 327685, 65540, 0, 131074, 65543, 0, 65536, 65551, 0, 262144, 131072, 0, 196608, 131075, 0, 65536, 131079, 0, 262144, 131087, 0, 262144, 196608, 0, 262144, 196611, 0, 393223, 196615, 0, 327680, 196616, 0, 4, 196617, 0, 458758, 196619, 0, 458752, 196620, 0, 3, 196621, 0, 4, 196622, 0, 3, 196623, 0, 327687, 262144, 0, 65536, 262159, 0, 65536, 327680, 0, 196608, 327695, 0, 65536, 393216, 0, 262144, 393231, 0, 196608, 458752, 0, 65536, 458767, 0, 196608, 524288, 0, 327680, 524289, 0, 1, 524290, 0, 4, 524291, 0, 3, 524292, 0, 1, 524293, 0, 3, 524294, 0, 3, 524295, 0, 3, 524296, 0, 4, 524297, 0, 1, 524298, 0, 1, 524299, 0, 4, 524300, 0, 1, 524301, 0, 4, 524302, 0, 1, 524303, 0, 393222 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 497.398, 319.195 )
-scale = Vector2( 16.3592, 9.98258 )
+position = Vector2( 646.666, 361.242 )
+scale = Vector2( 149.334, 80.4118 )
 z_index = -1
 texture = ExtResource( 2 )
 

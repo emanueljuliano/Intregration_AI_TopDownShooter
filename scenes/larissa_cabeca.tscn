@@ -5,7 +5,7 @@
 [ext_resource path="res://sprites/Artesanal/Larissa/antena.png" type="Texture" id=3]
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=4]
 
-[sub_resource type="CircleShape2D" id=7]
+[sub_resource type="CircleShape2D" id=1]
 
 [sub_resource type="Gradient" id=2]
 offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
@@ -85,18 +85,16 @@ texture = ExtResource( 2 )
 [node name="Sprite" type="Sprite" parent="sprite"]
 position = Vector2( 4.54622, 4.97813 )
 rotation = 3.14159
-scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 
 [node name="Sprite2" type="Sprite" parent="sprite"]
 position = Vector2( -4.68536, 4.97813 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 4.5, 4.5 )
-shape = SubResource( 7 )
+shape = SubResource( 1 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )
