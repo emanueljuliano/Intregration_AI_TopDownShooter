@@ -23,6 +23,7 @@ config/icon="res://icon.png"
 [autoload]
 
 game="*res://scripts/game.gd"
+dict_dialog="*res://scripts/dict_dialog.gd"
 
 [display]
 

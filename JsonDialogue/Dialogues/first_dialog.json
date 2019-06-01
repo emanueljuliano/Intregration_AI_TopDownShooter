@@ -1,7 +1,6 @@
-{
-  "passages": [
+[
     {
-      "text": "Wake up... please... just wake up...\n[[Uh?]]\n[[...]]",
+      "text": "Wake up... please... just wake up...",
       "links": [
         {
           "name": "Uh?",
@@ -22,7 +21,7 @@
       }
     },
     {
-      "text": "Oh God... I'm so glad that you are alive...\n[[Who are you?!]]\n[[...where am I?]]",
+      "text": "Oh God... I'm so glad that you are alive...",
       "links": [
         {
           "name": "Who are you?!",
@@ -43,7 +42,7 @@
       }
     },
     {
-      "text": "Hello, are you there?\n[[Hello?]]\n[[....]]",
+      "text": "Hello, are you there?",
       "links": [
         {
           "name": "Hello?",
@@ -64,7 +63,7 @@
       }
     },
     {
-      "text": "Oh God... I'm so glad that you are alive...\n[[Who are you?!]]\n[[...where am I?]]",
+      "text": "Oh God... I'm so glad that you are alive...",
       "links": [
         {
           "name": "Who are you?!",
@@ -85,7 +84,7 @@
       }
     },
     {
-      "text": "You can't remember your own father?  \n[[...father?]]\n[[Oh... it's kind of dark in my mind, but yeah... you are my father]]",
+      "text": "You can't remember your own father?",
       "links": [
         {
           "name": "...father?",
@@ -106,7 +105,7 @@
       }
     },
     {
-      "text": "You don't remember this place?\n[[no...]]\n[[I... I guess I know what place is that...]]",
+      "text": "You don't remember this place?",
       "links": [
         {
           "name": "no...",
@@ -127,7 +126,7 @@
       }
     },
     {
-      "text": "Oh no... please, answer something if you are there!\n[[help!]]\n[[.....]]",
+      "text": "Oh no... please, answer something if you are there!",
       "links": [
         {
           "name": "help!",
@@ -148,7 +147,7 @@
       }
     },
     {
-      "text": "Your brother... the Queen... your mom... even Neeko... You really forget about everything?\n[[I... I don't know what you're talking about...]]",
+      "text": "Your brother... the Queen... your mom... even Neeko... You really forget about everything?",
       "links": [
         {
           "name": "I... I don't know what you're talking about...",
@@ -164,7 +163,7 @@
       }
     },
     {
-      "text": "Great! At least you don't loss your entire memory. But for now, you just have to know that I'm your father and that the people how you care about are in danger.\n[[Oh no... what can I do?]]\n[[Where are they?]]",
+      "text": "Great! At least you don't loss your entire memory. But for now, you just have to know that I'm your father and that the people how you care about are in danger.",
       "links": [
         {
           "name": "Oh no... what can I do?",
@@ -185,7 +184,7 @@
       }
     },
     {
-      "text": "It doesn't matter now, they are in danger and they need you.\n[[but....]]",
+      "text": "It doesn't matter now, they are in danger and they need you.",
       "links": [
         {
           "name": "but....",
@@ -201,12 +200,12 @@
       }
     },
     {
-      "text": "Take this and go outside, you will remember about everything.\n[[..]]",
+      "text": "Take this and go outside, you will remember about everything.",
       "links": [
         {
-          "name": "..",
-          "link": "..",
-          "pid": "20"
+          "name": "okay!",
+          "link": "okay!",
+          "pid": "19"
         }
       ],
       "name": "but....",
@@ -217,7 +216,7 @@
       }
     },
     {
-      "text": "Oh, that's okay, that's okay, don't worry, it was just an nightmare...\n[[Who are you?!]]\n[[...where am I?]]",
+      "text": "Oh, that's okay, that's okay, don't worry, it was just an nightmare...",
       "links": [
         {
           "name": "Who are you?!",
@@ -238,16 +237,22 @@
       }
     },
     {
-      "text": "END.",
+      "text": "Didn't work again... uffff.... I will have to restart all over!",
+      "links": [
+        {
+          "name": "...|end",
+          "link": "...|end"
+        }
+      ],
       "name": ".....",
       "pid": "13",
       "position": {
-        "x": "1041",
-        "y": "371"
+        "x": "1190",
+        "y": "350"
       }
     },
     {
-      "text": "Do you know who I am?\n[[no....]]",
+      "text": "Do you know who I am?",
       "links": [
         {
           "name": "no....",
@@ -263,7 +268,7 @@
       }
     },
     {
-      "text": "Great! At least you don't loss your entire memory. But for now, you just have to know that I'm your father and that the people how you care about are in danger.\n[[Oh no... what can I do?]]\n[[Where are they?]]",
+      "text": "Great! At least you don't loss your entire memory. But for now, you just have to know that I'm your father and that the people how you care about are in danger.",
       "links": [
         {
           "name": "Oh no... what can I do?",
@@ -284,7 +289,7 @@
       }
     },
     {
-      "text": "You can't remember your own father?  \n[[...father?]]\n[[Oh... it's kind of dark in my mind, but yeah... you are my father]]",
+      "text": "You can't remember your own father?",
       "links": [
         {
           "name": "...father?",
@@ -305,7 +310,7 @@
       }
     },
     {
-      "text": "For now, you have to learn again how to fight, here, take this... it's too dangerous to go alone\n[[okay!]]",
+      "text": "For now, you have to learn again how to fight, here, take this... it's too dangerous to go alone!",
       "links": [
         {
           "name": "okay!",
@@ -321,7 +326,7 @@
       }
     },
     {
-      "text": "Outside of this lab.\nFor now, you have to learn again how to fight, here, take this... it's too dangerous to go alone.\n[[okay!]]",
+      "text": "Outside of this lab.\nFor now, you have to learn again how to fight, here, take this... it's too dangerous to go alone!",
       "links": [
         {
           "name": "okay!",
@@ -346,18 +351,12 @@
       }
     },
     {
-      "text": "END.",
-      "name": "..",
+      "text": "END",
+      "name": "end",
       "pid": "20",
       "position": {
-        "x": "46",
-        "y": "947"
+        "x": "1267",
+        "y": "502"
       }
     }
-  ],
-  "name": "sistem failure",
-  "startnode": "1",
-  "creator": "Twine",
-  "creator-version": "2.3.1",
-  "ifid": "93830827-23A7-482E-AA6F-7B94F7D5C0C8"
-}
+  ]

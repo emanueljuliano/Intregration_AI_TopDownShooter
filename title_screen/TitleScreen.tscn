@@ -118,5 +118,6 @@ visible = false
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
 autoplay = true
+
 [connection signal="pressed" from="Menu/CenterRow/Buttons/QuitButton" to="Menu/CenterRow/Buttons/QuitButton" method="_on_QuitButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

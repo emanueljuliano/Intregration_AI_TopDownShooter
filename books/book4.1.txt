@@ -1,0 +1,2999 @@
+
+
+
+
+                                BLADE RUNNER
+
+
+
+                               Screenplay by
+
+                              HAMPTON FANCHER
+
+                                    and
+
+                               DAVID PEOPLES
+
+
+
+
+
+
+        February 23, 1981
+
+
+
+
+
+
+
+
+
+
+
+        android (an'droid) adj.  Possessing human features - n.
+                A synthetic man created from biological materials.
+                Also called humanoid.  (Late Greek androeides,
+                manlike:  ANDR(O) - OID.)
+
+                                        THE AMERICAN HERITAGE
+                                        DICTIONARY OF THE ENGLISH
+                                        LANGUAGE  (1976)
+
+
+
+        android (an'droid) n, Gk. humanoid automation. more at
+                robot./ 1. early version utilized for work too
+                boring, dangerous or unpleasant for humans.
+                2. second generation bio-engineered.  Electronic
+                relay units and positronic brains.  Used in space
+                to explore inhospitable environments.  3. third
+                generation synthogenetic.  REPLICANT, constructed
+                of skin/flesh culture.  Selected enogenic transfer
+                conversion.  Capable of self perpetuating thought.
+                paraphysical abilities.  Developed for emigration
+                program.
+
+                                        WEBSTER'S DICTIONARY
+                                        New International  (2012)
+
+
+
+
+
+
+
+
+
+
+
+
+        FADE IN:
+
+        EXT. HADES - DUSK
+
+        We are MOVING TOWARD the Tyrell Corporation across a
+        vast plain of industrialization, menacing shapes on the
+        horizon, stacks belching flames five hundred feet into
+        the sky the color of cigar ash.  The CAMERA MOVES INTO
+        a window in the large pyramid-shaped building.  A man
+        is sitting at a table.  Another man enters the room and
+        sits down.  The following scene is reflected in the eye
+        until HOLDEN is seated.
+
+
+        INT. TYRELL CORPORATION INTERROGATION ROOM - DUSK
+
+        The eye is magnified and deeply revealed.  Flecks of
+        green and yellow in a field of milky blue.  Icy fila-
+        ments surround the undulating center.
+
+        The eye is brown in a tiny screen.  On the metallic
+        surface below, the words VOIGHT-KAMPFF are finely
+        etched.  There's a touch-light panel across the top
+        and on the side of the screen, a dial that registers
+        fluctuation of the iris.
+
+        The instrument is no bigger than a music box and sits
+        on a table between two men.  The man talking is big,
+        looks like an overstuffed kid.  LEON it says on his
+        breast pocket.  He's dressed in a warehouseman's uni-
+        form and his pudgy hands are folded expectantly in his
+        lap.  Despite the obvious heat, he looks very cool.
+
+        The man facing him is lean, hollow-cheeked, and dressed
+        in grey.  Detached and efficient, he looks like a cop
+        or an accountant.  His name is Holden and he's all
+        business, except for the sweat on his face.
+
+        The room is large and humid.  Rows of salvaged junk
+        are stacked neatly against the walls.  Two large FANS
+        WHIRR above their heads.
+
+                                LEON
+                  Okay if I talk?
+
+        Holden doesn't answer.  He's centering Leon's eye on
+        the machine.
+
+                                LEON
+                  I kinda get nervous when I take
+                  tests.
+
+                                HOLDEN
+                  Don't move.
+
+                                LEON
+                  Sorry.
+
+        He tries not to move, but finally his lips can't help
+        a sheepish smile.
+
+                                LEON
+                  I already had I.Q. test this year...
+                  but I don't think I never had a...
+
+                                HOLDEN
+                  Reaction time is a factor in this so
+                  please pay attention. Answer as quickly
+                  as you can.
+
+                                LEON
+                  Uh... sure...
+
+                                HOLDEN
+                  One one eight seven at Hunterwasser...
+
+                                LEON
+                  Oh... that's the hotel.
+
+                                HOLDEN
+                  What?
+
+                                LEON
+                  Where I live.
+
+                                HOLDEN
+                  Nice place ?
+
+                                LEON
+                  Huh? Sure.  Yeah. I guess. Is
+                  that.. part of the test ?
+
+       Holden smiles a patronising smile.
+
+                                HOLDEN
+                  Warming you up, that's all.
+
+                                LEON
+                  Oh.
+                  It's
+
+                                HOLDEN
+                  You're in a desert, walking along
+                  in the sand when....
+
+                                LEON
+                  Is this the test now ?
+
+                                HOLDEN
+                  Yes.   You're in a desert, walking
+                  along in the sand when all of a sudden
+                  you lookdown and see a.....
+
+                                LEON
+                  What one ?
+
+   It was a timid interruption, hardly audible.
+
+                                HOLDEN
+                  What ?
+
+                                LEON
+                  What desert ?
+
+                                HOLDEN
+                  Doesn't make any difference what
+                  desert.. it's completely hypothetical.
+
+                                LEON
+                  But how come I'd be there?
+
+                                HOLDEN
+                  Maybe you're fed up, maybe you want
+                  to be by yourself.. who knows.
+                  So you look down and see a 
+                  tortoise.  It's crawling toward
+                  you....
+
+                                LEON
+                  A tortoise.  What's that?
+
+                                HOLDEN
+                  Know what a turtle is?
+
+                                LEON
+                  Of course.
+
+                                HOLDEN
+                  Same thing.
+
+                                LEON
+                  I never seen a turtle.
+
+        He sees Holden's patience is wearing thin.
+
+                                LEON
+                  But I understand what you mean.
+
+                                HOLDEN
+                  You reach down and flip the
+                  tortoise over on its back, Leon.
+
+        Keeping an eye on his subject, Holden notes the dials
+        in the Voight-Kampff.  One of the needles quivers
+        slightly.
+
+                                LEON
+                  You make these questions, Mr.
+                  Holden, or they write 'em down
+                  for you?
+
+        Disregarding the question, Holden continues, picking
+        up the pace.
+
+                                HOLDEN
+                  The tortoise lays on its back,
+                  its belly baking in the hot sun,
+                  beating its legs trying to turn
+                  itself over.  But it can't.  Not
+                  without your help.  But you're not
+                  helping.
+
+        Leon's upper lip is quivering.
+
+                                LEON
+                  Whatya mean, I'm not helping?
+
+                                HOLDEN
+                  I mean you're not helping!  Why is
+                  that, Leon?
+
+        Holden looks hard at Leon, piercing look.
+
+        Leon is flushed with anger, breathing hard, it's a
+        bad moment, he might erupt.
+
+        Suddenly Holden grins disarmingly.
+
+                                HOLDEN
+                  They're just questions, Leon.
+                  In answer to your query, they're
+                  written down for me.  It's a 
+                  test, designed to provoke an
+                  emotional response.
+
+        Leon is glaring now, the blush subsides, his anger
+        slightly defused.
+
+        Holden smiles cheerfully, very smooth.
+
+                                HOLDEN
+                  Shall we continue?
+
+        Leon nods, still frowning, suspiciously.
+
+                                HOLDEN
+                  Describe in single words.  Only
+                  the good things that come into
+                  your mind.  About your mother.
+
+                                LEON
+                  My...
+
+        Leon looks shocked, surprised.  But the needles in
+        the computer barely move.  Holden goes for the in-
+        side of his coat.  But big Leon is faster.  His
+        laser burns a hole the size of a nickel through
+        Holden's stomach.  Unlike a bullet, a laser causes
+        no impact.  It goes through Holden's shoulder and
+        comes out his back, clean as a whistle.  Like a
+        rag doll he falls back into the seat.  Big slow Leon
+        is already walking away, but he stops, turns, and
+        with a little smile of satisfaction fires through
+        the back of the seat.
+
+        As Leon walks out of the room the Voight-Kampff
+        begins to blink, faint but steady.
+
+                                                   CUT TO:
+
+
+        EXT. OVERHEAD VIEW CITY - NIGHT
+
+        We are looking down on a city of the future where
+        gigantic buildings dwarf the ancient skyscrapers --
+        of -- now as a huge blimp, flashing lights and
+        BLARING SOUND drifts slowly over the tall buildings.
+
+                                                   CUT TO:
+
+
+        EXT. THE BLIMP - FROM BELOW - NIGHT
+
+        As the blimp drifts through the tall buildings ad-
+        vertisements appear on the curved sides of dirigible
+        and an accompanying SOUNDTRACK proclaims, with AM
+        enthusiasm, the virtues of Offworld emigration.
+
+                                BLIMP TRACK
+                  ATTENTION SUPERVISORY PERSONNEL!
+                  (WE NEED YOU YOU YOU)
+                  ATTENTION FAMILY MAKERS!
+                  (WE NEED YOU you you)
+                  OPPORTUNITY!
+                  (WE NEED YOU you you you)
+                  AUTOMATIC ADVANCEMENT!
+                  (WE NEED YOU YOU YOU)
+                  TOP PAY!
+                  (WE NEED YOU YOU you you)
+                  NUMEROUS BONUSES!
+                  (WE NEED YOU YOU you you)
+                  SPECIAL INCENTIVES!
+                  (WE NEED YOU YOU YOU you)
+                  NINE PAID VACATIONS PER YEAR!
+                  (WE NEED YOU you you)
+                         (beat, beat)
+                  The Dominguez-Shimata colony
+                  wants supervisory recruits and
+                  families.
+
+                  Join us in a clean, fresh
+                  environment featuring the
+                  invigorating Johnson and
+                  Murikami California Climate!
+                  (WE NEED YOU YOU you you you)
+                  Enjoy the numerous recreation
+                  areas and resorts such as the
+                  famous Elysium Crater Resort!
+
+                  (WE NEED YOU YOU you you)
+
+                  Let our abundant man-made labour
+                  force cater to your personal needs!
+
+                  (WE NEED YOU YOU you you)
+
+                  If you meet health and experience
+                  qualifications for the Offworld
+                  Emmigration Programs... the
+                  standard OPE short form... there's
+                  a place for you at Dominguez and
+                  Shimata Colonies.
+
+                  Press the button now!
+
+                  Give yourself a brand new world!
+
+                  (WE NEED YOU YOU you you)
+
+
+        EXT. CITY STREET - NIGHT
+
+        Lights from the blimp flash along the street and wipe
+        across the crowds of pedestrians as the VOICE TRACK
+        CONTINUES TO BLARE from above.
+
+        A portable noodle bar is crowded with customers, sit-
+        ting on stools slurping their food out of bowls.
+
+        DECKARD is standing near the noodle bar waiting for a
+        seat.  He's in his thirties, wiry, athletic, rumpled,
+        used, unshaven.  He's holding a newspaper, made of
+        tissue paper, open while he glances at the blimp
+        passing NOISILY overhead.  Then he notices the
+        COUNTERMAN.
+
+        The Counterman is beckoning to him to a newly vacated
+        seat.
+
+        Deckard sits down at the noodle bar and the Counterman,
+        an elderly Japanese, slaps a menu in front of him.
+
+        No words on the menu, just pictures of sliced fish
+        parts.
+
+        Deckard points to a particular item and holds up four
+        fingers.
+
+        The Counterman looks at the item on the menu, confirms
+        the order by holding up two fingers.
+
+        Deckard shakes his head "no" and repeats his four
+        fingers.
+
+        The Counterman nods, corrected and hurries off.
+
+        Deckard glances overhead.
+
+        The blimp drifts off among the buildings like a fish
+        disappearing in seaweed, the NOISY VOICE doing a
+        diminuendo.
+
+        Whap.  The Counterman slaps a bowl of rice and a pot
+        of tea in front of Deckard.  Then he puts the little
+        bowl with the two slices of fish on the counter.
+
+        Deckard looks at the fish.  Two slices of fish.
+
+        He looks at the Counterman and holds up four fingers.
+
+        The Counterman looks down at the two slices of fish,
+        looks like two to him.  He looks at Deckard as though
+        Deckard was a fool and holds up two fingers.  He can
+        count!
+
+        Deckard stares bleakly at the fish.  Can't win.
+
+        He starts to eat and that's when he feels a tap on his
+        shoulder.  He glances over his right shoulder.
+
+        A huge cop in uniform is looming behind him.
+
+        Deckard feels funny, looks left.
+
+        Another cop is looming over his left shoulder.
+
+        Deckard is tapped again from the right.
+
+        Turning again he realizes that it isn't the cop tapping
+        him, it's the short Japanese guy next to the cop.  The
+        guy's got beady eyes and lots of energy.  His name is
+        GAFF.
+
+                                GAFF
+                         (in Japanese)
+                  *** You will be required to
+                  accompany me, sir. ***
+
+        Deckard doesn't understand Japanese, thinks the man
+        wants a seat.
+
+                                DECKARD
+                  Wait your turn, pal.
+
+        Deckard turns back to his food.
+
+                                GAFF
+                         (in Japanese)
+                  *** If you do not comply with an
+                  official request, I will be
+                  obliged to exert my authority. ***
+
+        Deckard is ignoring Gaff but the Counterman leans in
+        Deckard's face and translates.
+
+                                THE COUNTERMAN
+                  He say, you go with him.
+
+        Deckard turns and finds Gaff waving a badge in his face.
+
+                                GAFF
+                         (in Japanese)
+                  *** To defy duly constituted
+                  authority is to flaunt the public
+                  good. ***
+
+        Deckard doesn't understand a word.
+
+                                THE COUNTERMAN
+                  He say, you're under arrest, Deckard.
+
+        Deckard turns back to his food.
+
+                                DECKARD
+                  Tell him he's got the wrong guy.
+                         (turning to Gaff
+                          loudly)
+                  You got the wrong guy, pal.
+
+                                GAFF
+                         (in Japanese)
+                  *** Wrong guy, my ass.  You're
+                  known as The Boogeyman in every
+                  mean joint in town. ***
+
+                                THE COUNTERMAN
+                  He say, Boogeyman.
+
+        Deckard flinches at the word "Boogeyman," but goes on
+        eating.  But now we know, and he knows it's not a
+        mistake.
+
+                                GAFF
+                         (in Japanese)
+                  *** You are a Blade Runner in the
+                  Four Sector and after the slaughter
+                  at the steel shop they called you
+                  Mister Nighttime. ***
+
+                                THE COUNTERMAN
+                  He say, Brade Runner.  He say,
+                  Mister Nightime.
+
+                                DECKARD
+                  Tell him I'm eating.
+
+                                GAFF
+                         (to the Counterman
+                          in Japanese)
+                  *** Please tell this notorious
+                  gentleman that I am acting as an
+                  emmisary from Captain Bryant and
+                  Captain Bryant has ordered me to
+                  bring Mr. Deckard to headquarters
+                  even if I have to serve him like
+                  so much sushi. ***
+
+        Deckard is continuing to eat but he has reacted to
+        Gaff's repeated use of the word "Bryant."
+
+                                THE COUNTERMAN
+                         (to Deckard)
+                  He say, you be ornery, okay.  He
+                  say big boss Bryant give him
+                  permission to use violence make
+                  arrest.  He say Bryant tell him
+                  rearrange your brains akay.  Make
+                  you raw fish.
+
+        Deckard looks disgusted and resigned.
+
+                                DECKARD
+                  Bryant huh.
+
+                                                   CUT TO:
+
+
+        EXT. STREET - NIGHT
+
+        Deckard, still holding his bowl of food, is climbing
+        into a spinner behind Gaff as the two cops loom over
+        him.  One of the cops shuts the spinner door behind
+        Deckard and the spinner lifts off in a flurry of wind.
+
+                                                   CUT TO:
+
+
+        EXT. CITY - BIRD'S EYE VIEW - NIGHT
+
+        The spinner zips through the canyons of the city.
+
+        Deckard is sitting in the passenger seat, eating while
+        he watches the maze of suspension bridges, platforms
+        and catwalks swim by below.  The tops of larger build-
+        ings emblazoned with fluorescent numerals and scrawls
+        of neon ads.
+
+                                                   CUT TO:
+
+
+        INT. SPINNER - NIGHT
+
+        Deckard is sitting gloomily in the passenger seat,
+        still eating from his bowl with chopsticks as Gaff
+        maneuvers the spinner through the city canyons chat-
+        tering in rapid Japanese.
+
+                                GAFF
+                         (in Japanese)
+                  I told Bryant I could take care of
+                  this myself.  Just move me up.
+                  I'll do the job, I told him.  Five
+                  phonies.  I just air 'em out.
+                         (he imitates shooting)
+                  Bow!  Bow!  Bow!
+
+        Deckard looks at Gaff uncomprehendingly.
+
+                                GAFF
+                          (continuing in Japanese)
+                  But no, he says.  Bryant thinks
+                  you're hot shit, smartest spotter,
+                  baddest Blade Runner.  You don't
+                  look so hot to me.  Don't even
+                  shave.  Bad grooming reflects on
+                  the whole department.  You don't
+                  dress well, that reflects on me...
+                  makes the whole department look
+                  like shit.
+                  The skin jobs look better than you
+                  do!  What's the point of wiping out
+                  skin jobs if they look better than
+                  Enforcement?  pretty soon the public
+                  will want skin jobs for Enforcement.
+                  I guess you'd prefer that, hunh?
+                  That why you quit?
+
+        Deckard looks at Gaff.  He hasn't understood a word.
+
+                                DECKARD
+                  I don't understand a word you're
+                  saying.
+
+        Gaff glares and mutters, turning his attention to navi-
+        gation of the spinner.
+
+                                GAFF
+                         (in Japanese)
+                  Exactly!  Whatta jerk!  If I wasn't
+                  up for promotion I'd put this baby
+                  in a hot spin and leave your dinner
+                  all over the glass!
+
+        The spinner flies low along the center of a busy
+        street and then turns right.
+
+
+        EXT. PRECINCT SPINNER PAD - NIGHT
+
+        The spinner slides toward the pad, cuts speed and
+        gently touches down as another lifts off.
+
+                                                   CUT TO:
+
+
+        INT. POLICE HQ CONCOURSE - NIGHT
+
+        An enormous grey vault of a building, Deckard and Gaff
+        stride down the long corridor.  Perhaps Gaff is still
+        jabbering in Japanese.
+
+                                                   CUT TO:
+
+
+        INT. BRYANT'S OFFICE - NIGHT
+
+        BRYANT is sitting behind his big desk, a fat man in his
+        fifties with grey hair, jowls and gas.
+
+                                BRYANT
+                  Hiya, Deck!
+
+        Deckard is standing in the doorway, still in the cus-
+        tody of Gaff.  Deckard glares at Bryant and doesn't
+        answer.  Bryant dismisses Gaff with a head movement.
+        Deckard glares at Gaff who glares back as he departs.
+
+                                BRYANT
+                  You wouldn't have come if I'd just
+                  asked you to.  Siddown, pal.
+
+        Deckard glares at Bryant without moving.
+
+                                BRYANT
+                  Don't be an asshole, Deckard.  I
+                  got five skin jobs walking the
+                  streets.
+
+        Deckard smiles and sits down.
+
+                                BRYANT
+                  They jumped a shuttle offworld.
+                  Killed the crew and passengers.
+
+        Deckard reacts.  This isn't usual.
+
+                                BRYANT
+                  We found the shuttle floating off
+                  the coast two weeks ago.  So we
+                  know they're around.
+
+                                DECKARD
+                  Embarrassing.
+
+        Bryant is pouring bourbon into a thick shot glass.  He
+        passes the amber tumbler to Deckard who takes it and
+        holds it to the light.
+
+                                BRYANT
+                  No, sir!  Not fucking embarrassing
+                  ... Because nobody's ever gonna
+                  find out they're down here because
+                  you're gonna spot 'em an' you're
+                  gonna air 'em out.
+
+        Deckard downs his drink and slides the empty back.
+
+                                DECKARD
+                  Not me, Bryant.  I won't work for
+                  you anymore.  Give it to Holden,
+                  he's good.
+
+        Deckard turns to go.
+
+                                BRYANT
+                  I did.
+
+        Deckard freezes and turns back.
+
+                                DECKARD
+                  And?
+
+                                BRYANT
+                  He can breathe okay... as long as
+                  nobody unplugs him.
+
+        Deckard is impressed.
+
+                                BRYANT
+                         Not good enough.  Not as
+                  good as you.  I need ya, Deck.
+                  This is a bad one, the worst yet.
+                  I need the old Blade Runner, I
+                  need your magic.
+
+        Deckard meets Bryant's pleading eyes for a beat.
+
+                                DECKARD
+                  I was quit when I walked in
+                  here...
+                         (pause)
+                  ... I'm twice as quit now.
+                  See ya, Bryant.
+
+        Deckard turns to go.
+
+        Bryant's pleading look turns abruptly cold and hard.
+
+                                BRYANT
+                  Stop the fuck right where you are!
+
+        Deckard freezes at the hard tone.
+
+                                BRYANT
+                  You know the score, pal.  When
+                  you're not a cop, you're little
+                  people.
+
+                                DECKARD
+                  Forgot there for a minute about
+                  the little people.  No choices
+                  I guess.
+
+                                BRYANT
+                  No choice, pal.
+
+                                                   CUT TO
+
+        INT. WHITE TILED ROOM (DAY)
+
+        We are looking at the bright image of a NAKED MAN in a
+        white tiled room with a white floor... an abbatoir
+        without blood. The naked man is very athletic. His
+        face reveals nothing as he executes one physical demon-
+        stration after another.... one handed pushups, gymnastic
+        contortions etc. An accompanying soundtrack drones
+        boringly and while we might pick up a few key words
+        such as "emigration, "incentive and "Man made
+        that we absorb the words.. they are the music to which
+        the image exercises.
+
+        After a moment a series of lines cross the screen and
+        the image diminishes and we realise we are looking at
+        a monitor.
+
+
+        INT. BRYANT'S OFFICE (DAY)
+
+        Deckard and Bryant are sitting in the dark looking
+        at a series of flickering monitors. Deckard has a
+        bored expression on his face.
+
+                                BRYANT
+                  We had an escape from the Off world
+                  colonies two weeks ago. Six repli-
+                  cants, three male, three female.
+                  Slaughtered twenty three people and
+                  jumped a shuttle. An aerial patrol
+                  found the ship in the desert. No
+                  crew.
+
+                                DECKARD
+                  These are old slave tapes, show me
+                  something new.
+
+        The naked man continues to exercise as Bryant
+        continues.
+
+                                BRYANT
+                  No sign of them then three nights ago
+                  they tried to break into the Tyrell
+                  Corporation, one got fried going through
+                  an electro-field but we lost the others.
+                  Going on the possibibility they might
+                  try to infiltrate as employees, we sent
+                  Holden in to run Voight Kampff tests on
+                  new workers.  Guess he found himself one.
+
+        The screen changes. Roy Batty in a loin cloth is battering
+        a metal post with his fists.  The smile on his face
+        indicates a total lack of pain.  He continues to pummel
+        the post mercilessly his hands becoming bloody.
+        The only sound is Batty humming Beethoven's 9th.
+
+        Deckard begins to look interested.
+
+                                DECKARD
+                  Who's this ?
+
+                                BRYANT
+                  It's a Nexus 6. Roy Batty. Incept
+                  date 2016, combat model optimum self
+                  sufficiency. Probably the leader.
+
+                                DECKARD
+                  Why would they come down here ?
+                  They coulda hid out ?
+
+                                BRYANT
+                  You tell me pal, that's what you're
+                  here for.
+
+                                DECKARD
+                  They must want something pretty important
+                  to risk coming back here. What do the
+                  rest look like ?
+
+        Bryant pushes a button. And a series of revolving still
+        shots of Leon, Pris, Mary and Zhora appear on the screen.
+
+                                DECKARD
+                  Why the Tyrell Corporation? Why would
+                  they return to the place of their
+                  manufacture?
+
+                                BRYANT
+                  Maybe they want to find out when
+                  they were made ?
+
+                                DECKARD
+                  Why would they bother?
+
+                                BRYANT
+                  The Nexus 6 was designed to copy human
+                  beings in every way except their emotions.
+                  But the makers reckoned that after a few
+                  years they might develop their own
+                  emotional responses - hate, love, fear,
+                  anger, envy.  So they built in
+                  a fail safe device.
+
+                                DECKARD
+                  What's that?
+
+                                BRYANT
+                  The Nexus 6 has only four years
+                  to live.
+
+        The screens go blank. The lights go on.  Bryant pours
+        two more drinks and hands one to Deckard.
+
+                                BRYANT
+                  You got one more problem, pal.
+
+        Deckard downs the glass.
+
+                                BRYANT (continuing)
+                  Looks like Holden found out that
+                  V-K machine doesn't work on the Nexus
+                  6. The Tyrell Corporation has a demo
+                  model so go check it out.   If the
+                  machine fails, we're in deep trouble.
+
+                                                   CUT TO
+
+
+        INT. HOSPITAL - NIGHT
+
+        Small green letterforms skim soundlessly across a dark
+        glass panel.  Beneath the panel a sick, white face
+        reads excerpts from Treasure Island, mouthing the
+        words as they appear in front of him.  It's Holden.
+
+                                HOLDEN
+                         (reading)
+
+        Holden is flat on his back in a breather, an iron-
+        lung-type of device covered in indicator lights and
+        exotic paraphernalia.  The hospital room is in com-
+        plete darkness.  Holden's breaths come in sharp rasps
+        as he reads.
+
+        We become aware of Deckard standing in the shadows.
+
+                                DECKARD
+                  Whatcha reading?
+
+        Holden is startled, has to look in a mirror angled over
+        his head, rolling his eyes way back to see who it is.
+
+                                HOLDEN
+                  Deckard, Treasure Island!  Good to
+                  see ya, buddy.  Old Favourite.
+
+        Deckard looks down at Holden and doesn't say anything.
+
+                                HOLDEN
+                  Pretty awful, huh?
+
+                                DECKARD
+                  Naw, you look great!  Absolutely
+                  terrific!  Never saw ya look
+                  better.  Jesus, you look good.
+
+        Deckard pinches Holden's cheek.
+
+                                DECKARD
+                  Great complexion!  Suit looks
+                  really nice.  Who's your tailor?
+
+        Deckard is making a joke, mocking hospital good cheer
+        but the touch of bitterness in his voice reveals his
+        sympathy for Holden.
+
+        Tears wet Holden's eyes.
+
+                                HOLDEN
+                  A big fucking skin job put the
+                  smash on me, wrecked me up!  Looka
+                  me, for Chrissake!
+
+        Deckard works at being hard.
+
+                                 DECKARD
+                  Ya blew it, huh ?
+
+        Holden recovers from his tears and whines.
+
+                                 HOLDEN
+                  It ain't like it used to be, Deck.
+                  It's tough now. These replicants
+                  aren't just a buncha muscle miners
+                  anymore, they're no goddamn different
+                  than you or me...
+
+        Deckard lights up and sits down, resting his elbows on
+        the glass.
+
+                                 DECKARD
+                  So what happened ?
+
+                                 HOLDEN
+                  Ten days ago Security at the
+                  Tyrell Corp finds three intruders
+                  in the records room.   Kills one,
+                  two get away, okay ?
+
+        Deckard nods.
+
+                                 HOLDEN
+                  They do a routine autopsy on the
+                  one that got aired and.. whaddya know?
+                  A skin job, one of the ones that
+                  busted out!  Top drawer replicant..
+                  combat type.. Nexus six.
+
+                                 DECKARD
+                  Pretty sexy, the sixes.
+
+                                 HOLDEN
+                  Sexy!  Three hours into the autopsy
+                  they still think they're cutting
+                  up a human.  No marks, nothing.
+
+        Deckard looks impressed. Satisfied, Holden continues.
+
+                                  HOLDEN
+                  I decided to check out all new employees
+                  at Tyrell. I test 26 boring jerks until
+                  in comes this guy Leon Somebody, nothing
+                  special but very big...
+                             (pause)
+                  Anyway....
+
+                                  DECKARD
+                  You Voight-Kampff him ?
+
+        Holden's eyes flutter a moment.  Deckard waits.  The
+        breathing changes rhythm.
+
+                                  HOLDEN
+                  Yeah!  I thought maybe I was getting
+                  something......
+                  Maybe it doesn't work on these ones
+                  Deck.
+
+        Deckard gets up and gives Holden phony good cheer.
+
+                                  HOLDEN
+                             (continuing)
+                  It's all over, it's a wipe out,
+                  they're almost us, Deck, they're
+                  a disease, they're....
+
+                                  DECKARD
+                  Take it easy, take it easy....
+                  Tyrell Corp's got one. I'm gonna
+                  Vee Kay it tomorrow.
+
+                                  HOLDEN
+                  Push it!  Push that button!
+
+        Deckard pushes.
+
+                                  DECKARD
+                  What's it for?
+
+                                  HOLDEN
+                  Pain!
+
+                                                   CUT TO
+
+        EXT. CITYSCAPE - MORNING
+
+        A bleak morning.
+
+                                                   CUT TO
+
+        EXT. SPINNER - MORNING
+
+        The police spinner is whizzing over the city.
+
+                                                   CUT TO
+
+        INT. SPINNER - MORNING
+
+        Deckard looks very rumpled as he sits sleepily in the
+        passenger seat drinking coffee from a mug and smoking.
+
+
+        INT. SPINNER - MORNING
+
+        Gaff is terse and silent at the controls.  Suddenly the
+        spinner rocks urgently from side to side and the sound
+        of a hot Ferrari Spinner dopplers off.
+
+        Gaff is pop-eyed with instant fury.  He hits the spinner
+        lights and flashes them.
+
+                                                   CUT TO:
+
+
+        EXT. OVER CITY - MORNING
+
+        The Ferrari Spinner zips right around a huge smokestack
+        and shoots insolently off into the distance.
+
+                                                   CUT TO:
+
+
+        INT. SPINNER - MORNING
+
+        Gaff sputters and fumes as he guides the spinner around
+        the same stack.
+
+        Deckard looks at Gaff.  It's too early in the morning
+        for all this energy.
+
+                                                   CUT TO:
+
+
+        EXT. SPINNER - MORNING
+
+        The Spinner makes a sharp bank, drops into a steep
+        curve and slides toward the vast plain of industrializa-
+        tion, the menacing shapes on the horizon, stacks
+        of belching flames five hundred feet into the sky the
+        color of cigar ash, towards a large pyramid shaped
+        building.
+
+                                                   CUT TO:
+
+
+        EXT. THE PYRAMID - MORNING
+
+        The spinner is in a holding pattern.
+
+                                                   CUT TO:
+
+
+        INT. SPINNER - MORNING
+
+        Traffic control purrs its SOFT ELECTRONIC INSTRUCTION
+        into the cockpit as the spinner rocks gently lower,
+        spiralling into the vortex.
+
+
+                        [page 22 missing from script]
+
+
+        CONTINUED
+
+        Now we see for the first time, Rachael, a beautiful
+        woman in her late twenties dressed with taste and
+        dignity.
+
+                                DECKARD
+                  Replicants are like any other
+                  machine. They can be a benefit
+                  or a hazard. If it's a benefit,
+                  it's not my problem.
+
+                                RACHAEL
+                  May I ask a personal question?
+
+                                DECKARD
+                  Go ahead.
+
+                                RACHAEL
+                  Have you ever retired a human by
+                  mistake ?
+
+        Deckard blinks... hesitates before answering the
+        question.
+
+                                DECKARD
+                  No.
+
+                                RACHAEL
+                  But in your position that is a risk.
+
+        An OWL flaps around the huge marble office.
+
+                                TYRELL (os)
+                  Is this to be an empathy test?
+                  Capillary dilation of the so-called
+                  blush response.. fluctuation of the
+                  pupil involuntary dilation of
+                  the iris......
+
+                                DECKARD
+                  We call it Voight Kampff for short.
+
+        Deckard turns to see an older man, very distinguished
+        very well tailored has entered the huge marble office.
+        TYRELL!
+
+                                RACHAEL
+                  Mr. Deckard.  Dr. Eldon Tyrell.
+
+        Tyrell has extended his hand to Deckard. Deckard shakes.
+
+                                TYRELL
+                  Demonstrate it. I want to see it
+                  work.
+
+                                DECKARD
+                  Where's the prototype ?
+
+                                TYRELL
+                  I want to see it work on a person.
+                  I want to see a negative before I
+                  provide you with a positive.
+
+                                DECKARD
+                  What's that gonna prove?
+
+                                TYRELL
+                  Indulge me.
+
+                                DECKARD
+                  On you?
+
+        Tyrell indicates Rachael.
+
+                                TYRELL
+                  Try her.
+
+        Deckard looks at Rachael.  She's a beauty alright.  He
+        shrugs.
+
+                                DECKARD
+                  It's too bright in here.
+
+        Tyrell hits a button.
+
+        The windows darken, a polaroid effect that seems to
+        give Tyrell the power to turn off the sun.
+
+        Deckard is placing the Voight Kampff case on the table.
+
+        The Voight Kampff opens like a butterfly as the room
+        darkens.
+
+
+        INT. TYRELL'S OFFICE - A LITTLE LATER
+
+        Rachael's eye fills the screen, the iris brilliant,
+        shot with light, the pupil contracting.  We hear
+        Deckard's voice and we have the impression the test
+        has been going on for a while.
+
+                                DECKARD (O.S.)
+                  You are given a calfskin wallet
+                  for your birthday...
+
+        Tyrell stands silhouetted behind Deckard, who sits in
+        front of Rachael.
+
+        The needles in both gauges swing violently past green
+        to red, then subside.
+
+                                RACHAEL
+                  I wouldn't accept it, also I'd
+                  report the person who gave it to me
+                  to the police.
+
+                                DECKARD
+                  You have a little boy.  He shows
+                  you his butterfly collection, plus
+                  the killing jar.
+
+        Again the gauges register, but not so far.
+
+                                RACHAEL
+                  I'd take him to the doctor.
+
+                                DECKARD
+                  You're watching TV and suddenly
+                  you notice a wasp crawling on
+                  your wrist.
+
+                                RACHAEL
+                  I'd kill it.
+
+        Both needles go red.  Deckard makes a note, takes a
+        sip of coffee and continues.
+
+                                DECKARD
+                  In a magazine you come across a
+                  full-page photo of a nude girl.
+
+                                RACHAEL
+                  Is this testing whether I'm a
+                  replicant or a lesbian?
+
+                                DECKARD
+                  You show the pciture to your
+                  husband.  He likes it and hangs
+                  it on the wall.  The girl is lying
+                  on a bearskin rug.
+
+                                RACHAEL
+                  I wouldn't let him.
+
+                                DECKARD
+                  Why not?
+
+                                RACHAEL
+                  I should be enough for him.
+
+        Deckard frowns, then smiles.  His smile looks a little
+        like a grimace or the other way around.
+
+                                DECKARD
+                  Last question.  You're watching
+                  an old movie.  It shows a banquet
+                  in progress, the guests are enjoying
+                  raw oysters.
+
+                                RACHAEL
+                  Ugh.
+
+        Both needles swing swiftly.
+
+                                DECKARD
+                  The entree consists of boiled
+                  dog stuffed with rice.
+
+        Needles move less.
+
+                                DECKARD
+                         (continuing)
+                  The raw oysters are less acceptable
+                  to you than a dish of boiled dog.
+
+        Deckard switches off his beam.
+
+                                TYRELL
+                  Well, Mr. Deckard?
+
+        Deckard is looking at Tyrell and wincing indecisively.
+
+        He doesn't get it.  Are they playing with him?
+
+                                TYRELL
+                         (continuing)
+                  Perhaps some privacy will loosen
+                  your tongue, Mr. Deckard.
+
+        He turns to Rachael
+
+                                TYRELL
+                  Would you step out for a few moments,
+                  Rachael?
+
+        Rachael exits looking a little shaken.  What's going
+        on?
+
+        Deckard stares at Tyrell.
+
+        Tyrell meets his look.
+
+                                TYRELL
+                  I'm impressed.  How many questions
+                  does it usually take to spot one?
+
+                                DECKARD
+                  I don't get it.
+
+                                TYRELL
+                  How many questions ?
+
+                                DECKARD
+                  In columns of four cross referenced,
+                  twenty or thirty.
+
+                                TYRELL
+                  It took more than a hundred for
+                  Rachael, didn't it ?
+
+                                DECKARD
+                  She really doesn't know ?
+
+                                TYRELL
+                  She's beginning to suspect, I think.
+
+                                DECKARD
+                  Suspect!  How can she not know
+                  she is.
+
+                                TYRELL
+                  Well, we began to notice in them
+                  a strange obsession.
+
+        Tyrell is pacing now, lecturing.
+
+                                TYRELL
+                  After all, they are emotionally
+                  inexperienced with only a few
+                  years inwhich to store up the
+                  experiences which you and I take
+                  for granted.  If we gift them
+                  with a past... we create a
+                  cushion or pillow for their
+                       emotions.. and we can
+                  control them better.
+
+                                DECKARD
+                  They want memories?
+
+                                TYRELL
+                  It's the dark corners, the little
+                  shadowy places that makes you
+                  interesting, Deckard..... gusty
+                  emotions on a wet road on an
+                  autumn night.. the change of
+                  seasons..... the sweet guilt
+                  after masturbation.
+
+                                DECKARD
+                  Jesus  Christ,Tyrell!
+
+        Tyrell looks startled.
+
+                                DECKARD
+                  Where do you get them, the
+                  memories?
+
+                                TYRELL
+                  In the case of Rachael, I simply
+                  copied and regenerated cells from
+                  the brain of my sixteen-year-
+                  old niece.  Rachael remembers
+                  what my little niece remembers.
+
+                                DECKARD
+                  I saw an old movie once.  The
+                  guy had  bolts in his head.
+
+        Deckard looks amazed while Tyrell looks pleased with
+        himself.
+
+                                                   CUT TO
+
+
+        EXT. OVERHEAD VIEW OF HOTEL - NIGHT
+
+        The hotel is in a seedy part of town.
+
+
+        EXT. ANGLE ON DECKARD - NIGHT
+
+        Deckard and Gaff are standing in front of the hotel,
+        looking it over.
+
+        Deckard glances at a crumpled piece of paper in his
+        hand with an address scrawled on it.
+
+        He glances at the hotel.  The address is correct.
+
+        Deckard and Gaff enter the hotel, leaving frame.
+
+                                                   CUT TO:
+
+
+        INT. HOTEL CORRIDOR - NIGHT
+
+        A dingy, trash-filled corridor.
+
+        An OLD MAN leads Deckard and Gaff to a door.  The Old
+        Man is wearing an oxygen tank taking occasional hits
+        of air from a mask.  He unlocks the door.
+
+        Deckard and Gaff enter wearily, hands inside their
+        coats on their weapons.
+
+                                                   CUT TO:
+
+
+        INT. HOTEL ROOM - NIGHT
+
+        The room is dark and ominous, full of danger.
+
+        Deckard studies the shadows, weapon ready.
+
+        Satisfied the room is empty, he hits the wall switch.
+
+        A four-tube fluorescent light overhead flutters weakly
+        to half-life, two tubes.
+
+        Deckard studies the room.
+
+        It's clean in contrast to the littered hallway.  A bed,
+        a wardrobe, a small desk, a chair.  Spartan, almost
+        military.
+
+        Gaff has seated himself on the windowsill.  Except for
+        his eyes he is motionless like a statue.
+
+        Deckard reaches into his pocket and takes out infrared
+        goggles which he puts on.  He looks strange wearing the
+        goggles.
+
+        The room, from his POV, is seen in high contrast,
+        every speck of dust in bright white, the fingerprints
+        on the wall standing out like paintings, Gaff appear-
+        ing eerie and ominous.
+
+        Deckard starts to inspect the room with great care,
+        feeling the moulding, inspecting the mattress on the
+        bed, studying the fingerprints on the wall.
+
+        Gaff watches motionless.
+
+                                                   CUT TO:
+
+
+        INT. HOTEL ROOM - NIGHT (A LITTLE LATER)
+
+        Deckard has opened the wardrobe.
+
+        He's inspecting the suit neatly hung there.  He feels
+        in the pockets.  He pulls out a packet of about sixty
+        photographs.  He thumbs them.  Very ordinary looking
+        snapshots.  Maybe he notices a couple of strange ones.
+        Maybe not.
+
+        Deckard pockets the pictures and continues his inspec-
+        tion.
+
+        Gaff sits motionless like a statue.
+
+
+        INT. HOTEL BATHROOM - NIGHT (MOMENTS LATER)
+
+        Deckard, still wearing goggles, is checking the inside
+        of the medicine cabinet in the tiny bathroom.
+
+        Nothing.  Clean.
+
+        He shuts the cabinet and sees himself in the mirror
+        in infrared wearing goggles.  Weird.
+
+        He exits the neat, tiny bathroom.
+
+                                                   CUT TO:
+
+
+        INT. HOTEL ROOM - NIGHT
+
+        Deckard steps out of the bathroom, notices something
+        on the floor.
+
+        Gaff is motionless.
+
+                                                   CUT TO:
+
+
+        INT. HOTEL ROOM - NIGHT (MOMENTS LATER)
+
+        Deckard is on his hands and knees studying the floor.
+        He picks up a little speck on his finger, studies it.
+
+        He picks up another.
+
+        He puts the speck in his wallet.
+
+        Gaff sits motionless on the sill.
+
+                                                   CUT TO:
+
+
+        INT. HOTEL ROOM - NIGHT (A LITTLE LATER)
+
+        Deckard takes off the goggles.  He motions Gaff off
+        the sill with his head.
+
+        Deckard steps to the window, pulls the photos from
+        his pocket and studies them in the faint light from
+        outside.
+
+        Snapshots.  Very ordinary.
+
+        Gaff stands near the door, watching Deckard.
+
+        Deckard shuffles through the pictures in front of the
+        window.
+
+                                                   CUT TO:
+
+
+        EXT. HOTEL - NIGHT
+
+        Leon is looking up at the hotel.
+
+        He can see Deckard in the window looking at pictures.
+
+        Leon is breathing hard, angry.
+
+                                                   CUT TO:
+
+
+        INT. HOTEL ROOM - NIGHT
+
+        Deckard feels funny as he studies the pictures, his
+        mind changes focus.  He steps aside, against the wall,
+        and glances out of the window.
+
+        Gaff watches Deckard and frowns uncomprehending.
+
+        Deckard, satisfied at what he sees out the window,
+        studies the photographs again, but not in front of
+        the window.
+
+        Gaff, frowning, approaches the window and looks out,
+        puzzled.
+
+                                                   CUT TO:
+
+
+        EXT. HOTEL - NIGHT
+
+        An angry Leon sees Gaff peering out the window above.
+
+        Leon's eyes blaze with anger.  He turns and runs off.
+
+                                                   CUT TO:
+
+
+        EXT. STREET - NIGHT
+
+        A blimp is drifting silently over the city reflect-
+        ed in an eyeball while we hear the SOUNDS OF THE
+        STREET.
+
+        The eyeball belongs to BATTY who is standing on
+        the sidewalk. He resembles a tradition, the gym
+        instructor, short, cropped hair with the body of a
+        drill sergeant but the eyes are gray and chilling.
+        Roy Batty is a presence of force with a lazy, but
+        acute sense of what goes on around him.
+
+        He lowers his attention from the sky to Leon.
+
+        Leon approaches him.
+
+                                BATTY
+                  Did you get your precious photos?
+
+                                LEON
+                  Somebody was there.
+
+                                BATTY
+                  Police.
+
+                                LEON
+                  Just men.
+
+                                BATTY
+                  Police men.
+
+        Leon looks sullen.  He doesn't know.
+
+        Batty is looking at the storefront across the street,
+        the one that says HANNIBAL CHEW over the door.
+
+        Batty indicates the store to Leon with a head movement.
+
+                                                   CUT TO
+
+
+        INT. CHEW'S SHOP - NIGHT
+
+        Eyes. Nothing but eyes swimming in a thick, clear
+        solution.
+
+        The eyes are in an aquarium inside Chew's shop.
+        There are other aquariums and technical equipment.
+
+        CHEW himself, wearing a heavy fur coat and gloves is
+        hunched over a workbench in a pool of light doing
+        meticulous work with a pair of forceps.  He is an
+        ancient Asian and  his steamy breath and frosty beard
+        indicate just how cold it is in this sub-zero
+        laboratory.
+
+        Chew dips the forceps into a vat at his side.
+        Deep cold!
+
+        The forceps and the tiny item in the forceps come out
+        of the solution frozen solid.
+
+        A SPEAKER on the wall CRACKLES and FARTS STATIC.
+
+                                WALL SPEAKER
+                  Mr. Chew.
+
+        Chew keeps working.
+
+                                CHEW
+                  Aaaaaaaannnnn?
+
+        The wall speaker is intermittent.
+
+                                WALL SPEAKER
+                  ... one... URP... wants... to
+                  see you.
+
+        Chew continues working.
+
+                                CHEW
+                  Busy!
+
+                                WALL SPEAKER
+                  ... talk to you... Nexus Six...
+                  designs.
+
+        Chew frowns and turns from his work disgruntled.
+
+                                CHEW
+                  Busy!
+
+        Chew continues working while he mutters in Chinese.
+        Peace returns, he calms down and works in chilly
+        silence.
+
+        Then the door opens.
+
+        Standing in the doorway is Roy Batty.
+
+        Chew gets up fuming.
+
+                                CHEW
+                  Busy!  Busy!  You go away!  Make
+                  appointment.
+
+        Chew bursts into Chinese.
+
+        Batty smiles.  You would not want him to smile at you.
+
+        Leon enters and closes the door.
+
+                                CHEW
+                       (apoplectic)
+                  No!  No!  Cold!  Cold!  Go away.
+
+        Batty smiles. His coat is already covered with ice.
+
+                                BATTY
+                  Questions.
+
+                                CHEW
+                  No!  No questions!
+
+        Leon is staring at the floating eyes in an aquarium.
+
+        Batty smiles pleasantly and glances at a tank of
+        deep cold. Batty sticks his hand in.
+
+                                CHEW
+                        (urgently)
+                  No! Cold!
+
+        Batty still smioing, pulls his hand out. It's icy.
+
+        Chew looks at Batty's hand and then at his smiling face.
+
+        Chew screams in sudden discovery and outrage.
+
+                                CHEW
+                  You replicant!
+
+        We looks at Batty's machine-gun smile, steam pouring
+        from his nostrils as we hear the shrill, indignant
+        voice of Chew being outraged.
+
+                                CHEW'S VOICE (OS)
+                  You illegal.  Can't come here!
+                  Illegal.
+
+        Batty is smiling his smokey smile and Chew is point-
+        ing up.
+
+                                CHEW
+                  You not belong here. Up there!
+
+                                BATTY
+                  Fiery the Angels fell... And as they
+                  fell deep thunder rolled around their
+                  shores;
+                  indignant,
+                  burning with the fires of Orc.
+
+        Chew is bug eyed. What is this shit?
+
+        Batty reaches out and puts his hands on the collar of
+        Chews's fur coat.
+
+                                BATTY
+                  Questions!
+
+        RRRRRIIIIIIPPPP.Batty pulls the coat apart, it splits
+        along the back seam and falls away like a banana peel.
+
+        Chew is suddenly totally scared, totally cold and totally
+        co-operative.
+
+                                CHEW
+                  Okay!  Answers!
+                        (pointing)
+                  Gimmeee coat!  Cold!
+
+        Chew is pointing to the wall pegs where more fur coats
+        hang.
+
+                                BATTY
+                  Morphology.. longevity... use life...
+                  incept dates...
+
+                                CHEW
+                         (squealing)
+                  I dunno!  Dunna that stuff. I do
+                  eyes!  Just eyes!  Genetic designs,
+                  just eyes!
+
+        Batty looks around the room at the tank of eyes, the
+        muscle charts of eyes, the pictures of eyes.
+
+                                BATTY
+                  Ah!  I thought perhaps feet...
+                  hands... muscle tissue.. or..
+                  noses...
+
+                                CHEW
+                         (desperate)
+                  Just eyes. Gimee coat, okay?
+
+        Leon is staring into the tank of eyes, trying not to
+        blink.
+
+        The eyes stare back at Leon, unblinkingly, arrogantly.
+
+                                BATTY
+                  My  eyes..... I guess you designed
+                  them, eh?
+
+                                CHEW
+                  You Nexus? I design Nexus eyes.
+
+        SMASH!  Leon, infuriated by the unblinking eyes, smashes
+        the tank and the insolent eyes pour out onto the floor.
+
+        Batty smiles and points to his own eyes.
+
+                                BATTY
+                  Ah, Chew.....
+                       (squish,squish)
+                  If only you could see the things
+                  I have seen with your eyes.
+
+        Squish!  Squish!  The squishes are Batty's feet
+        stepping in eyeballs as he paces in front of Chew.
+
+                                CHEW
+                  Please!  Cc-cc-cold!
+
+                                BATTY
+                        (prosecuting attorney)
+                  Questions!
+
+                                CHEW
+                  D-dunno answers!  P-please!
+
+                                BATTY
+                  Who does?
+
+                                CHEW
+                  Tyro! Knows everything!
+
+                                BATTY
+                  The Tyrell Corporation?
+
+                                CHEW
+                  Big boss!  Big genius!  Design
+                  your brain.
+
+                                BATTY
+                  Ah!  Smart!
+
+                                CHEW
+                  V-very cold, p-please....
+
+                                BATTY
+                  Not an easy man to see, I'd
+                  guess.  Security.....
+
+                                CHEW
+                  Sebastian take you!  Gimmee
+                  coat.
+
+                                BATTY
+                  And who is Sebastian?
+
+        Chew is blue and hysterical.
+
+                                CHEW
+                  J-j-j-j-j F. S-sebastian.
+                  Please.............
+
+                                BATTY
+                  Ah!  How would I find him...
+                  J.F. Sebastian ?
+
+        Chew looks like heart attack city.  Is it going to
+        go on forever?
+
+                                                   CUT TO
+
+
+        EXT. DECKARD'S APARTMENT BUILDING - NIGHT
+
+        Deckard's car pulls up into a drive of a condominium
+        block that looms against the night sky like a pile
+        of cardboard boxes.
+
+        Deckard gets out of the car wearily and heads for the
+        front door.
+
+                                                   CUT TO
+
+
+        INT. ELEVATOR NIGHT
+
+        The elevator is gloomy, poorly lit, full of shadows.
+
+        Deckard asks for the 97th Floor.
+
+        The ELEVATOR makes a creaking noise, very distinctive,
+        and starts upward.
+
+        Deckard frowns.  Something is wrong. He is suddenly
+        very alert, ready.
+
+        There are shadows behind him but he can't turn to look.
+
+        The ELEVATOR CREAKS UPWARDS.
+
+        Deckard goes for his blaster, gets it out quick and
+        whirls.
+
+        Rachael is there, in the shadows.
+
+        Deckard's blaster is pointed at her.  One more second.....
+
+        Deckard lowers the blaster.  He's shaking all of a sudden.
+
+                                RACHAEL
+                  I'm sorry.
+
+
+        INT. CORRIDOR NIGHT
+
+        Deckard exits the elevator and approaches his door.
+
+        Rachael is behind him, she's desperate.
+
+        Deckard takes out his wallet, it drops to the floor
+        scattering his cards.
+
+        Rachael picks up the cards.
+
+                                RACHAEL
+                  Let me help you.
+
+                                DECKARD
+                  What do I need help for?
+
+        Deckard takes the card from her and starts to open
+        the door.
+
+                                RACHAEL
+                  I don't know why he told you what
+                  he did.
+
+                                DECKARD
+                  Talk to him.
+
+
+        INT. DECKARD'S APARTMENT - NIGHT
+
+        The place is a mess.Deckard walks in leaving the door open.
+
+                                RACHAEL
+                  He wouldn't see me.
+
+        Deckard goes into the kitchen, comes out with a towel drying
+        his hair.  He walks to the cocktail cabinet and pours himself
+        a drink.
+
+                                DECKARD
+                  I'm gonna have a drink.
+
+                                RACHAEL
+                  You think I'm a replicant, don't
+                  you?
+
+        Deckard takes off his wet raincoat and throws it on a chair.
+
+                                RACHAEL
+                  Look.
+
+        She goes to him holding a picture in her hand.
+
+        Deckard looks at it.
+
+        It's an old snapshot, a little girl with a mother and father.
+
+                                RACHAEL
+                  It's me with my parents.
+
+        Deckard hands it back to her slowly.  Finally speaks.
+
+                                DECKARD
+                  You remember when you were about six and you
+                  and your brother snuck into an empty building....
+                  through the basement window ?
+
+                                RACHAEL
+                  What? Y-yes....
+
+                                DECKARD
+                  You were going to play Doctor. He showed
+                  you his, then you chickened and ran out.
+
+                                RACHAEL
+                  But....
+
+        She looks up and he's staring at her, but she doesn't seem
+        to notice.
+
+                                DECKARD
+                  Remember the bush outside your window
+                  with the spider in it.
+
+        Rachael looks up at him.
+
+                                DECKARD
+                  Green body, orange legs... you watched
+                  her build a web all summer.
+
+                                RACHAEL
+                  Yes.
+
+        Her voice is getting very small.
+
+                                DECKARD
+                  One day there was an egg in the webb.
+
+        Rachael nods faintly.
+
+                                RACHAEL
+                  After a while, the egg hatched and
+                  hundreds of baby spiders came out and
+                  ate her.   That made quite an impression
+                  on me, Mr. Deckard.
+
+                                DECKARD
+                  You still don't get it?
+
+                                RACHAEL
+                  No.. I... I .... don't.
+
+        Deckard is now nasty, downright bitter.
+
+                                DECKARD
+                  Implants.  They are not your memories,
+                  they belong to Tyrell's sixteen year
+                  old niece.
+
+        Rachael doesnt say anything, she can't.
+
+                                DECKARD
+                  He's very proud of them.  He ran them
+                  on a scanner for me.
+
+        Rachael just stares at him, stunned and barely holding on.
+
+                                DECKARD
+                  Still don't believe me ?
+
+                                RACHAEL
+                  I... I...
+
+                                DECKARD
+                  Right.  I made it all up.  You're not
+                  a replicant. It was a nasty joke. Go home.
+
+        Rachael is biting her lip or something, holding it back.
+
+                                DECKARD
+                  Go on.  Beat it.  Sorry.   Bad joke.
+
+        Deckard sees  he's gotten through... maybe too far.
+
+                                DECKARD
+                  Wanna drink ?
+
+        She's completely destroyed, silent.
+
+                                DECKARD
+                  I'll getcha one.
+
+        Deckard hurries out.
+
+        The CLOCK IS TICKING.
+
+                                                   CUT TO
+
+
+        INT. KITCHEN - NIGHT
+
+        Deckard is peering at her from the doorway, a Peeping
+        Tom.  He sees the shaking hands.  He doesn't like this
+        shit.
+
+        He turns his attention to getting the drink.  The
+        kitchen is a disaster area, dirty dishes overflowing
+        from the sink the way a plant grows out of a pot.
+
+        Deckard opens the refrigerator.  The contents aren't
+        messy so much as unusual.  He opens the freezer com-
+        partment and pulls out a bottle of Tsing Tao vodka
+        and eyes it.  Half-empty.
+
+        He rummages among the dirty dishes for a glass that
+        doesn't actually have fungus growing in it.  He finds
+        one that's only greasy, wipes it with a dirty towel
+        (making it greasier) and pours vodka into it.
+
+        He heads back into the living room.
+
+
+        INT. LIVING ROOM - NIGHT
+
+        Deckard stops in the doorway,surprised.
+
+        The room is empty. Rachael is gone.
+
+        Deckard stares at the empty room for a long moment.  Then
+        he chug-a-lugs the vodka. As he brings his head back and
+        winces from the fiery booze he sees something.
+
+        Something crumpled on the floor.
+
+        He goes over and picks it up.
+
+        It's the picture of Rachael with her parents. He studies
+        it.
+
+        On the other side is a phone number.
+
+        Deckard walks over to the window and stares out.
+
+        A spinner flashes by smearing light on his face.
+
+                                                   CUT TO
+
+
+        EXT. AN ABANDONED BUILDING - NIGHT
+
+        Pris exits the building and starts across the street.
+
+        A spinner rockets past overhead.  She reacts nervously
+        watches the spinner slide away.
+
+        She crosses the street past a window full of wedding dresses
+        as the spinner zips off in the distance.
+
+
+        EXT. SEBASTIAN'S BUILDING - NIGHT
+
+        Pris walks under the art deco marquee between the twisted
+        corduroy columns and into the foyer.
+
+        She picks a spot near the entrance and is covering herself with
+        old newspapers and trash for warmth when she hears a strange
+        NOISE.
+
+        A weird street cleaning MACHINE GRINDS past.
+
+        Pris watches the machine with interest, then huddles
+        under the trash.
+
+        A battered old truck, Sebastian's, SPUTTER AND FARTS
+        to a halt in front.
+
+        SEBASTIAN gets out, a young man with skin that is yel-
+        lowing into old parchment.  He's wearing a World War
+        Two leather pilot's cap and dark goggles and carrying
+        a pack.
+
+        In spite of his youth, he carries himself like Old
+        China as he walks toward the entrance with the gait
+        of an old man.
+
+        Sebastian stumbles over the trash covered body of Pris
+        and Pris leaps to her feet and start to run like a
+        frightened gazelle.
+
+                                SEBASTIAN
+                  Hey!
+
+        He reaches down and picks up the bag she left in the
+        trash.
+
+                                SEBASTIAN
+                  You forgot your bag.
+
+        He's holding it up.
+
+        She eyes him from a distance... unsure of him.  Then
+        she moves toward him tentatively.
+
+        Sebastian smiles awkwardly and holds out the bag.
+
+                                PRIS
+                  I'm lost.
+
+                                SEBASTIAN
+                  Don't worry, I won't hurt you.
+
+        Both of them are silent.  People are not Sebastian's
+        forte... usually he's too shy, but this girl is shyer
+        still.  Plus they're about the same age... it gives
+        him courage.
+
+                                SEBASTIAN
+                  What's your name?
+
+                                PRIS
+                  Pris.
+
+                                SEBASTIAN
+                  Mine's J.F. Sebastian.
+
+                                PRIS
+                  Hi.
+
+        So pleased with the way that went, he forgets for a
+        while what comes next.
+
+                                SEBASTIAN
+                  Oh... where were you going?
+
+        She shrugs.  That leaves him a lot of responsibility.
+        He throws her side-long glances, but she's not helping.
+
+                                SEBASTIAN
+                  Home?
+
+                                PRIS
+                  I don't have one.
+
+                                SEBASTIAN
+                  Oh.
+
+        She looks at him, a shadow of enticement in her clear
+        blue eyes.
+
+                                PRIS
+                  We scared each other pretty good,
+                  didn't we?
+
+                                SEBASTIAN
+                  We sure did.
+
+        She giggles and laughs.
+
+                                PRIS
+                  I'm hungry, J.F.
+
+                                SEBASTIAN
+                  I've got stuff inside, you wanna
+                  come in.
+
+                                PRIS
+                  I was hoping you'd say that.
+
+        Sebastian's grey face flushes with pleasure.  He turns
+        and inserts a key in the ornate iron mesh door and
+        swings it open.
+
+                                                   CUT TO:
+
+
+        INT. SEBASTIAN'S LOBBY - NIGHT (SHOT)
+
+        Stacks of gaudy balconies loom into shadows above.
+
+        Overhead lights reveal a shark-like blimp cruising
+        above the building glowing with advertisements.
+
+        Pris stares in wonder.
+
+                                PRIS
+                  And you live in this building all
+                  by yourself ?
+
+                                SEBASTIAN
+                  Yeah, I live here pretty much alone
+                  right now....
+
+                                                   CUT TO
+
+
+        INT. CAGE ELEVATOR (SHOT)
+
+        Pris and Sebastian are standing in the mesh elevator
+        as it grumbles noisily into the shadows above.
+
+
+        INT. CORRIDOR - NIGHT (SHOT)
+
+        Pris and Sebastian are standing in the mesh elevator
+        as it grumbles noisily into the shadows above.
+
+
+        INT. CORRIDOR - NIGHT (SHOT)
+
+        Sebastian and Pris walk down the corridor towards
+        his apartment .
+
+                                PRIS (WILD LINE)
+                  No housing shortage around here.
+
+                                SEBASTIAN (WILD LINE)
+                  Plenty of room for everybody... most
+                  of the others have emigrated already.
+
+
+        INT. CORRIDOR - NIGHT
+
+        Sebastian is unlocking his door.  He opens the door
+        and ushers Pris into the apartment.
+
+
+        INT. SEBASTIAN'S APARTMENT -NIGHT
+
+        Sebastian flicks on the light revealing the high
+        walls, elegant moulding and strange contents.
+
+        A three foot high Kaiser Wilhelm figure and a teddy
+        bear dressed as Napoleon march into view from a
+        doorway.  An alarm sounds.
+
+                                SEBASTIAN
+                  Yoo hoo, home again, home again!
+
+                                BEAR
+                  Good evening J.F.
+
+        The alarm cuts out.
+
+        The Bear and Kasier  Wilhelm stare woodenly at Pris
+        for a moment, then turn away disappearing into the gloom.
+
+                                SEBASTIAN
+                  They're my friends... here,
+                  can I take your things, they're soaked.
+
+                                BEAR
+                            (muttering)
+                  Home again, home again, jiggidy jig.
+
+        Pris is delighted.  She strips off her topcoat,
+        revealing a shape to pop eyes.
+
+                                SEBASTIAN
+                            (besides himself)
+                  Where are your folks ?
+
+                                PRIS
+                  I'm sort of an orphan.
+
+        Pris smiles.
+
+                                SEBASTIAN
+                  What about friends?
+
+                                PRIS
+                  I have some, but I have to find them....
+                  I'll let them know where I am tomorrow.
+
+                                SEBASTIAN
+                  Oh!
+
+        There is a silence. He steals a glance at her.
+
+                                SEBASTIAN
+                  Well..... I can sleep on the couch.
+
+                                PRIS
+                  Watch the bed bugs don't bite !
+
+
+        INT. DECKARD'S APARTMENT - NIGHT
+
+        A blurry photograph, unclear, FILLS THE SCREEN.
+
+        The photograph intensified.  The foreground BLURS AND
+        SHARPENS.  it's the "man" in Leon's room with the
+        wardrobe behind him.  The head is turned away and
+        downward, the face unreadable.
+
+        Another change!  A dramatic one.  The picture is
+        suddenly three dimensional.
+
+        Now we see that Deckard is studying the picture in a
+        viewer controlling the effects with punch controls.
+
+        The ashtray next to him is full of butts.  The bottle
+        of vodka is nearly empty.
+
+        He sucks on his cigarette and empties the vodka bottle
+        into his glass and goes back to peering into the
+        viewer.
+
+        He punches up.
+
+        A transparent grid with vectors is superimposed over
+        the photo.
+
+        Deckard's eyes move over it carefully.
+
+                                DECKARD
+                  Sharpen line forty-eight between
+                  twenty point twenty-seven.
+
+        The edge of the man sharpens.
+
+                                DECKARD
+                  Profile trace.
+
+        Slowly the view tracks the periphery of the man's
+        shoulder, up and around the skull, down the other
+        side and as it approaches the bottom of the picture
+        passes a miniscule sparkle...
+
+                                DECKARD
+                  Stop.  Back up.
+
+        The line is retraced.
+
+                                DECKARD
+                  Stop.
+
+        The faintest little sparkle.  Static.  Almost nothing.
+        Deckard leans forward.
+
+                                DECKARD
+                  Enhance.
+
+        The view squeezes in.  The "spark" seems to be coming
+        from about fifteen feet behind the figure -- from
+        within the wardrobe.
+
+                                DECKARD
+                  Seesaw.
+
+        After a short pause, as if the command causes the
+        machine to strain, it emits a thin, high-pitched
+        FREQUENCY SOUND and the picture begins a horizontal
+        yawing motion.  As it swings back and forth glimpses
+        of things previously obscured by the foreground
+        figure are revealed.  Slightly at first, but the
+        opening grows as the process picks up momentum.
+
+        Deckard's right down there, hands on his knees like
+        a man watching his favorite team make a crucial play.
+
+                                DECKARD
+                  Stop!
+
+        The picture freezes.
+
+                                DECKARD
+                  Enhance.
+
+        The view pushes in to the wardrobe.  In its gloomy
+        recesses hangs a dress.
+
+                                DECKARD
+                  Enhance.
+
+        In closer on the dress.  An exotic shimmering gown
+        made of sequins.  Deckard ponders it, smiles slightly.
+
+                                DECKARD
+                  I don't suppose one of those males
+                  has a transvestite problem.
+
+        Pause.
+
+                                DECKARD
+                  Hey!
+
+        Esper wakes up.
+
+                                ESPER
+                  Yes?
+
+                                DECKARD
+                  I said, I don't suppose one of
+                  those males has a transvestite
+                  problem.
+
+        Pause.
+
+                                ESPER
+                  Negative.
+
+        Deckard considers the situation for a few moments,
+        then frowns thoughtfully and fishes his wallet out of
+        his pocket.  He produces the flakes he found in the
+        hotel room.
+
+        Deckard lights a cigarette.
+
+        The flake.
+
+        He's holding it on the tip of his finger under the
+        light of the console screen.  He sits down, studying
+        it like Hamlet, contemplating Yorick's skull.  But
+        for the HUM OF THE MACHINE, a long silence.
+
+                                ESPER
+                  You're gonna have a fire if you
+                  don't turn off the machine.
+
+        Absently, Deckard reaches out and flips it off.  He
+        sits a while in the silent dark.  Then goes into the
+        bathroom.
+
+
+        INT. SHOWER - NIGHT
+
+        Deckard stands in the shower, his cigarette still in
+        his mouth.
+
+                                                   CUT TO:
+
+
+        EXT. NOODLE BAR - NIGHT
+
+        It might be 2:00 a.m. but the joint is still crowded
+        as noisy taxi drivers jostle each other for seats and
+        jabber in Kangaroo, a crude lingual mix of Chinese,
+        Japanese, French and Tagalog.
+
+        Deckard is hunched over his bowl of noodles, slurping
+        hungrily from his busy chopsticks.
+
+        Whap!  The counterman slaps a serving of fish heads on
+        the counter in front of a CHINESE sitting next to
+        Deckard.
+
+        Startled by the sound Deckard glances at the bowl of
+        fish heads, then turns his attention back to his
+        noodles.
+
+        But after two bites he frowns and turns to look at
+        the fish heads again.
+
+        The Chinese is eating the flesh hungrily from a head.
+        He cleans the skull and drops it on the plate.
+
+        Deckard stares at the heads with their blank stares
+        that seem to gaze at eternity.
+
+        Deckard is thinking.
+
+        The Chinese is eating.
+
+        Deckard frowns lost in furious thought.  Suddenly he
+        reaches out and grabs a fish head.
+
+        The Chinese goes bug-eyed with indignation.
+
+                                CHINESE
+                         (in Chinese)
+                  What the hell are you doing, you
+                  moronic ahng mo dim bulb?  That's
+                  my goddamn dinner you (in English)
+                  dumb shit!
+
+        Deckard is peeling scales off the fish head.  He grabs
+        his wallet, produces the flake and compares it to the
+        scales from the head.  He ignores the ranting of the
+        Chinese as he stares at the flake next to the scales.
+
+                                DECKARD
+                  Fish!
+
+                                CHINESE
+                         (in Chinese)
+                  What do you expect you get from
+                  fish head, stupid?
+                         (in English)
+                  Elephant shit?
+
+                                                   CUT TO:
+
+
+        EXT. ANIMAL ROW - NIGHT
+
+        An aquarium full of fish, weird looking fish, the
+        kind that might eat each other.  They're gliding in
+        sinister clusters like Doberman pinschers with gills.
+
+        The CAMBODIAN LADY is a withered woman in black.
+        She's got a lens in her eye and she's looking at the
+        flake which is on the tip of her finger.
+
+                                CAMBODIAN LADY
+                  Not fish!  Snake !
+
+        And she points down the row.
+
+        Deckard looks that way and we.........
+
+                                                   CUT TO
+
+
+        MICROSCOPIC VIEW - NIGHT
+
+        We are looking at a huge enlargement of a snake scale
+        seen through a microscope.. but we don't know that.
+        It's just a grand abstract weirdness blurring and
+        sharpening and changing.
+
+                                EGYPTIAN (OS)
+                  The finest quality, yeeeeeeessssss.
+                  Perfect workmanship.
+                  Geniune artificial snake.
+
+        The flake  becomes a landscape of forests and moon-
+        scapes.  Buried deep in the texture of the thing is a
+        serial number.
+
+                                EGYPTIAN (OS)
+                  Serial Number 99069745xb7Y
+                  That would indicate a Crotalus
+                  Atrox......
+
+                                                   CUT TO
+
+
+        EXT. EGYPTIANS JOINT - NIGHT
+
+        We see the Egyptian for the first time as he takes
+        his eye from the viewer and points to a snake in one
+        of the many tanks that writhe with groggy reptiles.
+
+                                EGYPTIAN
+                         (continuing)
+                  ... such as that one there with
+                  the black and white ring on tail.
+                         (making a whirring noise)
+                  Western Diamon Back....
+                         (whirr)
+                  Rattler.
+
+        Deckard is looking at the ugly serpent.
+
+        The Egyptian hands the scale back to Deckard.
+
+                                DECKARD
+                  Who made it ?
+
+                                EGYPTIAN
+                  This quality... not too many.
+
+                                DECKARD
+                  How many ?
+
+                                EGYPTIAN
+                  Very few.
+
+                                DECKARD
+                  How few ?
+
+                                EGYPTIAN
+                  Perhaps less than I thought....
+                  but still, more than I can remember.
+
+                                DECKARD
+                  What helps you to remember ?
+
+        The Egyptian pushes a hand out in front of him, revolving
+        the thumb slowly against the next two fingers.
+
+        Deckard slips a card out of his pocket and into the
+        man's fingers.  It's a police card.  It gets a super-
+        cilious smile, a sigh and a shrug.  And that's all
+        it gets.  The man knows his rights.  The card is
+        handed back.  The smile remains.
+
+                                EGYPTIAN
+                  What was the question again?
+
+                                DECKARD
+                  The question is...
+
+        Deckard steps in closer.
+
+                                DECKARD
+                  Are you a citizen?
+
+                                EGYPTIAN
+                  Yes.
+
+                                DECKARD
+                  Naturalized?
+
+                                EGYPTIAN
+                  Yes.
+
+                                DECKARD
+                  Your papers are in order.
+
+                                EGYPTIAN
+                  Of course.
+
+        This guy's got it covered.
+
+                                DECKARD
+                  You have a license for this
+                  establishment?
+
+        He points it out with a righteous finger.
+
+                                DECKARD
+                  Fire permit?
+
+                                EGYPTIAN
+                  Right here.
+
+        He lifts it out of a drawer, displays it.  A long
+        pause.  The Egyptian smiles smugly.  It pays to have
+        things covered.  Deckard pushes closer.
+
+                                DECKARD
+                  In two seconds I'm gonna break
+                  your fuckin' spine if you don't
+                  tell me what I wanna know.
+
+        Pause.
+
+                                EGYPTIAN
+                  I see.
+
+        Deckard's face is two inches away.  It's all very
+        plain.
+
+                                EGYPTIAN
+                  In that case, I think I will be obliged
+                  to tell you that one of two men could
+                  have done this.
+
+                                DECKARD
+                  Who ?
+
+                                EGYPTIAN
+                  Me.
+
+        The Egyptian works on an uncertain shit-eating grin
+        hoping to charm his way out of a hole.
+
+        Deckard lets him sweat for a beat or two, looking hard.
+
+                                DECKARD
+                  Who do you sell your junk to .
+
+                                EGYPTIAN
+                  Artists. Always to artists.
+
+        The Eygptian looks nervously at Deckard,sees he
+        means business and hastily begins to shuffle through a
+        wad of receipts from a cigar box.
+
+                                                   CUT TO
+
+
+        INT. TAFFEY'S SNAKE PIT BAR - NIGHT
+
+        A big guy, back to camera is sitting at the bar in
+        this sleazy joint.
+
+                                DECKARD (OS)
+                  You buy a snake off an Egyptian ?
+
+        The big guy turns to face his questioner.  His name
+        is TAFFEY LEWIS big and bad and low-life.  He looks
+        like he's looking at a cockroach.
+
+                                TAFFEY
+                  Buzz off, fella.
+
+        Deckard is searching in his pockets.  He pulls a dirty
+        handkerchief out, puts it on the bar, pulls out a
+        crumpled pack of cigs from another pocket, a wad of
+        money cards from another.  He's putting all sorts of
+        things on the bar.  Among them is the picture of
+        Rachael and her parents.
+
+                                DECKARD
+                  You ever see..... you ever se... ?
+
+        At last he finds the photo of the reclining woman, shows
+        it to Taffey.
+
+                                DECKARD
+                  You ever see this woman ?
+
+        Taffey doesn't even look at the picture.
+
+                                TAFFEY
+                  Never saw her.  Buzz off,pal.
+
+        Deckard flashes his police card.
+
+                                DECKARD
+                  Got your licenses in order, old
+                  buddy ?
+
+                                TAFFEY
+                  Pal, I got a license to piss,
+                  I got a license to kiss,
+                  An' I got a license to pee at
+                  four in the morning.
+
+                  I got licenses for things I do with
+                  my wife an' I got licenses for things
+                  I don't do with my wife.
+
+                  I got licenses for bad dreams, pal.
+                  I got licenses you wouldn't believe.
+                  Now buzz the fuck off, okay ?
+
+        Deckard seems blown away, puts his hands up, palms forward,
+        surrendering.
+
+                                DECKARD
+                  Take it easy mister, don't get
+                  excited.
+
+                                TAFFEY
+                  Nobody pushes me around.
+
+                                DECKARD
+                  Forget I asked.  My mistake.
+                  Water under the bridge.
+
+        Taffey looks a little startled. It was this easy ?  He's
+        kind of pleased with himself now that he's firmly estab-
+        lished his authority.
+
+                                TAFFEY
+                  No hard feelings. I just don't
+                  take a push, that's all.
+
+                                DECKARD
+                  No hard feelings.
+
+                                TAFFEY
+                         (to the bartender)
+                  Louis, the man's dry.  Give him
+                  one on the house, huh ?
+
+                                BARTENDER
+                  Whatcha drinking ?
+
+                                DECKARD
+                  Smokey, dry.
+
+                                TAFFEY
+                  You assed about a snake.....
+
+        Deckard is suddenly hopeful.
+
+                                DECKARD
+                  Yeah.....
+
+                                TAFFEY
+                  Wanna see a snake, huh?
+
+        The Bartender puts a weird drink in front of Deckard...
+        tiny worms floating in a viscous liquid.
+
+        Deckard takes the drink like he was used to it and swigs.
+
+                                TAFFEY
+                  Louis, show the cop the snake,
+                  willya?
+
+        The Bartender reaches under the bar and pulls out a
+        large snake that writhes lazily on the bar.  It is
+        bright gold.
+
+                                DECKARD
+                      (disappointed)
+                  Wrong snake.
+
+                                TAFFEY
+                  Don't like gold ?
+
+                                DECKARD
+                  Gold's okay.
+
+                                TAFFEY
+                  Original paint job was shitty.  Those
+                  fucking Egyptian's do crappy work.
+
+                                DECKARD
+                  How long ago did ya paint it?
+
+                                TAFFEY
+                  I dunno.  Couple of months.
+                  Why ?
+
+         Deckard looks discouraged, swigs the last of his drink.
+
+                                DECKARD
+                  No reason.  Doesn't matter.
+                      (to the bartender)
+                  Gimmee another, willya?
+
+        There is a burst of applause and they all look around
+        toward the stage.
+
+        A large egg has appeared on the stage, beside it a
+        smaller egg.
+
+                                TAFFEY
+                  Getta loada this. New act.
+                  Very artistic, very sen-shoe-all.
+                  Beautiful.
+
+        Music starts to play.
+
+        Deckard looks bored and discouraged.  Absently starts
+        picking up his junk off the bar... the wads of money cards,
+        cigarette packs, matches... the picture of Rachael.  That
+        catches his attention.
+
+        Deckard stares at the picture for a long moment.
+
+                                DECKARD
+                  Gotta phone ?
+
+                                                   CUT TO
+
+
+        INT. TAFFEY'S BAR MOMENTS LATER
+
+        Deckard is at a telephone not far from  the bar.  He's
+        got the phone hooked between his shoulder and ear while
+        he notes a number.
+
+                                DECKARD
+                  .......six six five. Thanks.
+
+        Deckard breaks the connection, then starts punching the
+        numbers.
+
+        Behind him the stage show is progressing.  A beautiful
+        woman named SALOME is emerging from the large egg, very
+        scantily clad, an erotic birth scene.
+
+        Rachael appears on the telephone vid-screen.
+
+                                RACHAEL
+                  Hello.
+
+                                DECKARD
+                  People have walked out on me
+                  before... but never when I was
+                  being charming.
+
+        Rachael freezes when she see who it is.  Says nothing.
+
+                                DECKARD
+                  Ya missed out on the drink I
+                  poured ya.
+
+        Rachael still says nothing.
+
+                                DECKARD
+                  Wanna try again ?
+
+        For a long moment it seems Rachael isn't going to say
+        anything.
+
+        Rachael is bitter.
+
+                                RACHAEL
+                       (on Vid-screen)
+                  Hunting... "skin jobs "?
+
+                                DECKARD
+                  Didn't find any.All I found was a bar.
+                  Why waste it ?
+
+                                RACHAEL
+                       (on vid-screen)
+                  Not my kind of place I'm afraid.
+
+                                DECKARD
+                  Meet me here.  We'll go someplace
+                  else.  It's in the Fourth Sector....
+
+        Something on the stage catches Deckard's eye. He frowns.
+
+        On stage, a snake has emerged from the second egg.
+
+        Deckard is suddenly pre-occupied with the stage show as
+        he absently gives the address over the phone.
+
