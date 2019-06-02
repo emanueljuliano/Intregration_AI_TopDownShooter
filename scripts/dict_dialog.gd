@@ -242,8 +242,8 @@ var dict =  [
       "text": "Didn't work again... uffff.... I will have to restart all over!",
       "links": [
         {
-          "name": "...|end",
-          "link": "...|end"
+          "name": "...end",
+          "link": "...end"
         }
       ],
       "name": ".....",

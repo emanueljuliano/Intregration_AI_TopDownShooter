@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/little_voice.ogg-1419895ae3574662acf2b368010fdf92.oggstr"
+
+[deps]
+
+source_file="res://samples/little_voice.ogg"
+dest_files=[ "res://.import/little_voice.ogg-1419895ae3574662acf2b368010fdf92.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -163,3 +163,4 @@ stream = ExtResource( 3 )
 [node name="RayCast2D" type="RayCast2D" parent="."]
 enabled = true
 cast_to = Vector2( 200, 0 )
+

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/teste.gd" type="Script" id=1]
 [ext_resource path="res://title_screen/Fonts/vt323_48.tres" type="DynamicFont" id=2]
+[ext_resource path="res://samples/musicas/dialog_song.ogg" type="AudioStream" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 1 )
@@ -72,6 +73,11 @@ anchor_bottom = 1.0
 custom_fonts/normal_font = ExtResource( 2 )
 custom_colors/default_color = Color( 0, 0.521569, 0.0980392, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 6.0
+autoplay = true
 
 [connection signal="ready" from="Game_Player/Dialog/Terminal" to="." method="_on_Terminal_ready"]
 [connection signal="timeout" from="Game_Player/Dialog/Timer" to="." method="_on_Timer_timeout"]

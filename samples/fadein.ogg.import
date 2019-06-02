@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/fadein.ogg-49c5c380427e091209525ad1d54c0f51.oggstr"
+
+[deps]
+
+source_file="res://samples/fadein.ogg"
+dest_files=[ "res://.import/fadein.ogg-49c5c380427e091209525ad1d54c0f51.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

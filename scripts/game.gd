@@ -7,6 +7,7 @@ var level = 1
 
 var inimigos_mortos = 0
 var auxiliar = 0
+var music_time = 0
 
 var gameData={
 	deaths = 0,

@@ -2,10 +2,20 @@ extends Control
 
 var dictionary = dict_dialog.dict
 var page = 0
+var voice = AudioStreamPlayer.new()
+
 
 
 func _ready():
+	self.add_child(voice)
+	voice.stream = load("res://samples/bunch_of_voices.ogg")
+	voice.play(23.44)
+	voice.set_volume_db(-6)
 	$Game_Player/Options/Button1.grab_focus()
+
+func _process(delta):
+	if voice.get_playback_position() > 27.13:
+		voice.play(23.44)
 
 
 func _on_Terminal_ready():
@@ -16,6 +26,7 @@ func _on_Terminal_ready():
 func _on_Timer_timeout():
 	$Game_Player/Dialog/Terminal.set_visible_characters($Game_Player/Dialog/Terminal.get_visible_characters()+1)
 	if($Game_Player/Dialog/Terminal.get_visible_characters() > $Game_Player/Dialog/Terminal.get_total_character_count()):
+		voice.stop()
 		$Game_Player/Options/Button1/option1.set_visible_characters($Game_Player/Options/Button1/option1.get_visible_characters()+1)
 		if(dictionary[page]["links"].size() > 1):
 			$Game_Player/Options/Button2/option2.set_visible_characters($Game_Player/Options/Button2/option2.get_visible_characters()+1)
@@ -26,10 +37,16 @@ func _on_option1_ready():
 	$Game_Player/Options/Button1/option1.set_visible_characters(0)
 		
 func _on_Button1_pressed():
+				
 	if $Game_Player/Dialog/Terminal.get_visible_characters() > $Game_Player/Dialog/Terminal.get_total_character_count():
-		if dictionary[page]["links"][0]["name"] != 'okay!':
+		if dictionary[page]["links"][0]["name"] == '...end':
+			get_tree().change_scene("res://title_screen/TitleScreen.tscn")
+		
+		elif dictionary[page]["links"][0]["name"] != 'okay!':
 			page  = dictionary[page]["links"][0]["pid"]
 			page = int(page) - 1
+			
+			voice.play(23.44)
 			
 			$Game_Player/Dialog/Terminal.set_bbcode(dictionary[page]["text"])
 			$Game_Player/Dialog/Terminal.set_visible_characters(0)
@@ -42,6 +59,7 @@ func _on_Button1_pressed():
 				$Game_Player/Options/Button2/option2.set_bbcode(dictionary[page]["links"][1]["name"])
 			else:
 				$Game_Player/Options/Button2.hide()
+				
 		else:
 			get_tree().change_scene("res://scenes/tutorial/tutorial.tscn")
 
@@ -55,10 +73,14 @@ func _on_Button1_focus_exited():
 
 
 func _on_Button2_pressed():
+	$Game_Player/Options/Button1.grab_focus()
 	if $Game_Player/Dialog/Terminal.get_visible_characters() > $Game_Player/Dialog/Terminal.get_total_character_count():
+		
 		if dictionary[page]["links"][0]["name"] != 'okay!':
 			page  = dictionary[page]["links"][1]["pid"]
 			page = int(page) - 1
+			
+			voice.play(23.44)
 			
 			$Game_Player/Dialog/Terminal.set_bbcode(dictionary[page]["text"])
 			$Game_Player/Dialog/Terminal.set_visible_characters(0)
@@ -71,6 +93,7 @@ func _on_Button2_pressed():
 				$Game_Player/Options/Button2/option2.set_bbcode(dictionary[page]["links"][1]["name"])
 			else:
 				$Game_Player/Options/Button2.hide()
+				
 		else:
 			get_tree().change_scene("res://scenes/tutorial/tutorial.tscn")
 				
