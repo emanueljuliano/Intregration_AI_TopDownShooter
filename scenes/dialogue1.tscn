@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/teste.gd" type="Script" id=1]
 [ext_resource path="res://title_screen/Fonts/vt323_48.tres" type="DynamicFont" id=2]
-[ext_resource path="res://samples/musicas/dialog_song.ogg" type="AudioStream" id=3]
+[ext_resource path="res://title_screen/Fonts/vt323_35.tres" type="DynamicFont" id=3]
+[ext_resource path="res://samples/musicas/dialog_song.ogg" type="AudioStream" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 1 )
@@ -47,50 +48,55 @@ polygon = PoolVector2Array( 144.932, 514.051, 143.982, 667.951, 1177.58, 667.951
 
 [node name="Button1" type="Button" parent="Game_Player/Options"]
 margin_left = 161.0
-margin_top = 499.0
+margin_top = 432.0
 margin_right = 639.0
-margin_bottom = 599.0
+margin_bottom = 636.0
 custom_styles/focus = SubResource( 1 )
+button_mask = 3
 flat = true
 
 [node name="option1" type="RichTextLabel" parent="Game_Player/Options/Button1"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/normal_font = ExtResource( 2 )
+custom_fonts/normal_font = ExtResource( 3 )
 custom_colors/default_color = Color( 0, 0.521569, 0.0980392, 1 )
 
 [node name="Button2" type="Button" parent="Game_Player/Options"]
 margin_left = 700.0
-margin_top = 495.0
+margin_top = 433.0
 margin_right = 1150.0
-margin_bottom = 593.0
+margin_bottom = 637.0
 custom_styles/focus = SubResource( 2 )
 flat = true
 
 [node name="option2" type="RichTextLabel" parent="Game_Player/Options/Button2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/normal_font = ExtResource( 2 )
+custom_fonts/normal_font = ExtResource( 3 )
 custom_colors/default_color = Color( 0, 0.521569, 0.0980392, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 
 [node name="music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
-volume_db = 6.0
+stream = ExtResource( 4 )
+volume_db = 10.0
 autoplay = true
 
 [connection signal="ready" from="Game_Player/Dialog/Terminal" to="." method="_on_Terminal_ready"]
 [connection signal="timeout" from="Game_Player/Dialog/Timer" to="." method="_on_Timer_timeout"]
 [connection signal="focus_entered" from="Game_Player/Options/Button1" to="." method="_on_Button1_focus_entered"]
 [connection signal="focus_exited" from="Game_Player/Options/Button1" to="." method="_on_Button1_focus_exited"]
+[connection signal="mouse_entered" from="Game_Player/Options/Button1" to="." method="_on_Button1_mouse_entered"]
+[connection signal="mouse_exited" from="Game_Player/Options/Button1" to="." method="_on_Button1_mouse_exited"]
 [connection signal="pressed" from="Game_Player/Options/Button1" to="." method="_on_Button1_pressed"]
-[connection signal="focus_entered" from="Game_Player/Options/Button1/option1" to="." method="_on_option1_focus_entered"]
-[connection signal="focus_exited" from="Game_Player/Options/Button1/option1" to="." method="_on_option1_focus_exited"]
+[connection signal="gui_input" from="Game_Player/Options/Button1/option1" to="." method="_on_option1_gui_input"]
+[connection signal="mouse_entered" from="Game_Player/Options/Button1/option1" to="." method="_on_option1_mouse_entered"]
+[connection signal="mouse_exited" from="Game_Player/Options/Button1/option1" to="." method="_on_option1_mouse_exited"]
 [connection signal="ready" from="Game_Player/Options/Button1/option1" to="." method="_on_option1_ready"]
 [connection signal="focus_entered" from="Game_Player/Options/Button2" to="." method="_on_Button2_focus_entered"]
 [connection signal="focus_exited" from="Game_Player/Options/Button2" to="." method="_on_Button2_focus_exited"]
 [connection signal="pressed" from="Game_Player/Options/Button2" to="." method="_on_Button2_pressed"]
 [connection signal="ready" from="Game_Player/Options/Button2" to="." method="_on_Button2_ready"]
-[connection signal="focus_entered" from="Game_Player/Options/Button2/option2" to="." method="_on_option2_focus_entered"]
-[connection signal="focus_exited" from="Game_Player/Options/Button2/option2" to="." method="_on_option2_focus_exited"]
+[connection signal="gui_input" from="Game_Player/Options/Button2/option2" to="." method="_on_option2_gui_input"]
+[connection signal="mouse_entered" from="Game_Player/Options/Button2/option2" to="." method="_on_option2_mouse_entered"]
+[connection signal="mouse_exited" from="Game_Player/Options/Button2/option2" to="." method="_on_option2_mouse_exited"]
 [connection signal="ready" from="Game_Player/Options/Button2/option2" to="." method="_on_option2_ready"]

@@ -14,6 +14,7 @@ func _ready():
 	
 	for button in $Menu/CenterRow/Buttons.get_children():
 		button.connect("pressed", self, "_on_Button_pressed", [button.scene_to_load])
+		
 
 func _on_Button_pressed(scene_to_load):
 	game.music_time = $musica.get_playback_position()

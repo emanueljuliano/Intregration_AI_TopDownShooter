@@ -28,6 +28,8 @@ var empurrao = 2000
 var knockback = Vector2()
 var tempo_vida = 1.0
 
+var scene_path_to_load
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	look_at(get_global_mouse_position())
@@ -59,7 +61,11 @@ func _process(delta):
 			tempo_vida = 0.5 + 1*(vida/(vida_max/2))
 		else:
 			tempo_vida = tempo_vida - delta
-	
+			
+	if Input.is_action_just_pressed("ui_cancel"):
+		scene_path_to_load = 'res://title_screen/TitleScreen.tscn'
+		$FadeIn.show()
+		$FadeIn.fade_in()
 	
 	pass
 	
@@ -178,10 +184,16 @@ func dano_player(valor, posicao_inimigo):
 	if vida <= 0 and not imortal:
 		game.deaths += 1
 		game.save_game()
-		get_tree().change_scene("res://title_screen/death/Death.tscn")
+		scene_path_to_load = 'res://title_screen/death/Death.tscn'
+		$FadeIn.show()
+		$FadeIn.fade_in()
 		
 	pass
 
 func add_vida(valor):
 	vida = clamp(vida + valor, 0, vida_max)
 	pass
+
+func _on_ColorRect_fade_finished():
+	$FadeIn.hide()
+	get_tree().change_scene(scene_path_to_load)
