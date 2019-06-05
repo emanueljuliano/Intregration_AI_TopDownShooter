@@ -4,20 +4,20 @@
 [ext_resource path="res://sprites/PNG/Parts/turretBase_small.png" type="Texture" id=2]
 [ext_resource path="res://sprites/PNG/Lasers/laserRed13.png" type="Texture" id=3]
 
-[sub_resource type="CircleShape2D" id=3]
+[sub_resource type="CircleShape2D" id=1]
 radius = 13.9717
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="CircleShape2D" id=2]
 radius = 13.8666
 
-[sub_resource type="SegmentShape2D" id=2]
+[sub_resource type="SegmentShape2D" id=3]
 b = Vector2( 0, 280 )
 
 [node name="shock" type="StaticBody2D"]
 script = ExtResource( 1 )
 
 [node name="ponto1" type="CollisionShape2D" parent="."]
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="ponto1"]
 texture = ExtResource( 2 )
@@ -25,7 +25,7 @@ texture = ExtResource( 2 )
 [node name="ponto2" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 280 )
 rotation = 3.14159
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="ponto2"]
 texture = ExtResource( 2 )
@@ -34,7 +34,7 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="raio"]
 scale = Vector2( 10, 1 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="raio"]
 position = Vector2( 0.835098, 133.065 )

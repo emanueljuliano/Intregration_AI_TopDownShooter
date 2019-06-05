@@ -54,7 +54,7 @@ func _physics_process(delta):
 				look_at(game.get_player().get_position())
 				if get_slide_count() > 0:
 					if get_slide_collision(0).collider == game.get_player():
-						game.get_player().dano_player(dano, get_global_position())
+						game.get_player().dano_player(dano, get_global_position(), filename)
 			else:
 				#MODO DE AGRUPAR
 				get_node("sprite").modulate.r = 1

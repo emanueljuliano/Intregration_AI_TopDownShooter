@@ -33,6 +33,7 @@ func _on_Area2D_body_entered(body):
 
 func trocar_room():
 	if trocar_fase:
+		game.music_time = game.get_main().get_node("musica").get_playback_position()
 		get_tree().change_scene(nova_fase)
 	else:
 		get_tree().get_root().get_node("main").get_node(camera_destino)._set_current(true)

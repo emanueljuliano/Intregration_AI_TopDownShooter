@@ -7,6 +7,7 @@ var chave
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	get_node("musica").play(game.music_time)
 	game.inimigos_mortos = 0
 	pass # Replace with function body.
 

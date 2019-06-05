@@ -4,9 +4,11 @@ const INIMIGO = "inimigo"
 const FILE = "user://save.data"
 var deaths = 0
 var level = 1
+var last_enemy = ""
 
 var inimigos_mortos = 0
 var auxiliar = 0
+
 var music_time = 0
 
 var gameData={
@@ -31,8 +33,9 @@ func _ready():
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	print(last_enemy)
+	pass
 
 
 func get_main():

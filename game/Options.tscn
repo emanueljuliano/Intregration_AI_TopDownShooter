@@ -23,5 +23,4 @@ stream = ExtResource( 2 )
 
 [node name="FadeIn" parent="." index="2" instance=ExtResource( 3 )]
 visible = false
-
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

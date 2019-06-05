@@ -34,7 +34,7 @@ func _process(delta):
 		var i = 0
 		while i < len(get_node("raio").get_overlapping_bodies()):
 			if get_node("raio").get_overlapping_bodies()[i].has_method("dano_player"):
-				get_node("raio").get_overlapping_bodies()[i].dano_player(dano, game.get_player().get_global_position())
+				get_node("raio").get_overlapping_bodies()[i].dano_player(dano, game.get_player().get_global_position(), filename)
 			i = i + 1
 	pass
 
@@ -42,7 +42,7 @@ func ativar():
 	var i = 0
 	while i < len(get_node("raio").get_overlapping_bodies()):
 		if get_node("raio").get_overlapping_bodies()[i].has_method("dano_player"):
-			get_node("raio").get_overlapping_bodies()[i].dano_player(dano, game.get_player().get_global_position())
+			get_node("raio").get_overlapping_bodies()[i].dano_player(dano, game.get_player().get_global_position(), filename)
 		i = i + 1
 	if tempo <= tempo_ativar*(-1):
 		tempo =  tempo_ativar

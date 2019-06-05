@@ -15,6 +15,6 @@ func _process(delta):
 
 func _on_flecha_body_entered(body):
 	if body == game.get_player():
-		game.get_player().dano_player(dano, get_global_position())
+		game.get_player().dano_player(dano, get_global_position(), filename)
 	queue_free()
 	pass # Replace with function body.

@@ -22,7 +22,6 @@ func _ready():
 		
 
 func _on_Button_pressed(scene_to_load):
-	game.music_time = $musica.get_playback_position()
 
 	scene_path_to_load = scene_to_load	
 	$FadeIn.show()
@@ -30,6 +29,7 @@ func _on_Button_pressed(scene_to_load):
 
 func _on_FadeIn_fade_finished():
 	$FadeIn.hide()
+	game.music_time = $musica.get_playback_position()
 	get_tree().change_scene(scene_path_to_load)
 
 

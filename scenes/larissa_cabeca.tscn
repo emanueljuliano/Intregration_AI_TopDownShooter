@@ -115,4 +115,3 @@ stream = ExtResource( 4 )
 [node name="anim" type="AnimationPlayer" parent="."]
 anims/dano = SubResource( 5 )
 anims/idle = SubResource( 6 )
-

@@ -9,13 +9,13 @@ var voice = AudioStreamPlayer.new()
 func _ready():
 	self.add_child(voice)
 	voice.stream = load("res://samples/bunch_of_voices.ogg")
-	voice.play(23.44)
+	voice.play(rand_range(0.0, 8.86))
 	voice.set_volume_db(-6)
 	$Game_Player/Options/Button1.grab_focus()
 
 func _process(delta):
-	if voice.get_playback_position() > 27.13:
-		voice.play(23.44)
+	if voice.get_playback_position() > 8.86:
+		voice.play(rand_range(0.0, 8.86))
 		
 	if Input.is_action_pressed("direita") and ($Game_Player/Dialog/Terminal.get_visible_characters() > $Game_Player/Dialog/Terminal.get_total_character_count()):
 		$Game_Player/Options/Button2.grab_focus()

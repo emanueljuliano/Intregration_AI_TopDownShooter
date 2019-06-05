@@ -158,6 +158,5 @@ process_material = SubResource( 7 )
 
 [node name="audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
-
 [connection signal="area_entered" from="." to="." method="_on_enemy_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_enemy_area_exited"]

@@ -14,7 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if dentro:
-		game.get_player().dano_player(game.get_player().vida, game.get_player().get_global_position())
+		game.get_player().dano_player(game.get_player().vida, game.get_player().get_global_position(), filename)
 	pass
 
 

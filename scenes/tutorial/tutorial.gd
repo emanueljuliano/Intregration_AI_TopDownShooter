@@ -6,6 +6,8 @@ var pre_inimigo = preload("res://scenes/melee.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	game.music_time = 0.0
+	get_node("musica").play(game.music_time)
 	game.inimigos_mortos = 0
 	game.auxiliar = 0
 	pass # Replace with function body.

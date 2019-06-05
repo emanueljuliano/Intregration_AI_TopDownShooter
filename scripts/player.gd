@@ -172,7 +172,9 @@ func atualizar_lanterna():
 			i = i + 1
 	pass
 
-func dano_player(valor, posicao_inimigo):
+func dano_player(valor, posicao_inimigo, path):
+	if vida > 0:
+		game.last_enemy = String(path)
 	vida = vida - valor
 	var direcao = get_global_position() - posicao_inimigo
 	if direcao != Vector2(0,0):

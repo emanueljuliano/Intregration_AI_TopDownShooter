@@ -29,7 +29,7 @@ func _physics_process(delta):
 			if get_slide_collision(0).collider.has_method("dano"):
 				get_slide_collision(0).collider.dano(dano)
 			elif get_slide_collision(0).collider.has_method("dano_player"):
-				game.get_player().dano_player(dano, get_global_position())
+				game.get_player().dano_player(dano, get_global_position(), filename)
 			dano(vida)
 	pass
 
