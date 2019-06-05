@@ -5,6 +5,7 @@ var vel = 400
 var vida = 40
 var dano = 40
 
+var death = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_to_group(game.INIMIGO)
@@ -14,7 +15,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if vida <= 0:
+		if death == 0:
+			game.inimigos_mortos += 1
+			death = 1
+
 		set_process(false)
 		set_physics_process(false)
 		set_collision_layer_bit(0, false)

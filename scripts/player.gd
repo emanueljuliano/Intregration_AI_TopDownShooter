@@ -28,6 +28,7 @@ var empurrao = 2000
 var knockback = Vector2()
 var tempo_vida = 1.0
 
+
 var scene_path_to_load
 
 # Called when the node enters the scene tree for the first time.
@@ -39,6 +40,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	game.exist_time += delta
+
 	look_at(get_global_mouse_position())
 	
 	if Input.is_action_pressed("clickE"):
@@ -71,9 +74,11 @@ func _process(delta):
 	
 	
 func _physics_process(delta):
+
 	if dashar:
 		if not dashando:
 			if Input.is_action_just_pressed("dash") and tempo_espera_dash<=0:
+				game.num_dashs += 1
 				vel = vel_base * vel_dash
 				dashando = true
 				tempo_dash = tempo_dash_max
@@ -123,6 +128,7 @@ func _physics_process(delta):
 func atirar():
 	if atirar:
 		if reload <= 0:
+			game.num_shoots += 1
 			var tiro = pre_tiro.instance()
 			tiro.set_global_position(get_node("mira").get_global_position())
 			get_owner().add_child(tiro)
@@ -186,7 +192,8 @@ func dano_player(valor, posicao_inimigo, path):
 	if vida <= 0 and not imortal:
 		game.deaths += 1
 		game.save_game()
-		scene_path_to_load = 'res://title_screen/death/Death.tscn'
+		imortal = true
+		scene_path_to_load = 'res://scenes/death/Death.tscn'
 		$FadeIn.show()
 		$FadeIn.fade_in()
 		
@@ -198,4 +205,5 @@ func add_vida(valor):
 
 func _on_ColorRect_fade_finished():
 	$FadeIn.hide()
+	imortal = false
 	get_tree().change_scene(scene_path_to_load)

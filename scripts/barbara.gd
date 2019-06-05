@@ -12,6 +12,8 @@ var pre_spawn_vida = preload("res://scenes/vida.tscn")
 var vida = 40
 var dano = 10
 
+var death = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_to_group(game.INIMIGO)
@@ -48,6 +50,10 @@ func _process(delta):
 
 func _physics_process(delta):
 	if vida > 0:
+		if death == 0:
+			game.inimigos_mortos += 1
+			death = 1
+
 		#TOCAR EM ALGUMA COISA
 		if get_slide_count() > 0:
 			esperando = false
