@@ -14,7 +14,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-
 	if vida <= 0:
 		if death == 0:
 			game.inimigos_mortos += 1
@@ -26,7 +25,6 @@ func _process(delta):
 		set_collision_mask_bit(0, false)
 		remove_from_group(game.INIMIGO)
 		get_node("anim").play("morrer")
-		game.inimigos_mortos += 1
 	look_at(game.get_player().get_position())
 
 func _physics_process(delta):

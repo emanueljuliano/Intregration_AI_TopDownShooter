@@ -30,6 +30,7 @@ func _process(delta):
 		get_node("sprite").set_rotation(deg2rad(-90 + direcao*90))
 	else:
 		get_node("sprite").set_rotation(deg2rad(-90))
+
 func _physics_process(delta):
 	if get_parent().vida > 0:
 		angulo = angulo + periodo_curva

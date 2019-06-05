@@ -7,7 +7,7 @@ var vel2 = 20
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	get_node("musica").play(game.music_time)
-	if game.auxiliar > 0:
+	if game.auxiliar > 1:
 		game.get_player().dashar = true
 	pass # Replace with function body.
 

@@ -23,6 +23,10 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if vida <= 0:
+		if death == 0:
+			game.inimigos_mortos += 1
+			death = 1
+		
 		var spawn_vida = pre_spawn_vida.instance()
 		spawn_vida.set_global_position(get_global_position())
 		game.get_main().add_child(spawn_vida)
@@ -50,10 +54,6 @@ func _process(delta):
 
 func _physics_process(delta):
 	if vida > 0:
-		if death == 0:
-			game.inimigos_mortos += 1
-			death = 1
-
 		#TOCAR EM ALGUMA COISA
 		if get_slide_count() > 0:
 			esperando = false

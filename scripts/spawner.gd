@@ -1,6 +1,7 @@
 extends Node2D
 
-var intervalo = 2
+export var ativado = true
+export var intervalo = 2
 var tempo = 0
 var pre_antony = preload("res://scenes/antony.tscn")
 var pre_monica = preload("res://scenes/monica.tscn")
@@ -21,22 +22,23 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	rand_n = rand_range(0, 4)
-	if tempo <= 0:
-		var inimigo = lista_inimigos[randi()%lista_inimigos.size()].instance()
-		if rand_n < 1:
-			spawn_pos = Vector2(rand_range(0, 1024), +50)
-		elif rand_n < 2:
-			spawn_pos = Vector2(rand_range(0, 1024), 550)
-		elif rand_n < 3:
-			spawn_pos = Vector2(50, rand_range(0, 600))
-		elif rand_n <= 4:
-			spawn_pos = Vector2(974, rand_range(0, 600))
-		inimigo.set_position(spawn_pos)
-		game.get_main().add_child(inimigo)
-		tempo = intervalo
-		pass
-	else:
-		tempo = tempo - delta
+	if ativado:
+		rand_n = rand_range(0, 4)
+		if tempo <= 0:
+			var inimigo = lista_inimigos[randi()%lista_inimigos.size()].instance()
+			if rand_n < 1:
+				spawn_pos = Vector2(rand_range(0, 1024), +50)
+			elif rand_n < 2:
+				spawn_pos = Vector2(rand_range(0, 1024), 550)
+			elif rand_n < 3:
+				spawn_pos = Vector2(50, rand_range(0, 600))
+			elif rand_n <= 4:
+				spawn_pos = Vector2(974, rand_range(0, 600))
+			inimigo.set_position(spawn_pos)
+			game.get_main().add_child(inimigo)
+			tempo = intervalo
+			pass
+		else:
+			tempo = tempo - delta
 	pass
 

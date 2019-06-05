@@ -17,6 +17,9 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if vida <= 0:
+		if death == 0:
+			game.inimigos_mortos += 1
+			death = 1
 		remove_from_group(game.INIMIGO)
 		set_process(false)
 		set_physics_process(false)
@@ -30,10 +33,6 @@ func _process(delta):
 		
 func _physics_process(delta):
 	if vida > 0:
-		if death == 0:
-			game.inimigos_mortos += 1
-			death = 1
-			
 		if iluminado:
 			move_and_slide((get_node("frente").get_global_position() - get_global_position()) * avanco)
 			if get_slide_count() > 0:
