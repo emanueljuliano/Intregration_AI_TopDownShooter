@@ -5,6 +5,11 @@ var data = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if game.deaths == 0 and game.level == 1:
+		$Menu/CenterRow/Buttons/ContinueButton.scene_to_load = "res://title_screen/TitleScreen.tscn"
+	else:
+		$Menu/CenterRow/Buttons/ContinueButton.scene_to_load = "res://game/Continue.tscn"
+		
 	$musica.play(game.music_time)
 	game.load_game()
 		
@@ -18,6 +23,7 @@ func _ready():
 
 func _on_Button_pressed(scene_to_load):
 	game.music_time = $musica.get_playback_position()
+
 	scene_path_to_load = scene_to_load	
 	$FadeIn.show()
 	$FadeIn.fade_in()

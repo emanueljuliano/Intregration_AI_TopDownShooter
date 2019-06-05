@@ -18,5 +18,5 @@ custom_colors/font_color = Color( 0, 1, 0.215686, 1 )
 custom_colors/font_color_shadow = Color( 0, 0.521569, 0.0980392, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 5
-text = "LABEL"
+text = "cd INFINITE"
 
