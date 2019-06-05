@@ -13,13 +13,11 @@ func _process(delta):
 # Continue Button:
 func _on_Continue_focus_entered():
 	$Menu/Decisions/Buttons/Continue/upgrade.add_color_override("font_color", Color("00ff3e"))
-
 func _on_Continue_mouse_entered():
+	$Menu/Decisions/Buttons/Continue.grab_focus()
 	$Menu/Decisions/Buttons/Continue/upgrade.add_color_override("font_color", Color("00ff3e"))
-	
 func _on_Continue_focus_exited():
 	$Menu/Decisions/Buttons/Continue/upgrade.add_color_override("font_color", Color("008519"))
-
 func _on_Continue_mouse_exited():
 	$Menu/Decisions/Buttons/Continue/upgrade.add_color_override("font_color", Color("008519"))
 
@@ -27,13 +25,11 @@ func _on_Continue_mouse_exited():
 # Exit Button:
 func _on_Exit_focus_entered():
 	$Menu/Decisions/Buttons/Exit/exit.add_color_override("font_color", Color("00ff3e"))
-	
 func _on_Exit_mouse_entered():
+	$Menu/Decisions/Buttons/Exit.grab_focus()
 	$Menu/Decisions/Buttons/Exit/exit.add_color_override("font_color", Color("00ff3e"))
-
 func _on_Exit_focus_exited():
 	$Menu/Decisions/Buttons/Exit/exit.add_color_override("font_color", Color("008519"))
-
 func _on_Exit_mouse_exited():
 	$Menu/Decisions/Buttons/Exit/exit.add_color_override("font_color", Color("008519"))
 

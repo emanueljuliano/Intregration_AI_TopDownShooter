@@ -31,3 +31,15 @@ func _on_Button_pressed(scene_to_load):
 func _on_FadeIn_fade_finished():
 	$FadeIn.hide()
 	get_tree().change_scene(scene_path_to_load)
+
+
+func _on_ContinueButton_mouse_entered():
+	$Menu/CenterRow/Buttons/ContinueButton.grab_focus()
+func _on_NewGameButton_mouse_entered():
+	$Menu/CenterRow/Buttons/NewGameButton.grab_focus()
+func _on_InfiniteButton_mouse_entered():
+	$Menu/CenterRow/Buttons/InfiniteButton.grab_focus()
+func _on_OptionsButton_mouse_entered():
+	$Menu/CenterRow/Buttons/OptionsButton.grab_focus()
+func _on_QuitButton_mouse_entered():
+	$Menu/CenterRow/Buttons/QuitButton.grab_focus()

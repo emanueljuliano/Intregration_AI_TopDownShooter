@@ -78,6 +78,7 @@ func _on_Button1_pressed():
 func _on_Button1_focus_entered():
 	$Game_Player/Options/Button1/option1.add_color_override("default_color", Color("00ff3e"))
 func _on_option1_mouse_entered():
+	$Game_Player/Options/Button1.grab_focus()
 	$Game_Player/Options/Button1/option1.add_color_override("default_color", Color("00ff3e"))
 	$Game_Player/Options/Button2/option2.add_color_override("default_color", Color("008519"))
 	
@@ -132,6 +133,7 @@ func _on_option2_ready():
 func _on_Button2_focus_entered():
 	$Game_Player/Options/Button2/option2.add_color_override("default_color", Color("00ff3e"))
 func _on_option2_mouse_entered():
+	$Game_Player/Options/Button2.grab_focus()
 	$Game_Player/Options/Button2/option2.add_color_override("default_color", Color("00ff3e"))
 	$Game_Player/Options/Button1/option1.add_color_override("default_color", Color("008519"))
 	

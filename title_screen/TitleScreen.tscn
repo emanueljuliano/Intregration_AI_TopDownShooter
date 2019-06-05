@@ -125,5 +125,11 @@ visible = false
 stream = ExtResource( 12 )
 autoplay = true
 
+[connection signal="focus_entered" from="Menu/CenterRow/Buttons/ContinueButton" to="." method="_on_ContinueButton_focus_entered"]
+[connection signal="mouse_entered" from="Menu/CenterRow/Buttons/ContinueButton" to="." method="_on_ContinueButton_mouse_entered"]
+[connection signal="mouse_entered" from="Menu/CenterRow/Buttons/NewGameButton" to="." method="_on_NewGameButton_mouse_entered"]
+[connection signal="mouse_entered" from="Menu/CenterRow/Buttons/InfiniteButton" to="." method="_on_InfiniteButton_mouse_entered"]
+[connection signal="mouse_entered" from="Menu/CenterRow/Buttons/OptionsButton" to="." method="_on_OptionsButton_mouse_entered"]
+[connection signal="mouse_entered" from="Menu/CenterRow/Buttons/QuitButton" to="." method="_on_QuitButton_mouse_entered"]
 [connection signal="pressed" from="Menu/CenterRow/Buttons/QuitButton" to="Menu/CenterRow/Buttons/QuitButton" method="_on_QuitButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
