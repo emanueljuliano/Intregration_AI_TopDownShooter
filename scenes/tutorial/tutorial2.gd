@@ -25,7 +25,8 @@ func _process(delta):
 	
 	if game.get_player().vida < game.get_player().vida_max:
 		if movimentou:
-			get_tree().change_scene("res://scenes/tutorial/tutorial3.tscn")
+			dict_dialog.tutorial_scene = 2
+			get_tree().change_scene("res://scenes/tutorial/death_tutorial.tscn")
 		else:
 			get_tree().change_scene("res://scenes/tutorial/tutorial2.tscn")
 	pass

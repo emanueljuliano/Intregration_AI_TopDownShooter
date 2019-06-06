@@ -4,6 +4,7 @@ var tempo = 5
 var spawnado = false
 var pre_inimigo = preload("res://scenes/melee.tscn")
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	game.music_time = 0.0
@@ -26,5 +27,6 @@ func _process(delta):
 		
 	
 	if game.get_player().vida < game.get_player().vida_max:
-		get_tree().change_scene("res://scenes/tutorial/tutorial2.tscn")
+		dict_dialog.tutorial_scene = 1
+		get_tree().change_scene("res://scenes/tutorial/death_tutorial.tscn")
 	pass

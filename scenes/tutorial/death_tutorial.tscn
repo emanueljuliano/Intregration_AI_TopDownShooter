@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://scripts/teste.gd" type="Script" id=1]
+[ext_resource path="res://scenes/tutorial/death_tutorial.gd" type="Script" id=1]
 [ext_resource path="res://title_screen/Fonts/vt323_48.tres" type="DynamicFont" id=2]
 [ext_resource path="res://title_screen/Fonts/vt323_35.tres" type="DynamicFont" id=3]
 [ext_resource path="res://samples/musicas/dialog_song.ogg" type="AudioStream" id=4]
@@ -10,7 +10,7 @@ bg_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="StyleBoxEmpty" id=2]
 
-[node name="Dialog1" type="Control"]
+[node name="death" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
@@ -78,6 +78,7 @@ custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = 10.0
 autoplay = true
 
 [connection signal="ready" from="Game_Player/Dialog/Terminal" to="." method="_on_Terminal_ready"]

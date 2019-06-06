@@ -192,18 +192,10 @@ func dano_player(valor, posicao_inimigo, path):
 	if vida <= 0 and not imortal:
 		game.deaths += 1
 		game.save_game()
-		imortal = true
-		scene_path_to_load = 'res://scenes/death/Death.tscn'
-		$FadeIn.show()
-		$FadeIn.fade_in()
-		
+		get_tree().change_scene('res://scenes/death/Death.tscn')		
 	pass
 
 func add_vida(valor):
 	vida = clamp(vida + valor, 0, vida_max)
 	pass
 
-func _on_ColorRect_fade_finished():
-	$FadeIn.hide()
-	imortal = false
-	get_tree().change_scene(scene_path_to_load)

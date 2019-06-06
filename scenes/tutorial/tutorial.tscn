@@ -37,3 +37,4 @@ autoplay = true
 
 [node name="PORTA_CIMA" type="Position2D" parent="."]
 position = Vector2( 636.009, 66.2509 )
+

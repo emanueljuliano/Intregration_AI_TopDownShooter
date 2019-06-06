@@ -1,16 +1,15 @@
 extends Control
 
-var dictionary = dict_dialog.dict
-var page = 0
+var dictionary = dict_dialog.tutorial
+var page = dict_dialog.id
 var voice = AudioStreamPlayer.new()
 
-
-
 func _ready():
+	page = dict_dialog.id
 	self.add_child(voice)
 	voice.stream = load("res://samples/bunch_of_voices.ogg")
 	voice.play(rand_range(0.0, 8.86))
-	voice.set_volume_db(-10)
+	voice.set_volume_db(-6)
 	$Game_Player/Options/Button1.grab_focus()
 
 func _process(delta):
@@ -49,7 +48,7 @@ func _on_Button1_pressed():
 		if dictionary[page]["links"][0]["name"] == '...end':
 			get_tree().change_scene("res://title_screen/TitleScreen.tscn")
 		
-		elif dictionary[page]["links"][0]["name"] != 'okay!':
+		elif dictionary[page]["links"][0]["name"] != 'UPGRADE':
 			page  = dictionary[page]["links"][0]["pid"]
 			page = int(page) - 1
 			
@@ -63,12 +62,24 @@ func _on_Button1_pressed():
 			
 			$Game_Player/Options/Button2/option2.set_visible_characters(0)
 			if(dictionary[page]["links"].size() > 1):
+				$Game_Player/Options/Button2.show()
 				$Game_Player/Options/Button2/option2.set_bbcode(dictionary[page]["links"][1]["name"])
 			else:
 				$Game_Player/Options/Button2.hide()
 				
 		else:
-			get_tree().change_scene("res://scenes/tutorial/tutorial.tscn")
+			if dict_dialog.tutorial_scene == 1:
+				page  = dictionary[page]["links"][0]["pid"]
+				page = int(page) + 1
+				dict_dialog.id = page
+				get_tree().change_scene("res://scenes/tutorial/tutorial2.tscn")
+			elif dict_dialog.tutorial_scene == 2:
+				page  = dictionary[page]["links"][0]["pid"]
+				page = int(page)
+				dict_dialog.id = page
+				get_tree().change_scene("res://scenes/tutorial/tutorial3.tscn")
+			elif dict_dialog.tutorial_scene == 3:
+				get_tree().change_scene("res://scenes/tutorial/tutorial4.tscn")
 
 	else:
 		$Game_Player/Dialog/Terminal.set_visible_characters($Game_Player/Dialog/Terminal.get_total_character_count())
@@ -112,6 +123,7 @@ func _on_Button2_pressed():
 			
 			$Game_Player/Options/Button2/option2.set_visible_characters(0)
 			if(dictionary[page]["links"].size() > 1):
+				$Game_Player/Options/Button2.show()
 				$Game_Player/Options/Button2/option2.set_bbcode(dictionary[page]["links"][1]["name"])
 			else:
 				$Game_Player/Options/Button2.hide()
