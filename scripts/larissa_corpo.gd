@@ -25,8 +25,8 @@ func _process(delta):
 		remove_from_group(game.INIMIGO)
 		set_process(false)
 		set_physics_process(false)
-		set_collision_layer_bit(0, false)
-		set_collision_mask_bit(0, false)
+		set_collision_layer_bit(2, false)
+		set_collision_mask_bit(2, false)
 	proximo_segmento = get_parent().get_child(segmento - 1)
 	angulo = proximo_segmento.angulo - 90
 	if proximo_segmento:

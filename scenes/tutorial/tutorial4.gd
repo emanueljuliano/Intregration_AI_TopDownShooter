@@ -7,7 +7,7 @@ var vel2 = 20
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	get_node("musica").play(game.music_time)
-	if game.auxiliar > 1:
+	if game.auxiliar == 2:
 		game.get_player().dashar = true
 	pass # Replace with function body.
 
@@ -21,11 +21,11 @@ func _process(delta):
 	#REPETIR FASE SE MORRER
 	if game.get_player().vida < game.get_player().vida_max:
 
-		if game.auxiliar <= 1:
-			game.auxiliar += 1
+		if game.auxiliar == 0:
+			game.auxiliar = 1
 			get_tree().change_scene("res://scenes/tutorial/tutorial4.tscn")
-		if game.auxiliar == 2:
-			game.auxiliar += 1
+		elif game.auxiliar == 1:
+			game.auxiliar = 2
 			dict_dialog.tutorial_scene = 3
 			get_tree().change_scene("res://scenes/tutorial/death_tutorial.tscn")
 		else:

@@ -37,5 +37,8 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "piscar"
 anims/piscar = SubResource( 2 )
+
+[node name="frente" type="Position2D" parent="."]
+position = Vector2( 1, 0 )
 [connection signal="body_entered" from="." to="." method="_on_morte_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_morte_body_exited"]

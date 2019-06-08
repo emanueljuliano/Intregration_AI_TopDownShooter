@@ -5,7 +5,9 @@ var vel_base = 400 * scale.x
 var vel_dash = 5
 var pre_tiro = preload("res://scenes/tiro.tscn")
 var reload = 0
-var tempo = 0.1
+var tempo = 0.25
+
+var arma = "padrao"
 
 var impulso
 
@@ -34,6 +36,7 @@ var scene_path_to_load
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	look_at(get_global_mouse_position())
+	set_arma("padrao")
 	vel = vel_base
 	get_node("anim").play("idle")
 	pass # Replace with function body.
@@ -58,6 +61,10 @@ func _process(delta):
 	get_node("luz").set_visible(lanterna)
 	atualizar_lanterna()
 	
+	get_node("sprite").get_node("lanterna").set_visible(lanterna)
+	get_node("sprite").get_node("dash").set_visible(not ((dashar and (not dashando)) and tempo_espera_dash<0))
+	get_node("sprite").get_node("vida").modulate.a = 1 - vida/vida_max
+	
 	if vida<=(vida_max/2) and not imortal:
 		if tempo_vida<=0:
 			get_node("coracao").play()
@@ -74,7 +81,7 @@ func _process(delta):
 	
 	
 func _physics_process(delta):
-
+	
 	if dashar:
 		if not dashando:
 			if Input.is_action_just_pressed("dash") and tempo_espera_dash<=0:
@@ -199,3 +206,13 @@ func add_vida(valor):
 	vida = clamp(vida + valor, 0, vida_max)
 	pass
 
+func set_arma(tipo):
+	arma = tipo
+	
+	if arma == "padrao":
+		get_node("sprite").get_node("arma").modulate = Color(0, 1, 0.215, 1)
+		
+		
+	#NAO APARECER ARMA SE NAO PUDER ATIRAR
+	if not atirar:
+		get_node("sprite").get_node("arma").modulate = Color(0, 0, 0, 1)

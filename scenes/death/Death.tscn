@@ -143,7 +143,6 @@ autoplay = true
 
 [node name="ColorRect" parent="." instance=ExtResource( 6 )]
 visible = false
-
 [connection signal="timeout" from="Menu/Decisions/Timer" to="." method="_on_Timer_timeout"]
 [connection signal="ready" from="Menu/Decisions/cause" to="." method="_on_cause_ready"]
 [connection signal="ready" from="Menu/Decisions/kill" to="." method="_on_cause_ready"]

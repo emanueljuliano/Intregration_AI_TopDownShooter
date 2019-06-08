@@ -55,14 +55,27 @@ func get_player():
 func get_camera():
 	var nome = "camera1"
 	var valor = 1
-	if get_main().get_node(nome).is_current():
-		return get_main().get_node(nome)
-	else:
-		while not get_main().get_node(nome).is_current():
+	if get_player().has_node(nome):
+		if get_player().get_node(nome).is_current():
+			return get_player().get_node(nome)
+		else:
 			valor = valor + 1
 			nome.erase(nome.length()-1, 1)
 			nome = nome + String(valor)
-		return get_main().get_node(nome)
+			while not get_main().get_node(nome).is_current():
+				valor = valor + 1
+				nome.erase(nome.length()-1, 1)
+				nome = nome + String(valor)
+			return get_main().get_node(nome)
+	else:
+		if get_main().get_node(nome).is_current():
+			return get_main().get_node(nome)
+		else:
+			while not get_main().get_node(nome).is_current():
+				valor = valor + 1
+				nome.erase(nome.length()-1, 1)
+				nome = nome + String(valor)
+			return get_main().get_node(nome)
 	pass
 	
 

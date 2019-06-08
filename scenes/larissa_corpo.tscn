@@ -93,4 +93,3 @@ position = Vector2( 0, 1 )
 [node name="anim" type="AnimationPlayer" parent="."]
 anims/dano = SubResource( 2 )
 anims/idle = SubResource( 3 )
-

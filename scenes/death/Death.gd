@@ -13,6 +13,8 @@ func _ready():
 		cause_text = 'Antony the Ant'
 	if game.last_enemy.right(13) == 'bebel.tscn':
 		cause_text = 'Bebel the Bee'
+	if game.last_enemy.right(13) == 'beto.tscn':
+		cause_text = 'Beto the Besouro'
 		
 		
 	$Menu/Decisions/Buttons/Continue.grab_focus()

@@ -384,7 +384,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Now you can move, try to survive thist time.\nYou just have to run, is like in a game, W A S D you know?]",
+      "text": "Now you can move, try to survive this time.\nYou just have to run, is like in a game, W A S D you know?",
       "links": [
         {
           "name": "...",
@@ -501,7 +501,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "The life isn't an pacifist game where you can choose this.\nYou HAVE to hurt someone to stay alive.",
+      "text": "Life is not a pacifist game where you can choose this.\nYou HAVE to hurt someone to stay alive.",
       "links": [
         {
           "name": "TAKE",
@@ -686,7 +686,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Even that you don't remember, people that I care about, people that YOU care about are in danger, and only getting of from this lab you can help them.",
+      "text": "Even if you don't remember, people that I care about, people that YOU care about are in danger, and you can only help them by getting out of this lab.",
       "links": [
         {
           "name": "But...",
@@ -813,7 +813,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "It must be part of the infection of the bugs.\nThe world is full of that things, please don't touch that.",
+      "text": "It must be part of the infection of the bugs.\nThe world is full of that thing, please don't touch that.",
       "links": [
         {
           "name": "But it was faster than me.",

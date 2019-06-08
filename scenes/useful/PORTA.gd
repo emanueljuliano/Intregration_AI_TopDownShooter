@@ -11,18 +11,25 @@ export (bool) var aberta
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
+	get_node("Sprite").set_modulate(game.get_main().get_node("TileMap").modulate)
+	
 	if aberta:
-		get_node("Sprite").set_modulate(Color(0,0,0,1))
+		get_node("Sprite2").set_visible(true)
+		#get_node("Sprite1").set_modulate(Color(0,0,0,1))
 	else:
-		get_node("Sprite").set_modulate(Color(1,1,1,0))
+		get_node("Sprite2").set_visible(false)
+		#get_node("Sprite").set_modulate(game.get_main().get_node("TileMap").modulate)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if aberta:
-		get_node("Sprite").set_modulate(Color(0,0,0,1))
+		get_node("Sprite2").set_visible(true)
+		#get_node("Sprite").set_modulate(Color(0,0,0,1))
 	else:
-		get_node("Sprite").set_modulate(Color(1,1,1,0))
+		get_node("Sprite2").set_visible(false)
+		#get_node("Sprite").set_modulate(game.get_main().get_node("TileMap").modulate)
 	pass
 
 
@@ -36,7 +43,16 @@ func trocar_room():
 		game.music_time = game.get_main().get_node("musica").get_playback_position()
 		get_tree().change_scene(nova_fase)
 	else:
-		get_tree().get_root().get_node("main").get_node(camera_destino)._set_current(true)
-		get_tree().get_root().get_node("main").get_node(camera_atual)._set_current(false)
-		game.get_player().set_global_position(get_tree().get_root().get_node("main").get_node(destino).get_global_position())
+		if game.get_player().has_node("camera1") and (camera_destino == "camera1" or camera_atual == "camera1"):
+			if camera_destino == "camera1":
+				game.get_player().get_node(camera_destino)._set_current(true)
+				game.get_main().get_node(camera_atual)._set_current(false)
+			if camera_atual == "camera1":
+				game.get_main().get_node(camera_destino)._set_current(true)
+				game.get_player().get_node(camera_atual)._set_current(false)
+		else:
+			game.get_main().get_node(camera_destino)._set_current(true)
+			game.get_main().get_node(camera_atual)._set_current(false)
+		
+		game.get_player().set_global_position(game.get_main().get_node(destino).get_global_position())
 	pass

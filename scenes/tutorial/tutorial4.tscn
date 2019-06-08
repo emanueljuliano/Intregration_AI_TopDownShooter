@@ -68,10 +68,9 @@ dashar = false
 iluminar = false
 imortal = true
 
-[node name="camera1" parent="." instance=ExtResource( 6 )]
-position = Vector2( 110.379, 352 )
-scale = Vector2( 8.54311, 6.61094 )
-segue = true
+[node name="camera1" parent="player" instance=ExtResource( 6 )]
+scale = Vector2( 17.0862, 13.2219 )
+current = true
 
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
@@ -97,7 +96,6 @@ shape = SubResource( 2 )
 position = Vector2( 2680, 360 )
 rotation = 3.14159
 trocar_fase = true
-nova_fase = "res://scenes/main.tscn"
+nova_fase = "res://scenes/tutorial/tutorial5.tscn"
 aberta = true
-
 [connection signal="body_entered" from="ativador" to="." method="_on_ativador_body_entered"]

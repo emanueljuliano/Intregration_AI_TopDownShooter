@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/margaret.gd" type="Script" id=1]
-[ext_resource path="res://sprites/PNG/Enemies/enemyGreen5.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Artesanal/Margaret/Margaret.png" type="Texture" id=2]
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="ConvexPolygonShape2D" id=8]
 
 [sub_resource type="Gradient" id=2]
 offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
@@ -132,12 +132,15 @@ tracks/3/keys = {
 script = ExtResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
-rotation = -1.5708
+rotation = 1.5708
+scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2( 4.5, 4.5 )
-shape = SubResource( 1 )
+position = Vector2( -11.5791, 0 )
+rotation = -0.523598
+scale = Vector2( 5.83567, 5.83567 )
+shape = SubResource( 8 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )

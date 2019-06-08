@@ -2,6 +2,8 @@ extends Area2D
 
 # Declare member variables here. Examples:
 export var visivel = true
+export var movendo = false
+export var velocidade = 100
 
 var dentro = false
 
@@ -13,6 +15,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if movendo:
+		set_global_position((get_global_position() + (get_node("frente").get_global_position() - get_global_position())*velocidade*delta))
 	if dentro:
 		game.get_player().dano_player(game.get_player().vida, game.get_player().get_global_position(), filename)
 	pass

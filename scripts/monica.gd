@@ -8,6 +8,8 @@ var avanco = 200
 var vida = 40
 var dano = 10
 
+export var ativo = true
+
 var death = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,14 +25,16 @@ func _process(delta):
 			death = 1
 		set_process(false)
 		set_physics_process(false)
-		set_collision_layer_bit(0, false)
-		set_collision_mask_bit(0, false)
+		set_collision_layer_bit(1, false)
+		set_collision_mask_bit(1, false)
 		remove_from_group(game.INIMIGO)
 		get_node("anim").play("morrer")
-	look_at(game.get_player().get_position())
+		
+	if ativo:
+		look_at(game.get_player().get_position())
 
 func _physics_process(delta):
-	if vida > 0:
+	if vida > 0 and ativo:
 		if get_global_position().distance_to(game.get_player().get_global_position()) > 200:
 			move_and_slide((get_node("frente").get_global_position() - get_global_position()) * 200)
 		

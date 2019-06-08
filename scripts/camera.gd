@@ -1,6 +1,6 @@
 extends Camera2D
 
-export (bool) var segue
+#export (bool) var segue
 export (bool) var escuro
 
 var posicao_inicial = Vector2()
@@ -17,9 +17,9 @@ func _process(delta):
 			get_node("Light2D").visible = true
 		else:
 			get_node("Light2D").visible = false
-		if segue:
-			set_position(game.get_player().get_position())
-	else:
-		set_global_position(posicao_inicial)
-		get_node("Light2D").visible = false
+		#if segue:
+		#	set_position(game.get_player().get_position())
+	#else:
+	#	set_global_position(posicao_inicial)
+	#	get_node("Light2D").visible = false
 	pass

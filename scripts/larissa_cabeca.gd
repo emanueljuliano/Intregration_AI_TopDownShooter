@@ -25,14 +25,16 @@ func _process(delta):
 		set_physics_process(false)
 		set_collision_layer_bit(0, false)
 		set_collision_mask_bit(0, false)
-	look_at(game.get_player().get_position())
-	if iluminado:
-		get_node("sprite").set_rotation(deg2rad(-90 + direcao*90))
-	else:
-		get_node("sprite").set_rotation(deg2rad(-90))
+	
+	if get_parent().ativo:
+		look_at(game.get_player().get_position())
+		if iluminado:
+			get_node("sprite").set_rotation(deg2rad(-90 + direcao*90))
+		else:
+			get_node("sprite").set_rotation(deg2rad(-90))
 
 func _physics_process(delta):
-	if get_parent().vida > 0:
+	if get_parent().vida > 0 and get_parent().ativo:
 		angulo = angulo + periodo_curva
 		if iluminado:
 			move_and_slide((get_node("lado").get_global_position() - get_global_position()) * esquiva * direcao)

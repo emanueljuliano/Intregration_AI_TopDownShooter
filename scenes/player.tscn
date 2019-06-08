@@ -1,14 +1,16 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
-[ext_resource path="res://sprites/PNG/playerShip3_green.png" type="Texture" id=2]
-[ext_resource path="res://samples/laser.wav" type="AudioStream" id=3]
-[ext_resource path="res://sprites/PNG/Effects/fire01.png" type="Texture" id=4]
-[ext_resource path="res://sprites/flash.png" type="Texture" id=5]
-[ext_resource path="res://samples/musicas/CORACAO.wav" type="AudioStream" id=6]
-[ext_resource path="res://sprites/aurea.png" type="Texture" id=7]
-
-[sub_resource type="ConvexPolygonShape2D" id=1]
+[ext_resource path="res://sprites/Artesanal/Player/corpo.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Artesanal/Player/lanterna.png" type="Texture" id=3]
+[ext_resource path="res://sprites/Artesanal/Player/arma.png" type="Texture" id=4]
+[ext_resource path="res://sprites/Artesanal/Player/dash.png" type="Texture" id=5]
+[ext_resource path="res://sprites/Artesanal/Player/vida.png" type="Texture" id=6]
+[ext_resource path="res://samples/laser.wav" type="AudioStream" id=7]
+[ext_resource path="res://sprites/PNG/Effects/fire01.png" type="Texture" id=8]
+[ext_resource path="res://sprites/flash.png" type="Texture" id=9]
+[ext_resource path="res://samples/musicas/CORACAO.wav" type="AudioStream" id=10]
+[ext_resource path="res://sprites/aurea.png" type="Texture" id=11]
 
 [sub_resource type="Animation" id=2]
 resource_name = "dano"
@@ -68,21 +70,35 @@ points = PoolVector2Array( 0, -5, 8.66025, 5, 4.33, 6.77, 0, 7.32, -4.33, 6.77, 
 
 [node name="player" type="KinematicBody2D"]
 scale = Vector2( 0.5, 0.5 )
-collision_layer = 7
-collision_mask = 7
+collision_layer = 519
+collision_mask = 519
 script = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -7.00775, -7.83155e-07 )
-rotation = 1.5708
-scale = Vector2( 6, 5 )
-shape = SubResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
 light_mask = 0
-position = Vector2( -3.8147e-06, 0 )
+position = Vector2( -3.8147e-006, 0 )
 rotation = 1.5708
 texture = ExtResource( 2 )
+
+[node name="lanterna" type="Sprite" parent="sprite"]
+visible = false
+light_mask = 0
+texture = ExtResource( 3 )
+
+[node name="arma" type="Sprite" parent="sprite"]
+light_mask = 0
+texture = ExtResource( 4 )
+
+[node name="dash" type="Sprite" parent="sprite"]
+light_mask = 0
+texture = ExtResource( 5 )
+
+[node name="vida" type="Sprite" parent="sprite"]
+light_mask = 0
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 38, 4, 38, -4, -22, -50, -30, -50, -30, -22, -38, -14, -38, 14, -30, 22, -30, 50, -22, 50 )
 
 [node name="mira" type="Position2D" parent="."]
 position = Vector2( 48, 0 )
@@ -92,7 +108,7 @@ anims/dano = SubResource( 2 )
 anims/idle = SubResource( 3 )
 
 [node name="atirar" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
+stream = ExtResource( 7 )
 
 [node name="lanterna" type="Area2D" parent="."]
 visible = false
@@ -109,7 +125,7 @@ visible = false
 position = Vector2( 9.5, 0 )
 rotation = -1.5708
 scale = Vector2( 1, 0.546 )
-texture = ExtResource( 4 )
+texture = ExtResource( 8 )
 
 [node name="lateral" type="Area2D" parent="."]
 visible = false
@@ -126,16 +142,16 @@ shape = SubResource( 5 )
 visible = false
 position = Vector2( 48, 0 )
 scale = Vector2( 2, 2 )
-texture = ExtResource( 5 )
+texture = ExtResource( 9 )
 offset = Vector2( 250, 0 )
 shadow_enabled = true
 
 [node name="coracao" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
+stream = ExtResource( 10 )
 
 [node name="aurea" type="Light2D" parent="."]
 scale = Vector2( 2, 2 )
-texture = ExtResource( 7 )
+texture = ExtResource( 11 )
 energy = 0.5
 shadow_enabled = true
 
@@ -143,6 +159,5 @@ shadow_enabled = true
 scale = Vector2( 2, 2 )
 enabled = true
 cast_to = Vector2( 50, 0 )
-
 [connection signal="body_entered" from="lanterna" to="." method="_on_lanterna_body_entered"]
 [connection signal="body_exited" from="lateral" to="." method="_on_lateral_body_exited"]
