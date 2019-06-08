@@ -2,6 +2,7 @@ extends Node
 
 var tutorial_scene = 0
 var id = 4
+var key = "first"
 
 var dict =  [
     {
@@ -89,15 +90,15 @@ var dict =  [
       }
     },
     {
-      "text": "You can't remember your own father?",
+      "text": "You can't remember me",
       "links": [
         {
-          "name": "...father?",
-          "link": "...father?",
+          "name": "...no..?",
+          "link": "...no..?",
           "pid": "8"
         },
         {
-          "name": "Oh... it's kind of dark in my mind, but yeah... you are my father",
+          "name": "Oh... it's kind of dark in my mind, but yeah... I remember you",
           "link": "Oh... it's kind of dark in my mind, but yeah... you are my father",
           "pid": "9"
         }
@@ -152,7 +153,7 @@ var dict =  [
       }
     },
     {
-      "text": "Your brother... the Queen... your mom... even Neeko... You really forget about everything?",
+      "text": "Me... Yor brother.. even Neeko... You really forget about everything?",
       "links": [
         {
           "name": "I... I don't know what you're talking about...",
@@ -168,7 +169,7 @@ var dict =  [
       }
     },
     {
-      "text": "Great! At least you don't loss your entire memory. But for now, you just have to know that I'm your father and that the people how you care about are in danger.",
+      "text": "Great! At least you don't loss your entire memory. But for now, you just have to know that I'm the Doctor and the people how you care about are in danger.",
       "links": [
         {
           "name": "Oh no... what can I do?",
@@ -189,7 +190,7 @@ var dict =  [
       }
     },
     {
-      "text": "It doesn't matter now, they are in danger and they need you.",
+      "text": "It doesn't matter now, I'm the Doctor and important people are in danger, they need you.",
       "links": [
         {
           "name": "but....",
@@ -208,7 +209,7 @@ var dict =  [
       "text": "Take this and go outside, you will remember about everything.",
       "links": [
         {
-          "name": "okay!",
+          "name": "UPGRADE",
           "link": "okay!",
           "pid": "19"
         }
@@ -318,7 +319,7 @@ var dict =  [
       "text": "For now, you have to learn again how to fight, here, take this... it's too dangerous to go alone!",
       "links": [
         {
-          "name": "okay!",
+          "name": "UPGRADE",
           "link": "okay!",
           "pid": "19"
         }
@@ -334,7 +335,7 @@ var dict =  [
       "text": "Outside of this lab.\nFor now, you have to learn again how to fight, here, take this... it's too dangerous to go alone!",
       "links": [
         {
-          "name": "okay!",
+          "name": "UPGRADE",
           "link": "okay!",
           "pid": "19"
         }
@@ -348,7 +349,7 @@ var dict =  [
     },
     {
       "text": "END.",
-      "name": "okay!",
+      "name": "UPGRADE",
       "pid": "19",
       "position": {
         "x": "746",
@@ -368,7 +369,7 @@ var dict =  [
 
 var tutorial =  [
     {
-      "text": "Oh... I didn't imagine that you where so week.",
+      "text": "Oh... I didn't imagine that you where so week.\nTake this, it will help.",
       "links": [
         {
           "name": "TAKE ",
@@ -589,7 +590,7 @@ var tutorial =  [
         },
         {
           "name": "DON'T TAKE ",
-          "link": " d4",
+          "link": "another_voice",
           "pid": "14"
         }
       ],
@@ -609,7 +610,7 @@ var tutorial =  [
           "pid": "15"
         }
       ],
-      "name": " d4",
+      "name": "another_voice",
       "pid": "14",
       "position": {
         "x": "178",
@@ -925,12 +926,219 @@ var tutorial =  [
       }
     },
     {
-      "text": "Double-click this passage to edit it.",
+      "text": "[[Tutorial4]]",
+      "links": [
+        {
+          "name": "Tutorial4",
+          "link": "Tutorial4",
+          "pid": "34"
+        }
+      ],
       "name": " Tutorial 4",
       "pid": "33",
       "position": {
-        "x": "2405",
-        "y": "2960"
+        "x": "2404",
+        "y": "2961"
+      }
+    },
+    {
+      "text": "Are you there?",
+      "links": [
+        {
+          "name": "Yeah, but I couldn't see anything",
+          "link": "Yeah, but I couldn't see anything",
+          "pid": "39"
+        }
+      ],
+      "name": "Tutorial4",
+      "pid": "34",
+      "position": {
+        "x": "2536",
+        "y": "2837"
+      }
+    },
+    {
+      "text": "My light is like your gun, to use it, you just have do CLICK.",
+      "links": [
+        {
+          "name": "What? ",
+          "link": "What? ",
+          "pid": "42"
+        }
+      ],
+      "name": "Neeko...?",
+      "pid": "35",
+      "position": {
+        "x": "3026",
+        "y": "2415"
+      }
+    },
+    {
+      "text": "What do you mean?",
+      "links": [
+        {
+          "name": "It's like if I heard Neeko's voice",
+          "link": "It's like if I heard Neeko's voice",
+          "pid": "41"
+        },
+        {
+          "name": "Oh, just forget",
+          "link": "Oh, just forget",
+          "pid": "44"
+        }
+      ],
+      "name": "But where is...? Doctor? What is going on??",
+      "pid": "36",
+      "position": {
+        "x": "3552",
+        "y": "1928"
+      }
+    },
+    {
+      "text": "It's a shame, I hoped it would be useful.\nAnyway, go there and KILL some bugs.",
+      "links": [
+        {
+          "name": "UPGRADE",
+          "link": "END",
+          "pid": "45"
+        }
+      ],
+      "name": "Nothing...",
+      "pid": "37",
+      "position": {
+        "x": "4334",
+        "y": "1978"
+      }
+    },
+    {
+      "text": "I see... I don't know what it means, but thank you for tell me that.\nYou are loyal.",
+      "links": [
+        {
+          "name": "UPGRADE",
+          "link": "END",
+          "pid": "45"
+        }
+      ],
+      "name": "Something about the darkness",
+      "pid": "38",
+      "position": {
+        "x": "4113",
+        "y": "1677"
+      }
+    },
+    {
+      "text": "Me neither, you should, I don't know, shoot everywhere and try dash as faster as you can.",
+      "links": [
+        {
+          "name": "You are right, I should've try this ",
+          "link": "neeko",
+          "pid": "40"
+        },
+        {
+          "name": "I don't know if it works... ",
+          "link": "neeko",
+          "pid": "40"
+        }
+      ],
+      "name": "Yeah, but I couldn't see anything",
+      "pid": "39",
+      "position": {
+        "x": "2685",
+        "y": "2674"
+      }
+    },
+    {
+      "text": "Don't let the darkness grow whitin you.\nAccept my light.",
+      "links": [
+        {
+          "name": "Neeko...?",
+          "link": "Neeko...?",
+          "pid": "35"
+        }
+      ],
+      "name": "neeko",
+      "pid": "40",
+      "position": {
+        "x": "2860",
+        "y": "2536"
+      }
+    },
+    {
+      "text": "It must be another lapse of memory!\nWhat did you hear?",
+      "links": [
+        {
+          "name": "Nothing...",
+          "link": "Nothing...",
+          "pid": "37"
+        },
+        {
+          "name": "Something about the darkness",
+          "link": "Something about the darkness",
+          "pid": "38"
+        }
+      ],
+      "name": "It's like if I heard Neeko's voice",
+      "pid": "41",
+      "position": {
+        "x": "3904",
+        "y": "1985"
+      }
+    },
+    {
+      "text": "But instead of kill the others, you bring light to the world.\nThat is the RIGHT CLICK.",
+      "links": [
+        {
+          "name": "Okay, I will try, but I have some questions for you",
+          "link": "Okay, I will try, but I have some questions for you",
+          "pid": "43"
+        }
+      ],
+      "name": "What? ",
+      "pid": "42",
+      "position": {
+        "x": "3196",
+        "y": "2265"
+      }
+    },
+    {
+      "text": "What are you whaiting for? Go on and kill some bugs.",
+      "links": [
+        {
+          "name": "But where is...? Doctor? What is going on??",
+          "link": "But where is...? Doctor? What is going on??",
+          "pid": "36"
+        }
+      ],
+      "name": "Okay, I will try, but I have some questions for you",
+      "pid": "43",
+      "position": {
+        "x": "3346",
+        "y": "2136"
+      }
+    },
+    {
+      "text": "You are weird...\nDon't waist my time, go there and kill those creatures already!",
+      "links": [
+        {
+          "name": "UPGRADE",
+          "link": "END",
+          "pid": "45"
+        }
+      ],
+      "name": "Oh, just forget",
+      "pid": "44",
+      "position": {
+        "x": "3664",
+        "y": "1552"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "END",
+      "pid": "45",
+      "position": {
+        "x": "4489",
+        "y": "1639"
       }
     }
   ]

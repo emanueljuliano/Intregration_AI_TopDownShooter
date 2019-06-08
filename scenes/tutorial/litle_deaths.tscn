@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://scenes/tutorial/death_tutorial.gd" type="Script" id=1]
+[ext_resource path="res://scenes/tutorial/litle_deaths.gd" type="Script" id=1]
 [ext_resource path="res://title_screen/Fonts/vt323_48.tres" type="DynamicFont" id=2]
 [ext_resource path="res://title_screen/Fonts/vt323_35.tres" type="DynamicFont" id=3]
 [ext_resource path="res://samples/musicas/dialog_song.ogg" type="AudioStream" id=4]
-[ext_resource path="res://samples/diferent_voices.ogg" type="AudioStream" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0, 0, 0, 1 )
@@ -63,6 +62,7 @@ custom_fonts/normal_font = ExtResource( 3 )
 custom_colors/default_color = Color( 0, 0.521569, 0.0980392, 1 )
 
 [node name="Button2" type="Button" parent="Game_Player/Options"]
+visible = false
 margin_left = 700.0
 margin_top = 433.0
 margin_right = 1150.0
@@ -81,9 +81,6 @@ custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 stream = ExtResource( 4 )
 volume_db = 10.0
 autoplay = true
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
 
 [connection signal="ready" from="Game_Player/Dialog/Terminal" to="." method="_on_Terminal_ready"]
 [connection signal="timeout" from="Game_Player/Dialog/Timer" to="." method="_on_Timer_timeout"]

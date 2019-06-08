@@ -28,7 +28,8 @@ func _process(delta):
 			dict_dialog.tutorial_scene = 2
 			get_tree().change_scene("res://scenes/tutorial/death_tutorial.tscn")
 		else:
-			get_tree().change_scene("res://scenes/tutorial/tutorial2.tscn")
+			dict_dialog.key = "tutorial2"
+			get_tree().change_scene("res://scenes/tutorial/litle_deaths.tscn")
 	pass
 
 

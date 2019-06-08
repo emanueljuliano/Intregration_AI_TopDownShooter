@@ -19,8 +19,15 @@ func _process(delta):
 	if game.get_player().vida < game.get_player().vida_max:
 		if game.auxiliar == 2:
 			game.auxiliar = 3
+			dict_dialog.key = "tutorial5.1"
+			get_tree().change_scene("res://scenes/tutorial/litle_deaths.tscn")
 		elif game.auxiliar == 3:
 			game.auxiliar = 4
-		get_tree().change_scene("res://scenes/tutorial/tutorial5.tscn")
+			dict_dialog.tutorial_scene = 4
+			get_tree().change_scene("res://scenes/tutorial/death_tutorial.tscn")
+
+		else:
+			dict_dialog.key = "tutorial5.2"
+			get_tree().change_scene("res://scenes/tutorial/litle_deaths.tscn")
 	
 	pass

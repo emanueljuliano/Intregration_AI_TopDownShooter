@@ -49,7 +49,7 @@ func _on_Button1_pressed():
 		if dictionary[page]["links"][0]["name"] == '...end':
 			get_tree().change_scene("res://title_screen/TitleScreen.tscn")
 		
-		elif dictionary[page]["links"][0]["name"] != 'okay!':
+		elif dictionary[page]["links"][0]["link"] != 'okay!':
 			page  = dictionary[page]["links"][0]["pid"]
 			page = int(page) - 1
 			

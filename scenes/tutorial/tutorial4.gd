@@ -23,13 +23,15 @@ func _process(delta):
 
 		if game.auxiliar == 0:
 			game.auxiliar = 1
-			get_tree().change_scene("res://scenes/tutorial/tutorial4.tscn")
+			dict_dialog.key = "tutorial4.1"
+			get_tree().change_scene("res://scenes/tutorial/litle_deaths.tscn")
 		elif game.auxiliar == 1:
 			game.auxiliar = 2
 			dict_dialog.tutorial_scene = 3
 			get_tree().change_scene("res://scenes/tutorial/death_tutorial.tscn")
 		else:
-			get_tree().change_scene("res://scenes/tutorial/tutorial4.tscn")
+			dict_dialog.key = "tutorial4.2"
+			get_tree().change_scene("res://scenes/tutorial/litle_deaths.tscn")
 	
 	pass
 

@@ -32,7 +32,6 @@ imortal = true
 [node name="camera1" parent="." instance=ExtResource( 5 )]
 position = Vector2( 639.943, 360.609 )
 scale = Vector2( 8.54311, 6.61094 )
-current = true
 
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
@@ -46,4 +45,5 @@ position = Vector2( 636.009, 362.661 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
+
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

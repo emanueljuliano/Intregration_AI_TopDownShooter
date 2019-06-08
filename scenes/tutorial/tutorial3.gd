@@ -30,6 +30,7 @@ func _process(delta):
 		
 	#REPETIR FASE SE MORRER
 	if game.get_player().vida < game.get_player().vida_max:
-		get_tree().change_scene("res://scenes/tutorial/tutorial3.tscn")
+		dict_dialog.key = "tutorial3"
+		get_tree().change_scene("res://scenes/tutorial/litle_deaths.tscn")
 	
 	pass

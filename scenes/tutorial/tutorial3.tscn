@@ -30,7 +30,6 @@ imortal = true
 [node name="camera1" parent="." instance=ExtResource( 5 )]
 position = Vector2( 639.943, 360.609 )
 scale = Vector2( 8.54311, 6.61094 )
-current = true
 
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
@@ -47,3 +46,4 @@ camera_destino = "camera2"
 destino = "PORTA"
 trocar_fase = true
 nova_fase = "res://scenes/tutorial/tutorial4.tscn"
+
