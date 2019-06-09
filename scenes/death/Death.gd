@@ -59,6 +59,7 @@ func _on_Timer_timeout():
 	$Menu/Decisions/exist_time.set_visible_characters($Menu/Decisions/exist_time.get_visible_characters()+1)
 	$Menu/Decisions/shoots.set_visible_characters($Menu/Decisions/shoots.get_visible_characters()+1)
 	$Menu/Decisions/dashs.set_visible_characters($Menu/Decisions/dashs.get_visible_characters()+1)
+	$Menu/Decisions/version.set_visible_characters($Menu/Decisions/version.get_visible_characters()+1)
 
 	
 # Continue Button:

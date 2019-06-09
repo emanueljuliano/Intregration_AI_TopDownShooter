@@ -862,7 +862,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Okay, Okay, have you ever saw any SPACE scyfi fiction?",
+      "text": "Okay, Okay, have you ever saw any SPACE scy fi fiction?",
       "links": [
         {
           "name": "SPACE... what?",
@@ -894,7 +894,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Well, when that SPACE ship have to cover much SPACE, they do something named hyper SPACE travel.",
+      "text": "Well, when they have to go faster, they took some SPACE and dash.",
       "links": [
         {
           "name": "And how it helps me?",

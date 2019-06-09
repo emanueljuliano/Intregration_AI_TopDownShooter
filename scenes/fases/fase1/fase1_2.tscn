@@ -152,3 +152,4 @@ ativo = false
 [node name="beto6" parent="." instance=ExtResource( 7 )]
 position = Vector2( 4000, 4040 )
 ativo = false
+

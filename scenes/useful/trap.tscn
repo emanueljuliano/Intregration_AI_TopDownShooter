@@ -18,3 +18,4 @@ texture = ExtResource( 2 )
 
 [node name="spawner" type="Position2D" parent="."]
 position = Vector2( 0, 30 )
+

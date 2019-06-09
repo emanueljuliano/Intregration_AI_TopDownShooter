@@ -1,6 +1,6 @@
 extends Node2D
 
-var vida = 40
+export var vida = 40
 
 export var ativo = true
 

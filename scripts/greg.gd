@@ -15,6 +15,8 @@ var dano = 10
 
 var death = 0
 
+export var ativo = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_to_group(game.INIMIGO)
@@ -52,7 +54,7 @@ func _process(delta):
 			get_node("grilo").play()
 
 func _physics_process(delta):
-	if vida > 0:
+	if vida > 0 and ativo:
 		if tempo_movendo > 0:
 			move_and_slide((get_node("frente").get_global_position() - get_global_position()) * vel)
 			tempo_movendo = tempo_movendo - delta

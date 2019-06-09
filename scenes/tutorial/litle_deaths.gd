@@ -6,7 +6,7 @@ var dictionary = {"tutorial2":"W A S D!",
 				  "tutorial4.2":"SPACE!", 
 				  "tutorial5.1":"What's happening?",
 				  "tutorial5.2":"OTHER CLICK!",
-				  "tutorial5.3":"Stay DETERMINED!"}
+				  "level2":"Stay DETERMINED!"}
 var key = dict_dialog.key
 var voice = AudioStreamPlayer.new()
 var character = 0
@@ -66,8 +66,11 @@ func _on_Button1_pressed():
 		if key == "tutorial4.1" or key == "tutorial4.2":
 			get_tree().change_scene("res://scenes/tutorial/tutorial4.tscn")	
 
-		if key == "tutorial5.1" or key == "tutorial5.2" or key == "tutorial5.3":
+		if key == "tutorial5.1" or key == "tutorial5.2":
 			get_tree().change_scene("res://scenes/tutorial/tutorial5.tscn")		
+		
+		if key == "level2":
+			get_tree().change_scene("res://scenes/fases/fase 2/fase2_1.tscn")		
 			
 
 	else:

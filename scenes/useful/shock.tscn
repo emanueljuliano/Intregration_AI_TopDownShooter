@@ -40,3 +40,4 @@ shape = SubResource( 3 )
 position = Vector2( 0.835098, 133.065 )
 scale = Vector2( 1.46784, 5.02413 )
 texture = ExtResource( 3 )
+

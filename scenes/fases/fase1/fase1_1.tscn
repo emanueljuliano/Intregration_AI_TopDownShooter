@@ -89,3 +89,4 @@ ativo = false
 position = Vector2( 360, 344 )
 scale = Vector2( 4.62199, 32.4348 )
 lista = [ "beto2", "beto3", "beto4" ]
+

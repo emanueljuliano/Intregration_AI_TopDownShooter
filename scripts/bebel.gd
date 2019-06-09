@@ -7,6 +7,9 @@ var vida = 40
 var dano = 40
 
 var death = 0
+
+export var ativo = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_to_group(game.INIMIGO)
@@ -33,7 +36,7 @@ func _process(delta):
 		get_node("anim").play("morrer")
 
 func _physics_process(delta):
-	if vida > 0:
+	if vida > 0 and ativo:
 		move_and_slide((get_node("frente").get_global_position() - get_global_position()) * vel)
 		if get_slide_count() > 0:
 			if get_slide_collision(0).collider.has_method("dano_player"):
