@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scenes/fases/fase 2/fase2_1.gd" type="Script" id=1]
-[ext_resource path="res://sprites/Backgrounds/tutorial_background.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Backgrounds/white.png" type="Texture" id=2]
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=5]
@@ -29,7 +29,7 @@ extents = Vector2( 2.96667, 40.7933 )
 extents = Vector2( 1.76648, 8.29489 )
 
 [node name="main" type="Node2D"]
-rotation = 4.83244e-05
+rotation = 4.83244e-005
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
@@ -37,8 +37,9 @@ __meta__ = {
 }
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 10912.8, 1170.23 )
-scale = Vector2( 2624.73, 397.292 )
+modulate = Color( 0.0627451, 0.0431373, 0, 1 )
+position = Vector2( 10305, 801.25 )
+scale = Vector2( 2776.68, 402.711 )
 z_index = -1
 texture = ExtResource( 2 )
 
@@ -49,6 +50,7 @@ tile_data = PoolIntArray( -786402, 0, 65537, -786401, 0, 65542, -786400, 0, 3276
 
 [node name="player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 12.463, 375.17 )
+imortal = true
 
 [node name="camera1" parent="player" instance=ExtResource( 5 )]
 scale = Vector2( 17.0862, 13.2219 )
@@ -529,7 +531,6 @@ scale = Vector2( 1.16663, 6.86655 )
 position = Vector2( 18886.3, 365.083 )
 scale = Vector2( 10, 10 )
 shape = SubResource( 4 )
-
 [connection signal="area_entered" from="move_death" to="." method="_on_Area2D_area_entered"]
 [connection signal="body_entered" from="move_death" to="." method="_on_move_death_body_entered"]
 [connection signal="area_entered" from="light_on" to="." method="_on_Area2D_area_entered"]

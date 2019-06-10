@@ -27,6 +27,7 @@ func _process(delta):
 		set_physics_process(false)
 		set_collision_layer_bit(2, false)
 		set_collision_mask_bit(2, false)
+		get_node("sprite").visible = false
 	proximo_segmento = get_parent().get_child(segmento - 1)
 	angulo = proximo_segmento.angulo - 90
 	if proximo_segmento:

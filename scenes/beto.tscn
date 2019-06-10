@@ -5,6 +5,7 @@
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 11.1383
 
 [sub_resource type="Animation" id=2]
 resource_name = "dano"
@@ -112,7 +113,7 @@ tracks/3/keys = {
 
 [sub_resource type="Gradient" id=5]
 offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
-colors = PoolColorArray( 1, 1, 1, 1, 1, 0.960938, 0, 1, 1, 0.395947, 0, 1, 1, 0.31162, 0, 1, 1, 0, 0, 0.105882 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.847656, 0.345757, 0.125824, 1, 0.78125, 0.398469, 0.0274658, 1, 0.5, 0.361115, 0.0664063, 1, 0.270588, 0.235294, 0, 0 )
 
 [sub_resource type="GradientTexture" id=6]
 gradient = SubResource( 5 )
@@ -139,6 +140,7 @@ scale = Vector2( 10, 10 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 scale = Vector2( 4.5, 4.5 )
 shape = SubResource( 1 )
 
@@ -159,4 +161,3 @@ process_material = SubResource( 7 )
 
 [node name="audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
-

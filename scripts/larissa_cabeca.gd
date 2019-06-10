@@ -25,6 +25,7 @@ func _process(delta):
 		set_physics_process(false)
 		set_collision_layer_bit(0, false)
 		set_collision_mask_bit(0, false)
+		get_node("sprite").visible = false
 	
 	if get_parent().ativo:
 		look_at(game.get_player().get_position())

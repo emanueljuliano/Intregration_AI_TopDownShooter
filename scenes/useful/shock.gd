@@ -4,10 +4,11 @@ extends StaticBody2D
 
 export (bool) var automatico
 
-export var tempo_ativar = 2
+export var tempo_ativar = 2.0
 export var ativado = false
-var tempo = 0
-var dano = 1
+export var delay = 0.0
+var tempo = 0.0
+export var dano = 5
 
 
 # Called when the node enters the scene tree for the first time.
@@ -18,10 +19,13 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if not automatico and not ativado:
+	if delay > 0:
+		delay = delay - delta
+	
+	if not automatico and not ativado and delay <= 0:
 			get_node("raio").get_node("Sprite").visible = false
 		
-	if automatico and not ativado:
+	if automatico and not ativado and delay <= 0:
 		if tempo <= 0:
 			ativar()
 			get_node("raio").get_node("Sprite").visible = true
@@ -29,7 +33,7 @@ func _process(delta):
 			get_node("raio").get_node("Sprite").visible = false
 		tempo = tempo - delta
 	
-	if ativado:
+	if ativado and delay <= 0:
 		get_node("raio").get_node("Sprite").visible = true
 		var i = 0
 		while i < len(get_node("raio").get_overlapping_bodies()):

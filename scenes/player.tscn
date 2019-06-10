@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Artesanal/Player/corpo.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://sprites/flash.png" type="Texture" id=9]
 [ext_resource path="res://samples/musicas/CORACAO.wav" type="AudioStream" id=10]
 [ext_resource path="res://sprites/aurea.png" type="Texture" id=11]
+[ext_resource path="res://samples/musicas/DASH.wav" type="AudioStream" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "dano"
@@ -70,13 +71,13 @@ points = PoolVector2Array( 0, -5, 8.66025, 5, 4.33, 6.77, 0, 7.32, -4.33, 6.77, 
 
 [node name="player" type="KinematicBody2D"]
 scale = Vector2( 0.5, 0.5 )
-collision_layer = 519
-collision_mask = 519
+collision_layer = 527
+collision_mask = 527
 script = ExtResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
 light_mask = 0
-position = Vector2( -3.8147e-06, 0 )
+position = Vector2( -3.8147e-006, 0 )
 rotation = 1.5708
 texture = ExtResource( 2 )
 
@@ -160,5 +161,9 @@ scale = Vector2( 2, 2 )
 enabled = true
 cast_to = Vector2( 50, 0 )
 
+[node name="vush" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = -15.0
+pitch_scale = 2.0
 [connection signal="body_entered" from="lanterna" to="." method="_on_lanterna_body_entered"]
 [connection signal="body_exited" from="lateral" to="." method="_on_lateral_body_exited"]

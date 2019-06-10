@@ -41,17 +41,17 @@ func _process(delta):
 		get_node("anim").play("morrer")
 		
 	#ESPERAR UM POUCO QUANDO CHEGAR NO DESTINO
-	if tempo_movendo <= 0:
+	if tempo_movendo <= 0 and ativo:
 		tempo = tempo - delta
-	if tempo <= 0:
+	if tempo <= 0 and ativo:
 		destino = random_point(get_global_position(), raio)
 		get_node("RayCast2D").look_at(destino)
 		get_node("RayCast2D").force_raycast_update()
 		if (not get_node("RayCast2D").is_colliding()):
 			look_at(destino)
-			tempo = tempo_espera
+			tempo = int(rand_range(1.5, 4.9))
 			tempo_movendo = tempo_movendo_max
-			get_node("grilo").play()
+			get_node("long").play()
 
 func _physics_process(delta):
 	if vida > 0 and ativo:

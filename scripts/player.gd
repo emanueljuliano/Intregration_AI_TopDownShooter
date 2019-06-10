@@ -85,6 +85,7 @@ func _physics_process(delta):
 	if dashar:
 		if not dashando:
 			if Input.is_action_just_pressed("dash") and tempo_espera_dash<=0:
+				get_node("vush").play()
 				game.num_dashs += 1
 				vel = vel_base * vel_dash
 				dashando = true
@@ -196,6 +197,7 @@ func dano_player(valor, posicao_inimigo, path):
 	get_node("anim").stop()
 	get_node("anim").play("dano")
 	
+	#MORTE DO PLAYER (TALVEZ DEVA SER CONFIGURADA PELO MAIN DA FASE, PARA QUE A FASE SEJA REINICIADA)
 	if vida <= 0 and not imortal:
 		game.deaths += 1
 		game.save_game()

@@ -43,16 +43,17 @@ func trocar_room():
 		game.music_time = game.get_main().get_node("musica").get_playback_position()
 		get_tree().change_scene(nova_fase)
 	else:
-		if game.get_player().has_node("camera1") and (camera_destino == "camera1" or camera_atual == "camera1"):
-			if camera_destino == "camera1":
-				game.get_player().get_node(camera_destino)._set_current(true)
-				game.get_main().get_node(camera_atual)._set_current(false)
-			if camera_atual == "camera1":
+		if camera_destino != camera_atual:
+			if game.get_player().has_node("camera1") and (camera_destino == "camera1" or camera_atual == "camera1"):
+				if camera_destino == "camera1":
+					game.get_player().get_node(camera_destino)._set_current(true)
+					game.get_main().get_node(camera_atual)._set_current(false)
+				if camera_atual == "camera1":
+					game.get_main().get_node(camera_destino)._set_current(true)
+					game.get_player().get_node(camera_atual)._set_current(false)
+			else:
 				game.get_main().get_node(camera_destino)._set_current(true)
-				game.get_player().get_node(camera_atual)._set_current(false)
-		else:
-			game.get_main().get_node(camera_destino)._set_current(true)
-			game.get_main().get_node(camera_atual)._set_current(false)
+				game.get_main().get_node(camera_atual)._set_current(false)
 		
 		game.get_player().set_global_position(game.get_main().get_node(destino).get_global_position())
 	pass

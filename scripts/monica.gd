@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
 # GIRO 2000 = ORBITAR
-# GIRO 1500 = GIRAR E AVANCAR
-var giro = 1500
+# GIRO 1000 = GIRAR E AVANCAR
+var giro = 1000
 var avanco = 200
 
 var vida = 40

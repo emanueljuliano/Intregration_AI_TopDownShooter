@@ -4,11 +4,12 @@
 [ext_resource path="res://sprites/Artesanal/Margaret/Margaret.png" type="Texture" id=2]
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
 
-[sub_resource type="ConvexPolygonShape2D" id=8]
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 9, -2, 9, 2, -5, 8, -5, -8 )
 
 [sub_resource type="Gradient" id=2]
-offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
-colors = PoolColorArray( 1, 1, 1, 1, 1, 0.960938, 0, 1, 1, 0.395947, 0, 1, 1, 0.31162, 0, 1, 1, 0, 0, 0.105882 )
+offsets = PoolRealArray( 0, 0.222222, 0.614815, 0.785185, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 0.842804, 0.800781, 1, 0.894531, 0.318278, 0.16423, 1, 0.996094, 0.0700378, 0, 1, 1, 0, 0, 0.145098 )
 
 [sub_resource type="GradientTexture" id=3]
 gradient = SubResource( 2 )
@@ -138,9 +139,8 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -11.5791, 0 )
-rotation = -0.523598
 scale = Vector2( 5.83567, 5.83567 )
-shape = SubResource( 8 )
+shape = SubResource( 1 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )
