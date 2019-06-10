@@ -8,6 +8,7 @@ export (bool) var trocar_fase
 export (String) var nova_fase
 
 export (bool) var aberta
+export (Array, String) var abrir_com_inimigos
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -24,6 +25,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if len(abrir_com_inimigos) > 0:
+		var i = 0
+		var existe = false
+		while i < len(abrir_com_inimigos):
+			if game.get_main().has_node(abrir_com_inimigos[i]):
+				existe = true
+			i = i + 1
+		aberta = not existe
 	if aberta:
 		get_node("Sprite2").set_visible(true)
 		#get_node("Sprite").set_modulate(Color(0,0,0,1))

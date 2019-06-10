@@ -6,12 +6,15 @@ func _ready():
 	game.inimigos_mortos = 0
 	if game.auxiliar == 4:
 		game.get_player().iluminar= true
-		get_node("spawner").ativado = false
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if game.auxiliar == 4 and game.inimigos_mortos == 5:
+	if get_node("spawner").ativado:
+		if game.get_player().lanterna:
+			get_node("spawner").ativado = false
+	
+	if game.auxiliar == 4 and game.inimigos_mortos == 5 and not get_node("spawner").ativado:
 		get_node("PORTA2").aberta = true
 	
 	

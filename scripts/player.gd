@@ -142,6 +142,7 @@ func atirar():
 			get_owner().add_child(tiro)
 			tiro.set_rotation(get_rotation())
 			get_node("atirar").play()
+			game.get_camera().get_node("ScreenShake").start()
 			reload = tempo
 
 
@@ -196,6 +197,7 @@ func dano_player(valor, posicao_inimigo, path):
 		knockback = knockback + alpha*direcao
 	get_node("anim").stop()
 	get_node("anim").play("dano")
+	game.get_camera().get_node("ScreenShake").start(0.2, 15, 4, 1)
 	
 	#MORTE DO PLAYER (TALVEZ DEVA SER CONFIGURADA PELO MAIN DA FASE, PARA QUE A FASE SEJA REINICIADA)
 	if vida <= 0 and not imortal:
