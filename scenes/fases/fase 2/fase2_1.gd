@@ -2,30 +2,46 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	game.level = 2
 	pass # Replace with function body.
 
-func _process(delta):
+func _process(delta):	
 	if game.get_player().vida < 1:
+		game.deaths += 1
+		game.save_game()
 		dict_dialog.key = "level2"
 		get_tree().change_scene("res://scenes/tutorial/litle_deaths.tscn")
+
+	if $morte4.position.x < 1360:
+		$morte4.movendo = false
 
 func _on_move_death_body_entered(body):
 	if body == game.get_player():
 		$morte4.movendo = true
 	
-
+func _on_move_death2_body_entered(body):
+	if body == game.get_player():
+		$morte4.movendo = true
 
 func _on_light_on_body_entered(body):
 	if body == game.get_player():
 		$TileMap.modulate = "#f1a902"
 		$player/camera1.escuro = false
+		
+func _on_light_off_body_entered(body):
+	if body == game.get_player():
+		$TileMap.modulate = "#926600"
+		$player/camera1.escuro = true
+
+func _on_light_off2_body_entered(body):
+	if body == game.get_player():
+		$TileMap.modulate = "#926600"
+		$player/camera1.escuro = true
 
 
 func _on_Area2D_body_exited(body):
 	if body == game.get_player():
 		$morte.movendo = true
-
-
 
 func _on_death_speed_body_entered(body):
 	if body == game.get_player():
@@ -72,3 +88,5 @@ func _on_death_speed6_body_entered(body):
 
 func _on_END_area_entered(area):
 	get_tree().change_scene("res://scenes/main.tscn")
+
+

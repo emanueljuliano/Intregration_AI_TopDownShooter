@@ -88,7 +88,7 @@ func _on_Exit_mouse_exited():
 
 func _on_Continue_pressed():
 	if $Menu/Decisions/cause.get_visible_characters() > $Menu/Decisions/cause.get_total_character_count():
-		get_tree().change_scene("res://scenes/main.tscn")
+		game.Continue()
 	else:
 		$Menu/Decisions/cause.set_visible_characters($Menu/Decisions/cause.get_total_character_count())
 		$Menu/Decisions/kill.set_visible_characters($Menu/Decisions/kill.get_total_character_count())
