@@ -21,4 +21,5 @@ shape = SubResource( 1 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )
+
 [connection signal="body_entered" from="." to="." method="_on_tiro_body_entered"]

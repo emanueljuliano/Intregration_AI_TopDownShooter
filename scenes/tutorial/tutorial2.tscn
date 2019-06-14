@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/tutorial/tutorial2.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Backgrounds/tutorial_background.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=5]
 [ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=6]
+[ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 49.3
@@ -36,6 +37,10 @@ scale = Vector2( 8.54311, 6.61094 )
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 autoplay = true
+
+[node name="pause" type="CanvasLayer" parent="."]
+
+[node name="menu" parent="pause" instance=ExtResource( 7 )]
 
 [node name="PORTA_CIMA" type="Position2D" parent="."]
 position = Vector2( 636.009, 66.2509 )

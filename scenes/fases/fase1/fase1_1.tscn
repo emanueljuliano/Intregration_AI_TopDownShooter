@@ -1,18 +1,19 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://sprites/Backgrounds/tutorial_background.png" type="Texture" id=1]
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=4]
 [ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=5]
-[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/useful/ativador.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/beto.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/useful/shock.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/greg.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/monica.tscn" type="PackedScene" id=11]
-[ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/useful/teletransporte.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/useful/ativador.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/beto.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/useful/shock.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/greg.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/monica.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/useful/teletransporte.tscn" type="PackedScene" id=14]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
@@ -63,18 +64,26 @@ position = Vector2( -120, 359.512 )
 [node name="camera1" parent="player" instance=ExtResource( 4 )]
 scale = Vector2( 17.0862, 13.2219 )
 
+[node name="Control" type="Control" parent="player/camera1"]
+margin_right = 40.0
+margin_bottom = 40.0
+
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 autoplay = true
 
-[node name="PORTA" parent="." instance=ExtResource( 6 )]
+[node name="pause" type="CanvasLayer" parent="."]
+
+[node name="menu" parent="pause" instance=ExtResource( 6 )]
+
+[node name="PORTA" parent="." instance=ExtResource( 7 )]
 position = Vector2( -120, 359.512 )
 camera_atual = "camera2"
 camera_destino = "camera1"
 destino = "PORTA2"
 nova_fase = "res://scenes/tutorial/tutorial.tscn"
 
-[node name="PORTA2" parent="." instance=ExtResource( 6 )]
+[node name="PORTA2" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1880, 360 )
 rotation = -3.14159
 camera_atual = "camera1"
@@ -82,14 +91,14 @@ camera_destino = "camera1"
 destino = "PORTA3"
 nova_fase = "res://scenes/main.tscn"
 
-[node name="PORTA3" parent="." instance=ExtResource( 6 )]
+[node name="PORTA3" parent="." instance=ExtResource( 7 )]
 position = Vector2( 2040, 360 )
 camera_atual = "camera1"
 camera_destino = "camera1"
 destino = "PORTA2"
 nova_fase = "res://scenes/main.tscn"
 
-[node name="PORTA4" parent="." instance=ExtResource( 6 )]
+[node name="PORTA4" parent="." instance=ExtResource( 7 )]
 position = Vector2( 3480, 1160 )
 rotation = -1.5708
 camera_atual = "camera1"
@@ -97,7 +106,7 @@ camera_destino = "camera1"
 destino = "PORTA5"
 nova_fase = "res://scenes/main.tscn"
 
-[node name="PORTA5" parent="." instance=ExtResource( 6 )]
+[node name="PORTA5" parent="." instance=ExtResource( 7 )]
 position = Vector2( 3480, 1307 )
 rotation = -4.71238
 camera_atual = "camera1"
@@ -105,254 +114,254 @@ camera_destino = "camera21"
 destino = "PORTA4"
 nova_fase = "res://scenes/main.tscn"
 
-[node name="ativador12" parent="." instance=ExtResource( 7 )]
+[node name="ativador12" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2040, 360 )
 rotation = 1.5708
 lista = [ "greg4", "greg5", "greg6", "greg7" ]
 
-[node name="beto" parent="." instance=ExtResource( 8 )]
+[node name="beto" parent="." instance=ExtResource( 9 )]
 position = Vector2( 760, 360 )
 rotation = 3.14159
 
-[node name="ativador" parent="." instance=ExtResource( 7 )]
+[node name="ativador" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1000, 360 )
 scale = Vector2( 4.62199, 32.4348 )
 lista = [ "greg", "greg2", "greg3", "greg4" ]
 
-[node name="shock" parent="." instance=ExtResource( 9 )]
+[node name="shock" parent="." instance=ExtResource( 10 )]
 position = Vector2( 987, 219.4 )
 automatico = true
 
-[node name="shock3" parent="." instance=ExtResource( 9 )]
+[node name="shock3" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1173.96, 222.729 )
 automatico = true
 
-[node name="shock2" parent="." instance=ExtResource( 9 )]
+[node name="shock2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1080, 219.4 )
 automatico = true
 delay = 2.0
 
-[node name="shock4" parent="." instance=ExtResource( 9 )]
+[node name="shock4" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1266, 222.729 )
 automatico = true
 delay = 2.0
 
-[node name="shock5" parent="." instance=ExtResource( 9 )]
+[node name="shock5" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1352.53, 219.4 )
 automatico = true
 tempo_ativar = 0.5
 
-[node name="shock8" parent="." instance=ExtResource( 9 )]
+[node name="shock8" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3619.96, 4363.34 )
 rotation = 1.57079
 automatico = true
 tempo_ativar = 0.5
 
-[node name="shock10" parent="." instance=ExtResource( 9 )]
+[node name="shock10" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3855.82, 6457.19 )
 rotation = 1.57079
 automatico = true
 tempo_ativar = 0.5
 
-[node name="shock13" parent="." instance=ExtResource( 9 )]
+[node name="shock13" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3853.17, 6573.79 )
 rotation = 1.57079
 automatico = true
 tempo_ativar = 0.5
 
-[node name="shock11" parent="." instance=ExtResource( 9 )]
+[node name="shock11" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3623.89, 2696.95 )
 rotation = 1.57079
 automatico = true
 tempo_ativar = 0.5
 
-[node name="shock12" parent="." instance=ExtResource( 9 )]
+[node name="shock12" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3615.03, 3108.57 )
 rotation = 1.57079
 automatico = true
 tempo_ativar = 0.5
 
-[node name="shock6" parent="." instance=ExtResource( 9 )]
+[node name="shock6" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1389.45, 219.4 )
 automatico = true
 tempo_ativar = 0.5
 
-[node name="shock7" parent="." instance=ExtResource( 9 )]
+[node name="shock7" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3618.29, 4316.74 )
 rotation = 1.57079
 automatico = true
 tempo_ativar = 0.5
 
-[node name="shock9" parent="." instance=ExtResource( 9 )]
+[node name="shock9" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3856.8, 6341.69 )
 rotation = 1.57079
 automatico = true
 tempo_ativar = 0.5
 
-[node name="greg" parent="." instance=ExtResource( 10 )]
+[node name="greg" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1720.75, 496.339 )
 ativo = false
 
-[node name="greg2" parent="." instance=ExtResource( 10 )]
+[node name="greg2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1720, 219.4 )
 ativo = false
 
-[node name="greg3" parent="." instance=ExtResource( 10 )]
+[node name="greg3" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1880, 359.512 )
 ativo = false
 
-[node name="greg4" parent="." instance=ExtResource( 10 )]
+[node name="greg4" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2520.75, 209.729 )
 ativo = false
 
-[node name="greg5" parent="." instance=ExtResource( 10 )]
+[node name="greg5" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2040, 520 )
 ativo = false
 
-[node name="greg6" parent="." instance=ExtResource( 10 )]
+[node name="greg6" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2040, 200 )
 ativo = false
 
-[node name="greg7" parent="." instance=ExtResource( 10 )]
+[node name="greg7" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2520, 520 )
 ativo = false
 
-[node name="monica" parent="." instance=ExtResource( 11 )]
+[node name="monica" parent="." instance=ExtResource( 12 )]
 position = Vector2( 2040.75, 360 )
 ativo = false
 
-[node name="ativador2" parent="." instance=ExtResource( 7 )]
+[node name="ativador2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2680, -440 )
 lista = [ "monica3" ]
 
-[node name="ativador3" parent="." instance=ExtResource( 7 )]
+[node name="ativador3" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3320, 360 )
 lista = [ "monica4" ]
 
-[node name="ativador4" parent="." instance=ExtResource( 7 )]
+[node name="ativador4" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3480, 200 )
 lista = [ "monica11" ]
 
-[node name="ativador5" parent="." instance=ExtResource( 7 )]
+[node name="ativador5" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3080, 760 )
 lista = [ "monica5" ]
 
-[node name="ativador6" parent="." instance=ExtResource( 7 )]
+[node name="ativador6" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3880, 760 )
 lista = [ "monica9" ]
 
-[node name="ativador7" parent="." instance=ExtResource( 7 )]
+[node name="ativador7" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3880, 359.512 )
 lista = [ "monica10" ]
 
-[node name="ativador8" parent="." instance=ExtResource( 7 )]
+[node name="ativador8" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3560, 1160 )
 lista = [ "monica7" ]
 
-[node name="ativador9" parent="." instance=ExtResource( 7 )]
+[node name="ativador9" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2680, 1160 )
 lista = [ "monica6" ]
 
-[node name="ativador10" parent="." instance=ExtResource( 7 )]
+[node name="ativador10" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4280, -440 )
 lista = [ "monica2" ]
 
-[node name="monica2" parent="." instance=ExtResource( 11 )]
+[node name="monica2" parent="." instance=ExtResource( 12 )]
 position = Vector2( 3720, -200 )
 ativo = false
 
-[node name="monica3" parent="." instance=ExtResource( 11 )]
+[node name="monica3" parent="." instance=ExtResource( 12 )]
 position = Vector2( 2840, -200 )
 ativo = false
 
-[node name="monica4" parent="." instance=ExtResource( 11 )]
+[node name="monica4" parent="." instance=ExtResource( 12 )]
 position = Vector2( 3320, 200 )
 ativo = false
 
-[node name="monica5" parent="." instance=ExtResource( 11 )]
+[node name="monica5" parent="." instance=ExtResource( 12 )]
 position = Vector2( 3240, 600 )
 ativo = false
 
-[node name="monica6" parent="." instance=ExtResource( 11 )]
+[node name="monica6" parent="." instance=ExtResource( 12 )]
 position = Vector2( 3240, 1000 )
 ativo = false
 
-[node name="monica7" parent="." instance=ExtResource( 11 )]
+[node name="monica7" parent="." instance=ExtResource( 12 )]
 position = Vector2( 3720, 1000 )
 ativo = false
 
-[node name="monica8" parent="." instance=ExtResource( 11 )]
+[node name="monica8" parent="." instance=ExtResource( 12 )]
 position = Vector2( 4040, 920 )
 ativo = false
 
-[node name="monica9" parent="." instance=ExtResource( 11 )]
+[node name="monica9" parent="." instance=ExtResource( 12 )]
 position = Vector2( 4120, 600 )
 ativo = false
 
-[node name="monica10" parent="." instance=ExtResource( 11 )]
+[node name="monica10" parent="." instance=ExtResource( 12 )]
 position = Vector2( 4120, 120 )
 ativo = false
 
-[node name="monica11" parent="." instance=ExtResource( 11 )]
+[node name="monica11" parent="." instance=ExtResource( 12 )]
 position = Vector2( 3640, 120 )
 ativo = false
 
-[node name="vida" parent="." instance=ExtResource( 12 )]
+[node name="vida" parent="." instance=ExtResource( 13 )]
 position = Vector2( 2520, 1320 )
 
-[node name="vida2" parent="." instance=ExtResource( 12 )]
+[node name="vida2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 4440, 1320 )
 
-[node name="vida3" parent="." instance=ExtResource( 12 )]
+[node name="vida3" parent="." instance=ExtResource( 13 )]
 position = Vector2( 4440, -600 )
 
-[node name="vida4" parent="." instance=ExtResource( 12 )]
+[node name="vida4" parent="." instance=ExtResource( 13 )]
 position = Vector2( 2520, -600 )
 
-[node name="ativador11" parent="." instance=ExtResource( 7 )]
+[node name="ativador11" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4280, 1160 )
 lista = [ "monica8" ]
 
-[node name="teletransporte" parent="." instance=ExtResource( 13 )]
+[node name="teletransporte" parent="." instance=ExtResource( 14 )]
 position = Vector2( 3480, 5560 )
 destino = "teletransporte4"
 ativo = true
 multi_uso = true
 
-[node name="teletransporte2" parent="." instance=ExtResource( 13 )]
+[node name="teletransporte2" parent="." instance=ExtResource( 14 )]
 position = Vector2( 3480, 2040 )
 destino = "teletransporte3"
 
-[node name="teletransporte3" parent="." instance=ExtResource( 13 )]
+[node name="teletransporte3" parent="." instance=ExtResource( 14 )]
 position = Vector2( 3720.75, 7480 )
 
-[node name="teletransporte4" parent="." instance=ExtResource( 13 )]
+[node name="teletransporte4" parent="." instance=ExtResource( 14 )]
 position = Vector2( 3480, 3720 )
 
-[node name="ativador13" parent="." instance=ExtResource( 7 )]
+[node name="ativador13" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3480, 5400 )
 lista = [ "teletransporte2" ]
 
-[node name="PORTA6" parent="." instance=ExtResource( 6 )]
+[node name="PORTA6" parent="." instance=ExtResource( 7 )]
 position = Vector2( 3720, 3000 )
 rotation = 1.5708
 trocar_fase = true
 nova_fase = "res://scenes/fases/fase1/fase1_2.tscn"
 aberta = true
 
-[node name="greg8" parent="." instance=ExtResource( 10 )]
+[node name="greg8" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3240, 4440 )
 
-[node name="greg9" parent="." instance=ExtResource( 10 )]
+[node name="greg9" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3960, 6600 )
 
-[node name="beto2" parent="." instance=ExtResource( 8 )]
+[node name="beto2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 3240, 2920 )
 
-[node name="ativador14" parent="." instance=ExtResource( 7 )]
+[node name="ativador14" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3480, 1400 )
 lista = [ "greg8", "greg9" ]
 
-[node name="beto3" parent="." instance=ExtResource( 8 )]
+[node name="beto3" parent="." instance=ExtResource( 9 )]
 position = Vector2( 3880.75, 6680 )
 

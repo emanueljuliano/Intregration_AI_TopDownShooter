@@ -1,18 +1,19 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://sprites/Backgrounds/tutorial_background.png" type="Texture" id=1]
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=4]
 [ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=5]
-[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/beto.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/useful/ativador.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/vagner.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/margaret.tscn" type="PackedScene" id=10]
-[ext_resource path="res://sprites/Backgrounds/white.png" type="Texture" id=11]
-[ext_resource path="res://scenes/useful/shock.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/monica.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/beto.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/useful/ativador.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/vagner.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/margaret.tscn" type="PackedScene" id=11]
+[ext_resource path="res://sprites/Backgrounds/white.png" type="Texture" id=12]
+[ext_resource path="res://scenes/useful/shock.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/monica.tscn" type="PackedScene" id=14]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
@@ -64,14 +65,18 @@ escuro = true
 stream = ExtResource( 5 )
 autoplay = true
 
-[node name="PORTA" parent="." instance=ExtResource( 6 )]
+[node name="pause" type="CanvasLayer" parent="."]
+
+[node name="menu" parent="pause" instance=ExtResource( 6 )]
+
+[node name="PORTA" parent="." instance=ExtResource( 7 )]
 position = Vector2( -120, 359.512 )
 camera_atual = "camera2"
 camera_destino = "camera1"
 destino = "PORTA2"
 nova_fase = "res://scenes/tutorial/tutorial.tscn"
 
-[node name="PORTA2" parent="." instance=ExtResource( 6 )]
+[node name="PORTA2" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1640, 360 )
 rotation = 3.14159
 camera_atual = "camera1"
@@ -79,103 +84,103 @@ camera_destino = "camera1"
 destino = "PORTA3"
 nova_fase = "res://scenes/fases/fase1/fase1_1.tscn"
 
-[node name="PORTA3" parent="." instance=ExtResource( 6 )]
+[node name="PORTA3" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1800, 360 )
 camera_atual = "camera1"
 camera_destino = "camera1"
 destino = "PORTA2"
 nova_fase = "res://scenes/fases/fase1/fase1_1.tscn"
 
-[node name="beto" parent="." instance=ExtResource( 7 )]
+[node name="beto" parent="." instance=ExtResource( 8 )]
 position = Vector2( 440, 360 )
 rotation = 3.14159
 
-[node name="beto2" parent="." instance=ExtResource( 7 )]
+[node name="beto2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1400, 118 )
 ativo = false
 
-[node name="beto3" parent="." instance=ExtResource( 7 )]
+[node name="beto3" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1401, 600 )
 ativo = false
 
-[node name="beto4" parent="." instance=ExtResource( 7 )]
+[node name="beto4" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1080, 368 )
 ativo = false
 
-[node name="ativador" parent="." instance=ExtResource( 8 )]
+[node name="ativador" parent="." instance=ExtResource( 9 )]
 position = Vector2( 360, 344 )
 scale = Vector2( 4.62199, 32.4348 )
 lista = [ "beto2", "beto3", "beto4" ]
 
-[node name="vagner" parent="." instance=ExtResource( 9 )]
+[node name="vagner" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1084.88, 120 )
 
-[node name="vagner2" parent="." instance=ExtResource( 9 )]
+[node name="vagner2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1080, 565 )
 
-[node name="vagner3" parent="." instance=ExtResource( 9 )]
+[node name="vagner3" parent="." instance=ExtResource( 10 )]
 position = Vector2( 280, 359.512 )
 aceso = true
 
-[node name="ativador2" parent="." instance=ExtResource( 8 )]
+[node name="ativador2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1880, 360 )
 lista = [ "vagner4", "vagner5", "vagner6", "vagner7" ]
 
-[node name="margaret" parent="." instance=ExtResource( 10 )]
+[node name="margaret" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2524.88, 538 )
 atacar_vagner = true
 qual_vagner = "vagner5"
 
-[node name="margaret6" parent="." instance=ExtResource( 10 )]
+[node name="margaret6" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3148.42, 169.875 )
 atacar_vagner = true
 qual_vagner = "vagner6"
 
-[node name="margaret2" parent="." instance=ExtResource( 10 )]
+[node name="margaret2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2135.63, 169.875 )
 atacar_vagner = true
 qual_vagner = "vagner4"
 
-[node name="margaret5" parent="." instance=ExtResource( 10 )]
+[node name="margaret5" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2770, 569.875 )
 atacar_vagner = true
 qual_vagner = "vagner7"
 
-[node name="vagner4" parent="." instance=ExtResource( 9 )]
+[node name="vagner4" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2520, 154.875 )
 ativo = false
 
-[node name="vagner6" parent="." instance=ExtResource( 9 )]
+[node name="vagner6" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2840, 159.75 )
 ativo = false
 
-[node name="vagner5" parent="." instance=ExtResource( 9 )]
+[node name="vagner5" parent="." instance=ExtResource( 10 )]
 position = Vector2( 2120, 584.875 )
 ativo = false
 
-[node name="vagner7" parent="." instance=ExtResource( 9 )]
+[node name="vagner7" parent="." instance=ExtResource( 10 )]
 position = Vector2( 3080, 580 )
 ativo = false
 
 [node name="Light2D" type="Light2D" parent="."]
 position = Vector2( 2600, 154.875 )
 scale = Vector2( 160, 30 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 color = Color( 0.12549, 0.12549, 0.12549, 1 )
 
 [node name="Light2D2" type="Light2D" parent="."]
 position = Vector2( 2600, 565 )
 scale = Vector2( 160, 30 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 color = Color( 0.12549, 0.12549, 0.12549, 1 )
 
-[node name="margaret3" parent="." instance=ExtResource( 10 )]
+[node name="margaret3" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3720, 440 )
 
-[node name="margaret4" parent="." instance=ExtResource( 10 )]
+[node name="margaret4" parent="." instance=ExtResource( 11 )]
 position = Vector2( 3720, 280 )
 
-[node name="PORTA4" parent="." instance=ExtResource( 6 )]
+[node name="PORTA4" parent="." instance=ExtResource( 7 )]
 position = Vector2( 4280, 360 )
 rotation = -3.14159
 camera_atual = "camera1"
@@ -183,52 +188,52 @@ camera_destino = "camera1"
 destino = "PORTA5"
 abrir_com_inimigos = [ "margaret3", "margaret4" ]
 
-[node name="PORTA5" parent="." instance=ExtResource( 6 )]
+[node name="PORTA5" parent="." instance=ExtResource( 7 )]
 position = Vector2( 4440, 360 )
 camera_atual = "camera1"
 camera_destino = "camera1"
 destino = "PORTA4"
 abrir_com_inimigos = [ "margaret3", "margaret4" ]
 
-[node name="ativador3" parent="." instance=ExtResource( 8 )]
+[node name="ativador3" parent="." instance=ExtResource( 9 )]
 position = Vector2( 5000, 360 )
 lista = [ "beto5", "beto6", "vagner8", "beto7" ]
 
-[node name="margaret7" parent="." instance=ExtResource( 10 )]
+[node name="margaret7" parent="." instance=ExtResource( 11 )]
 position = Vector2( 5240, 120 )
 
-[node name="margaret8" parent="." instance=ExtResource( 10 )]
+[node name="margaret8" parent="." instance=ExtResource( 11 )]
 position = Vector2( 5880, 440 )
 
-[node name="beto5" parent="." instance=ExtResource( 7 )]
+[node name="beto5" parent="." instance=ExtResource( 8 )]
 position = Vector2( 5560, 200 )
 ativo = false
 
-[node name="beto6" parent="." instance=ExtResource( 7 )]
+[node name="beto6" parent="." instance=ExtResource( 8 )]
 position = Vector2( 5320, 600 )
 ativo = false
 
-[node name="beto7" parent="." instance=ExtResource( 7 )]
+[node name="beto7" parent="." instance=ExtResource( 8 )]
 position = Vector2( 5800, 589.75 )
 ativo = false
 
-[node name="vagner8" parent="." instance=ExtResource( 9 )]
+[node name="vagner8" parent="." instance=ExtResource( 10 )]
 position = Vector2( 5320, 200 )
 
-[node name="shock" parent="." instance=ExtResource( 12 )]
+[node name="shock" parent="." instance=ExtResource( 13 )]
 position = Vector2( 6440, 229.986 )
 automatico = true
 delay = 1.0
 
-[node name="shock2" parent="." instance=ExtResource( 12 )]
+[node name="shock2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 6600, 229.986 )
 automatico = true
 
-[node name="shock3" parent="." instance=ExtResource( 12 )]
+[node name="shock3" parent="." instance=ExtResource( 13 )]
 position = Vector2( 6280, 226.658 )
 automatico = true
 
-[node name="PORTA6" parent="." instance=ExtResource( 6 )]
+[node name="PORTA6" parent="." instance=ExtResource( 7 )]
 position = Vector2( 5880, 360 )
 rotation = 3.14159
 camera_atual = "camera1"
@@ -236,42 +241,42 @@ camera_destino = "camera1"
 destino = "PORTA7"
 abrir_com_inimigos = [ "margaret7", "margaret7", "beto5", "beto6", "beto7" ]
 
-[node name="PORTA7" parent="." instance=ExtResource( 6 )]
+[node name="PORTA7" parent="." instance=ExtResource( 7 )]
 position = Vector2( 6040, 360 )
 camera_atual = "camera1"
 camera_destino = "camera1"
 destino = "PORTA7"
 abrir_com_inimigos = [ "margaret7", "margaret7", "beto5", "beto6", "beto7" ]
 
-[node name="ativador4" parent="." instance=ExtResource( 8 )]
+[node name="ativador4" parent="." instance=ExtResource( 9 )]
 position = Vector2( 6680, 360 )
 lista = [ "monica", "monica2", "monica3", "monica4", "vagner9", "vagner10" ]
 
-[node name="monica" parent="." instance=ExtResource( 13 )]
+[node name="monica" parent="." instance=ExtResource( 14 )]
 position = Vector2( 6680, -360 )
 ativo = false
 
-[node name="monica2" parent="." instance=ExtResource( 13 )]
+[node name="monica2" parent="." instance=ExtResource( 14 )]
 position = Vector2( 7320, -360 )
 ativo = false
 
-[node name="monica3" parent="." instance=ExtResource( 13 )]
+[node name="monica3" parent="." instance=ExtResource( 14 )]
 position = Vector2( 6680, 1000 )
 ativo = false
 
-[node name="monica4" parent="." instance=ExtResource( 13 )]
+[node name="monica4" parent="." instance=ExtResource( 14 )]
 position = Vector2( 7480, 1000 )
 ativo = false
 
-[node name="vagner9" parent="." instance=ExtResource( 9 )]
+[node name="vagner9" parent="." instance=ExtResource( 10 )]
 position = Vector2( 7175.63, 595 )
 ativo = false
 
-[node name="vagner10" parent="." instance=ExtResource( 9 )]
+[node name="vagner10" parent="." instance=ExtResource( 10 )]
 position = Vector2( 7160, 133.125 )
 ativo = false
 
-[node name="PORTA8" parent="." instance=ExtResource( 6 )]
+[node name="PORTA8" parent="." instance=ExtResource( 7 )]
 position = Vector2( 7320, 360 )
 rotation = 3.14159
 trocar_fase = true

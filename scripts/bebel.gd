@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
-var vel = 400
+export var vel = 400
 var distancia = 600
 
-var vida = 40
+export var vida = 40
 var dano = 40
 
 var death = 0

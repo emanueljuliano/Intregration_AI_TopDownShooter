@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/tutorial/tutorial5.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Backgrounds/tutorial_background.png" type="Texture" id=2]
@@ -6,9 +6,10 @@
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=5]
 [ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=6]
-[ext_resource path="res://scenes/spawner.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/beto.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/spawner.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/beto.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=10]
 
 [node name="main" type="Node2D"]
 script = ExtResource( 1 )
@@ -37,7 +38,11 @@ escuro = true
 stream = ExtResource( 6 )
 autoplay = true
 
-[node name="spawner" parent="." instance=ExtResource( 7 )]
+[node name="pause" type="CanvasLayer" parent="."]
+
+[node name="menu" parent="pause" instance=ExtResource( 7 )]
+
+[node name="spawner" parent="." instance=ExtResource( 8 )]
 position = Vector2( 440, 360 )
 scale = Vector2( 8.54311, 6.61094 )
 intervalo = 1
@@ -49,35 +54,36 @@ bebel = false
 barbara = false
 greg = false
 
-[node name="beto" parent="." instance=ExtResource( 8 )]
+[node name="beto" parent="." instance=ExtResource( 9 )]
 position = Vector2( 600, 200 )
 rotation = 3.14159
 
-[node name="beto2" parent="." instance=ExtResource( 8 )]
+[node name="beto2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 840, -40 )
 rotation = 3.14159
 
-[node name="beto3" parent="." instance=ExtResource( 8 )]
+[node name="beto3" parent="." instance=ExtResource( 9 )]
 position = Vector2( 920, 359.512 )
 rotation = 3.14159
 
-[node name="beto4" parent="." instance=ExtResource( 8 )]
+[node name="beto4" parent="." instance=ExtResource( 9 )]
 position = Vector2( 840, 760 )
 rotation = 3.14159
 
-[node name="beto5" parent="." instance=ExtResource( 8 )]
+[node name="beto5" parent="." instance=ExtResource( 9 )]
 position = Vector2( 600, 520 )
 rotation = 3.14159
 
-[node name="PORTA" parent="." instance=ExtResource( 9 )]
+[node name="PORTA" parent="." instance=ExtResource( 10 )]
 position = Vector2( -120, 360 )
 camera_atual = "camera2"
 camera_destino = "camera1"
 destino = "PORTA2"
 nova_fase = "res://scenes/tutorial/tutorial.tscn"
 
-[node name="PORTA2" parent="." instance=ExtResource( 9 )]
+[node name="PORTA2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1000, 360 )
 rotation = 3.14159
 trocar_fase = true
 nova_fase = "res://scenes/fases/fase1/fase1_1.tscn"
+

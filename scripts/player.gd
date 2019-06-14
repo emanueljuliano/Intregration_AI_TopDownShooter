@@ -72,10 +72,10 @@ func _process(delta):
 		else:
 			tempo_vida = tempo_vida - delta
 			
-	if Input.is_action_just_pressed("ui_cancel"):
-		scene_path_to_load = 'res://title_screen/TitleScreen.tscn'
-		$FadeIn.show()
-		$FadeIn.fade_in()
+	#if Input.is_action_just_pressed("ui_cancel"):
+	#	scene_path_to_load = 'res://title_screen/TitleScreen.tscn'
+	#	$FadeIn.show()
+	#	$FadeIn.fade_in()
 	
 	pass
 	

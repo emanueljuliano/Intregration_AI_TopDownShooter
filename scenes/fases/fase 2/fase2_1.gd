@@ -51,9 +51,9 @@ func _on_death_speed_body_entered(body):
 
 func _on_death_speed2_body_entered(body):
 	if body == game.get_player():
-		$morte19.velocidade = 12
+		$morte19.velocidade = 10
 		$morte19.movendo = true
-		$morte18.velocidade = 12
+		$morte18.velocidade = 10
 		$morte18.movendo = true
 
 func _on_death_speed3_body_entered(body):
@@ -66,27 +66,27 @@ func _on_death_speed3_body_entered(body):
 
 func _on_death_speed4_body_entered(body):
 	if body == game.get_player():
-		$morte15.velocidade = 45
+		$morte15.velocidade = 20
 		$morte15.movendo = true
-		$morte14.velocidade = 20
+		$morte14.velocidade = 9
 		$morte14.movendo = true
 
 func _on_death_speed5_body_entered(body):
 	if body == game.get_player():
-		$morte13.velocidade = 30
+		$morte13.velocidade = 20
 		$morte13.movendo = true
-		$morte12.velocidade = 45
+		$morte12.velocidade = 35
 		$morte12.movendo = true
 
 
 func _on_death_speed6_body_entered(body):
 	if body == game.get_player():
-		$morte11.velocidade = 9
+		$morte11.velocidade = 7
 		$morte11.movendo = true
-		$morte10.velocidade = 9
+		$morte10.velocidade = 7
 		$morte10.movendo = true
 
-func _on_END_area_entered(area):
-	get_tree().change_scene("res://scenes/main.tscn")
 
-
+func _on_END_body_entered(body):
+	if body == game.get_player():
+		get_tree().change_scene("res://scenes/main.tscn")

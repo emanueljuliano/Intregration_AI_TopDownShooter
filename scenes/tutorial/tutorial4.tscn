@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/tutorial/tutorial4.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Backgrounds/tutorial_background.png" type="Texture" id=2]
@@ -7,7 +7,8 @@
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=6]
 [ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=7]
-[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=9]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Area2D
@@ -75,7 +76,11 @@ scale = Vector2( 17.0862, 13.2219 )
 stream = ExtResource( 7 )
 autoplay = true
 
-[node name="PORTA" parent="." instance=ExtResource( 8 )]
+[node name="pause" type="CanvasLayer" parent="."]
+
+[node name="menu" parent="pause" instance=ExtResource( 8 )]
+
+[node name="PORTA" parent="." instance=ExtResource( 9 )]
 position = Vector2( 110.379, 360 )
 camera_atual = "camera2"
 camera_destino = "camera1"
@@ -91,10 +96,11 @@ script = SubResource( 1 )
 position = Vector2( 1.97099, 68.4533 )
 shape = SubResource( 2 )
 
-[node name="PORTA2" parent="." instance=ExtResource( 8 )]
+[node name="PORTA2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2680, 360 )
 rotation = 3.14159
 trocar_fase = true
 nova_fase = "res://scenes/tutorial/tutorial5.tscn"
 aberta = true
+
 [connection signal="body_entered" from="ativador" to="." method="_on_ativador_body_entered"]

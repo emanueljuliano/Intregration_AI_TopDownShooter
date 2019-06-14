@@ -3,7 +3,7 @@ extends Node2D
 const INIMIGO = "inimigo"
 const FILE = "user://save.data"
 var deaths = 0
-var level = 1
+var level = 0
 var last_enemy = "Doctor"
 var num_dashs = 0
 var num_shoots = 0

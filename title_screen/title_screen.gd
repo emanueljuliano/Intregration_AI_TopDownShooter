@@ -5,7 +5,7 @@ var data = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if game.deaths == 0 and game.level == 1:
+	if game.deaths == 0 and game.level == 0:
 		$Menu/CenterRow/Buttons/ContinueButton.scene_to_load = "res://title_screen/TitleScreen.tscn"
 	else:
 		$Menu/CenterRow/Buttons/ContinueButton.scene_to_load = "res://game/Continue.tscn"
