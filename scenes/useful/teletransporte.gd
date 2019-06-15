@@ -16,7 +16,17 @@ func _ready():
 #	pass
 
 
-func _on_teletransporte_body_entered(body):
+#func _on_teletransporte_body_entered(body):
+#	if not usado and ativo:
+#		if body == game.get_player():
+#			var x = game.get_player().get_global_position() - get_global_position()
+#			game.get_player().set_global_position(game.get_main().get_node(destino).get_global_position() + x)
+#			if not multi_uso:
+#				usado = true
+#	pass # Replace with function body.
+
+
+func _on_teletransporte_body_exited(body):
 	if not usado and ativo:
 		if body == game.get_player():
 			var x = game.get_player().get_global_position() - get_global_position()

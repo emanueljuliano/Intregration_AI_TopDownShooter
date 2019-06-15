@@ -30,6 +30,7 @@ var empurrao = 2000
 var knockback = Vector2()
 var tempo_vida = 1.0
 
+var lento = 1.0
 
 var scene_path_to_load
 
@@ -103,27 +104,27 @@ func _physics_process(delta):
 	if mover:
 		if Input.is_action_pressed("cima"):
 			if Input.is_action_pressed("esquerda") or Input.is_action_pressed("direita"):
-				move_and_slide(Vector2(0, -sin(45)) * vel)
+				move_and_slide(Vector2(0, -sin(45)) * vel * lento)
 			else:
-				move_and_slide(Vector2(0,-1) * vel)
+				move_and_slide(Vector2(0,-1) * vel * lento)
 		
 		if Input.is_action_pressed("baixo"):
 			if Input.is_action_pressed("esquerda") or Input.is_action_pressed("direita"):
-				move_and_slide(Vector2(0, sin(45)) * vel)
+				move_and_slide(Vector2(0, sin(45)) * vel * lento)
 			else:
-				move_and_slide(Vector2(0,1) * vel)
+				move_and_slide(Vector2(0,1) * vel * lento)
 			
 		if Input.is_action_pressed("direita"):
 			if Input.is_action_pressed("cima") or Input.is_action_pressed("baixo"):
-				move_and_slide(Vector2(cos(45), 0) * vel)
+				move_and_slide(Vector2(cos(45), 0) * vel * lento)
 			else:
-				move_and_slide(Vector2(1,0) * vel)
+				move_and_slide(Vector2(1,0) * vel * lento)
 			
 		if Input.is_action_pressed("esquerda"):
 			if Input.is_action_pressed("cima") or Input.is_action_pressed("baixo"):
-				move_and_slide(Vector2(-cos(45), 0) * vel)
+				move_and_slide(Vector2(-cos(45), 0) * vel * lento)
 			else:
-				move_and_slide(Vector2(-1,0) * vel)
+				move_and_slide(Vector2(-1,0) * vel * lento)
 	
 	if knockback != Vector2(0,0):
 		move_and_slide(knockback*empurrao)

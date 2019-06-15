@@ -98,4 +98,3 @@ stream = ExtResource( 4 )
 stream = ExtResource( 5 )
 volume_db = -20.0
 autoplay = true
-

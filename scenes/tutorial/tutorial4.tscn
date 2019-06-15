@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/tutorial/tutorial4.gd" type="Script" id=1]
-[ext_resource path="res://sprites/Backgrounds/tutorial_background.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Backgrounds/white.png" type="Texture" id=2]
 [ext_resource path="res://scenes/useful/morte.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=5]
@@ -39,6 +39,7 @@ extents = Vector2( 71.5044, 328.413 )
 script = ExtResource( 1 )
 
 [node name="background" type="Sprite" parent="."]
+modulate = Color( 0, 0.0588235, 0.0196078, 1 )
 position = Vector2( 2040, 360 )
 scale = Vector2( 704, 280 )
 z_index = -1
@@ -102,5 +103,4 @@ rotation = 3.14159
 trocar_fase = true
 nova_fase = "res://scenes/tutorial/tutorial5.tscn"
 aberta = true
-
 [connection signal="body_entered" from="ativador" to="." method="_on_ativador_body_entered"]

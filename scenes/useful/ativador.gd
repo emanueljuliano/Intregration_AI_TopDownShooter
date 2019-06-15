@@ -19,6 +19,7 @@ func _on_parede_body_exited(body):
 			usado = true
 			var i = 0
 			while i < len(lista):
-				game.get_main().get_node(lista[i]).ativo = true
+				if game.get_main().has_node(lista[i]):
+					game.get_main().get_node(lista[i]).ativo = true
 				i = i + 1
 	pass # Replace with function body.

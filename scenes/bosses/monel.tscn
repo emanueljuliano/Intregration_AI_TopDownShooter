@@ -1,10 +1,11 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://scripts/bebel.gd" type="Script" id=1]
+[ext_resource path="res://scenes/bosses/monel.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Backgrounds/triangulo.png" type="Texture" id=2]
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( -15, -15, 15, 0, -15, 15 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "dano"
@@ -21,6 +22,30 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 0, 1 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("sprite2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0, 0.607843, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("sprite4:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 0, 1 ) ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "idle"
@@ -31,6 +56,30 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("sprite2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0.607843, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("sprite4:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -91,10 +140,46 @@ tracks/3/keys = {
 "method": "play"
 } ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("sprite2:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("sprite3:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("sprite4:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Gradient" id=5]
-offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
-colors = PoolColorArray( 1, 1, 1, 1, 1, 0.960938, 0, 1, 1, 0.395947, 0, 1, 1, 0.31162, 0, 1, 1, 0, 0, 0.105882 )
+offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.866667, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 0, 0.607843, 1, 1, 0, 0.273438, 1, 1, 0.0473022, 0, 0.605469, 1, 0.03125, 0, 1, 0.105882 )
 
 [sub_resource type="GradientTexture" id=6]
 gradient = SubResource( 5 )
@@ -112,7 +197,7 @@ scale = 10.0
 scale_random = 0.5
 color_ramp = SubResource( 6 )
 
-[node name="bebel" type="KinematicBody2D"]
+[node name="monel" type="KinematicBody2D"]
 z_index = 1
 collision_layer = 2
 collision_mask = 2
@@ -120,20 +205,34 @@ script = ExtResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
 modulate = Color( 1, 1, 0, 1 )
-position = Vector2( 10, 0 )
-rotation = 1.5708
+position = Vector2( -80, 0 )
+rotation = -1.57079
 texture = ExtResource( 2 )
 
-[node name="sprite2" type="Sprite" parent="sprite"]
+[node name="sprite2" type="Sprite" parent="."]
+modulate = Color( 0, 0.607843, 1, 1 )
+rotation = 1.57079
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="sprite4" type="Sprite" parent="."]
+modulate = Color( 1, 1, 0, 1 )
+position = Vector2( 7, 0 )
+rotation = -1.57079
+texture = ExtResource( 2 )
+
+[node name="sprite3" type="Sprite" parent="."]
 modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 0, -16.2944 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( 33.1788, 0.540375 )
+rotation = 1.57079
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = -0.523637
 scale = Vector2( 4.5, 4.5 )
-shape = SubResource( 1 )
+shape = SubResource( 8 )
+
+[node name="lado" type="Position2D" parent="."]
+position = Vector2( 0, 1 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )

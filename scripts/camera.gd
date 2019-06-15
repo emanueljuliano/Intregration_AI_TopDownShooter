@@ -12,14 +12,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if current:
-		if escuro:
-			get_node("Light2D").visible = true
-		else:
-			get_node("Light2D").visible = false
+	if escuro and current:
+		get_node("Light2D").visible = true
+	else:
+		get_node("Light2D").visible = false
+	#if current:
 		#if segue:
 		#	set_position(game.get_player().get_position())
-	#else:
-	#	set_global_position(posicao_inicial)
-	#	get_node("Light2D").visible = false
+		#else:
+		#	set_global_position(posicao_inicial)
+		#	get_node("Light2D").visible = false
 	pass

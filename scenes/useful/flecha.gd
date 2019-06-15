@@ -1,7 +1,7 @@
 extends Area2D
 
 # Declare member variables here. Examples:
-var vel = 1000
+var vel = 500
 var dano = 50
 
 # Called when the node enters the scene tree for the first time.

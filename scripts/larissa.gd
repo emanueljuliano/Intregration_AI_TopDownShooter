@@ -3,6 +3,7 @@ extends Node2D
 export var vida = 40
 
 export var ativo = true
+export var imortal = false
 
 var death = 0
 

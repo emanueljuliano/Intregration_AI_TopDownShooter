@@ -29,7 +29,7 @@ func _process(delta):
 	
 	if get_parent().ativo:
 		look_at(game.get_player().get_position())
-		if iluminado:
+		if iluminado and game.get_camera().escuro:
 			get_node("sprite").set_rotation(deg2rad(-90 + direcao*90))
 		else:
 			get_node("sprite").set_rotation(deg2rad(-90))
@@ -37,7 +37,7 @@ func _process(delta):
 func _physics_process(delta):
 	if get_parent().vida > 0 and get_parent().ativo:
 		angulo = angulo + periodo_curva
-		if iluminado:
+		if iluminado and game.get_camera().escuro:
 			move_and_slide((get_node("lado").get_global_position() - get_global_position()) * esquiva * direcao)
 		else:
 			move_and_slide(((get_node("frente").get_global_position() - get_global_position()) * avanco) + ((get_node("lado").get_global_position() - get_global_position()) * sin(deg2rad(angulo)) * curva))
@@ -47,9 +47,10 @@ func _physics_process(delta):
 	pass
 
 func dano(valor):
-	get_parent().vida = get_parent().vida - valor
-	get_node("anim").stop()
-	get_node("anim").play("dano")
+	if not get_parent().imortal:
+		get_parent().vida = get_parent().vida - valor
+		get_node("anim").stop()
+		get_node("anim").play("dano")
 	pass
 
 func na_luz():

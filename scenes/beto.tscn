@@ -5,7 +5,7 @@
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 11.1383
+radius = 10.0274
 
 [sub_resource type="Animation" id=2]
 resource_name = "dano"
@@ -140,7 +140,6 @@ scale = Vector2( 10, 10 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 scale = Vector2( 4.5, 4.5 )
 shape = SubResource( 1 )
 

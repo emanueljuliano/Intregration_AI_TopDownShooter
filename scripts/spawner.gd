@@ -1,5 +1,7 @@
 extends Node2D
 
+export var vet_x = Vector2(0, 1024)
+export var vet_y = Vector2(0, 600)
 export var ativado = true
 export var intervalo = 2
 var tempo = 0
@@ -52,13 +54,13 @@ func _process(delta):
 		if tempo <= 0:
 			var inimigo = lista_inimigos[randi()%lista_inimigos.size()].instance()
 			if rand_n < 1:
-				spawn_pos = Vector2(rand_range(0, 1024), +50)
+				spawn_pos = Vector2(rand_range(vet_x.x, vet_x.y), vet_y.x+50)
 			elif rand_n < 2:
-				spawn_pos = Vector2(rand_range(0, 1024), 550)
+				spawn_pos = Vector2(rand_range(vet_x.x, vet_x.y), vet_y.y-50)
 			elif rand_n < 3:
-				spawn_pos = Vector2(50, rand_range(0, 600))
+				spawn_pos = Vector2(vet_x.x+50, rand_range(vet_y.x, vet_y.y))
 			elif rand_n <= 4:
-				spawn_pos = Vector2(974, rand_range(0, 600))
+				spawn_pos = Vector2(vet_x.y-50, rand_range(vet_y.x, vet_y.y))
 			inimigo.set_position(spawn_pos)
 			game.get_main().add_child(inimigo)
 			tempo = intervalo

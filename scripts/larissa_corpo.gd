@@ -44,7 +44,8 @@ func _physics_process(delta):
 	pass
 
 func dano(valor):
-	get_parent().vida = get_parent().vida - valor/2
-	get_node("anim").stop()
-	get_node("anim").play("dano")
+	if not get_parent().imortal:
+		get_parent().vida = get_parent().vida - valor/2
+		get_node("anim").stop()
+		get_node("anim").play("dano")
 	pass
