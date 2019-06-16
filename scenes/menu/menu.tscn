@@ -18,7 +18,7 @@ bg_color = Color( 0, 0, 0, 0 )
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0, 0, 0, 0 )
 
-[node name="menu" instance=ExtResource( 1 )]
+[node name="menu" index="0" instance=ExtResource( 1 )]
 pause_mode = 2
 visible = false
 script = ExtResource( 2 )
@@ -80,6 +80,7 @@ stream = ExtResource( 5 )
 [node name="FadeIn" parent="." index="4" instance=ExtResource( 6 )]
 visible = false
 script = ExtResource( 7 )
+
 [connection signal="focus_entered" from="Screen/Options/NewGame" to="." method="_on_NewGame_focus_entered"]
 [connection signal="focus_exited" from="Screen/Options/NewGame" to="." method="_on_NewGame_focus_exited"]
 [connection signal="mouse_entered" from="Screen/Options/NewGame" to="." method="_on_NewGame_mouse_entered"]

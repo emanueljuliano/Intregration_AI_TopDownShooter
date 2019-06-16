@@ -33,7 +33,7 @@ margin_top = 46.0
 margin_right = 988.0
 margin_bottom = 262.0
 custom_fonts/normal_font = ExtResource( 2 )
-custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+custom_colors/default_color = Color( 1, 0, 0, 1 )
 bbcode_enabled = true
 
 [node name="Timer" type="Timer" parent="Game_Player/Dialog"]
@@ -79,6 +79,7 @@ custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
+
 [connection signal="ready" from="Game_Player/Dialog/Terminal" to="." method="_on_Terminal_ready"]
 [connection signal="timeout" from="Game_Player/Dialog/Timer" to="." method="_on_Timer_timeout"]
 [connection signal="focus_entered" from="Game_Player/Options/Button1" to="." method="_on_Button1_focus_entered"]

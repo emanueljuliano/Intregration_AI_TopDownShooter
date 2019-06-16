@@ -42,6 +42,7 @@ func _physics_process(delta):
 
 func dano(valor):
 	vida = vida - valor
+	ativo = true
 	get_node("anim").stop()
 	get_node("anim").play("dano")
 	pass

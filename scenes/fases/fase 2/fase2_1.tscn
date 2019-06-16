@@ -35,7 +35,7 @@ extents = Vector2( 2.96667, 40.7933 )
 extents = Vector2( 1.76648, 8.29489 )
 
 [node name="main" type="Node2D"]
-rotation = 4.83244e-005
+rotation = 4.83244e-05
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
@@ -44,8 +44,8 @@ __meta__ = {
 
 [node name="background" type="Sprite" parent="."]
 modulate = Color( 0.0627451, 0.0431373, 0, 1 )
-position = Vector2( 9900.52, 807.567 )
-scale = Vector2( 2776.68, 402.711 )
+position = Vector2( 9892.51, 476.021 )
+scale = Vector2( 2778.68, 485.598 )
 z_index = -1
 texture = ExtResource( 2 )
 
@@ -56,7 +56,6 @@ tile_data = PoolIntArray( -1310690, 0, 65537, -1310689, 0, 65540, -1310688, 0, 6
 
 [node name="player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 39.9981, -40.0019 )
-imortal = true
 
 [node name="camera1" parent="player" instance=ExtResource( 5 )]
 scale = Vector2( 17.0862, 13.2219 )
@@ -553,7 +552,7 @@ shape = SubResource( 5 )
 [node name="morte" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3058.33, 360.365 )
 scale = Vector2( 4.59333, 4.08827 )
-velocidade = 40
+velocidade = 45
 
 [node name="ativador17" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1318.63, -709.217 )
@@ -715,6 +714,7 @@ ativo = false
 [node name="PORTA" parent="." instance=ExtResource( 18 )]
 position = Vector2( 39.9981, -40.0019 )
 rotation = 1.5708
+
 [connection signal="body_entered" from="move_death" to="." method="_on_move_death_body_entered"]
 [connection signal="body_entered" from="move_death2" to="." method="_on_move_death2_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

@@ -2,7 +2,6 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	game.level = 2
 	pass # Replace with function body.
 
 func _process(delta):	
@@ -51,9 +50,9 @@ func _on_death_speed_body_entered(body):
 
 func _on_death_speed2_body_entered(body):
 	if body == game.get_player():
-		$morte19.velocidade = 10
+		$morte19.velocidade = 8
 		$morte19.ativo = true
-		$morte18.velocidade = 10
+		$morte18.velocidade = 8
 		$morte18.ativo = true
 
 func _on_death_speed3_body_entered(body):
@@ -89,4 +88,4 @@ func _on_death_speed6_body_entered(body):
 
 func _on_END_body_entered(body):
 	if body == game.get_player():
-		get_tree().change_scene("res://scenes/main.tscn")
+		get_tree().change_scene("res://scenes/fases/fase1/fase1_2.tscn")

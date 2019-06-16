@@ -333,3 +333,4 @@ ativo = false
 [node name="greg2" parent="." instance=ExtResource( 12 )]
 position = Vector2( 1240, -5480 )
 ativo = false
+

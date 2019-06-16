@@ -6,10 +6,10 @@ func _ready():
 	$Screen/Options/NewGame.grab_focus()
 	$Screen/Options/NewGame.add_color_override("font_color", Color("00ff3e"))
 	
-	$music.play(game.music_time)
 
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
+		$music.playing = not $music.playing
 		$Screen/Options/NewGame.grab_focus()
 		get_tree().paused = not get_tree().paused
 		visible = not visible

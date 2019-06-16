@@ -19,15 +19,15 @@ func _ready():
 	$Game_Player/Options/Button1.grab_focus()
 
 func _process(delta):
-	if character == 0:
+	if character == 0:  # Professor
 		if voice.get_playback_position() > 8.86:
 			voice.play(rand_range(0.0, 8.86))
 			
-	if character == 1:
+	if character == 1:  # IA
 		if voice.get_playback_position() > 18.86:
 			voice.play(15.50)
 			
-	if character == 2:
+	if character == 2:  # Neeko
 		if voice.get_playback_position() > 9.86:
 			voice.play(5.80)
 		

@@ -122,12 +122,18 @@ func load_game():
 	file.close()
 
 func Continue():
-	if game.level == 1.1:
+	if game.level == 1:
 		get_tree().change_scene("res://scenes/fases/fase1/fase1_1.tscn")
-	elif game.level == 1.2:
-		get_tree().change_scene("res://scenes/fases/fase1/fase1_2.tscn")
 	elif game.level == 2:
+		get_tree().change_scene("res://scenes/fases/fase1/fase1_4.tscn")
+	elif game.level == 3:
+		get_tree().change_scene("res://scenes/fases/fase1/fase1_3.tscn")	
+	elif game.level == 4:
 		get_tree().change_scene("res://scenes/fases/fase 2/fase2_1.tscn")
+	elif game.level == 5:
+		get_tree().change_scene("res://scenes/fases/fase1/fase1_2.tscn")
+	elif game.level == 6:
+		get_tree().change_scene("res://scenes/fases/fase1/fase1_5.tscn")
 	else:
 		get_tree().change_scene("res://scenes/main.tscn")
 	
