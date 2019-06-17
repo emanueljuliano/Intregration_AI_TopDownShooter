@@ -34,7 +34,6 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="ponto1"]
-light_mask = 0
 texture = ExtResource( 3 )
 
 [node name="ponto2" type="CollisionShape2D" parent="."]
@@ -43,5 +42,4 @@ rotation = 3.14159
 shape = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="ponto2"]
-light_mask = 0
 texture = ExtResource( 3 )

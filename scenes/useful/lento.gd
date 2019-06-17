@@ -20,14 +20,20 @@ func _ready():
 
 
 func _on_morte_body_entered(body):
+	print(body.filename)
 	if body == game.get_player():
 		dentro = true
 		game.get_player().lento = lentidao
+	if body.filename == "res://scenes/bosses/centipeta_cabeca.tscn":
+		body.avanco = 50
 	pass # Replace with function body.
 
 
 func _on_morte_body_exited(body):
+	print(body.filename)
 	if body == game.get_player():
 		dentro = false
 		game.get_player().lento = 1.0
+	if body.filename == "res://scenes/bosses/centipeta_cabeca.tscn":
+		body.avanco = body.avanco_max
 	pass # Replace with function body.

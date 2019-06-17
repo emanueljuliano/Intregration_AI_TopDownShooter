@@ -22,7 +22,7 @@ __meta__ = {
 }
 
 [node name="background" type="Sprite" parent="."]
-modulate = Color( 0.054902, 0.0627451, 0, 1 )
+modulate = Color( 0.0627451, 0.0627451, 0, 1 )
 position = Vector2( 8402.72, -520 )
 scale = Vector2( 2990, 1540 )
 texture = ExtResource( 1 )

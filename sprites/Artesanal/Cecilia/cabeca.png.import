@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Margaret.png-2d4730cd98ddff6f95a737f77e55feff.stex"
+path="res://.import/cabeca.png-9de86580d21e4e678ae2d210a456445b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Artesanal/Margaret/Margaret.png"
-dest_files=[ "res://.import/Margaret.png-2d4730cd98ddff6f95a737f77e55feff.stex" ]
+source_file="res://sprites/Artesanal/Cecilia/cabeca.png"
+dest_files=[ "res://.import/cabeca.png-9de86580d21e4e678ae2d210a456445b.stex" ]
 
 [params]
 

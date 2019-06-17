@@ -1,43 +1,28 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/bosses/centipeta_corpo.gd" type="Script" id=1]
-[ext_resource path="res://sprites/Artesanal/Larissa/corpo.png" type="Texture" id=2]
-[ext_resource path="res://sprites/Artesanal/Larissa/antena.png" type="Texture" id=3]
+[ext_resource path="res://sprites/Artesanal/Cecilia/corpo.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Artesanal/Cecilia/perna.png" type="Texture" id=3]
+[ext_resource path="res://sprites/aurea.png" type="Texture" id=4]
+[ext_resource path="res://samples/musicas/CRAWLING.wav" type="AudioStream" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 8.39829
 
 [sub_resource type="Animation" id=2]
 resource_name = "dano"
 length = 0.5
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("sprite:modulate:r")
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("sprite:modulate:g")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
-}
-tracks/2/type = "bezier"
-tracks/2/path = NodePath("sprite:modulate:b")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 0.341176, 0.176471, 0, 1 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -49,38 +34,107 @@ tracks/0/path = NodePath("sprite:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 0.341176, 0.176471, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("sprite/Sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("sprite/Sprite2:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("sprite/Sprite2/Sprite3:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 2, 3, 0, 1 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("sprite/Sprite/Sprite4:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 2, 3, 0, 1 ]
 }
 
 [node name="centipeta_corpo" type="KinematicBody2D"]
+show_behind_parent = true
+scale = Vector2( 0.8, 0.8 )
 collision_layer = 4
 collision_mask = 0
 script = ExtResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
+modulate = Color( 0.505882, 0.262745, 0.00392157, 1 )
 rotation = -1.5708
 scale = Vector2( 10, 10 )
 texture = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="sprite"]
-visible = false
-position = Vector2( 3.27732, -4.75209 )
-rotation = -1.5708
+show_behind_parent = true
+position = Vector2( -4.69057, -1.72519 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 3 )
+hframes = 4
+
+[node name="Sprite4" type="Sprite" parent="sprite/Sprite"]
+show_behind_parent = true
+position = Vector2( -1.23978e-005, 8.25931 )
+rotation = -8.88506e-006
+texture = ExtResource( 3 )
+hframes = 4
+frame = 2
 
 [node name="Sprite2" type="Sprite" parent="sprite"]
-visible = false
-position = Vector2( -3.52938, -4.62606 )
-rotation = 1.5708
+show_behind_parent = true
+position = Vector2( 4.68668, -1.55487 )
+rotation = 3.14159
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 3 )
-flip_h = true
+hframes = 4
+
+[node name="Sprite3" type="Sprite" parent="sprite/Sprite2"]
+show_behind_parent = true
+position = Vector2( 2.38419e-005, -7.91258 )
+texture = ExtResource( 3 )
+hframes = 4
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 scale = Vector2( 4.5, 4.5 )
 shape = SubResource( 1 )
 
@@ -93,3 +147,14 @@ position = Vector2( 0, 1 )
 [node name="anim" type="AnimationPlayer" parent="."]
 anims/dano = SubResource( 2 )
 anims/idle = SubResource( 3 )
+
+[node name="Light2D" type="Light2D" parent="."]
+visible = false
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = -15.0
+pitch_scale = 0.5
+autoplay = true

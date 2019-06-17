@@ -1,17 +1,15 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://scenes/bosses/centipeta_cabeca.gd" type="Script" id=1]
-[ext_resource path="res://sprites/Artesanal/Cecilia/corpo.png" type="Texture" id=2]
-[ext_resource path="res://sprites/Artesanal/Larissa/antena.png" type="Texture" id=3]
-[ext_resource path="res://samples/explosion.wav" type="AudioStream" id=4]
-[ext_resource path="res://samples/musicas/RUGIDO BOSS.wav" type="AudioStream" id=5]
+[ext_resource path="res://scenes/bosses/bortolomeu.gd" type="Script" id=1]
+[ext_resource path="res://sprites/Artesanal/Margaret/Margaret.png" type="Texture" id=2]
+[ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 8.59336
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 9, -2, 9, 2, -5, 8, -5, -8 )
 
 [sub_resource type="Gradient" id=2]
-offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
-colors = PoolColorArray( 1, 1, 1, 1, 1, 0.960938, 0, 1, 1, 0.395947, 0, 1, 1, 0.31162, 0, 1, 1, 0, 0, 0.105882 )
+offsets = PoolRealArray( 0, 0.222222, 0.614815, 0.785185, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 0.842804, 0.800781, 1, 0.894531, 0.318278, 0.16423, 1, 0.996094, 0.0700378, 0, 1, 1, 0, 0, 0.145098 )
 
 [sub_resource type="GradientTexture" id=3]
 gradient = SubResource( 2 )
@@ -73,44 +71,80 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 0.235294, 0.117647, 0, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 
-[node name="centipeta_cabeca" type="KinematicBody2D"]
-collision_layer = 4096
-collision_mask = 4096
+[sub_resource type="Animation" id=7]
+resource_name = "morrer"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Particles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("sprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("audio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ 0.0 ],
+"method": "play"
+} ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "queue_free"
+} ]
+}
+
+[node name="bortolomeu" type="KinematicBody2D"]
+scale = Vector2( 10, 10 )
 script = ExtResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
-modulate = Color( 0.235294, 0.117647, 0, 1 )
-rotation = -1.5708
-scale = Vector2( 10, 10 )
+rotation = 1.5708
+scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="sprite"]
-modulate = Color( 0.215686, 0, 0, 1 )
-position = Vector2( 3.45375, 4.98907 )
-rotation = 3.14159
-scale = Vector2( 0.5, 1 )
-texture = ExtResource( 3 )
-
-[node name="Sprite2" type="Sprite" parent="sprite"]
-modulate = Color( 0.215686, 0, 0, 1 )
-position = Vector2( -3.31468, 4.98906 )
-scale = Vector2( 0.5, 1 )
-texture = ExtResource( 3 )
-flip_v = true
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-scale = Vector2( 4.5, 4.5 )
+position = Vector2( -11.5791, 0 )
+scale = Vector2( 5.83567, 5.83567 )
 shape = SubResource( 1 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )
-
-[node name="lado" type="Position2D" parent="."]
-position = Vector2( 0, 1 )
 
 [node name="Particles2D" type="Particles2D" parent="."]
 emitting = false
@@ -120,13 +154,9 @@ explosiveness = 1.0
 process_material = SubResource( 4 )
 
 [node name="audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource( 3 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
 anims/dano = SubResource( 5 )
 anims/idle = SubResource( 6 )
-
-[node name="grito" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-volume_db = -10.0
-pitch_scale = 2.0
+anims/morrer = SubResource( 7 )

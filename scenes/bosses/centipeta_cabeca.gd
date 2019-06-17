@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
-var avanco = 200
+var avanco = 135
+var avanco_max = 135
 var curva = 200
 var esquiva = 700
 var angulo = 0
@@ -28,8 +29,8 @@ func _process(delta):
 		remove_from_group(game.INIMIGO)
 		set_process(false)
 		set_physics_process(false)
-		set_collision_layer_bit(0, false)
-		set_collision_mask_bit(0, false)
+		set_collision_layer_bit(12, false)
+		set_collision_mask_bit(12, false)
 		get_node("sprite").visible = false
 	
 
@@ -41,7 +42,7 @@ func _physics_process(delta):
 	
 	if get_parent().vida > 0 and get_parent().ativo:
 		angulo = angulo + periodo_curva
-		if global_position.distance_to(path[1]) > 20:
+		if global_position.distance_to(path[1]) > -1:
 			move_and_slide(((get_node("frente").get_global_position() - get_global_position()) * avanco) + ((get_node("lado").get_global_position() - get_global_position()) * sin(deg2rad(angulo)) * curva))
 #		if iluminado and game.get_camera().escuro:
 #			move_and_slide((get_node("lado").get_global_position() - get_global_position()) * esquiva * direcao)
@@ -53,10 +54,8 @@ func _physics_process(delta):
 	pass
 
 func dano(valor):
-	if not get_parent().imortal:
-		get_parent().vida = get_parent().vida - valor
-		get_node("anim").stop()
-		get_node("anim").play("dano")
+	if get_parent().imortal:
+		get_parent().vida = get_parent().vida - 1
 	pass
 
 #func na_luz():
@@ -95,3 +94,9 @@ func move_along_path(distance : float):
 #		return
 #	set_process(true)
 #	pass
+
+func trocar():
+	if avanco_max != 175:
+		get_node("grito").play()
+		avanco_max = 175
+		avanco = avanco_max

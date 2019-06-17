@@ -25,6 +25,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	get_node("Sprite").set_modulate(game.get_main().get_node("TileMap").modulate)
+	
 	if len(abrir_com_inimigos) > 0:
 		var i = 0
 		var existe = false

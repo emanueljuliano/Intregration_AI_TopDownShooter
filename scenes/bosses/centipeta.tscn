@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/bosses/centipeta.gd" type="Script" id=1]
 [ext_resource path="res://scenes/bosses/centipeta_cabeca.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/bosses/centipeta_corpo.tscn" type="PackedScene" id=3]
 [ext_resource path="res://samples/musicas/MORTE INSETO GRANDE 2.wav" type="AudioStream" id=4]
 [ext_resource path="res://samples/musicas/CRAWLING.wav" type="AudioStream" id=5]
+[ext_resource path="res://scenes/spawnador.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
@@ -97,4 +98,16 @@ stream = ExtResource( 4 )
 [node name="crawl" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 5 )
 volume_db = -20.0
-autoplay = true
+
+[node name="spawnador" parent="." instance=ExtResource( 6 )]
+vet_x = 1000
+vet_y = 1000
+intervalo = 30
+antony = false
+larissa = false
+margaret = false
+bebel_n = 9
+barbara = false
+greg = false
+beto = false
+vagner = false

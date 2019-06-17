@@ -71,8 +71,8 @@ points = PoolVector2Array( 0, -5, 8.66025, 5, 4.33, 6.77, 0, 7.32, -4.33, 6.77, 
 
 [node name="player" type="KinematicBody2D"]
 scale = Vector2( 0.5, 0.5 )
-collision_layer = 2575
-collision_mask = 2575
+collision_layer = 6671
+collision_mask = 6671
 script = ExtResource( 1 )
 
 [node name="sprite" type="Sprite" parent="."]
