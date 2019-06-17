@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://scenes/bosses/monel.gd" type="Script" id=1]
+[ext_resource path="res://scenes/bosses/vanessa.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Backgrounds/triangulo.png" type="Texture" id=2]
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
 
-[sub_resource type="ConvexPolygonShape2D" id=8]
+[sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( -15, -15, 15, 0, -15, 15 )
 
 [sub_resource type="Animation" id=2]
@@ -197,17 +197,11 @@ scale = 10.0
 scale_random = 0.5
 color_ramp = SubResource( 6 )
 
-[node name="monel" type="KinematicBody2D"]
+[node name="vanessa" type="KinematicBody2D"]
 z_index = 1
-collision_layer = 2
-collision_mask = 2
+collision_layer = 2048
+collision_mask = 2048
 script = ExtResource( 1 )
-
-[node name="sprite" type="Sprite" parent="."]
-modulate = Color( 1, 1, 0, 1 )
-position = Vector2( -80, 0 )
-rotation = -1.57079
-texture = ExtResource( 2 )
 
 [node name="sprite2" type="Sprite" parent="."]
 modulate = Color( 0, 0.607843, 1, 1 )
@@ -215,8 +209,20 @@ rotation = 1.57079
 scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
 
-[node name="sprite4" type="Sprite" parent="."]
+[node name="sprite5" type="Sprite" parent="sprite2"]
+position = Vector2( -0.000260387, 41.5 )
+rotation = -3.14158
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="sprite" type="Sprite" parent="."]
 modulate = Color( 1, 1, 0, 1 )
+position = Vector2( -22, 0 )
+rotation = -1.57079
+texture = ExtResource( 2 )
+
+[node name="sprite4" type="Sprite" parent="."]
+modulate = Color( 0, 0.607843, 1, 1 )
 position = Vector2( 7, 0 )
 rotation = -1.57079
 texture = ExtResource( 2 )
@@ -228,8 +234,9 @@ rotation = 1.57079
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 scale = Vector2( 4.5, 4.5 )
-shape = SubResource( 8 )
+shape = SubResource( 1 )
 
 [node name="lado" type="Position2D" parent="."]
 position = Vector2( 0, 1 )

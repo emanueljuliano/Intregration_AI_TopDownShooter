@@ -6,7 +6,7 @@
 [ext_resource path="res://samples/musicas/MORTE INSETO ESMAGADO.wav" type="AudioStream" id=4]
 [ext_resource path="res://samples/musicas/GRILO.wav" type="AudioStream" id=5]
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=1]
 
 [sub_resource type="Animation" id=2]
 resource_name = "dano"
@@ -106,14 +106,14 @@ tracks/4/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Gradient" id=6]
+[sub_resource type="Gradient" id=5]
 offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
 colors = PoolColorArray( 1, 1, 1, 1, 0.607843, 1, 0, 1, 0.0344753, 0.706055, 0, 1, 0.0286922, 0.299805, 0, 1, 0, 0.249023, 0.0166015, 0 )
 
-[sub_resource type="GradientTexture" id=7]
-gradient = SubResource( 6 )
+[sub_resource type="GradientTexture" id=6]
+gradient = SubResource( 5 )
 
-[sub_resource type="ParticlesMaterial" id=8]
+[sub_resource type="ParticlesMaterial" id=7]
 flag_disable_z = true
 spread = 180.0
 gravity = Vector3( 0, 0, 0 )
@@ -124,7 +124,7 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 10.0
 scale_random = 0.5
-color_ramp = SubResource( 7 )
+color_ramp = SubResource( 6 )
 
 [node name="greg" type="KinematicBody2D"]
 scale = Vector2( 0.75, 0.75 )
@@ -145,7 +145,7 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 scale = Vector2( 2, 2 )
-shape = SubResource( 9 )
+shape = SubResource( 1 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )
@@ -160,7 +160,7 @@ emitting = false
 amount = 20
 one_shot = true
 explosiveness = 1.0
-process_material = SubResource( 8 )
+process_material = SubResource( 7 )
 
 [node name="audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )

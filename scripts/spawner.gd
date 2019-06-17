@@ -4,21 +4,24 @@ export var vet_x = Vector2(0, 1024)
 export var vet_y = Vector2(0, 600)
 export var ativado = true
 export var intervalo = 2
-var tempo = 0
+var tempo = intervalo
 var pre_antony = preload("res://scenes/antony.tscn")
 export var antony = true
 var pre_monica = preload("res://scenes/monica.tscn")
 export var monica = true
+export var monica_n = 1
 var pre_larissa = preload("res://scenes/larissa.tscn")
 export var larissa = true
 var pre_margaret = preload("res://scenes/margaret.tscn")
 export var margaret = true
 var pre_bebel = preload("res://scenes/bebel.tscn")
 export var bebel = true
+export var bebel_n = 1
 var pre_barbara = preload("res://scenes/barbara.tscn")
 export var barbara = true
 var pre_greg = preload("res://scenes/greg.tscn")
 export var greg = true
+export var greg_n = 1
 var pre_beto = preload("res://scenes/beto.tscn")
 export var beto = true
 var lista_inimigos = []
@@ -31,17 +34,23 @@ func _ready():
 	if antony:
 		lista_inimigos.append(pre_antony)
 	if monica:
-		lista_inimigos.append(pre_monica)
+		while monica_n > 0:
+			lista_inimigos.append(pre_monica)
+			monica_n = monica_n - 1
 	if larissa:
 		lista_inimigos.append(pre_larissa)
 	if margaret:
 		lista_inimigos.append(pre_margaret)
 	if bebel:
-		lista_inimigos.append(pre_bebel)
+		while bebel_n > 0:
+			lista_inimigos.append(pre_bebel)
+			bebel_n = bebel_n - 1
 	if barbara:
 		lista_inimigos.append(pre_barbara)
 	if greg:
-		lista_inimigos.append(pre_greg)
+		while greg_n > 0:
+			lista_inimigos.append(pre_greg)
+			greg_n = greg_n - 1
 	if beto:
 		lista_inimigos.append(pre_beto)
 	randomize()

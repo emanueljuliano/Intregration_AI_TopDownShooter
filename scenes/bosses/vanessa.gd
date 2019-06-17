@@ -2,11 +2,12 @@ extends KinematicBody2D
 
 # GIRO 2000 = ORBITAR
 # GIRO 1000 = GIRAR E AVANCAR
-var giro = 800
-var avanco = 800
-var distancia = 1000
+var giro = 700
+var avanco = 700
+var distancia = 800
+var distancia_giro = 350
 
-var vida = 2500
+var vida = 1000
 var dano = 10
 
 var atacando = false
@@ -26,8 +27,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	tempo_giro_max = (randi()%6)+4
+	tempo_giro_max = (randi()%6)+6
 	tempo_ataque_max = (randi()%6)+4
+	
+	if vida <= 300:
+		giro = 1000
+		avanco = 1000
 	
 	if vida <= 0:
 		if death == 0:
@@ -64,7 +69,7 @@ func _physics_process(delta):
 			move_and_slide((get_node("frente").get_global_position() - get_global_position()) * avanco)
 		if not atacando:
 			move_and_slide((get_node("lado").get_global_position() - get_position()) * giro)
-			if get_global_position().distance_to(game.get_player().get_global_position()) > 200:
+			if get_global_position().distance_to(game.get_player().get_global_position()) > distancia_giro:
 				move_and_slide((get_node("frente").get_global_position() - get_global_position()) * 200)
 		if get_slide_count() > 0:
 			if get_slide_collision(0).collider == game.get_player():
@@ -73,6 +78,8 @@ func _physics_process(delta):
 
 func dano(valor):
 	vida = vida - valor
+	if vida <= 0:
+		game.get_player().vida = game.get_player().vida_max
 	get_node("anim").stop()
 	get_node("anim").play("dano")
 	pass

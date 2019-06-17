@@ -775,4 +775,3 @@ cell_size = Vector2( 8, 8 )
 collision_layer = 9
 collision_mask = 9
 format = 1
-tile_data = PoolIntArray( 0, 393223, 0, 1, 393223, 0, 65536, 10, 0, 65537, 262145, 0, 65539, 131084, 0 )

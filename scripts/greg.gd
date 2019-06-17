@@ -10,7 +10,7 @@ var tempo_movendo = 0
 
 var pre_spawn_vida = preload("res://scenes/vida.tscn")
 
-var vida = 40
+var vida = 30
 var dano = 10
 
 var death = 0

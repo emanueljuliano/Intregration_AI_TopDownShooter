@@ -5,7 +5,7 @@ extends KinematicBody2D
 var giro = 1000
 var avanco = 200
 
-var vida = 40
+var vida = 30
 var dano = 10
 
 export var ativo = true
