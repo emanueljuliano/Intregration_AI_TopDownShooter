@@ -42,7 +42,7 @@ func _physics_process(delta):
 	
 	if get_parent().vida > 0 and get_parent().ativo:
 		angulo = angulo + periodo_curva
-		if global_position.distance_to(path[1]) > -1:
+		if global_position.distance_to(path[1]) > 1:
 			move_and_slide(((get_node("frente").get_global_position() - get_global_position()) * avanco) + ((get_node("lado").get_global_position() - get_global_position()) * sin(deg2rad(angulo)) * curva))
 #		if iluminado and game.get_camera().escuro:
 #			move_and_slide((get_node("lado").get_global_position() - get_global_position()) * esquiva * direcao)

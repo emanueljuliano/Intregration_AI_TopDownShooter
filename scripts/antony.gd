@@ -4,6 +4,8 @@ var vel = 400
 var amigos = []
 var quantos_amigos = 4
 
+var iluminado = false
+
 var raio_grupo = 100
 var agrupado = false
 var atacando = false
@@ -75,9 +77,15 @@ func _physics_process(delta):
 			get_node("sprite").modulate.g = 1
 			get_node("sprite").modulate.b = 1
 			agrupado = false
-			random_negative()
-			angulo = angulo + (randi()%rotacao) * negativo
-			set_rotation(deg2rad(angulo))
+			#FUGIR
+			if iluminado:
+				print("lolo")
+				look_at(global_position + (global_position - game.get_player().get_position()))
+			#NÃO FUGIR
+			else:
+				random_negative()
+				angulo = angulo + (randi()%rotacao) * negativo
+				set_rotation(deg2rad(angulo))
 			if get_slide_count() > 0:
 				if get_slide_collision(0).collider.has_method("add_amigo"):
 					preso = false
@@ -155,4 +163,12 @@ func morreu_coitado():
 		if amigos[i].vida <= 0:
 			amigos.remove(i)
 		i = i + 1
+	pass
+	
+func na_luz():
+	iluminado = true
+	pass
+
+func no_escuro():
+	iluminado = false
 	pass

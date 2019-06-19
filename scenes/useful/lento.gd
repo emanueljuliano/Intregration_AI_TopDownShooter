@@ -20,7 +20,6 @@ func _ready():
 
 
 func _on_morte_body_entered(body):
-	print(body.filename)
 	if body == game.get_player():
 		dentro = true
 		game.get_player().lento = lentidao

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://sprites/Backgrounds/white.png" type="Texture" id=1]
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=2]
@@ -9,7 +9,10 @@
 [ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/spawnador.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/bosses/bortolomeu.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/bosses/DOUTOR/DOUTOR_beto.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/bosses/DOUTOR/DOUTOR_larissa.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/bosses/DOUTOR/DOUTOR_monica.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/bosses/arnaldo.tscn" type="PackedScene" id=13]
 
 [node name="main" type="Node2D"]
 
@@ -94,5 +97,14 @@ barbara = false
 greg = false
 beto = false
 
-[node name="margaret" parent="." instance=ExtResource( 10 )]
-position = Vector2( 840, 200 )
+[node name="DOUTOR_beto" parent="." instance=ExtResource( 10 )]
+position = Vector2( 650, 280 )
+
+[node name="DOUTOR_larissa" parent="." instance=ExtResource( 11 )]
+position = Vector2( -200, 360.64 )
+
+[node name="DOUTOR_monica" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2600, 369.967 )
+
+[node name="arnaldo" parent="." instance=ExtResource( 13 )]
+position = Vector2( 920, 120 )
