@@ -79,7 +79,6 @@ func _physics_process(delta):
 			agrupado = false
 			#FUGIR
 			if iluminado:
-				print("lolo")
 				look_at(global_position + (global_position - game.get_player().get_position()))
 			#NÃO FUGIR
 			else:

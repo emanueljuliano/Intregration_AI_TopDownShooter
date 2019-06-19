@@ -29,7 +29,6 @@ func _on_morte_body_entered(body):
 
 
 func _on_morte_body_exited(body):
-	print(body.filename)
 	if body == game.get_player():
 		dentro = false
 		game.get_player().lento = 1.0

@@ -54,6 +54,7 @@ margaret = false
 bebel = false
 barbara = false
 greg = false
+vagner = false
 
 [node name="beto" parent="." instance=ExtResource( 9 )]
 position = Vector2( 600, 200 )

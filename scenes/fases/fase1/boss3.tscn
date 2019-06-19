@@ -98,10 +98,10 @@ greg = false
 beto = false
 
 [node name="DOUTOR_beto" parent="." instance=ExtResource( 10 )]
-position = Vector2( 650, 280 )
+position = Vector2( 900, -440 )
 
 [node name="DOUTOR_larissa" parent="." instance=ExtResource( 11 )]
-position = Vector2( -200, 360.64 )
+position = Vector2( 395.181, 1160 )
 
 [node name="DOUTOR_monica" parent="." instance=ExtResource( 12 )]
 position = Vector2( 2600, 369.967 )
