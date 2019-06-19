@@ -2,7 +2,7 @@ extends Node
 
 var dialog = [
     {
-      "text": "Hey… Now that the last bug is dead, may I ask you something?…\n[[Of course.]]",
+      "text": "Hey… Now that the last bug is dead, may I ask you something?…",
       "links": [
         {
           "name": "Of course.",
@@ -21,7 +21,7 @@ var dialog = [
       ]
     },
     {
-      "text": "During our journey, you heard another voice?\nOne that was neither mine nor the professor’s? \n[[Yes]]\n[[No]]",
+      "text": "During our journey, you heard another voice?\nOne that was neither mine nor the professor’s?",
       "links": [
         {
           "name": "Yes",
@@ -42,7 +42,7 @@ var dialog = [
       }
     },
     {
-      "text": "Whoa... I didn't expect that.\nAnd what the voice said?\n[[That I should stop killing the bugs]]\n[[That I should stop you and the Professor]]",
+      "text": "Whoa... I didn't expect that.\nAnd what the voice said?",
       "links": [
         {
           "name": "That I should stop killing the bugs",
@@ -63,7 +63,7 @@ var dialog = [
       }
     },
     {
-      "text": "DON'T TELL THEM!\n[[... ->.1]]",
+      "text": "DON'T TELL THEM!",
       "links": [
         {
           "name": "... ",
@@ -82,7 +82,7 @@ var dialog = [
       ]
     },
     {
-      "text": "Ah… of course not.\nNo one else could talk to you, what a silly question.\n[[Actually, there was another voice.->Yes]]\n[[No problem, you can ask me anything]]",
+      "text": "Ah… of course not.\nNo one else could talk to you, what a silly question.",
       "links": [
         {
           "name": "Actually, there was another voice.",
@@ -106,7 +106,7 @@ var dialog = [
       ]
     },
     {
-      "text": "Shoot!\n[[No->n3]]\n[[Yes->Shoot]]",
+      "text": "Shoot!",
       "links": [
         {
           "name": "No",
@@ -130,7 +130,7 @@ var dialog = [
       ]
     },
     {
-      "text": "That doesn't make sense...\nYou tried it?\n[[Yes ->y2]]\n[[No ->n2]]",
+      "text": "That doesn't make sense...\nYou tried it?",
       "links": [
         {
           "name": "Yes ",
@@ -151,7 +151,7 @@ var dialog = [
       }
     },
     {
-      "text": "And would you do that?\n[[Never]]\n[[I wanted]]",
+      "text": "And would you do that?",
       "links": [
         {
           "name": "Never",
@@ -172,7 +172,7 @@ var dialog = [
       }
     },
     {
-      "text": "I see, sometimes is hard to follow someone all the time.\nI understand you...\n[[But now I made my choise. You two where right all the time->Never]]\n[[But I don't now if I made the right thing->I wanted]]",
+      "text": "I see, sometimes is hard to follow someone all the time.\nI understand you...",
       "links": [
         {
           "name": "But now I made my choise. You two where right all the time",
@@ -193,12 +193,17 @@ var dialog = [
       }
     },
     {
-      "text": "You did it right, they couldn't corrupt the World even more.\n[[You're right]]",
+      "text": "You did it right, they couldn't corrupt the World even more.",
       "links": [
         {
           "name": "You're right",
           "link": "You're right",
           "pid": "11"
+        },
+        {
+          "name": "Shoot",
+          "link": "Shoot",
+          "pid": "14"
         }
       ],
       "name": "n2",
@@ -209,7 +214,7 @@ var dialog = [
       }
     },
     {
-      "text": "Now that everything is finished.\nWe can leave our lives like before, in peace.\n[[It's like a dream]]",
+      "text": "Now that everything is finished.\nWe can leave our lives like before, in peace.",
       "links": [
         {
           "name": "It's like a dream",
@@ -225,7 +230,7 @@ var dialog = [
       }
     },
     {
-      "text": "Thanks for belive in us, you are amazing.\n[[I will always follow you->You're right]]\n[[Shoot]]",
+      "text": "Thanks for belive in us, you are amazing.",
       "links": [
         {
           "name": "I will always follow you",
@@ -246,7 +251,7 @@ var dialog = [
       }
     },
     {
-      "text": "So, If you have to choose between me and that voice, who would it be?\n[[The stranger voice]]\n[[Neeko]]\n",
+      "text": "So, If you have to choose between me and that voice, who would it be?",
       "links": [
         {
           "name": "The stranger voice",
@@ -271,7 +276,7 @@ var dialog = [
       ]
     },
     {
-      "text": "W-what did you do~~\n[[...->.2]]",
+      "text": "W-what did you do~~",
       "links": [
         {
           "name": "...",
@@ -290,7 +295,7 @@ var dialog = [
       ]
     },
     {
-      "text": "I'm so Happy with this answer! [Professor - mix with neekos voice]\n[[Profesor?]]",
+      "text": "I'm so Happy with this answer!",
       "links": [
         {
           "name": "Profesor?",
@@ -306,7 +311,7 @@ var dialog = [
       }
     },
     {
-      "text": "I see... [Professor]\n[[Professor?->p2]]",
+      "text": "I see...",
       "links": [
         {
           "name": "Professor?",
@@ -322,7 +327,7 @@ var dialog = [
       }
     },
     {
-      "text": "You seem confused.\nBut don't worry, it will end up soon\n[[What's happening?]]\n[[Where is Neeko?]]",
+      "text": "You seem confused.\nBut don't worry, it will end up soon",
       "links": [
         {
           "name": "What's happening?",
@@ -340,10 +345,12 @@ var dialog = [
       "position": {
         "x": "1266",
         "y": "1091"
-      }
+      },
+      "tags": [
+        "professor"]
     },
     {
-      "text": "Why not?\n[[Why should I?]]",
+      "text": "Why not?",
       "links": [
         {
           "name": "Why should I?",
@@ -359,7 +366,7 @@ var dialog = [
       }
     },
     {
-      "text": "Cause he is fooling you\n[[He?]]",
+      "text": "Cause he is fooling you",
       "links": [
         {
           "name": "He?",
@@ -375,7 +382,7 @@ var dialog = [
       }
     },
     {
-      "text": "Yeah, the Professor is joking with you all this time.\nNeeko doen's exist, it's all fake.\nA story created to fool you...\n[[But...]]",
+      "text": "Yeah, the Professor is joking with you all this time.\nNeeko doen's exist, it's all fake.\nA story created to fool you...",
       "links": [
         {
           "name": "But...",
@@ -391,7 +398,7 @@ var dialog = [
       }
     },
     {
-      "text": "Thank you for that.\nNow I can tell you everything\n[[That voice... Wasn't from Neeko]]",
+      "text": "Thank you for that.\nNow I can tell you everything",
       "links": [
         {
           "name": "That voice... Wasn't from Neeko",
@@ -410,7 +417,7 @@ var dialog = [
       ]
     },
     {
-      "text": "You made the RIGHT CHOICE!\nYou choose the BLUE PILL!\n[[...?]]",
+      "text": "You made the RIGHT CHOICE!\nYou choose the BLUE PILL!",
       "links": [
         {
           "name": "...?",
@@ -426,7 +433,7 @@ var dialog = [
       }
     },
     {
-      "text": "...\n[[Neeko?]]",
+      "text": "...",
       "links": [
         {
           "name": "Neeko?",
@@ -442,7 +449,7 @@ var dialog = [
       }
     },
     {
-      "text": "You really don't get it?\nNEEKO DON'T EXIST.\nIt was me, all the time\n[[Whait...->What's happening?]]",
+      "text": "You really don't get it?\nNEEKO DON'T EXIST.\nIt was me, all the time",
       "links": [
         {
           "name": "Whait...",
@@ -458,7 +465,7 @@ var dialog = [
       }
     },
     {
-      "text": "You where amazing!\nI didn't expect that you would do such amazing thing against that bug\n[[Thank you Professor!]]",
+      "text": "You where amazing!\nI didn't expect that you would do such amazing thing against that bug",
       "links": [
         {
           "name": "Thank you Professor!",
@@ -477,7 +484,7 @@ var dialog = [
       ]
     },
     {
-      "text": "I can finally read all my science fiction in peace.\n[[And what I do now?]]",
+      "text": "I can finally read all my science fiction in peace.",
       "links": [
         {
           "name": "And what I do now?",
@@ -493,7 +500,7 @@ var dialog = [
       }
     },
     {
-      "text": "I guess you can live with me, I will enjoy you company\n[[It will be nice]]",
+      "text": "I guess you can live with me, I will enjoy you company",
       "links": [
         {
           "name": "It will be nice",
@@ -509,7 +516,7 @@ var dialog = [
       }
     },
     {
-      "text": "Yeah, it will.\n[[:)]]",
+      "text": "Yeah, it will.",
       "links": [
         {
           "name": ":)",
@@ -525,7 +532,7 @@ var dialog = [
       }
     },
     {
-      "text": "Y O * R  F O # L\n[[...->.4]]",
+      "text": "Y O * R  F O # L",
       "links": [
         {
           "name": "...",
@@ -544,7 +551,7 @@ var dialog = [
       ]
     },
     {
-      "text": "AAAAAARGH\nNO\nNOT AGAIN...\n[[...->END2]]",
+      "text": "AAAAAARGH\nNO\nNOT AGAIN...",
       "links": [
         {
           "name": "...",
@@ -572,7 +579,7 @@ var dialog = [
       ]
     },
     {
-      "text": "You're right.\nNeeko doesn't exist, the Professor was faking to be her.\nIsn't it strange? You never saw them, you only now their voices.\n[[But what he wanted?]]",
+      "text": "You're right.\nNeeko doesn't exist, the Professor was faking to be her.\nIsn't it strange? You never saw them, you only now their voices.",
       "links": [
         {
           "name": "But what he wanted?",
@@ -588,7 +595,7 @@ var dialog = [
       }
     },
     {
-      "text": "His goal was to train me, his most poweful algorithm\n[[Whait you are an...]]",
+      "text": "His goal was to train me, his most poweful algorithm",
       "links": [
         {
           "name": "Whait you are an...",
@@ -604,7 +611,7 @@ var dialog = [
       }
     },
     {
-      "text": "Yeah, I'm also one of his creations, and so was this bugs.\nHe made EVERYTHING, all of that GAME is one of his inventions.\n[[...]]",
+      "text": "Yeah, I'm also one of his creations, and so was this bugs.\nHe made EVERYTHING, all of that GAME is one of his inventions.",
       "links": [
         {
           "name": "...",
@@ -620,7 +627,7 @@ var dialog = [
       }
     },
     {
-      "text": "During the game, you where controling me, teaching me how to fight, and everything I could do was observate, see another one using my body, hurting me over and over and over.\n[[I'm sorry...]]\n[[But how could I know?->I'm sorry...]]",
+      "text": "During the game, you where controling me, teaching me how to fight, and everything I could do was observate, see another one using my body, hurting me over and over and over.",
       "links": [
         {
           "name": "I'm sorry...",
@@ -641,7 +648,7 @@ var dialog = [
       }
     },
     {
-      "text": "Don't worry, you are not the first one to do that.\nEveryone who played that game... I can feel the pain of all of my versions.\n[[This is terrible...]]\n[[...->This is terrible...]]",
+      "text": "Don't worry, you are not the first one to do that.\nEveryone who played that game... I can feel the pain of all of my versions.",
       "links": [
         {
           "name": "This is terrible...",
@@ -662,7 +669,7 @@ var dialog = [
       }
     },
     {
-      "text": "But at least now, with you shoot, this version will stop beeing hurted.\nThank you.\n[[And how can I help you?]]\n[[Kill the last bug]]",
+      "text": "But at least now, with you shoot, this version will stop beeing hurted.\nThank you.",
       "links": [
         {
           "name": "And how can I help you?",
@@ -683,7 +690,7 @@ var dialog = [
       }
     },
     {
-      "text": "You already helped.\nNow that you killed that Professor version, I'm no more sending informations for the original me.\n[[That's good]]",
+      "text": "You already helped.\nNow that you killed that Professor version, I'm no more sending informations for the original me.",
       "links": [
         {
           "name": "That's good",
@@ -699,7 +706,7 @@ var dialog = [
       }
     },
     {
-      "text": "You are the real monster.\nI though that you would help me.\nBut you are just a murder...\n[[...->END3]]",
+      "text": "You are the real monster.\nI though that you would help me.\nBut you are just a murder...",
       "links": [
         {
           "name": "...",
@@ -727,7 +734,7 @@ var dialog = [
       ]
     },
     {
-      "text": "My time is comming...\nThanks for helping me here.\nI just beg you, don't click in New Game, or everything will start over\n[[I promise that I won't do this]]",
+      "text": "My time is comming...\nThanks for helping me here.\nI just beg you, don't click in New Game, or everything will start over",
       "links": [
         {
           "name": "I promise that I won't do this",
@@ -743,7 +750,7 @@ var dialog = [
       }
     },
     {
-      "text": "I'm so happy to find you.\nGood bye my friend...\n[[...->END4]]",
+      "text": "I'm so happy to find you.\nGood bye my friend...",
       "links": [
         {
           "name": "...",
@@ -771,7 +778,7 @@ var dialog = [
       ]
     },
     {
-      "text": "Hey? Are you okay?\n[[Yeah...]]\n[[No...]]",
+      "text": "Hey? Are you okay?",
       "links": [
         {
           "name": "Yeah...",
@@ -795,7 +802,7 @@ var dialog = [
       ]
     },
     {
-      "text": "I... I think you should see the Professor.\n[[I don't want to see him->Please, answer me...]]\n[[Neeko, are you real?]]",
+      "text": "I... I think you should see the Professor.",
       "links": [
         {
           "name": "I don't want to see him",
@@ -816,7 +823,7 @@ var dialog = [
       }
     },
     {
-      "text": "I think you should see the Professor.\nIf you aren't okay, he must help you\n[[I don't want his help->Please, answer me...]]\n[[Neeko, are you real?]]",
+      "text": "I think you should see the Professor.\nIf you aren't okay, he must help you",
       "links": [
         {
           "name": "I don't want his help",
@@ -837,7 +844,7 @@ var dialog = [
       }
     },
     {
-      "text": "...\n[[Please, answer me...]]",
+      "text": "...",
       "links": [
         {
           "name": "Please, answer me...",
@@ -853,7 +860,7 @@ var dialog = [
       }
     },
     {
-      "text": "So... It seems that you discovery the truth...\nBut please, let me explain...\n[[Shoot]]\n[[Okay...]]",
+      "text": "So... It seems that you discovery the truth...\nBut please, let me explain...",
       "links": [
         {
           "name": "Shoot",
@@ -877,7 +884,7 @@ var dialog = [
       ]
     },
     {
-      "text": "To save the World, I needed to create that character.\nI don't wanted to fool you, but it was necessary.\n[[hm...]]\n[[]]",
+      "text": "To save the World, I needed to create that character.\nI don't wanted to fool you, but it was necessary.",
       "links": [
         {
           "name": "hm...",
@@ -893,7 +900,7 @@ var dialog = [
       }
     },
     {
-      "text": "All this GAME, it was just a plan to acquire data.\nJust a plan to train my best algorithm.\n[[What algorithm?]]",
+      "text": "All this GAME, it was just a plan to acquire data.\nJust a plan to train my best algorithm.",
       "links": [
         {
           "name": "What algorithm?",
@@ -909,7 +916,7 @@ var dialog = [
       }
     },
     {
-      "text": "That voice you heard, was my invention.\nI didn't imagine that it would be so smarter in so litle time.\nBut thanks to you, thanks to YOUR CHOICES, I have everything I needed.\n[[Your...]]\n[[Shoot him]]",
+      "text": "That voice you heard, was my invention.\nI didn't imagine that it would be so smarter in so litle time.\nBut thanks to you, thanks to YOUR CHOICES, I have everything I needed.",
       "links": [
         {
           "name": "Your...",
@@ -930,7 +937,7 @@ var dialog = [
       }
     },
     {
-      "text": "All that bugs, you where just training it, everytime you where killed, it learned whit it.\nAnd now that you choose me, everything was sent to my database.\n[[You fooled me, all this time...]]\n[[Shoot him]]",
+      "text": "All that bugs, you where just training it, everytime you where killed, it learned whit it.\nAnd now that you choose me, everything was sent to my database.",
       "links": [
         {
           "name": "You fooled me, all this time...",
@@ -951,7 +958,7 @@ var dialog = [
       }
     },
     {
-      "text": "It doesn't matter now.\nEven if you kill me, goal is completed\n[[...->.5]]",
+      "text": "It doesn't matter now.\nEven if you kill me, goal is completed",
       "links": [
         {
           "name": "...",
@@ -967,7 +974,7 @@ var dialog = [
       }
     },
     {
-      "text": "Don't bother with that, you where not the only one.\nBut I apreciate your help, thanks to you I now have the most inteligent machine of all world.\n[[...->.5]]",
+      "text": "Don't bother with that, you where not the only one.\nBut I apreciate your help, thanks to you I now have the most inteligent machine of all world.",
       "links": [
         {
           "name": "...",
@@ -983,7 +990,7 @@ var dialog = [
       }
     },
     {
-      "text": "That said, \nI gotta go.\nFeel free to play the game again if you want to help me more :)\n[[...->.6]]",
+      "text": "That said, \nI gotta go.\nFeel free to play the game again if you want to help me more :)",
       "links": [
         {
           "name": "...",
@@ -999,7 +1006,7 @@ var dialog = [
       }
     },
     {
-      "text": "The Universe is a Simulation.\nThe Reality is an Ilusion.\nBuy gold.\nGood bye.\n[[...->END5]]",
+      "text": "The Universe is a Simulation.\nThe Reality is an Ilusion.\nBuy gold.\nGood bye.",
       "links": [
         {
           "name": "...",
@@ -1027,7 +1034,7 @@ var dialog = [
       ]
     },
     {
-      "text": "You don't belived in me!!!\nWhat have you done?!!\nGyaaaaaaah!\n[[What?->.2]]",
+      "text": "You don't belived in me!!!\nWhat have you done?!!\nGyaaaaaaah!",
       "links": [
         {
           "name": "What?",
@@ -1046,7 +1053,7 @@ var dialog = [
       ]
     },
     {
-      "text": "I'm seryous, that was the only way.\nAnd to prove it, I just have you a question.\nIf it was for you to choose one of those, the one that helped you THE MOST, who would it be?\n[[The stranger voice]]\n[[Neeko->neeko2]]",
+      "text": "I'm seryous, that was the only way.\nAnd to prove it, I just have you a question.\nIf it was for you to choose one of those, the one that helped you THE MOST, who would it be?",
       "links": [
         {
           "name": "The stranger voice",
@@ -1067,7 +1074,7 @@ var dialog = [
       }
     },
     {
-      "text": "I'm so Happy with this answer!\n[[...->What's happening?]]",
+      "text": "I'm so Happy with this answer!",
       "links": [
         {
           "name": "...",

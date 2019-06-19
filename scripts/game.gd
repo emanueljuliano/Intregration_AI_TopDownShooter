@@ -136,4 +136,4 @@ func Continue():
 		get_tree().change_scene("res://scenes/fases/fase1/fase1_5.tscn")
 	else:
 		get_tree().change_scene("res://scenes/main.tscn")
-	
+

@@ -1,0 +1,189 @@
+{
+  "passages": [
+    {
+      "text": "Seems that you learned more than I could teach you, congratulations.\n[[Thank you, it was hard, but I think I made it]]",
+      "links": [
+        {
+          "name": "Thank you, it was hard, but I think I made it",
+          "link": "Thank you, it was hard, but I think I made it",
+          "pid": "2"
+        }
+      ],
+      "name": "First_level",
+      "pid": "1",
+      "position": {
+        "x": "580",
+        "y": "272"
+      },
+      "tags": [
+        "professor"
+      ]
+    },
+    {
+      "text": "Now, is about time to tell you about your pass\n[[finally…]]",
+      "links": [
+        {
+          "name": "finally…",
+          "link": "finally…",
+          "pid": "3"
+        }
+      ],
+      "name": "Thank you, it was hard, but I think I made it",
+      "pid": "2",
+      "position": {
+        "x": "580",
+        "y": "422"
+      }
+    },
+    {
+      "text": "You must notice that you have that strange power of “respawn” after die.\n[[Yeah…]]",
+      "links": [
+        {
+          "name": "Yeah…",
+          "link": "Yeah…",
+          "pid": "4"
+        }
+      ],
+      "name": "finally…",
+      "pid": "3",
+      "position": {
+        "x": "580",
+        "y": "572"
+      }
+    },
+    {
+      "text": "So, before loss your memory, you used that power to fight.\nYou where an extraordinary soldier.\n[[me…?]]",
+      "links": [
+        {
+          "name": "me…?",
+          "link": "me…?",
+          "pid": "5"
+        }
+      ],
+      "name": "Yeah…",
+      "pid": "4",
+      "position": {
+        "x": "581",
+        "y": "721"
+      }
+    },
+    {
+      "text": "That’s right.\nBut one day… There was an incident…\n[[...]]",
+      "links": [
+        {
+          "name": "...",
+          "link": "...",
+          "pid": "6"
+        }
+      ],
+      "name": "me…?",
+      "pid": "5",
+      "position": {
+        "x": "581",
+        "y": "871"
+      }
+    },
+    {
+      "text": "In a laboratory, some scientists where making an experiments with bugs.\nBut it got out of control and the bugs started to corrupt the world.\n[[And they tell me to fight against them?]]",
+      "links": [
+        {
+          "name": "And they tell me to fight against them?",
+          "link": "And they tell me to fight against them?",
+          "pid": "7"
+        }
+      ],
+      "name": "...",
+      "pid": "6",
+      "position": {
+        "x": "581",
+        "y": "1021"
+      }
+    },
+    {
+      "text": "Exactly.\nYou  achieved your goal of exterminate the bugs.\nBut there was consequences.\n[[…->.2]]",
+      "links": [
+        {
+          "name": "…",
+          "link": ".2",
+          "pid": "8"
+        }
+      ],
+      "name": "And they tell me to fight against them?",
+      "pid": "7",
+      "position": {
+        "x": "581",
+        "y": "1171"
+      }
+    },
+    {
+      "text": "In your last fight, you where against the most terryfing bug.\nIt was such a hard battle, that after that, your respawn power didn’t work proprely\n[[But if I killed all bugs, why they are back?]]",
+      "links": [
+        {
+          "name": "But if I killed all bugs, why they are back?",
+          "link": "But if I killed all bugs, why they are back?",
+          "pid": "9"
+        }
+      ],
+      "name": ".2",
+      "pid": "8",
+      "position": {
+        "x": "581",
+        "y": "1321"
+      }
+    },
+    {
+      "text": "Seems like something bring they.\nI don’t know what, but we must discovery!\n[[You're right!->IA]]\n[[I don’t know...->IA]]",
+      "links": [
+        {
+          "name": "You're right!",
+          "link": "IA",
+          "pid": "10"
+        },
+        {
+          "name": "I don’t know...",
+          "link": "IA",
+          "pid": "10"
+        }
+      ],
+      "name": "But if I killed all bugs, why they are back?",
+      "pid": "9",
+      "position": {
+        "x": "581",
+        "y": "1471"
+      }
+    },
+    {
+      "text": "0x 48 65 20 6d 61 64 65 20 74 68 65 20 62 75 67 73\n[[Again...?->END]]",
+      "links": [
+        {
+          "name": "Again...?",
+          "link": "END",
+          "pid": "11"
+        }
+      ],
+      "name": "IA",
+      "pid": "10",
+      "position": {
+        "x": "701",
+        "y": "1621"
+      },
+      "tags": [
+        "IA"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "END",
+      "pid": "11",
+      "position": {
+        "x": "701",
+        "y": "1771"
+      }
+    }
+  ],
+  "name": "first_level_story",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.1",
+  "ifid": "7A596FF1-8CC8-43A4-BFC1-111FE2F20296"
+}

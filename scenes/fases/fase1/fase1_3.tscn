@@ -513,3 +513,4 @@ aberta = true
 [node name="ativador7" parent="." instance=ExtResource( 10 )]
 position = Vector2( 6219.38, -413.491 )
 lista = [ "barbara5" ]
+

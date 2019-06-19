@@ -359,3 +359,4 @@ ativo = false
 [node name="ativador7" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1000, -5000 )
 lista = [ "beto", "beto2" ]
+

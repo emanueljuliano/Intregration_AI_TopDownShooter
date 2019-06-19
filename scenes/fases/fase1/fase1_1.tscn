@@ -365,3 +365,4 @@ lista = [ "greg8", "greg9" ]
 
 [node name="beto3" parent="." instance=ExtResource( 9 )]
 position = Vector2( 3880.75, 6680 )
+

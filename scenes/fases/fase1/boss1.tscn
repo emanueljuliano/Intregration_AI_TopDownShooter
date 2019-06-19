@@ -79,3 +79,4 @@ abrir_com_inimigos = [ "vanessa" ]
 
 [node name="vanessa" parent="." instance=ExtResource( 10 )]
 position = Vector2( 643.736, -166.526 )
+

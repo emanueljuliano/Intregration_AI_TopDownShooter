@@ -278,3 +278,4 @@ rotation = 3.14159
 trocar_fase = true
 nova_fase = "res://scenes/fases/fase1/fase1_5.tscn"
 abrir_com_inimigos = [ "monica", "monica2", "monica3", "monica4" ]
+

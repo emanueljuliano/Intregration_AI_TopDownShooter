@@ -1,0 +1,98 @@
+{
+  "passages": [
+    {
+      "text": "Please, be careful…\n[[Oh you appear again...]]",
+      "links": [
+        {
+          "name": "Oh you appear again...",
+          "link": "Oh you appear again...",
+          "pid": "2"
+        }
+      ],
+      "name": "Second Level",
+      "pid": "1",
+      "position": {
+        "x": "580",
+        "y": "272"
+      },
+      "tags": [
+        "neeko"
+      ]
+    },
+    {
+      "text": "Yeah… I have to tell you that there is a great danger here, bigger than everything you saw...\n[[Don’t worry...->a1]]\n[[I don’t know if I can...->a1]]",
+      "links": [
+        {
+          "name": "Don’t worry...",
+          "link": "a1",
+          "pid": "3"
+        },
+        {
+          "name": "I don’t know if I can...",
+          "link": "a1",
+          "pid": "3"
+        }
+      ],
+      "name": "Oh you appear again...",
+      "pid": "2",
+      "position": {
+        "x": "580",
+        "y": "422"
+      }
+    },
+    {
+      "text": "But here is a tip,  they will try to mess with your brain.\nBeware of illusions.\n[[Thanks for the advice, Neeko.->a2]]\n[[~Scary~->a2]]",
+      "links": [
+        {
+          "name": "Thanks for the advice, Neeko.",
+          "link": "a2",
+          "pid": "4"
+        },
+        {
+          "name": "~Scary~",
+          "link": "a2",
+          "pid": "4"
+        }
+      ],
+      "name": "a1",
+      "pid": "3",
+      "position": {
+        "x": "535",
+        "y": "572"
+      }
+    },
+    {
+      "text": "B 64 TmVla28gaXMgYW4gaWx1c2lvbg==\n[[It's different, what it means?->END]]",
+      "links": [
+        {
+          "name": "It's different, what it means?",
+          "link": "END",
+          "pid": "5"
+        }
+      ],
+      "name": "a2",
+      "pid": "4",
+      "position": {
+        "x": "535",
+        "y": "722"
+      },
+      "tags": [
+        "IA"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "END",
+      "pid": "5",
+      "position": {
+        "x": "535",
+        "y": "872"
+      }
+    }
+  ],
+  "name": "Second_level",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.1",
+  "ifid": "B13E187C-9D99-4E36-B5DD-A45101CBCC88"
+}

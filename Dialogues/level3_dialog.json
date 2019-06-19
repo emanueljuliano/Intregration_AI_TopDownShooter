@@ -1,0 +1,241 @@
+{
+  "passages": [
+    {
+      "text": "Congratulation for defeat that giant bug.\n[[It was hard for me.->a1]]\n[[I want to fight more.->a1]]",
+      "links": [
+        {
+          "name": "It was hard for me.",
+          "link": "a1",
+          "pid": "2"
+        },
+        {
+          "name": "I want to fight more.",
+          "link": "a1",
+          "pid": "2"
+        }
+      ],
+      "name": "Thrid_Level",
+      "pid": "1",
+      "position": {
+        "x": "580",
+        "y": "272"
+      },
+      "tags": [
+        "professor"
+      ]
+    },
+    {
+      "text": "I know, but you have to be fast in the next challenges.\nBut before that, why don’t we talk a little, like, to know each other.\n[[Sure.->a2]]\n[[No...->a2]]",
+      "links": [
+        {
+          "name": "Sure.",
+          "link": "a2",
+          "pid": "3"
+        },
+        {
+          "name": "No...",
+          "link": "a2",
+          "pid": "3"
+        }
+      ],
+      "name": "a1",
+      "pid": "2",
+      "position": {
+        "x": "535",
+        "y": "422"
+      }
+    },
+    {
+      "text": "So, You said me early that you remember a little about science fiction right?\n[[Yeah...and?]]",
+      "links": [
+        {
+          "name": "Yeah...and?",
+          "link": "Yeah...and?",
+          "pid": "4"
+        }
+      ],
+      "name": "a2",
+      "pid": "3",
+      "position": {
+        "x": "535",
+        "y": "572"
+      }
+    },
+    {
+      "text": "Well, I LOVE science fiction, I mean, You can make so many parameters with reality, but at the same time it’s a wonderful escapism. The best of both.\n[[Do you have any favorite?]]\n[[...]]",
+      "links": [
+        {
+          "name": "Do you have any favorite?",
+          "link": "Do you have any favorite?",
+          "pid": "5"
+        },
+        {
+          "name": "...",
+          "link": "...",
+          "pid": "6"
+        }
+      ],
+      "name": "Yeah...and?",
+      "pid": "4",
+      "position": {
+        "x": "535",
+        "y": "722"
+      }
+    },
+    {
+      "text": "Well, my favorite of course is Matrix, like, the whole idea of simulation and we, humans, be like the processor of the machines. It’s just amazing.\n[[I like Blade Runner]]\n[[I like the Asimov stories]]",
+      "links": [
+        {
+          "name": "I like Blade Runner",
+          "link": "I like Blade Runner",
+          "pid": "7"
+        },
+        {
+          "name": "I like the Asimov stories",
+          "link": "I like the Asimov stories",
+          "pid": "8"
+        }
+      ],
+      "name": "Do you have any favorite?",
+      "pid": "5",
+      "position": {
+        "x": "460",
+        "y": "870"
+      }
+    },
+    {
+      "text": "So, it seams that you are not in the mood today, but I will say anyway, chat with an  excited always help me to talk\n[[Whe could try->Do you have any favorite?]]\n[[...->Do you have any favorite?]]",
+      "links": [
+        {
+          "name": "Whe could try",
+          "link": "Do you have any favorite?",
+          "pid": "5"
+        },
+        {
+          "name": "...",
+          "link": "Do you have any favorite?",
+          "pid": "5"
+        }
+      ],
+      "name": "...",
+      "pid": "6",
+      "position": {
+        "x": "610",
+        "y": "872"
+      }
+    },
+    {
+      "text": "The cyberpunk vibe is really breathtaking. \nThe whole philosophy behind this story is so fascinating.\n[[Everyone should watch->blade]]\n[[It’s just too smart for me->blade]]",
+      "links": [
+        {
+          "name": "Everyone should watch",
+          "link": "blade",
+          "pid": "9"
+        },
+        {
+          "name": "It’s just too smart for me",
+          "link": "blade",
+          "pid": "9"
+        }
+      ],
+      "name": "I like Blade Runner",
+      "pid": "7",
+      "position": {
+        "x": "385",
+        "y": "1020"
+      }
+    },
+    {
+      "text": "I’m Robot is an fantastic Novel, it doesn’t surprises me that in this days we still thinking about their rules.\n[[A genius ahead of his time->asimov]]\n[[He was very dreamy->asimov]]",
+      "links": [
+        {
+          "name": "A genius ahead of his time",
+          "link": "asimov",
+          "pid": "12"
+        },
+        {
+          "name": "He was very dreamy",
+          "link": "asimov",
+          "pid": "12"
+        }
+      ],
+      "name": "I like the Asimov stories",
+      "pid": "8",
+      "position": {
+        "x": "535",
+        "y": "1020"
+      }
+    },
+    {
+      "text": "I know that feeling.\nBut about the movie, here comes a question: \nWe can trust in any of our memories to say if we are humans?\n[[I think so.]]\n[[I guess no.]]",
+      "links": [
+        {
+          "name": "I think so.",
+          "link": "I think so.",
+          "pid": "10"
+        },
+        {
+          "name": "I guess no.",
+          "link": "I guess no.",
+          "pid": "11"
+        }
+      ],
+      "name": "blade",
+      "pid": "9",
+      "position": {
+        "x": "297",
+        "y": "1179"
+      }
+    },
+    {
+      "text": "ASCII 087 114 111 110 103 032 097 110 115 119 101 114",
+      "name": "I think so.",
+      "pid": "10",
+      "position": {
+        "x": "356",
+        "y": "1409"
+      },
+      "tags": [
+        "IA"
+      ]
+    },
+    {
+      "text": "ASCII 082 105 103 104 116 032 097 110 115 119 101 114",
+      "name": "I guess no.",
+      "pid": "11",
+      "position": {
+        "x": "585",
+        "y": "1411"
+      },
+      "tags": [
+        "IA"
+      ]
+    },
+    {
+      "text": "I’m kinda of agree with that.\nBut here comes a question:\nShould anyone smart enough to create robots, be smart enough to make sure that those robots wouldn’t attack their makers?\n[[I think so.]]\n[[I guess no.]]",
+      "links": [
+        {
+          "name": "I think so.",
+          "link": "I think so.",
+          "pid": "10"
+        },
+        {
+          "name": "I guess no.",
+          "link": "I guess no.",
+          "pid": "11"
+        }
+      ],
+      "name": "asimov",
+      "pid": "12",
+      "position": {
+        "x": "535",
+        "y": "1170"
+      }
+    }
+  ],
+  "name": "Thrid level story",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.1",
+  "ifid": "A9FD9F14-0AFE-4E63-B323-B066FAF6C3DE"
+}

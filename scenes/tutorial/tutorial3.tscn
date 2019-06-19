@@ -52,3 +52,4 @@ camera_destino = "camera2"
 destino = "PORTA"
 trocar_fase = true
 nova_fase = "res://scenes/tutorial/tutorial4.tscn"
+

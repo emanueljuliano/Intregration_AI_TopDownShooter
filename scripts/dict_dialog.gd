@@ -148,7 +148,7 @@ var tutorial =  [
           "pid": "10"
         },
         {
-          "name": "0x44 6f 6e 27 74 20 62 65 6c 69 65 76 65 20 69 6e 20 68 69 73 20 6c 69 65 73 ",
+          "name": "DON'T TAKE",
           "link": "DON'T TAKE",
           "pid": "11"
         }
@@ -240,7 +240,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Do-don't take",
+      "text": "0x 44 6f 6e 27 74 20 62 65 6c 69 65 76 65 20 69 6e 20 68 69 73 20 6c 69 65 73 ",
       "links": [
         {
           "name": "Uh??",

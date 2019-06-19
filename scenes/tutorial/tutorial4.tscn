@@ -103,4 +103,5 @@ rotation = 3.14159
 trocar_fase = true
 nova_fase = "res://scenes/tutorial/tutorial5.tscn"
 aberta = true
+
 [connection signal="body_entered" from="ativador" to="." method="_on_ativador_body_entered"]
