@@ -283,7 +283,10 @@ var level3 = [
           "name": "END",
           "link": "END",
           "pid": "1"
-        }]}]
+        }],
+      "tags": [
+        "IA"
+      ]}]
 		
 var level4 = [
     {
@@ -836,6 +839,19 @@ var level5 = [
     }
   ]
 
+var level6= [
+    {
+      "text": "Nothing here.",
+      "links": [
+        {
+          "name": "END",
+          "link": "END",
+          "pid": "1"
+        }],
+      "tags": [
+        "IA"
+      ]}]
+
 var level7 = [
     {
       "text": "Congratulation for defeat that giant bug.",
@@ -1071,5 +1087,31 @@ var level7 = [
     }
   ]
 
+var level8 =[
+    {
+      "text": "Nothing here.",
+      "links": [
+        {
+          "name": "END",
+          "link": "END",
+          "pid": "1"
+        }],
+      "tags": [
+        "IA"
+      ]}]
+
+var level9 = [
+    {
+      "text": "Nothing here.",
+      "links": [
+        {
+          "name": "END",
+          "link": "END",
+          "pid": "1"
+        }],
+      "tags": [
+        "IA"
+      ]}]
+	
 func _ready():
 	pass 
