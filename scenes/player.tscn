@@ -110,6 +110,7 @@ anims/idle = SubResource( 2 )
 
 [node name="atirar" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
+volume_db = -10.0
 
 [node name="lanterna" type="Area2D" parent="."]
 visible = false

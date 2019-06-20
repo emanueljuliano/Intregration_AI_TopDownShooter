@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bebel.ogg-fd576af3cd2e13fdcd96c01a738dbc7c.oggstr"
+
+[deps]
+
+source_file="res://samples/musicas/bebel.ogg"
+dest_files=[ "res://.import/bebel.ogg-fd576af3cd2e13fdcd96c01a738dbc7c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

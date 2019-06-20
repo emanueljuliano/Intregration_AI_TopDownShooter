@@ -15,7 +15,7 @@ var rotacao = 4
 var negativo = 1
 
 var vida = 200
-var dano = 10
+var dano = 5
 
 var path = PoolVector2Array()# setget set_path
 

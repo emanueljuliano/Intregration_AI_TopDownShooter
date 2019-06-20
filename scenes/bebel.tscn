@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scripts/bebel.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Backgrounds/triangulo.png" type="Texture" id=2]
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
+[ext_resource path="res://samples/musicas/bebel.ogg" type="AudioStream" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -153,3 +154,6 @@ process_material = SubResource( 7 )
 [node name="audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+autoplay = true

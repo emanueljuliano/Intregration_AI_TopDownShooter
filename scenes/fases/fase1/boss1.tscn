@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=4]
-[ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=5]
+[ext_resource path="res://samples/musicas/vane.ogg" type="AudioStream" id=5]
 [ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/spawner.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=8]
@@ -47,6 +47,7 @@ bebel_n = 5
 barbara = false
 greg_n = 4
 beto = false
+vagner = false
 
 [node name="vida" parent="." instance=ExtResource( 8 )]
 position = Vector2( 40, 840 )
@@ -79,4 +80,3 @@ abrir_com_inimigos = [ "vanessa" ]
 
 [node name="vanessa" parent="." instance=ExtResource( 10 )]
 position = Vector2( 643.736, -166.526 )
-

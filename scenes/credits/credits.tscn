@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://scenes/credits/credits.gd" type="Script" id=1]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=2]
@@ -14,11 +14,16 @@
 [ext_resource path="res://scenes/bosses/vanessa.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/vagner.tscn" type="PackedScene" id=13]
 [ext_resource path="res://scenes/margaret.tscn" type="PackedScene" id=14]
-[ext_resource path="res://scenes/larissa.tscn" type="PackedScene" id=15]
+[ext_resource path="res://sprites/Artesanal/Larissa/corpo.png" type="Texture" id=15]
 [ext_resource path="res://scenes/useful/trap.tscn" type="PackedScene" id=16]
-[ext_resource path="res://scenes/antony.tscn" type="PackedScene" id=17]
-[ext_resource path="res://scenes/bosses/arnaldo.tscn" type="PackedScene" id=18]
-[ext_resource path="res://scenes/barbara.tscn" type="PackedScene" id=19]
+[ext_resource path="res://sprites/Artesanal/Antony/bortolom.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/antony.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/bosses/arnaldo.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/barbara.tscn" type="PackedScene" id=20]
+[ext_resource path="res://samples/musicas/credits.ogg" type="AudioStream" id=21]
+[ext_resource path="res://sprites/Artesanal/Larissa/cent_cab.tscn" type="PackedScene" id=22]
+[ext_resource path="res://sprites/Artesanal/Larissa/cent_corp.tscn" type="PackedScene" id=23]
+[ext_resource path="res://sprites/Artesanal/Larissa/lari_cabec.tscn" type="PackedScene" id=24]
 
 [node name="main" type="Node2D"]
 script = ExtResource( 1 )
@@ -284,10 +289,10 @@ custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
 text = "Bia the Big Bebel"
 
 [node name="RichTextLabel26" type="RichTextLabel" parent="."]
-margin_left = 470.875
-margin_top = 7460.23
-margin_right = 826.875
-margin_bottom = 7514.23
+margin_left = 470.778
+margin_top = 7394.58
+margin_right = 826.778
+margin_bottom = 7448.58
 rect_min_size = Vector2( 100, 50 )
 custom_fonts/normal_font = ExtResource( 6 )
 custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
@@ -390,9 +395,22 @@ ativo = false
 position = Vector2( 958.361, 4041.36 )
 rotation = -3.13584
 
-[node name="larissa" parent="." instance=ExtResource( 15 )]
-position = Vector2( 449.998, 4739.06 )
-ativo = false
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 366.94, 4743.13 )
+rotation = -0.112929
+scale = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 328.126, 4744.62 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 291.683, 4740.92 )
+rotation = 0.105065
+scale = Vector2( 5, 5 )
+texture = ExtResource( 15 )
 
 [node name="trap" parent="." instance=ExtResource( 16 )]
 position = Vector2( 982.01, 4666.26 )
@@ -414,61 +432,86 @@ custom_fonts/normal_font = ExtResource( 6 )
 custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
 text = "Rafaela the Rainha Formiga"
 
-[node name="antony" parent="." instance=ExtResource( 17 )]
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 707.051, 5277.02 )
+scale = Vector2( 2, 2 )
+
+[node name="sprite" parent="Sprite3" instance=ExtResource( 17 )]
+position = Vector2( -2.7821, -41.8223 )
+
+[node name="antony" parent="." instance=ExtResource( 18 )]
 pause_mode = 1
 position = Vector2( 483.439, 5929.88 )
 ativo = false
 
-[node name="antony2" parent="." instance=ExtResource( 17 )]
+[node name="antony2" parent="." instance=ExtResource( 18 )]
 pause_mode = 1
 position = Vector2( 414.013, 6076.64 )
 ativo = false
 
-[node name="antony3" parent="." instance=ExtResource( 17 )]
+[node name="antony3" parent="." instance=ExtResource( 18 )]
 pause_mode = 1
 position = Vector2( 362.462, 5911.96 )
 ativo = false
 
-[node name="antony4" parent="." instance=ExtResource( 17 )]
+[node name="antony4" parent="." instance=ExtResource( 18 )]
 pause_mode = 1
 position = Vector2( 532.03, 6036.96 )
 ativo = false
 
-[node name="antony5" parent="." instance=ExtResource( 17 )]
+[node name="antony5" parent="." instance=ExtResource( 18 )]
 pause_mode = 1
 position = Vector2( 322.367, 6013.63 )
 ativo = false
 
-[node name="arnaldo" parent="." instance=ExtResource( 18 )]
+[node name="arnaldo" parent="." instance=ExtResource( 19 )]
 position = Vector2( 938.118, 5926.28 )
 vel = -1
 ativo = false
 
-[node name="arnaldo2" parent="." instance=ExtResource( 18 )]
+[node name="arnaldo2" parent="." instance=ExtResource( 19 )]
 position = Vector2( 985.373, 6029.38 )
 vel = -1
 ativo = false
 
-[node name="arnaldo3" parent="." instance=ExtResource( 18 )]
+[node name="arnaldo3" parent="." instance=ExtResource( 19 )]
 position = Vector2( 855.063, 6053.72 )
 vel = -1
 ativo = false
 
-[node name="larissa2" parent="." instance=ExtResource( 15 )]
-modulate = Color( 0.878431, 0.623529, 0.0352941, 1 )
-position = Vector2( 387.721, 6661.89 )
-scale = Vector2( 1, 1 )
-ativo = false
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 241.059, 6650.83 )
+rotation = -0.161326
+scale = Vector2( 10, 10 )
+texture = ExtResource( 15 )
 
-[node name="barbara" parent="." instance=ExtResource( 19 )]
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 159.724, 6651.95 )
+rotation = 0.212561
+scale = Vector2( 10, 10 )
+texture = ExtResource( 15 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( 86.0596, 6613.89 )
+rotation = -0.477668
+scale = Vector2( 10, 10 )
+texture = ExtResource( 15 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( 59.0494, 6540.22 )
+rotation = 0.152683
+scale = Vector2( 10, 10 )
+texture = ExtResource( 15 )
+
+[node name="barbara" parent="." instance=ExtResource( 20 )]
 position = Vector2( 880.321, 6606.04 )
 ativo = false
 
-[node name="barbara2" parent="." instance=ExtResource( 19 )]
+[node name="barbara2" parent="." instance=ExtResource( 20 )]
 position = Vector2( 953.352, 6706.28 )
 ativo = false
 
-[node name="barbara3" parent="." instance=ExtResource( 19 )]
+[node name="barbara3" parent="." instance=ExtResource( 20 )]
 position = Vector2( 807.29, 6720.6 )
 ativo = false
 
@@ -496,3 +539,54 @@ position = Vector2( 817.789, 7298.94 )
 scale = Vector2( 0.75, 0.75 )
 ativo = false
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
+autoplay = true
+
+[node name="sprite" parent="." instance=ExtResource( 22 )]
+position = Vector2( 1038.7, 7586.72 )
+
+[node name="sprite2" parent="." instance=ExtResource( 23 )]
+position = Vector2( 894.629, 7582.74 )
+
+[node name="sprite3" parent="." instance=ExtResource( 23 )]
+position = Vector2( 746.903, 7566.52 )
+
+[node name="sprite4" parent="." instance=ExtResource( 23 )]
+position = Vector2( 601.126, 7577.49 )
+
+[node name="sprite5" parent="." instance=ExtResource( 23 )]
+position = Vector2( 467.936, 7566.43 )
+
+[node name="sprite7" parent="." instance=ExtResource( 23 )]
+position = Vector2( 328.902, 7578.75 )
+
+[node name="sprite8" parent="." instance=ExtResource( 23 )]
+modulate = Color( 1, 0.74902, 0, 1 )
+position = Vector2( 171.01, 7605.41 )
+
+[node name="Sprite" parent="sprite8" index="0"]
+visible = false
+
+[node name="Sprite2" parent="sprite8" index="1"]
+visible = false
+
+[node name="sprite9" parent="." instance=ExtResource( 24 )]
+position = Vector2( 406.302, 4737.68 )
+rotation = -1.69766
+scale = Vector2( 5, 5 )
+
+[node name="sprite10" parent="." instance=ExtResource( 24 )]
+position = Vector2( 256.069, 4734.02 )
+rotation = -4.59349
+scale = Vector2( 5, 5 )
+
+[node name="sprite11" parent="." instance=ExtResource( 24 )]
+position = Vector2( 316.587, 6629 )
+rotation = -1.77636
+
+[node name="sprite12" parent="." instance=ExtResource( 24 )]
+position = Vector2( 84.5445, 6465.71 )
+rotation = -2.85651
+
+[editable path="sprite8"]

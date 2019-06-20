@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bortin.ogg-67f3d8bdc92fa0ece37eb1607ecf7c55.oggstr"
+
+[deps]
+
+source_file="res://samples/musicas/bortin.ogg"
+dest_files=[ "res://.import/bortin.ogg-67f3d8bdc92fa0ece37eb1607ecf7c55.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

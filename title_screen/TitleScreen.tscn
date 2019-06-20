@@ -125,7 +125,6 @@ visible = false
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
 autoplay = true
-
 [connection signal="focus_entered" from="Menu/CenterRow/Buttons/ContinueButton" to="." method="_on_ContinueButton_focus_entered"]
 [connection signal="mouse_entered" from="Menu/CenterRow/Buttons/ContinueButton" to="." method="_on_ContinueButton_mouse_entered"]
 [connection signal="mouse_entered" from="Menu/CenterRow/Buttons/NewGameButton" to="." method="_on_NewGameButton_mouse_entered"]

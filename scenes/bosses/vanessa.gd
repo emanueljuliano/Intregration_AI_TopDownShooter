@@ -7,7 +7,7 @@ var avanco = 700
 var distancia = 800
 var distancia_giro = 350
 
-var vida = 1000
+var vida = 850
 var dano = 10
 
 var atacando = false
@@ -30,7 +30,7 @@ func _process(delta):
 	tempo_giro_max = (randi()%6)+6
 	tempo_ataque_max = (randi()%6)+4
 	
-	if vida <= 300:
+	if vida <= 250:
 		giro = 1000
 		avanco = 1000
 	
