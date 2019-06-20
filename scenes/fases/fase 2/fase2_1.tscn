@@ -719,7 +719,7 @@ rotation = 1.5708
 position = Vector2( 19080, 359.078 )
 rotation = 3.14159
 trocar_fase = true
-nova_fase = "res://scenes/fases/fase1/boss3.tscn"
+nova_fase = "res://Dialogues/level.tscn"
 aberta = true
 
 [connection signal="body_entered" from="move_death" to="." method="_on_move_death_body_entered"]

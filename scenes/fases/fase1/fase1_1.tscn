@@ -113,7 +113,7 @@ rotation = -4.71238
 camera_atual = "camera1"
 camera_destino = "camera21"
 destino = "PORTA4"
-nova_fase = "res://scenes/main.tscn"
+nova_fase = "res://Dialogues/level.tscn"
 
 [node name="ativador12" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2040, 360 )

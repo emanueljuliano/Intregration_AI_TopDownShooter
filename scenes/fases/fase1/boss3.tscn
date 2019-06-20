@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/useful/Path.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=5]
-[ext_resource path="res://samples/musicas/queen.ogg" type="AudioStream" id=6]
+[ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=6]
 [ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=9]
@@ -183,3 +183,4 @@ texture = ExtResource( 13 )
 texture_scale = 3.0
 energy = 3.0
 shadow_enabled = true
+

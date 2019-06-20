@@ -15,6 +15,9 @@ var button2_collor2 = "008519"
 
 
 func _ready():
+	var font = load('res://title_screen/Fonts/vt323_48.tres')
+	$"Game_Player/Dialog/Terminal".set("custom_fonts/normal_font", font)
+	
 	check_level()
 		
 	page = 0
@@ -126,6 +129,10 @@ func _on_Button1_pressed():
 	if $Game_Player/Dialog/Terminal.get_visible_characters() > $Game_Player/Dialog/Terminal.get_total_character_count():
 		
 		if not "END" in dictionary[page]["links"][0]["link"]:
+			
+			if dictionary[page]["links"][0]["link"] == "never_used":
+				var newfont = load('res://title_screen/Fonts/miltown2_30.tres')
+				$"Game_Player/Dialog/Terminal".set("custom_fonts/normal_font", newfont)
 				
 			if dictionary[page]["links"][0]["link"] == "Shoot" or dictionary[page]["links"][0]["link"] == "The stranger voice" or dictionary[page]["links"][0]["link"] == ":)":
 				self.add_child(shoot_sound)

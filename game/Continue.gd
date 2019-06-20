@@ -5,7 +5,6 @@ var level_path
 func _ready():
 	$Back.grab_focus()
 	game.load_game()
-	game.level = 10
 	game.max_level = max(game.level, game.max_level)
 	verify_level()
 	
@@ -99,9 +98,9 @@ func _on_continue1_mouse_entered():
 	$continue1.grab_focus()
 	$continue1/text.add_color_override("font_color", Color("00ffb1"))
 func _on_continue1_focus_exited():
-	$continue1/text.add_color_override("font_color", Color("099168"))
+	$continue1/text.add_color_override("font_color", Color("05543c"))
 func _on_continue1_mouse_exited():
-	$continue1/text.add_color_override("font_color", Color("099168"))
+	$continue1/text.add_color_override("font_color", Color("05543c"))
 
 # continue:
 func _on_continue2_focus_entered():
@@ -110,9 +109,9 @@ func _on_continue2_mouse_entered():
 	$continue2.grab_focus()
 	$continue2/text.add_color_override("font_color", Color("0093ff"))
 func _on_continue2_focus_exited():
-	$continue2/text.add_color_override("font_color", Color("065d9d"))
+	$continue2/text.add_color_override("font_color", Color("043a63"))
 func _on_continue2_mouse_exited():
-	$continue2/text.add_color_override("font_color", Color("065d9d"))
+	$continue2/text.add_color_override("font_color", Color("043a63"))
 
 # continue:
 func _on_continue3_focus_entered():
@@ -121,75 +120,75 @@ func _on_continue3_mouse_entered():
 	$continue3.grab_focus()
 	$continue3/text.add_color_override("font_color", Color("000aff"))
 func _on_continue3_focus_exited():
-	$continue3/text.add_color_override("font_color", Color("070eb1"))
+	$continue3/text.add_color_override("font_color", Color("050965"))
 func _on_continue3_mouse_exited():
-	$continue3/text.add_color_override("font_color", Color("070eb1"))
+	$continue3/text.add_color_override("font_color", Color("050965"))
 	
 # continue:
 func _on_continue4_focus_entered():
-	$continue4/text.add_color_override("font_color", Color("00ff3e"))
+	$continue4/text.add_color_override("font_color", Color("653b8f"))
 func _on_continue4_mouse_entered():
 	$continue4.grab_focus()
-	$continue4/text.add_color_override("font_color", Color("00ff3e"))
+	$continue4/text.add_color_override("font_color", Color("653b8f"))
 func _on_continue4_focus_exited():
-	$continue4/text.add_color_override("font_color", Color("008519"))
+	$continue4/text.add_color_override("font_color", Color("230046"))
 func _on_continue4_mouse_exited():
-	$continue4/text.add_color_override("font_color", Color("008519"))
+	$continue4/text.add_color_override("font_color", Color("230046"))
 
 # continue:
 func _on_continue5_focus_entered():
-	$continue5/text.add_color_override("font_color", Color("00ff3e"))
+	$continue5/text.add_color_override("font_color", Color("6a027a"))
 func _on_continue5_mouse_entered():
 	$continue5.grab_focus()
-	$continue5/text.add_color_override("font_color", Color("00ff3e"))
+	$continue5/text.add_color_override("font_color", Color("6a027a"))
 func _on_continue5_focus_exited():
-	$continue5/text.add_color_override("font_color", Color("008519"))
+	$continue5/text.add_color_override("font_color", Color("3d0046"))
 func _on_continue5_mouse_exited():
-	$continue5/text.add_color_override("font_color", Color("008519"))
+	$continue5/text.add_color_override("font_color", Color("3d0046"))
 	
 # continue:
 func _on_continue6_focus_entered():
-	$continue6/text.add_color_override("font_color", Color("00ff3e"))
+	$continue6/text.add_color_override("font_color", Color("94032c"))
 func _on_continue6_mouse_entered():
 	$continue6.grab_focus()
-	$continue6/text.add_color_override("font_color", Color("00ff3e"))
+	$continue6/text.add_color_override("font_color", Color("94032c"))
 func _on_continue6_focus_exited():
-	$continue6/text.add_color_override("font_color", Color("008519"))
+	$continue6/text.add_color_override("font_color", Color("460014"))
 func _on_continue6_mouse_exited():
-	$continue6/text.add_color_override("font_color", Color("008519"))
+	$continue6/text.add_color_override("font_color", Color("460014"))
 	
 # continue:
 func _on_continue7_focus_entered():
-	$continue7/text.add_color_override("font_color", Color("00ff3e"))
+	$continue7/text.add_color_override("font_color", Color("c8eb00"))
 func _on_continue7_mouse_entered():
 	$continue7.grab_focus()
-	$continue7/text.add_color_override("font_color", Color("00ff3e"))
+	$continue7/text.add_color_override("font_color", Color("c8eb00"))
 func _on_continue7_focus_exited():
-	$continue7/text.add_color_override("font_color", Color("008519"))
+	$continue7/text.add_color_override("font_color", Color("708204"))
 func _on_continue7_mouse_exited():
-	$continue7/text.add_color_override("font_color", Color("008519"))
+	$continue7/text.add_color_override("font_color", Color("708204"))
 	
 # continue:
 func _on_continue8_focus_entered():
-	$continue8/text.add_color_override("font_color", Color("00ff3e"))
+	$continue8/text.add_color_override("font_color", Color("eb7400"))
 func _on_continue8_mouse_entered():
 	$continue8.grab_focus()
-	$continue8/text.add_color_override("font_color", Color("00ff3e"))
+	$continue8/text.add_color_override("font_color", Color("eb7400"))
 func _on_continue8_focus_exited():
-	$continue8/text.add_color_override("font_color", Color("008519"))
+	$continue8/text.add_color_override("font_color", Color("8e4600"))
 func _on_continue8_mouse_exited():
-	$continue8/text.add_color_override("font_color", Color("008519"))
+	$continue8/text.add_color_override("font_color", Color("8e4600"))
 	
 # continue:
 func _on_continue9_focus_entered():
-	$continue9/text.add_color_override("font_color", Color("00ff3e"))
+	$continue9/text.add_color_override("font_color", Color("ff2200"))
 func _on_continue9_mouse_entered():
 	$continue9.grab_focus()
-	$continue9/text.add_color_override("font_color", Color("00ff3e"))
+	$continue9/text.add_color_override("font_color", Color("ff2200"))
 func _on_continue9_focus_exited():
-	$continue9/text.add_color_override("font_color", Color("008519"))
+	$continue9/text.add_color_override("font_color", Color("7b1000"))
 func _on_continue9_mouse_exited():
-	$continue9/text.add_color_override("font_color", Color("008519"))
+	$continue9/text.add_color_override("font_color", Color("7b1000"))
 	
 # B Button:
 func _on_Back_focus_entered():

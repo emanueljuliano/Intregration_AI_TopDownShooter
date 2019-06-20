@@ -2,6 +2,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	game.level = 0
 	get_node("musica").play(game.music_time)
 	game.inimigos_mortos = 0
 	if game.auxiliar == 4:

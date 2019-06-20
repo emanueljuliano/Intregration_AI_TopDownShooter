@@ -10,7 +10,7 @@ func _ready():
 	pass
 
 func _process(delta):
-	if $camera1.position.y < 8100:
+	if $camera1.position.y < 8512.535:
 		$camera1.position.y += delta*100
 
 func _on_centipeta_ready():

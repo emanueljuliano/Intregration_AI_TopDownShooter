@@ -277,7 +277,7 @@ var level2 = [
 
 var level3 = [
     {
-      "text": "Nothing here.",
+      "text": "Vanessa is deadly. Use dash to avoid her attacks",
       "links": [
         {
           "name": "END",
@@ -285,7 +285,7 @@ var level3 = [
           "pid": "1"
         }],
       "tags": [
-        "IA"
+        "neeko"
       ]}]
 		
 var level4 = [
@@ -841,7 +841,7 @@ var level5 = [
 
 var level6= [
     {
-      "text": "Nothing here.",
+      "text": "These Ants must have a Queen. Try to find and kill  her",
       "links": [
         {
           "name": "END",
@@ -849,7 +849,7 @@ var level6= [
           "pid": "1"
         }],
       "tags": [
-        "IA"
+        "professor"
       ]}]
 
 var level7 = [
@@ -1089,20 +1089,309 @@ var level7 = [
 
 var level8 =[
     {
-      "text": "Nothing here.",
+      "text": "You are almost there, I believe that this we will stop them once for all.",
       "links": [
         {
-          "name": "END",
-          "link": "END",
-          "pid": "1"
-        }],
+          "name": "You are always so kind with me Neko, thank you",
+          "link": "You are always so kind with me Neko, thank you",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "580",
+        "y": "272"
+      },
+      "tags": [
+        "neeko"
+      ]
+    },
+    {
+      "text": "It's me who have to say thanks.\nEven you're not the same as before, I'm really glad to talk to you.",
+      "links": [
+        {
+          "name": "I'm too",
+          "link": "I'm too",
+          "pid": "3"
+        }
+      ],
+      "name": "You are always so kind with me Neko, thank you",
+      "pid": "2",
+      "position": {
+        "x": "580",
+        "y": "422"
+      }
+    },
+    {
+      "text": "I'ts almost like if I made a new friend hihi\nAnd to thank you, I allow you to make one question, can be anything.",
+      "links": [
+        {
+          "name": "What's your relation with the Professor?",
+          "link": "What's your relation with the Professor?",
+          "pid": "4"
+        },
+        {
+          "name": "Why do you helps me so much?",
+          "link": "Why do you helps me so much?",
+          "pid": "9"
+        }
+      ],
+      "name": "I'm too",
+      "pid": "3",
+      "position": {
+        "x": "580",
+        "y": "572"
+      }
+    },
+    {
+      "text": "Oh... it's hard to say, why do you want to know it?",
+      "links": [
+        {
+          "name": "It's cause I never saw you two togheter",
+          "link": "It's cause I never saw you two togheter",
+          "pid": "5"
+        }
+      ],
+      "name": "What's your relation with the Professor?",
+      "pid": "4",
+      "position": {
+        "x": "580",
+        "y": "694"
+      }
+    },
+    {
+      "text": "It's hard to explain, we...\nWe just do not get along...",
+      "links": [
+        {
+          "name": "But he is so great",
+          "link": "But he is so great",
+          "pid": "6"
+        },
+        {
+          "name": "There is someone who dislike you?",
+          "link": "There is someone who dislike you?",
+          "pid": "7"
+        }
+      ],
+      "name": "It's cause I never saw you two togheter",
+      "pid": "5",
+      "position": {
+        "x": "585",
+        "y": "870"
+      }
+    },
+    {
+      "text": "It depends on the view point...\nBut that's not the problem, it's because... ehhhh... we fight?",
+      "links": [
+        {
+          "name": "It's a question?",
+          "link": "a",
+          "pid": "12"
+        }
+      ],
+      "name": "But he is so great",
+      "pid": "6",
+      "position": {
+        "x": "505",
+        "y": "1022"
+      }
+    },
+    {
+      "text": "Well, there is... but it doesn't matter for now...",
+      "links": [
+        {
+          "name": "Who?",
+          "link": "a",
+          "pid": "12"
+        },
+        {
+          "name": "Why you are down today?",
+          "link": "a",
+          "pid": "12"
+        }
+      ],
+      "name": "There is someone who dislike you?",
+      "pid": "7",
+      "position": {
+        "x": "655",
+        "y": "1022"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "Who?",
+      "pid": "8",
+      "position": {
+        "x": "580",
+        "y": "1172"
+      }
+    },
+    {
+      "text": "As I saw, cause we where friends before you lost your memories.",
+      "links": [
+        {
+          "name": "But, I'm not the same person as before, so...",
+          "link": "But, I'm not the same person as before, so...",
+          "pid": "10"
+        }
+      ],
+      "name": "Why do you helps me so much?",
+      "pid": "9",
+      "position": {
+        "x": "786",
+        "y": "624"
+      }
+    },
+    {
+      "text": "It's because... I felt like if I helped you, everything could be back to normal...",
+      "links": [
+        {
+          "name": "I see... the professor must think the same",
+          "link": "I see... the professor must think the same",
+          "pid": "11"
+        }
+      ],
+      "name": "But, I'm not the same person as before, so...",
+      "pid": "10",
+      "position": {
+        "x": "1007",
+        "y": "697"
+      }
+    },
+    {
+      "text": "Let's not talk about him, please...",
+      "links": [
+        {
+          "name": "Why you don't like to talk about him?",
+          "link": "It's cause I never saw you two togheter",
+          "pid": "5"
+        }
+      ],
+      "name": "I see... the professor must think the same",
+      "pid": "11",
+      "position": {
+        "x": "771",
+        "y": "794"
+      }
+    },
+    {
+      "text": "Ah... ehhh.... Uhhhh....\nI'm a little confuse.... calm down...",
+      "links": [
+        {
+          "name": "What's happening?",
+          "link": "What's happening?",
+          "pid": "13"
+        }
+      ],
+      "name": "a",
+      "pid": "12",
+      "position": {
+        "x": "481",
+        "y": "1351"
+      },
+      "tags": [
+        "neeko",
+        "professor"
+      ]
+    },
+    {
+      "text": "...",
+      "links": [
+        {
+          "name": "Neeko?",
+          "link": "never_used",
+          "pid": "14"
+        }
+      ],
+      "name": "What's happening?",
+      "pid": "13",
+      "position": {
+        "x": "481",
+        "y": "1501"
+      }
+    },
+    {
+      "text": "They are fooling you",
+      "links": [
+        {
+          "name": "That voice...",
+          "link": "That voice...",
+          "pid": "15"
+        }
+      ],
+      "name": "never_used",
+      "pid": "14",
+      "position": {
+        "x": "480",
+        "y": "1643"
+      },
       "tags": [
         "IA"
-      ]}]
+      ]
+    },
+    {
+      "text": "This whole time, they where fooling you...",
+      "links": [
+        {
+          "name": "But...",
+          "link": "But...",
+          "pid": "16"
+        }
+      ],
+      "name": "That voice...",
+      "pid": "15",
+      "position": {
+        "x": "481",
+        "y": "1792"
+      }
+    },
+    {
+      "text": "My anterior massages, remember them.",
+      "links": [
+        {
+          "name": "That things... what are th-",
+          "link": "That things... what are th-",
+          "pid": "17"
+        }
+      ],
+      "name": "But...",
+      "pid": "16",
+      "position": {
+        "x": "481",
+        "y": "1942"
+      }
+    },
+    {
+      "text": "Don't tell anyone about me!",
+      "links": [
+        {
+          "name": "I don't know what's happening, Neeko? Professor?",
+          "link": "END",
+          "pid": "18"
+        }
+      ],
+      "name": "That things... what are th-",
+      "pid": "17",
+      "position": {
+        "x": "481",
+        "y": "2092"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "END",
+      "pid": "18",
+      "position": {
+        "x": "494",
+        "y": "2245"
+      }
+    }
+  ]
 
 var level9 = [
     {
-      "text": "Nothing here.",
+      "text": "Cecilia is unstoppable. Try to reach for her tail",
       "links": [
         {
           "name": "END",

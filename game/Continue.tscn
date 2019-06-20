@@ -45,7 +45,7 @@ margin_top = 12.3307
 margin_right = 1.00232
 margin_bottom = 6.33075
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.0196078, 0.329412, 0.235294, 1 )
 text = "./LEVEL1"
 
 [node name="continue2" type="Button" parent="."]
@@ -69,7 +69,7 @@ margin_top = 6.99104
 margin_right = 3.8302
 margin_bottom = 6.99104
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.0156863, 0.227451, 0.388235, 1 )
 text = "./LEVEL2"
 
 [node name="continue3" type="Button" parent="."]
@@ -93,7 +93,7 @@ margin_top = 4.66605
 margin_right = -0.125244
 margin_bottom = 4.66605
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.0196078, 0.0352941, 0.396078, 1 )
 text = "./BOSS1"
 
 [node name="continue4" type="Button" parent="."]
@@ -117,7 +117,7 @@ margin_top = 3.40439
 margin_right = -0.480438
 margin_bottom = 3.40439
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.231373, 0.121569, 0.341176, 1 )
 text = "./LEVEL3"
 
 [node name="continue5" type="Button" parent="."]
@@ -141,7 +141,7 @@ margin_top = 9.10077
 margin_right = 1.57605
 margin_bottom = 9.10077
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.239216, 0, 0.27451, 1 )
 text = "./LEVEL4"
 
 [node name="continue6" type="Button" parent="."]
@@ -165,7 +165,7 @@ margin_top = -0.272888
 margin_right = 8.60168
 margin_bottom = -0.272888
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.27451, 0, 0.0784314, 1 )
 text = "./BOSS2"
 
 [node name="continue7" type="Button" parent="."]
@@ -193,7 +193,7 @@ margin_top = 7.22531
 margin_right = -0.707916
 margin_bottom = 7.22531
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.439216, 0.509804, 0.0156863, 1 )
 text = "./LEVEL5"
 
 [node name="continue8" type="Button" parent="."]
@@ -217,7 +217,7 @@ margin_top = 6.2746
 margin_right = -6.87634
 margin_bottom = 6.2746
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.556863, 0.27451, 0, 1 )
 text = "./LEVEL6"
 
 [node name="continue9" type="Button" parent="."]
@@ -241,7 +241,7 @@ margin_top = 2.41199
 margin_right = 23.4183
 margin_bottom = 2.41199
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
+custom_colors/font_color = Color( 0.482353, 0.0627451, 0, 1 )
 text = "./BOSS3"
 
 [node name="Back" type="Button" parent="."]

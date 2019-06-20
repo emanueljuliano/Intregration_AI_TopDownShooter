@@ -7,7 +7,7 @@ var movimentou = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	game.level = 1.2
+	game.level = 0
 	get_node("musica").play(game.music_time)
 	pass # Replace with function body.
 
