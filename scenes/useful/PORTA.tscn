@@ -45,4 +45,5 @@ light_mask = 0
 position = Vector2( -64, 0 )
 scale = Vector2( 6, 4 )
 texture = ExtResource( 2 )
+
 [connection signal="body_entered" from="Sprite/Area2D" to="." method="_on_Area2D_body_entered"]

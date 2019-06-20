@@ -35,7 +35,7 @@ extents = Vector2( 2.96667, 40.7933 )
 extents = Vector2( 1.76648, 8.29489 )
 
 [node name="main" type="Node2D"]
-rotation = 4.83244e-005
+rotation = 4.83244e-05
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
@@ -719,8 +719,9 @@ rotation = 1.5708
 position = Vector2( 19080, 359.078 )
 rotation = 3.14159
 trocar_fase = true
-nova_fase = "res://scenes/fases/fase1/boss2.tscn"
+nova_fase = "res://scenes/fases/fase1/boss3.tscn"
 aberta = true
+
 [connection signal="body_entered" from="move_death" to="." method="_on_move_death_body_entered"]
 [connection signal="body_entered" from="move_death2" to="." method="_on_move_death2_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
