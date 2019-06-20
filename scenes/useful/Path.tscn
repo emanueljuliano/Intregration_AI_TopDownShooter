@@ -21,7 +21,7 @@ polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 0/z_index = 0
 
 [node name="Path" type="TileMap"]
-modulate = Color( 1, 1, 1, 0.215686 )
+modulate = Color( 1, 1, 1, 0.0588235 )
 light_mask = 0
 scale = Vector2( 10, 10 )
 tile_set = SubResource( 2 )

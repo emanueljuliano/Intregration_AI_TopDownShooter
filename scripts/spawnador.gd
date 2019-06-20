@@ -32,6 +32,9 @@ export var beto_n = 1
 var pre_vagner = preload("res://scenes/vagner.tscn")
 export var vagner = true
 export var vagner_n = 1
+var pre_arnaldo = preload("res://scenes/bosses/arnaldo.tscn")
+export var arnaldo = false
+export var arnaldo_n = 1
 var lista_inimigos = []
 #pre_barbara, pre_antony, pre_monica, pre_larissa, pre_margaret, pre_bebel, pre_greg, pre_beto
 var spawn_pos = Vector2()
@@ -77,6 +80,10 @@ func _ready():
 		while vagner_n > 0:
 			lista_inimigos.append(pre_vagner)
 			vagner_n = vagner_n - 1
+	if arnaldo:
+		while arnaldo_n > 0:
+			lista_inimigos.append(pre_arnaldo)
+			arnaldo_n = arnaldo_n - 1
 	randomize()
 	pass # Replace with function body.
 

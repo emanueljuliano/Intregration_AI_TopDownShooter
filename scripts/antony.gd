@@ -6,6 +6,9 @@ var quantos_amigos = 4
 
 var iluminado = false
 
+var rainha = false
+var luto = false
+
 var raio_grupo = 100
 var agrupado = false
 var atacando = false
@@ -15,11 +18,13 @@ var angulo = 0
 var rotacao = 4
 var negativo = 1
 
-var vida = 40
+var vida = 10
 var dano = 10
 var death = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if game.get_main().has_node("bortolomeu"):
+		rainha = true
 	randomize()
 	add_to_group(game.INIMIGO)
 	get_node("anim").play("idle")
@@ -27,6 +32,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if rainha:
+		if not game.get_main().has_node("bortolomeu"):
+			luto = true
+	
 	if vida <= 0:
 		if death == 0:
 			game.inimigos_mortos += 1
@@ -49,8 +58,8 @@ func _physics_process(delta):
 		# TIRAR DO COMENTÁRIO SE QUISER QUE ANTONY FIQUE PARADO AO CHEGAR AO PONTO MÉDIO
 		if not (agrupado and not todos_agrupados() and get_global_position().distance_to(ponto_medio(amigos)) <= 10) or atacando:
 			move_and_slide((get_node("frente").get_global_position() - get_global_position()) * vel)
-		if len(amigos) >= quantos_amigos:
-			if todos_agrupados() or atacando:
+		if len(amigos) >= quantos_amigos or luto:
+			if todos_agrupados() or atacando or luto:
 				#MODO DE ATAQUE
 				atacando = true
 				get_node("sprite").modulate.r = 0.5
@@ -88,7 +97,7 @@ func _physics_process(delta):
 			if get_slide_count() > 0:
 				if get_slide_collision(0).collider.has_method("add_amigo"):
 					preso = false
-					if not amigos.has(get_slide_collision(0).collider):
+					if not amigos.has(get_slide_collision(0).collider) and not get_slide_collision(0).collider.luto:
 						add_amigo(get_slide_collision(0).collider)
 						if not get_slide_collision(0).collider.amigos.has(self):
 							get_slide_collision(0).collider.add_amigo(self)
@@ -101,6 +110,7 @@ func _physics_process(delta):
 
 func dano(valor):
 	vida = vida - valor
+	
 	get_node("anim").stop()
 	get_node("anim").play("dano")
 	pass
@@ -159,7 +169,7 @@ func atualizar_amigos():
 func morreu_coitado():
 	var i = 0
 	while i < len(amigos):
-		if amigos[i].vida <= 0:
+		if amigos[i].vida <= 0 or luto:
 			amigos.remove(i)
 		i = i + 1
 	pass

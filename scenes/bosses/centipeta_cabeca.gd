@@ -10,7 +10,6 @@ var periodo_curva = 20
 var direcao = 1
 var iluminado = false
 
-var vida
 var dano = 10
 
 var path = PoolVector2Array()# setget set_path
@@ -36,30 +35,13 @@ func _process(delta):
 	
 
 func _physics_process(delta):
-	if vida > 0:
-		if iluminado:
-			move_and_slide((get_node("frente").get_global_position() - get_global_position()) * avanco)
-			if get_slide_count() > 0:
-				if get_slide_collision(0).collider == game.get_player():
-					game.get_player().dano_player(dano, get_global_position(), filename)
-		else:
-			look_at(path[1])
-		
-					#FUGIR
-			if iluminado:
-				look_at(global_position + (global_position - game.get_player().get_position()))
-			#NÃO FUGIR
-			else:
-				random_negative()
-				angulo = angulo + (randi()%rotacao) * negativo
-				set_rotation(deg2rad(angulo))
-			if get_slide_count() > 0:
-				if get_slide_collision(0).collider.has_method("add_amigo"):
-					preso = false
+	if get_parent().ativo:
+		look_at(path[1])
 	
 	#move_along_path(avanco)
 	
-	if vida > 0:
+	if get_parent().vida > 0 and get_parent().ativo:
+		angulo = angulo + periodo_curva
 		if global_position.distance_to(path[1]) > 1:
 			move_and_slide(((get_node("frente").get_global_position() - get_global_position()) * avanco) + ((get_node("lado").get_global_position() - get_global_position()) * sin(deg2rad(angulo)) * curva))
 #		if iluminado and game.get_camera().escuro:

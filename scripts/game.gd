@@ -13,6 +13,9 @@ var auxiliar = 0
 
 var music_time = 0
 
+var morte_pos = Vector2()
+var screen
+
 var gameData={
 	deaths = 0,
 	level = 0,

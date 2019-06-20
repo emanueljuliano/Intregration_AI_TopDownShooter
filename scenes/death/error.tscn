@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://title_screen/Fonts/miltown2_30.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://samples/musicas/COMPUTADOR.wav" type="AudioStream" id=4]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+# Declare member variables here. Examples:
+var tempo = 0.0
+var tempo_max = 0.0001
+var conjunto = 0
+var linhas = 16
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	get_node(\"player\").set_global_position(get_node(\"camera1\").global_position + game.morte_pos)
+	get_node(\"player\").look_at(get_global_mouse_position())
+	pass # Replace with function body.
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if tempo <= 0:
+			get_node(\"Label\").text = get_node(\"Label\").text + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10)+ String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10)+ String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10)+ String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10)+ String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10)+ String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10)+ String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10)+ String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10) + String(randi()%10)
+			conjunto = conjunto + 1
+			tempo = tempo_max
+	else:
+		tempo = tempo - delta
+	
+	if conjunto == 2:
+		conjunto = 0
+		get_node(\"Label\").text = get_node(\"Label\").text + \"\\n\"
+		linhas = linhas - 1
+	
+	if linhas <= 0:
+		get_tree().change_scene('res://scenes/death/Death.tscn')
+	pass
+"
+
+[node name="main" type="Node2D"]
+script = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0, 0.607843, 0, 1 )
+margin_left = -643.0
+margin_top = -366.0
+margin_right = 648.0
+margin_bottom = 366.0
+custom_fonts/font = ExtResource( 1 )
+
+[node name="camera1" parent="." instance=ExtResource( 2 )]
+scale = Vector2( 0.5, 0.5 )
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+visible = false
+imortal = true
+stop = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = 1.0
+pitch_scale = 0.25
+autoplay = true

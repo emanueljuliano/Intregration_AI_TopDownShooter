@@ -23,6 +23,7 @@ export var atirar = true
 export var dashar = true
 export var iluminar = true
 export var imortal = false
+export var stop = false
 
 var vida = 100.0
 var vida_max = 100.0
@@ -36,7 +37,8 @@ var scene_path_to_load
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	look_at(get_global_mouse_position())
+	if not stop:
+		look_at(get_global_mouse_position())
 	set_arma("padrao")
 	vel = vel_base
 	get_node("anim").play("idle")
@@ -45,8 +47,9 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	game.exist_time += delta
-
-	look_at(get_global_mouse_position())
+	
+	if not stop:
+		look_at(get_global_mouse_position())
 	
 	if Input.is_action_pressed("clickE"):
 		atirar()
@@ -54,7 +57,7 @@ func _process(delta):
 	if reload > 0:
 		reload = reload - delta
 	
-	if iluminar:
+	if iluminar and not stop:
 		if Input.is_action_just_pressed("clickD") or Input.is_action_just_pressed("e"):
 			lanterna = not lanterna
 			#atualizar_lanterna()
@@ -83,7 +86,7 @@ func _process(delta):
 	
 func _physics_process(delta):
 	
-	if dashar:
+	if dashar and not stop:
 		if not dashando:
 			if Input.is_action_just_pressed("dash") and tempo_espera_dash<=0:
 				get_node("vush").play()
@@ -101,7 +104,7 @@ func _physics_process(delta):
 			dashando = false
 		
 		
-	if mover:
+	if mover and not stop:
 		if Input.is_action_pressed("cima"):
 			if Input.is_action_pressed("esquerda") or Input.is_action_pressed("direita"):
 				move_and_slide(Vector2(0, -sin(45)) * vel * lento)
@@ -135,7 +138,7 @@ func _physics_process(delta):
 
 
 func atirar():
-	if atirar:
+	if atirar and not stop:
 		if reload <= 0:
 			game.num_shoots += 1
 			var tiro = pre_tiro.instance()
@@ -204,7 +207,8 @@ func dano_player(valor, posicao_inimigo, path):
 	if vida <= 0 and not imortal:
 		game.deaths += 1
 		game.save_game()
-		get_tree().change_scene('res://scenes/death/Death.tscn')		
+		game.morte_pos = global_position - game.get_camera().global_position
+		get_tree().change_scene('res://scenes/death/error.tscn')
 	pass
 
 func add_vida(valor):

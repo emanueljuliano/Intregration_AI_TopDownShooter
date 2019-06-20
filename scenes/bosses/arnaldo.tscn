@@ -1,17 +1,19 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/bosses/arnaldo.gd" type="Script" id=1]
-[ext_resource path="res://sprites/Artesanal/Player/tiro.png" type="Texture" id=2]
-[ext_resource path="res://sprites/Backgrounds/triangulo.png" type="Texture" id=3]
+[ext_resource path="res://sprites/Backgrounds/triangulo.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Artesanal/Player/tiro.png" type="Texture" id=3]
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=4]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, -10, 12, 7, -8.66025, 5, -18, -2, -10, -15 )
 
-[sub_resource type="Animation" id=2]
-resource_name = "dano"
+[sub_resource type="GDScript" id=9]
+
+[sub_resource type="Animation" id=11]
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("sprite:modulate")
+tracks/0/path = NodePath("CollisionShape2D/sprite:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -20,13 +22,12 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 0, 0, 1 ), Color( 1, 1, 0, 1 ) ]
+"values": [ Color( 1, 0, 0, 1 ), Color( 0.607843, 0, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "idle"
+[sub_resource type="Animation" id=12]
 tracks/0/type = "value"
-tracks/0/path = NodePath("sprite:modulate")
+tracks/0/path = NodePath("CollisionShape2D/sprite:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -35,11 +36,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 0, 1 ) ]
+"values": [ Color( 0.607843, 0, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "morrer"
+[sub_resource type="Animation" id=13]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Particles2D:emitting")
 tracks/0/interp = 1
@@ -53,7 +53,7 @@ tracks/0/keys = {
 "values": [ true ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("sprite:modulate")
+tracks/1/path = NodePath("CollisionShape2D/sprite:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -93,14 +93,14 @@ tracks/3/keys = {
 } ]
 }
 
-[sub_resource type="Gradient" id=5]
+[sub_resource type="Gradient" id=6]
 offsets = PoolRealArray( 0, 0.207407, 0.614815, 0.785185, 1 )
 colors = PoolColorArray( 1, 1, 1, 1, 1, 0.960938, 0, 1, 1, 0.395947, 0, 1, 1, 0.31162, 0, 1, 1, 0, 0, 0.105882 )
 
-[sub_resource type="GradientTexture" id=6]
-gradient = SubResource( 5 )
+[sub_resource type="GradientTexture" id=7]
+gradient = SubResource( 6 )
 
-[sub_resource type="ParticlesMaterial" id=7]
+[sub_resource type="ParticlesMaterial" id=8]
 flag_disable_z = true
 spread = 180.0
 gravity = Vector3( 0, 0, 0 )
@@ -111,60 +111,56 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 10.0
 scale_random = 0.5
-color_ramp = SubResource( 6 )
+color_ramp = SubResource( 7 )
 
 [node name="arnaldo" type="KinematicBody2D"]
+scale = Vector2( 0.5, 0.5 )
 z_index = 1
 collision_layer = 2
 collision_mask = 2
 script = ExtResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -40, 0 )
-scale = Vector2( 15, 15 )
-texture = ExtResource( 2 )
-
-[node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( -120, 0 )
-scale = Vector2( 25, 25 )
-texture = ExtResource( 2 )
-
-[node name="sprite" type="Sprite" parent="."]
-position = Vector2( 10, 0 )
-rotation = 1.5708
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 3 )
-
-[node name="sprite2" type="Sprite" parent="sprite"]
-position = Vector2( -26.6666, 20.0001 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 3 )
-
-[node name="sprite3" type="Sprite" parent="sprite"]
-position = Vector2( 26.6667, 19.9999 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 3 )
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 rotation = -0.523637
-scale = Vector2( 4.5, 4.5 )
-shape = SubResource( 1 )
+scale = Vector2( 4, 4 )
+shape = SubResource( 10 )
+
+[node name="sprite" type="Sprite" parent="CollisionShape2D"]
+modulate = Color( 0.607843, 0, 1, 1 )
+position = Vector2( 1.92446, 1.11118 )
+rotation = 2.09444
+scale = Vector2( 0.333333, 0.333333 )
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="CollisionShape2D/sprite"]
+show_behind_parent = true
+position = Vector2( 0.000120666, 33.3333 )
+rotation = -1.5708
+scale = Vector2( 10, 10 )
+texture = ExtResource( 3 )
+script = SubResource( 9 )
+
+[node name="Sprite2" type="Sprite" parent="CollisionShape2D/sprite"]
+modulate = Color( 1, 1, 0.0823529, 1 )
+position = Vector2( -7.62939e-005, -22.5138 )
+scale = Vector2( 0.25, 0.255 )
+texture = ExtResource( 2 )
+script = SubResource( 9 )
 
 [node name="frente" type="Position2D" parent="."]
 position = Vector2( 1, 0 )
 
 [node name="anim" type="AnimationPlayer" parent="."]
-anims/dano = SubResource( 2 )
-anims/idle = SubResource( 3 )
-anims/morrer = SubResource( 4 )
+anims/dano = SubResource( 11 )
+anims/idle = SubResource( 12 )
+anims/morrer = SubResource( 13 )
 
 [node name="Particles2D" type="Particles2D" parent="."]
 emitting = false
 amount = 20
 one_shot = true
 explosiveness = 1.0
-process_material = SubResource( 7 )
+process_material = SubResource( 8 )
 
 [node name="audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
