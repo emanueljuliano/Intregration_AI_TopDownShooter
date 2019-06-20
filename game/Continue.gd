@@ -1,79 +1,129 @@
 extends Control
 
+var level_path
+
 func _ready():
 	$Back.grab_focus()
-func _on_NewGame_pressed():
 	game.load_game()
-	game.Continue()
+	game.level = 10
+	game.max_level = max(game.level, game.max_level)
+	verify_level()
+	
+func verify_level():
+	if game.max_level < 1:
+		$continue1.hide()
+	if game.max_level < 2:
+		$continue2.hide()
+	if game.max_level < 3:
+		$continue3.hide()
+	if game.max_level < 4:
+		$continue4.hide()
+	if game.max_level < 5:
+		$continue5.hide()
+	if game.max_level < 6:
+		$continue6.hide()
+	if game.max_level < 7:
+		$continue7.hide()
+	if game.max_level < 8:
+		$continue8.hide()
+	if game.max_level < 9:
+		$continue9.hide()
+	
+# Choosing level
 
 func _on_continue1_pressed():
-	pass # Replace with function body.
-
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 1
+	level_path = "res://scenes/fases/fase1/fase1_1.tscn"
 
 func _on_continue2_pressed():
-	pass # Replace with function body.
-
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 2
+	level_path = "res://scenes/fases/fase1/fase1_4.tscn"
 
 func _on_continue3_pressed():
-	pass # Replace with function body.
-
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 3
+	level_path = "res://scenes/fases/fase1/boss1.tscn"
 
 func _on_continue4_pressed():
-	pass # Replace with function body.
-
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 4
+	level_path = "res://scenes/fases/fase1/fase1_2.tscn"
 
 func _on_continue5_pressed():
-	pass # Replace with function body.
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 5
+	level_path = "res://scenes/fases/fase1/fase1_5.tscn"
 
+
+func _on_continue6_pressed():
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 6
+	level_path = "res://scenes/fases/fase1/boss3.tscn"
 
 func _on_continue7_pressed():
-	pass # Replace with function body.
-
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 7
+	level_path = "res://scenes/fases/fase1/fase1_3.tscn"
 
 func _on_continue8_pressed():
-	pass # Replace with function body.
-
-
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 8
+	level_path = "res://scenes/fases/fase 2/fase2_1.tscn"
+	
 func _on_continue9_pressed():
-	pass # Replace with function body.
-
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	game.level = 9
+	level_path = "res://scenes/fases/fase1/boss2.tscn"
 
 func _on_Back_pressed():
-	pass # Replace with function body.
+	$FadeIn.show()
+	$FadeIn.fade_in()
+	get_tree().change_scene("res://title_screen/TitleScreen.tscn")
 	
 
 # New Game Button:
 func _on_continue1_focus_entered():
-	$continue1/text.add_color_override("font_color", Color("00ff3e"))
+	$continue1/text.add_color_override("font_color", Color("00ffb1"))
 func _on_continue1_mouse_entered():
 	$continue1.grab_focus()
-	$continue1/text.add_color_override("font_color", Color("00ff3e"))
+	$continue1/text.add_color_override("font_color", Color("00ffb1"))
 func _on_continue1_focus_exited():
-	$continue1/text.add_color_override("font_color", Color("008519"))
+	$continue1/text.add_color_override("font_color", Color("099168"))
 func _on_continue1_mouse_exited():
-	$continue1/text.add_color_override("font_color", Color("008519"))
+	$continue1/text.add_color_override("font_color", Color("099168"))
 
 # continue:
 func _on_continue2_focus_entered():
-	$continue2/text.add_color_override("font_color", Color("00ff3e"))
+	$continue2/text.add_color_override("font_color", Color("0093ff"))
 func _on_continue2_mouse_entered():
 	$continue2.grab_focus()
-	$continue2/text.add_color_override("font_color", Color("00ff3e"))
+	$continue2/text.add_color_override("font_color", Color("0093ff"))
 func _on_continue2_focus_exited():
-	$continue2/text.add_color_override("font_color", Color("008519"))
+	$continue2/text.add_color_override("font_color", Color("065d9d"))
 func _on_continue2_mouse_exited():
-	$continue2/text.add_color_override("font_color", Color("008519"))
+	$continue2/text.add_color_override("font_color", Color("065d9d"))
 
 # continue:
 func _on_continue3_focus_entered():
-	$continue3/text.add_color_override("font_color", Color("00ff3e"))
+	$continue3/text.add_color_override("font_color", Color("000aff"))
 func _on_continue3_mouse_entered():
 	$continue3.grab_focus()
-	$continue3/text.add_color_override("font_color", Color("00ff3e"))
+	$continue3/text.add_color_override("font_color", Color("000aff"))
 func _on_continue3_focus_exited():
-	$continue3/text.add_color_override("font_color", Color("008519"))
+	$continue3/text.add_color_override("font_color", Color("070eb1"))
 func _on_continue3_mouse_exited():
-	$continue3/text.add_color_override("font_color", Color("008519"))
+	$continue3/text.add_color_override("font_color", Color("070eb1"))
 	
 # continue:
 func _on_continue4_focus_entered():
@@ -151,4 +201,12 @@ func _on_Back_focus_exited():
 	$Back/text.add_color_override("font_color", Color("008519"))
 func _on_Back_mouse_exited():
 	$Back/text.add_color_override("font_color", Color("008519"))
+
+
+
+func _on_FadeIn_fade_finished():
+	$FadeIn.hide()
+	game.music_time = $music.get_playback_position() 
+	get_tree().change_scene(level_path)
+
 
