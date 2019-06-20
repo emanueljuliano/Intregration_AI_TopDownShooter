@@ -24,23 +24,24 @@ func _process(delta):
 
 
 func _on_Terminal_ready():
-	game.level = 6
 	if game.level ==  1:
 		jokes = small_dialogs.vida + small_dialogs.shock + small_dialogs.monica + small_dialogs.beto + small_dialogs.greg
 	if game.level ==  2:
 		jokes = small_dialogs.monica + small_dialogs.beto + small_dialogs.greg + small_dialogs.bebel
 	if game.level ==  3:
-		jokes = small_dialogs.vagner + small_dialogs.margaret + small_dialogs.monica + small_dialogs.shock
+		jokes = small_dialogs.vagner + small_dialogs.monica + small_dialogs.bebel + small_dialogs.greg
 	if game.level ==  4:
-		jokes = small_dialogs.larissa + small_dialogs.trap + small_dialogs.vagner + small_dialogs.margaret + small_dialogs.monica + small_dialogs.barbara
+		jokes = small_dialogs.vagner + small_dialogs.margaret + small_dialogs.monica + small_dialogs.shock
 	if game.level ==  5:
-		jokes = small_dialogs.larissa + small_dialogs.shock + small_dialogs.barbara + small_dialogs.vida
+		jokes = small_dialogs.larissa + small_dialogs.trap + small_dialogs.margaret + small_dialogs.beto
 	if game.level ==  6:
-		jokes = small_dialogs.larissa + small_dialogs.barbara + small_dialogs.monica + small_dialogs.bebel_mini + small_dialogs.bebel_mini_boss + small_dialogs.big_larissa_mini_boss + small_dialogs.trap
+		jokes = small_dialogs.antony + small_dialogs.margaret + small_dialogs.vagner
 	if game.level ==  7:
-		jokes = small_dialogs.vida
+		jokes = small_dialogs.larissa + small_dialogs.shock + small_dialogs.barbara + small_dialogs.vida
 	if game.level ==  8:
-		jokes = small_dialogs.vida
+		jokes = small_dialogs.larissa + small_dialogs.barbara + small_dialogs.monica + small_dialogs.bebel_mini + small_dialogs.bebel_mini_boss + small_dialogs.big_larissa_mini_boss + small_dialogs.trap
+	if game.level ==  9:
+		jokes = small_dialogs.vida + small_dialogs.larissa + small_dialogs.barbara
 	
 	randomize()
 	var text = jokes[rand_range(0, jokes.size())]

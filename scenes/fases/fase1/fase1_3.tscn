@@ -507,7 +507,7 @@ segmentos = 6
 position = Vector2( 9402.72, -2280 )
 rotation = -1.5708
 trocar_fase = true
-nova_fase = "res://scenes/fases/fase 2/fase2_1.tscn"
+nova_fase = "res://Dialogues/level.tscn"
 aberta = true
 
 [node name="ativador7" parent="." instance=ExtResource( 10 )]

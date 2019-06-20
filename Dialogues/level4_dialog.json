@@ -1,0 +1,226 @@
+{
+  "passages": [
+    {
+      "text": "Congratulations for killing Vanessa the Vespa\n[[Thank you]]\n",
+      "links": [
+        {
+          "name": "Thank you",
+          "link": "Thank you",
+          "pid": "2"
+        }
+      ],
+      "name": "fourth level story",
+      "pid": "1",
+      "position": {
+        "x": "827",
+        "y": "428"
+      },
+      "tags": [
+        "professor"
+      ]
+    },
+    {
+      "text": "I have an interesting story about her…\nShe is one of the 3 primordial bugs of this age.\n[[Primordial?]]\n[[Are there any others?]]",
+      "links": [
+        {
+          "name": "Primordial?",
+          "link": "Primordial?",
+          "pid": "3"
+        },
+        {
+          "name": "Are there any others?",
+          "link": "Are there any others?",
+          "pid": "4"
+        }
+      ],
+      "name": "Thank you",
+      "pid": "2",
+      "position": {
+        "x": "827",
+        "y": "578"
+      }
+    },
+    {
+      "text": "Yeah, the three Primordial ones,  Vanessa, who you already meet, Rafaela the Rainha Formiga and Cecilia the Centopeia.\n[[And would they be as difficult as Vanessa?]]",
+      "links": [
+        {
+          "name": "And would they be as difficult as Vanessa?",
+          "link": "And would they be as difficult as Vanessa?",
+          "pid": "5"
+        }
+      ],
+      "name": "Primordial?",
+      "pid": "3",
+      "position": {
+        "x": "751",
+        "y": "726"
+      }
+    },
+    {
+      "text": "You must fight against another two, Rafaela the Rainha Formiga and Cecilia the Centopeia.\n[[And would they be as difficult as Vanessa?]]",
+      "links": [
+        {
+          "name": "And would they be as difficult as Vanessa?",
+          "link": "And would they be as difficult as Vanessa?",
+          "pid": "5"
+        }
+      ],
+      "name": "Are there any others?",
+      "pid": "4",
+      "position": {
+        "x": "902",
+        "y": "728"
+      }
+    },
+    {
+      "text": "No, they will be much harder.\n[[Oh no…]]",
+      "links": [
+        {
+          "name": "Oh no…",
+          "link": "Oh no…",
+          "pid": "6"
+        }
+      ],
+      "name": "And would they be as difficult as Vanessa?",
+      "pid": "5",
+      "position": {
+        "x": "830",
+        "y": "876"
+      }
+    },
+    {
+      "text": "But there is a reason for all of that, Their strength comes from the terrifying bug that made it with you.\n[[I though I was…]]",
+      "links": [
+        {
+          "name": "I though I was…",
+          "link": "I though I was…",
+          "pid": "7"
+        }
+      ],
+      "name": "Oh no…",
+      "pid": "6",
+      "position": {
+        "x": "830",
+        "y": "1026"
+      }
+    },
+    {
+      "text": "I know, but something remained in you, after you killed it, some part of the bug’s soul  embedded with yours.\n[[You mean that I’m half-]]",
+      "links": [
+        {
+          "name": "You mean that I’m half-",
+          "link": "You mean that I’m half-",
+          "pid": "8"
+        }
+      ],
+      "name": "I though I was…",
+      "pid": "7",
+      "position": {
+        "x": "830",
+        "y": "1176"
+      }
+    },
+    {
+      "text": "It was not enough for this, but I know he used part of you to create the primordial.\n[[...]]",
+      "links": [
+        {
+          "name": "...",
+          "link": "...",
+          "pid": "9"
+        }
+      ],
+      "name": "You mean that I’m half-",
+      "pid": "8",
+      "position": {
+        "x": "830",
+        "y": "1326"
+      }
+    },
+    {
+      "text": "When someone bring the bugs back, he started with those 3\nAnd from they, all the other bugs where generated, as a mix of its parts\n[[How do you know that much?->Do you know who created them?]]\n[[Do you know who created them?]]",
+      "links": [
+        {
+          "name": "How do you know that much?",
+          "link": "Do you know who created them?",
+          "pid": "10"
+        },
+        {
+          "name": "Do you know who created them?",
+          "link": "Do you know who created them?",
+          "pid": "10"
+        }
+      ],
+      "name": "...",
+      "pid": "9",
+      "position": {
+        "x": "830",
+        "y": "1476"
+      }
+    },
+    {
+      "text": "... It doesn’t matter now...\nWhoever has done it has already paid the consequences\n[[Do you think he is alive?]]",
+      "links": [
+        {
+          "name": "Do you think he is alive?",
+          "link": "Do you think he is alive?",
+          "pid": "11"
+        }
+      ],
+      "name": "Do you know who created them?",
+      "pid": "10",
+      "position": {
+        "x": "830",
+        "y": "1626"
+      }
+    },
+    {
+      "text": "Let’s stop talking about it, please…\n[[Okay...]]",
+      "links": [
+        {
+          "name": "Okay...",
+          "link": "Okay...",
+          "pid": "12"
+        }
+      ],
+      "name": "Do you think he is alive?",
+      "pid": "11",
+      "position": {
+        "x": "830",
+        "y": "1776"
+      }
+    },
+    {
+      "text": "gold bug poe .(‡18))‡( ?)8) :‡?\n[[Who are you? what are those messagers?->END]]",
+      "links": [
+        {
+          "name": "Who are you? what are those messagers?",
+          "link": "END",
+          "pid": "13"
+        }
+      ],
+      "name": "Okay...",
+      "pid": "12",
+      "position": {
+        "x": "830",
+        "y": "1926"
+      },
+      "tags": [
+        "IA"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "END",
+      "pid": "13",
+      "position": {
+        "x": "830",
+        "y": "2076"
+      }
+    }
+  ],
+  "name": "fourth level story",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.1",
+  "ifid": "3A801845-AA47-4B2E-A45E-5EDA9E1BA501"
+}

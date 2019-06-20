@@ -35,6 +35,7 @@ func _process(delta):
 	if character == 2:  # Neeko
 		if voice.get_playback_position() > 9.86:
 			voice.play(rand_range(5.80, 9.86))
+
 		
 	if Input.is_action_pressed("direita") and ($Game_Player/Dialog/Terminal.get_visible_characters() > $Game_Player/Dialog/Terminal.get_total_character_count()):
 		$Game_Player/Options/Button2.grab_focus()
@@ -47,20 +48,23 @@ func check_character(page):
 		$Game_Player/Dialog/Terminal.add_color_override("default_color", Color("00ff3e"))
 		character = 0
 		voice.stream = load("res://samples/bunch_of_voices.ogg")
+		voice.pitch_scale = 1
 		voice.play(rand_range(0.0, 8.86))
+	
 		
 	if dictionary[page]["tags"][0] == "neeko":
 		$Game_Player/Dialog/Terminal.add_color_override("default_color", Color("009999"))
 		character = 2
 		voice.stream = load("res://samples/diferent_voices.ogg")
 		voice.play(rand_range(5.80, 9.86))
+
 		
 	if dictionary[page]["tags"][0] == "IA":
 		$Game_Player/Dialog/Terminal.add_color_override("default_color", Color("ff0000"))
 		character = 1
 		voice.stream = load("res://samples/diferent_voices.ogg")
 		voice.play(rand_range(15.50, 18.86))
-		print("I'm here")
+
 		if shoot:
 			voice.pitch_scale = 0
 			$music.pitch_scale = 1
@@ -75,30 +79,27 @@ func check_character(page):
 		voice.play(rand_range(0.0, 8.86))
 
 func check_level():
-	if game.level == 1:
-		dictionary = level_dialogs.level1
 	if game.level == 2:
-		dictionary = level_dialogs.level2
+		dictionary = level_dialogs.level1
 	if game.level == 3:
-		dictionary = level_dialogs.level3
+		dictionary = level_dialogs.level2
 	if game.level == 4:
-		dictionary = level_dialogs.level4
+		dictionary = level_dialogs.level3
 	if game.level == 5:
-		dictionary = level_dialogs.level5
+		dictionary = level_dialogs.level4
 	if game.level == 6:
-		dictionary = level_dialogs.level6
+		dictionary = level_dialogs.level5
 	if game.level == 7:
-		dictionary = level_dialogs.level7
+		dictionary = level_dialogs.level6
 	if game.level == 8:
-		dictionary = level_dialogs.level8
+		dictionary = level_dialogs.level7
 	if game.level == 9:
-		dictionary = level_dialogs.level9
+		dictionary = level_dialogs.level8
 	if game.level == 10:
 		dictionary = last_dialog.dialog
 	
 	
 func _on_Terminal_ready():
-	game.level = 10
 	check_level()
 	
 	$Game_Player/Dialog/Terminal.set_bbcode(dictionary[page]["text"])
@@ -195,7 +196,7 @@ func _on_Button1_pressed():
 				$Game_Player/Options/Button2.hide()
 				
 		else:
-			get_tree().change_scene("res://scenes/death/Death.tscn")
+			game.Continue()
 
 	else:
 		$Game_Player/Dialog/Terminal.set_visible_characters($Game_Player/Dialog/Terminal.get_total_character_count())

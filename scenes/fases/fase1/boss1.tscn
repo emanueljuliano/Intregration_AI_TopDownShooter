@@ -74,7 +74,7 @@ rotation = -1.5708
 position = Vector2( 638.706, 35.9169 )
 rotation = 1.5708
 trocar_fase = true
-nova_fase = "res://scenes/fases/fase1/fase1_3.tscn"
+nova_fase = "res://Dialogues/level.tscn"
 abrir_com_inimigos = [ "vanessa" ]
 
 [node name="vanessa" parent="." instance=ExtResource( 10 )]

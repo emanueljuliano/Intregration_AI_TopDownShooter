@@ -276,5 +276,6 @@ ativo = false
 position = Vector2( 7320, 360 )
 rotation = 3.14159
 trocar_fase = true
-nova_fase = "res://scenes/fases/fase1/fase1_5.tscn"
+nova_fase = "res://Dialogues/level.tscn"
 abrir_com_inimigos = [ "monica", "monica2", "monica3", "monica4" ]
+

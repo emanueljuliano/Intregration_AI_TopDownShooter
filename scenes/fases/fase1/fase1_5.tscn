@@ -420,6 +420,7 @@ position = Vector2( 6360, 3080 )
 position = Vector2( 7393.5, 3320 )
 rotation = 3.14159
 trocar_fase = true
+nova_fase = "res://Dialogues/level.tscn"
 abrir_com_inimigos = [ "beto", "beto2", "beto3", "beto4", "beto5", "beto6", "beto7", "beto8", "beto9", "margaret5", "margaret6", "margaret7", "margaret8" ]
 
 [node name="PORTA15" parent="." instance=ExtResource( 8 )]
@@ -516,3 +517,4 @@ position = Vector2( 6760, 1480 )
 
 [node name="vagner12" parent="." instance=ExtResource( 11 )]
 position = Vector2( 7000, 1480 )
+

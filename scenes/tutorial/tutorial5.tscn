@@ -88,3 +88,4 @@ position = Vector2( 1000, 360 )
 rotation = 3.14159
 trocar_fase = true
 nova_fase = "res://scenes/fases/fase1/fase1_1.tscn"
+

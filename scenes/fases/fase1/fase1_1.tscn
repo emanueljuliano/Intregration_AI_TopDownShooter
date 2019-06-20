@@ -347,7 +347,7 @@ lista = [ "teletransporte2" ]
 position = Vector2( 3720, 3000 )
 rotation = 1.5708
 trocar_fase = true
-nova_fase = "res://scenes/fases/fase1/fase1_4.tscn"
+nova_fase = "res://Dialogues/level.tscn"
 aberta = true
 
 [node name="greg8" parent="." instance=ExtResource( 11 )]

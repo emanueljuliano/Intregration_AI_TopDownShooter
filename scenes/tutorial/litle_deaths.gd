@@ -2,10 +2,10 @@ extends Control
 
 var dictionary = {"tutorial2":"W A S D!",
 				  "tutorial3":"CLICK!", 
-				  "tutorial4.1":"STOP!", 
+				  "tutorial4.1":"01010011 01010100 01001111 01010000", 
 				  "tutorial4.2":"SPACE!", 
 				  "tutorial5.1":"What's happening?",
-				  "tutorial5.2":"OTHER CLICK!",
+				  "tutorial5.2":"Remember the RIGHT click.",
 				  "level2":"Stay DETERMINED!"}
 var key = dict_dialog.key
 var voice = AudioStreamPlayer.new()
@@ -22,7 +22,7 @@ func _ready():
 		voice.stream = load("res://samples/diferent_voices.ogg")
 		voice.play(15.50)
 		
-	elif key ==  "level2":
+	elif key ==  "tutorial5.2":
 		character = 2
 		$Game_Player/Dialog/Terminal.add_color_override("default_color", Color("009999"))
 		voice.stream = load("res://samples/diferent_voices.ogg")

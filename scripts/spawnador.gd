@@ -89,7 +89,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if ativado:
+	if ativado and get_parent().ativo:
 		#rand_n = rand_range(0, 4)
 		if tempo <= 0:
 			var inimigo = lista_inimigos[randi()%lista_inimigos.size()].instance()

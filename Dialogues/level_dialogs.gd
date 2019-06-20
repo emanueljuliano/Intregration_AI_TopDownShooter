@@ -277,6 +277,567 @@ var level2 = [
 
 var level3 = [
     {
+      "text": "Nothing here.",
+      "links": [
+        {
+          "name": "END",
+          "link": "END",
+          "pid": "1"
+        }]}]
+		
+var level4 = [
+    {
+      "text": "Congratulations for killing Vanessa the Vespa",
+      "links": [
+        {
+          "name": "Thank you",
+          "link": "Thank you",
+          "pid": "2"
+        }
+      ],
+      "name": "fourth level story",
+      "pid": "1",
+      "position": {
+        "x": "827",
+        "y": "428"
+      },
+      "tags": [
+        "professor"
+      ]
+    },
+    {
+      "text": "I have an interesting story about her…\nShe is one of the 3 primordial bugs of this age.",
+      "links": [
+        {
+          "name": "Primordial?",
+          "link": "Primordial?",
+          "pid": "3"
+        },
+        {
+          "name": "Are there any others?",
+          "link": "Are there any others?",
+          "pid": "4"
+        }
+      ],
+      "name": "Thank you",
+      "pid": "2",
+      "position": {
+        "x": "827",
+        "y": "578"
+      }
+    },
+    {
+      "text": "Yeah, the three Primordial ones,  Vanessa, who you already meet, Rafaela the Rainha Formiga and Cecilia the Centopeia.",
+      "links": [
+        {
+          "name": "And would they be as difficult as Vanessa?",
+          "link": "And would they be as difficult as Vanessa?",
+          "pid": "5"
+        }
+      ],
+      "name": "Primordial?",
+      "pid": "3",
+      "position": {
+        "x": "751",
+        "y": "726"
+      }
+    },
+    {
+      "text": "You must fight against another two, Rafaela the Rainha Formiga and Cecilia the Centopeia.",
+      "links": [
+        {
+          "name": "And would they be as difficult as Vanessa?",
+          "link": "And would they be as difficult as Vanessa?",
+          "pid": "5"
+        }
+      ],
+      "name": "Are there any others?",
+      "pid": "4",
+      "position": {
+        "x": "902",
+        "y": "728"
+      }
+    },
+    {
+      "text": "No, they will be much harder.",
+      "links": [
+        {
+          "name": "Oh no…",
+          "link": "Oh no…",
+          "pid": "6"
+        }
+      ],
+      "name": "And would they be as difficult as Vanessa?",
+      "pid": "5",
+      "position": {
+        "x": "830",
+        "y": "876"
+      }
+    },
+    {
+      "text": "But there is a reason for all of that, Their strength comes from the terrifying bug that made it with you.",
+      "links": [
+        {
+          "name": "I though I was…",
+          "link": "I though I was…",
+          "pid": "7"
+        }
+      ],
+      "name": "Oh no…",
+      "pid": "6",
+      "position": {
+        "x": "830",
+        "y": "1026"
+      }
+    },
+    {
+      "text": "I know, but something remained in you, after you killed it, some part of the bug’s soul  embedded with yours.",
+      "links": [
+        {
+          "name": "You mean that I’m half-",
+          "link": "You mean that I’m half-",
+          "pid": "8"
+        }
+      ],
+      "name": "I though I was…",
+      "pid": "7",
+      "position": {
+        "x": "830",
+        "y": "1176"
+      }
+    },
+    {
+      "text": "It was not enough for this, but I know he used part of you to create the primordial.",
+      "links": [
+        {
+          "name": "...",
+          "link": "...",
+          "pid": "9"
+        }
+      ],
+      "name": "You mean that I’m half-",
+      "pid": "8",
+      "position": {
+        "x": "830",
+        "y": "1326"
+      }
+    },
+    {
+      "text": "When someone bring the bugs back, he started with those 3\nAnd from they, all the other bugs where generated, as a mix of its parts.",
+      "links": [
+        {
+          "name": "How do you know that much?",
+          "link": "Do you know who created them?",
+          "pid": "10"
+        },
+        {
+          "name": "Do you know who created them?",
+          "link": "Do you know who created them?",
+          "pid": "10"
+        }
+      ],
+      "name": "...",
+      "pid": "9",
+      "position": {
+        "x": "830",
+        "y": "1476"
+      }
+    },
+    {
+      "text": "... It doesn’t matter now...\nWhoever has done it has already paid the consequences.",
+      "links": [
+        {
+          "name": "Do you think he is alive?",
+          "link": "Do you think he is alive?",
+          "pid": "11"
+        }
+      ],
+      "name": "Do you know who created them?",
+      "pid": "10",
+      "position": {
+        "x": "830",
+        "y": "1626"
+      }
+    },
+    {
+      "text": "Let’s stop talking about it, please…",
+      "links": [
+        {
+          "name": "Okay...",
+          "link": "Okay...",
+          "pid": "12"
+        }
+      ],
+      "name": "Do you think he is alive?",
+      "pid": "11",
+      "position": {
+        "x": "830",
+        "y": "1776"
+      }
+    },
+    {
+      "text": "gold bug poe .(‡18))‡( ?)8) :‡?",
+      "links": [
+        {
+          "name": "Who are you? what are those messagers?",
+          "link": "END",
+          "pid": "13"
+        }
+      ],
+      "name": "Okay...",
+      "pid": "12",
+      "position": {
+        "x": "830",
+        "y": "1926"
+      },
+      "tags": [
+        "IA"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "END",
+      "pid": "13",
+      "position": {
+        "x": "830",
+        "y": "2076"
+      }
+    }
+  ]
+
+var level5 = [
+    {
+      "text": "Another danger is coming",
+      "links": [
+        {
+          "name": "Neeko?",
+          "link": "Neeko?",
+          "pid": "2"
+        }
+      ],
+      "name": "fifth level story",
+      "pid": "1",
+      "position": {
+        "x": "827",
+        "y": "428"
+      },
+      "tags": [
+        "neeko"
+      ]
+    },
+    {
+      "text": "Oh, I’m sorry for appear again with bad news. It seems like if I’m only here to announce the evil.",
+      "links": [
+        {
+          "name": "Just a little",
+          "link": "Just a little",
+          "pid": "3"
+        },
+        {
+          "name": "You helps me a lot with that",
+          "link": "You helps me a lot with that",
+          "pid": "4"
+        }
+      ],
+      "name": "Neeko?",
+      "pid": "2",
+      "position": {
+        "x": "824",
+        "y": "577"
+      }
+    },
+    {
+      "text": "I’m sorry, I’ll try my best to talk about better things, okay?",
+      "links": [
+        {
+          "name": "Shure",
+          "link": "Shure",
+          "pid": "5"
+        }
+      ],
+      "name": "Just a little",
+      "pid": "3",
+      "position": {
+        "x": "749",
+        "y": "727"
+      }
+    },
+    {
+      "text": "Oh, thanks for being comprehensive, I’ll try my best to talk about interesting things, okay? ",
+      "links": [
+        {
+          "name": "Shure",
+          "link": "Shure",
+          "pid": "5"
+        }
+      ],
+      "name": "You helps me a lot with that",
+      "pid": "4",
+      "position": {
+        "x": "899",
+        "y": "727"
+      }
+    },
+    {
+      "text": "So… hmm…. What should we talk about?… eh…",
+      "links": [
+        {
+          "name": "Are you okay?",
+          "link": "Are you okay?",
+          "pid": "6"
+        },
+        {
+          "name": "Do you want me to help?",
+          "link": "Do you want me to help?",
+          "pid": "7"
+        }
+      ],
+      "name": "Shure",
+      "pid": "5",
+      "position": {
+        "x": "819",
+        "y": "882"
+      }
+    },
+    {
+      "text": "Ah, yes yes. It’s just…. Hmmm… \nI have to think in something…. Think, think, think...",
+      "links": [
+        {
+          "name": "...",
+          "link": "...",
+          "pid": "8"
+        }
+      ],
+      "name": "Are you okay?",
+      "pid": "6",
+      "position": {
+        "x": "717",
+        "y": "1037"
+      }
+    },
+    {
+      "text": "Oh, no, no, no. It’s just…. Hmmm… \nI just have to think in something…. Think, think, think...",
+      "links": [
+        {
+          "name": "...",
+          "link": "...",
+          "pid": "8"
+        }
+      ],
+      "name": "Do you want me to help?",
+      "pid": "7",
+      "position": {
+        "x": "939",
+        "y": "1032"
+      }
+    },
+    {
+      "text": "AH I KNOW!",
+      "links": [
+        {
+          "name": "Whoa, so, about what we’re going to talk?",
+          "link": "Whoa, so, about what we’re going to talk?",
+          "pid": "9"
+        }
+      ],
+      "name": "...",
+      "pid": "8",
+      "position": {
+        "x": "820",
+        "y": "1197"
+      }
+    },
+    {
+      "text": "Let’s talk about the weather!",
+      "links": [
+        {
+          "name": "Wheater….?",
+          "link": "Wheater….?",
+          "pid": "10"
+        }
+      ],
+      "name": "Whoa, so, about what we’re going to talk?",
+      "pid": "9",
+      "position": {
+        "x": "821",
+        "y": "1346"
+      }
+    },
+    {
+      "text": "Yeah! Like… I mean…. it’s getting cold right?",
+      "links": [
+        {
+          "name": "I don’t know….",
+          "link": "I don’t know….",
+          "pid": "11"
+        },
+        {
+          "name": "I guess… so?",
+          "link": "I don’t know….",
+          "pid": "11"
+        }
+      ],
+      "name": "Wheater….?",
+      "pid": "10",
+      "position": {
+        "x": "820",
+        "y": "1495"
+      }
+    },
+    {
+      "text": "Ahhhhh I’m so terrible at talking to people.\nLike, before you loss you memories, you where my only friend and the only one that I could talk. But now… I don’t know.. it’s different.",
+      "links": [
+        {
+          "name": "I’m sorry...",
+          "link": "I’m sorry...",
+          "pid": "12"
+        },
+        {
+          "name": "Can I do anything to help you?",
+          "link": "I’m sorry...",
+          "pid": "12"
+        }
+      ],
+      "name": "I don’t know….",
+      "pid": "11",
+      "position": {
+        "x": "819",
+        "y": "1645"
+      }
+    },
+    {
+      "text": "Don’t worry, that person that I used to talk don’t exists anymore. Even if the Professor somehow put all of you memories back, it still doesn’t being the same, at least it is what I think.",
+      "links": [
+        {
+          "name": "...",
+          "link": ".2",
+          "pid": "13"
+        }
+      ],
+      "name": "I’m sorry...",
+      "pid": "12",
+      "position": {
+        "x": "820",
+        "y": "1802"
+      }
+    },
+    {
+      "text": "But hey! Don’t be depressive, I thought of something to talk about. \nThe current challenge have so much darkness that you can easily be  swallowed by it.",
+      "links": [
+        {
+          "name": "But, seems like the light attract more enemies.",
+          "link": "But, seems like the light attract more enemies.",
+          "pid": "14"
+        }
+      ],
+      "name": ".2",
+      "pid": "13",
+      "position": {
+        "x": "817",
+        "y": "1951"
+      }
+    },
+    {
+      "text": "I know that, the moths are my grater weakness.\nThey follow the light and try to consume it, until there is no source.",
+      "links": [
+        {
+          "name": "And what I do?",
+          "link": "And what I do?",
+          "pid": "15"
+        }
+      ],
+      "name": "But, seems like the light attract more enemies.",
+      "pid": "14",
+      "position": {
+        "x": "817",
+        "y": "2101"
+      }
+    },
+    {
+      "text": "Against them… You have to fight without my help.\nBut there are bugs that fear the radiance more than anything.\nPlease, use my light to help you this hour.",
+      "links": [
+        {
+          "name": "I will try…",
+          "link": "I will try…",
+          "pid": "16"
+        }
+      ],
+      "name": "And what I do?",
+      "pid": "15",
+      "position": {
+        "x": "817",
+        "y": "2251"
+      }
+    },
+    {
+      "text": "Just believe in yourself the same way that I believe in you… ",
+      "links": [
+        {
+          "name": "Thanks for your help",
+          "link": "Thanks for your help",
+          "pid": "17"
+        }
+      ],
+      "name": "I will try…",
+      "pid": "16",
+      "position": {
+        "x": "817",
+        "y": "2401"
+      }
+    },
+    {
+      "text": "Hihi, thank you for being so kind with me.",
+      "links": [
+        {
+          "name": "You are an amazing person...",
+          "link": "You are amazing...",
+          "pid": "18"
+        },
+        {
+          "name": "You are amazing...",
+          "link": "You are amazing...",
+          "pid": "18"
+        }
+      ],
+      "name": "Thanks for your help",
+      "pid": "17",
+      "position": {
+        "x": "817",
+        "y": "2551"
+      }
+    },
+    {
+      "text": "light dbuw wjqtn yzz zox wqmom",
+      "links": [
+        {
+          "name": "Light... what?",
+          "link": "END",
+          "pid": "19"
+        }
+      ],
+      "name": "You are amazing...",
+      "pid": "18",
+      "position": {
+        "x": "818",
+        "y": "2699"
+      },
+      "tags": [
+        "IA"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "END",
+      "pid": "19",
+      "position": {
+        "x": "818",
+        "y": "2849"
+      }
+    }
+  ]
+
+var level7 = [
+    {
       "text": "Congratulation for defeat that giant bug.",
       "links": [
         {

@@ -35,7 +35,7 @@ func _process(delta):
 		linhas = linhas - 1
 	
 	if linhas <= 0:
-		get_tree().change_scene('res://scenes/death/Death.tscn')
+		get_tree().change_scene('res://Dialogues/small_deaths.tscn')
 	pass
 "
 
@@ -65,3 +65,4 @@ stream = ExtResource( 4 )
 volume_db = 1.0
 pitch_scale = 0.25
 autoplay = true
+

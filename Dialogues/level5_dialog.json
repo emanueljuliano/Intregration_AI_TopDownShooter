@@ -1,0 +1,337 @@
+{
+  "passages": [
+    {
+      "text": "Another danger is coming\n[[Neeko?]]",
+      "links": [
+        {
+          "name": "Neeko?",
+          "link": "Neeko?",
+          "pid": "2"
+        }
+      ],
+      "name": "fifth level story",
+      "pid": "1",
+      "position": {
+        "x": "827",
+        "y": "428"
+      },
+      "tags": [
+        "neeko"
+      ]
+    },
+    {
+      "text": "Oh, I’m sorry for appear again with bad news. It seems like if I’m only here to announce the evil.\n[[Just a little]]\n[[You helps me a lot with that]]",
+      "links": [
+        {
+          "name": "Just a little",
+          "link": "Just a little",
+          "pid": "3"
+        },
+        {
+          "name": "You helps me a lot with that",
+          "link": "You helps me a lot with that",
+          "pid": "4"
+        }
+      ],
+      "name": "Neeko?",
+      "pid": "2",
+      "position": {
+        "x": "824",
+        "y": "577"
+      }
+    },
+    {
+      "text": "I’m sorry, I’ll try my best to talk about better things, okay?\n[[Shure]]",
+      "links": [
+        {
+          "name": "Shure",
+          "link": "Shure",
+          "pid": "5"
+        }
+      ],
+      "name": "Just a little",
+      "pid": "3",
+      "position": {
+        "x": "749",
+        "y": "727"
+      }
+    },
+    {
+      "text": "Oh, thanks for being comprehensive, I’ll try my best to talk about interesting things, okay?\n[[Shure]] ",
+      "links": [
+        {
+          "name": "Shure",
+          "link": "Shure",
+          "pid": "5"
+        }
+      ],
+      "name": "You helps me a lot with that",
+      "pid": "4",
+      "position": {
+        "x": "899",
+        "y": "727"
+      }
+    },
+    {
+      "text": "So… hmm…. What should we talk about?… eh…\n[[Are you okay?]]\n[[Do you want me to help?]]",
+      "links": [
+        {
+          "name": "Are you okay?",
+          "link": "Are you okay?",
+          "pid": "6"
+        },
+        {
+          "name": "Do you want me to help?",
+          "link": "Do you want me to help?",
+          "pid": "7"
+        }
+      ],
+      "name": "Shure",
+      "pid": "5",
+      "position": {
+        "x": "819",
+        "y": "882"
+      }
+    },
+    {
+      "text": "Ah, yes yes. It’s just…. Hmmm… \nI have to think in something…. Think, think, think….\n[[...]]",
+      "links": [
+        {
+          "name": "...",
+          "link": "...",
+          "pid": "8"
+        }
+      ],
+      "name": "Are you okay?",
+      "pid": "6",
+      "position": {
+        "x": "717",
+        "y": "1037"
+      }
+    },
+    {
+      "text": "Oh, no, no, no. It’s just…. Hmmm… \nI just have to think in something…. Think, think, think….\n[[...]]",
+      "links": [
+        {
+          "name": "...",
+          "link": "...",
+          "pid": "8"
+        }
+      ],
+      "name": "Do you want me to help?",
+      "pid": "7",
+      "position": {
+        "x": "939",
+        "y": "1032"
+      }
+    },
+    {
+      "text": "AH I KNOW!\n[[Whoa, so, about what we’re going to talk?]]",
+      "links": [
+        {
+          "name": "Whoa, so, about what we’re going to talk?",
+          "link": "Whoa, so, about what we’re going to talk?",
+          "pid": "9"
+        }
+      ],
+      "name": "...",
+      "pid": "8",
+      "position": {
+        "x": "820",
+        "y": "1197"
+      }
+    },
+    {
+      "text": "Let’s talk about the weather!\n[[Wheater….?]]",
+      "links": [
+        {
+          "name": "Wheater….?",
+          "link": "Wheater….?",
+          "pid": "10"
+        }
+      ],
+      "name": "Whoa, so, about what we’re going to talk?",
+      "pid": "9",
+      "position": {
+        "x": "821",
+        "y": "1346"
+      }
+    },
+    {
+      "text": "Yeah! Like… I mean…. it’s getting cold right?\n[[I don’t know….]]\n[[I guess… so?->I don’t know….]]",
+      "links": [
+        {
+          "name": "I don’t know….",
+          "link": "I don’t know….",
+          "pid": "11"
+        },
+        {
+          "name": "I guess… so?",
+          "link": "I don’t know….",
+          "pid": "11"
+        }
+      ],
+      "name": "Wheater….?",
+      "pid": "10",
+      "position": {
+        "x": "820",
+        "y": "1495"
+      }
+    },
+    {
+      "text": "Ahhhhh I’m so terrible at talking to people.\nLike, before you loss you memories, you where my only friend and the only one that I could talk. But now… I don’t know.. it’s different.\n[[I’m sorry...]]\n[[Can I do anything to help you?->I’m sorry...]]",
+      "links": [
+        {
+          "name": "I’m sorry...",
+          "link": "I’m sorry...",
+          "pid": "12"
+        },
+        {
+          "name": "Can I do anything to help you?",
+          "link": "I’m sorry...",
+          "pid": "12"
+        }
+      ],
+      "name": "I don’t know….",
+      "pid": "11",
+      "position": {
+        "x": "819",
+        "y": "1645"
+      }
+    },
+    {
+      "text": "Don’t worry, that person that I used to talk don’t exists anymore. Even if the Professor somehow put all of you memories back, it still doesn’t being the same, at least it is what I think.\n[[...->.2]]",
+      "links": [
+        {
+          "name": "...",
+          "link": ".2",
+          "pid": "13"
+        }
+      ],
+      "name": "I’m sorry...",
+      "pid": "12",
+      "position": {
+        "x": "820",
+        "y": "1802"
+      }
+    },
+    {
+      "text": "But hey! Don’t be depressive, I thought of something to talk about. \nThe current challenge have so much darkness that you can easily be  swallowed by it.\n[[But, seems like the light attract more enemies.]]",
+      "links": [
+        {
+          "name": "But, seems like the light attract more enemies.",
+          "link": "But, seems like the light attract more enemies.",
+          "pid": "14"
+        }
+      ],
+      "name": ".2",
+      "pid": "13",
+      "position": {
+        "x": "817",
+        "y": "1951"
+      }
+    },
+    {
+      "text": "I know that, the moths are my grater weakness.\nThey follow the light and try to consume it, until there is no source.\n[[And what I do?]]",
+      "links": [
+        {
+          "name": "And what I do?",
+          "link": "And what I do?",
+          "pid": "15"
+        }
+      ],
+      "name": "But, seems like the light attract more enemies.",
+      "pid": "14",
+      "position": {
+        "x": "817",
+        "y": "2101"
+      }
+    },
+    {
+      "text": "Against them… You have to fight without my help.\nBut there are bugs that fear the radiance more than anything.\nPlease, use my light to help you this hour.\n[[I will try…]]\n",
+      "links": [
+        {
+          "name": "I will try…",
+          "link": "I will try…",
+          "pid": "16"
+        }
+      ],
+      "name": "And what I do?",
+      "pid": "15",
+      "position": {
+        "x": "817",
+        "y": "2251"
+      }
+    },
+    {
+      "text": "Just believe in yourself the same way that I believe in you… \n[[Thanks for your help]]",
+      "links": [
+        {
+          "name": "Thanks for your help",
+          "link": "Thanks for your help",
+          "pid": "17"
+        }
+      ],
+      "name": "I will try…",
+      "pid": "16",
+      "position": {
+        "x": "817",
+        "y": "2401"
+      }
+    },
+    {
+      "text": "Hihi, thank you for being so kind with me.\n[[You are an amazing person...->You are amazing...]]\n[[You are amazing...]]",
+      "links": [
+        {
+          "name": "You are an amazing person...",
+          "link": "You are amazing...",
+          "pid": "18"
+        },
+        {
+          "name": "You are amazing...",
+          "link": "You are amazing...",
+          "pid": "18"
+        }
+      ],
+      "name": "Thanks for your help",
+      "pid": "17",
+      "position": {
+        "x": "817",
+        "y": "2551"
+      }
+    },
+    {
+      "text": "light dbuw wjqtn yzz zox wqmom\n[[Light... what?->END]]",
+      "links": [
+        {
+          "name": "Light... what?",
+          "link": "END",
+          "pid": "19"
+        }
+      ],
+      "name": "You are amazing...",
+      "pid": "18",
+      "position": {
+        "x": "818",
+        "y": "2699"
+      },
+      "tags": [
+        "IA"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "END",
+      "pid": "19",
+      "position": {
+        "x": "818",
+        "y": "2849"
+      }
+    }
+  ],
+  "name": "fifth level story",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.1",
+  "ifid": "FD5D3AB7-4882-4C8D-BB0D-3C99171E943C"
+}

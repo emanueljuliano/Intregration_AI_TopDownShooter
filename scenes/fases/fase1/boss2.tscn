@@ -114,7 +114,7 @@ rotation = -1.5708
 position = Vector2( 645.181, -282.353 )
 rotation = 1.5708
 trocar_fase = true
-nova_fase = "res://scenes/fases/fase1/fase1_2.tscn"
+nova_fase = "res://Dialogues/level.tscn"
 abrir_com_inimigos = [ "centipeta" ]
 
 [node name="Light2D" type="Light2D" parent="PORTA2"]
@@ -521,3 +521,4 @@ lista = [ "bebel6" ]
 [node name="bebel7" parent="." instance=ExtResource( 18 )]
 position = Vector2( 4200, -440 )
 ativo = false
+

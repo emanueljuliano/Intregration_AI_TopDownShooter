@@ -1,0 +1,498 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://scenes/credits/credits.gd" type="Script" id=1]
+[ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://title_screen/system failure.png" type="Texture" id=4]
+[ext_resource path="res://title_screen/Fonts/miltown2_40.tres" type="DynamicFont" id=5]
+[ext_resource path="res://title_screen/Fonts/vt323_35.tres" type="DynamicFont" id=6]
+[ext_resource path="res://scenes/beto.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/useful/morte.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/monica.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/bebel.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/useful/shock.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/bosses/vanessa.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/vagner.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/margaret.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/larissa.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/useful/trap.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/antony.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/bosses/arnaldo.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/barbara.tscn" type="PackedScene" id=19]
+
+[node name="main" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [ 1282.27 ]
+}
+
+[node name="camera1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 649.816, 354.445 )
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 655.253, 1220.36 )
+mover = false
+imortal = true
+stop = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1278.0
+margin_bottom = 140.0
+texture = ExtResource( 4 )
+stretch_mode = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 432.273
+margin_top = 190.034
+margin_right = 1432.27
+margin_bottom = 290.034
+rect_min_size = Vector2( 1000, 100 )
+custom_fonts/normal_font = ExtResource( 5 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+visible_characters = 10
+text = "Created By:"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 310.187
+margin_top = 352.878
+margin_right = 1269.19
+margin_bottom = 461.878
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Emanuel Silva            Writer, UI Designer
+.                        and Programmer "
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 316.493
+margin_top = 483.334
+margin_right = 1275.49
+margin_bottom = 592.334
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Marcos Vinicios          2D Artist, Sounds,            .                        Enemies designer and Programmer"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+margin_left = 480.003
+margin_top = 920.474
+margin_right = 836.003
+margin_bottom = 974.474
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Professor as Professor"
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="."]
+margin_left = 451.742
+margin_top = 780.876
+margin_right = 873.742
+margin_bottom = 854.876
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 5 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Characters:"
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="."]
+margin_left = 523.3
+margin_top = 1433.17
+margin_right = 945.3
+margin_bottom = 1507.17
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 5 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Enemies:"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+margin_left = 556.629
+margin_top = 996.627
+margin_right = 803.629
+margin_bottom = 1052.63
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 0.6, 0.6, 1 )
+text = "??? as Neeko"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 503.665
+margin_top = 1076.84
+margin_right = 832.665
+margin_bottom = 1143.84
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 1, 0, 0, 1 )
+text = "AI as Strange Voice"
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="."]
+margin_left = 283.056
+margin_top = 1587.01
+margin_right = 639.056
+margin_bottom = 1641.01
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Beto the Besouro"
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="."]
+margin_left = 739.753
+margin_top = 1585.46
+margin_right = 1095.75
+margin_bottom = 1639.46
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Morte the Red Square"
+
+[node name="RichTextLabel12" type="RichTextLabel" parent="."]
+margin_left = 766.727
+margin_top = 2018.62
+margin_right = 1122.73
+margin_bottom = 2072.62
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Bebel the Bee"
+
+[node name="RichTextLabel11" type="RichTextLabel" parent="."]
+margin_left = 306.589
+margin_top = 2018.62
+margin_right = 662.59
+margin_bottom = 2072.62
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Monica de Mosca"
+
+[node name="RichTextLabel13" type="RichTextLabel" parent="."]
+margin_left = 505.969
+margin_top = 2434.34
+margin_right = 861.969
+margin_bottom = 2488.34
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Shock the shock"
+
+[node name="RichTextLabel14" type="RichTextLabel" parent="."]
+margin_left = 492.276
+margin_top = 3122.46
+margin_right = 848.276
+margin_bottom = 3176.46
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Vanessa the Vespa"
+
+[node name="RichTextLabel15" type="RichTextLabel" parent="."]
+margin_left = 265.518
+margin_top = 3672.87
+margin_right = 621.518
+margin_bottom = 3726.87
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Vagner the Vagalume"
+
+[node name="RichTextLabel16" type="RichTextLabel" parent="."]
+margin_left = 756.615
+margin_top = 3672.87
+margin_right = 1112.62
+margin_bottom = 3726.87
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Margaret the Mariposa"
+
+[node name="RichTextLabel17" type="RichTextLabel" parent="."]
+margin_left = 338.045
+margin_top = 5677.56
+margin_right = 694.045
+margin_bottom = 5731.56
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Anthony the Ant"
+
+[node name="RichTextLabel19" type="RichTextLabel" parent="."]
+margin_left = 770.873
+margin_top = 4365.21
+margin_right = 1126.87
+margin_bottom = 4419.21
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Trap the Trap"
+
+[node name="RichTextLabel20" type="RichTextLabel" parent="."]
+margin_left = 281.741
+margin_top = 4364.92
+margin_right = 637.741
+margin_bottom = 4418.92
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Larissa the Lacraia"
+
+[node name="RichTextLabel21" type="RichTextLabel" parent="."]
+margin_left = 810.51
+margin_top = 5681.65
+margin_right = 1166.51
+margin_bottom = 5735.65
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Arnaldo the Air Ant"
+
+[node name="RichTextLabel22" type="RichTextLabel" parent="."]
+margin_left = 232.555
+margin_top = 6357.43
+margin_right = 588.555
+margin_bottom = 6411.43
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Lala the Large Larissa"
+
+[node name="RichTextLabel23" type="RichTextLabel" parent="."]
+margin_left = 782.083
+margin_top = 6357.26
+margin_right = 1138.08
+margin_bottom = 6411.26
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Barbara the Barata"
+
+[node name="RichTextLabel24" type="RichTextLabel" parent="."]
+margin_left = 746.762
+margin_top = 7068.2
+margin_right = 1102.76
+margin_bottom = 7122.2
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Miabela the mini Bebel"
+
+[node name="RichTextLabel25" type="RichTextLabel" parent="."]
+margin_left = 293.305
+margin_top = 7069.55
+margin_right = 649.305
+margin_bottom = 7123.55
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Bia the Big Bebel"
+
+[node name="RichTextLabel26" type="RichTextLabel" parent="."]
+margin_left = 470.875
+margin_top = 7460.23
+margin_right = 826.875
+margin_bottom = 7514.23
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Cecilia the Centopeia"
+
+[node name="RichTextLabel27" type="RichTextLabel" parent="."]
+margin_left = 491.351
+margin_top = 8168.68
+margin_right = 847.351
+margin_bottom = 8222.68
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Thanks for Playing :)"
+
+[node name="beto" parent="." instance=ExtResource( 7 )]
+position = Vector2( 394.065, 1771.58 )
+ativo = false
+
+[node name="morte" parent="." instance=ExtResource( 8 )]
+position = Vector2( 806.794, 1781.12 )
+rotation = 3.14159
+
+[node name="monica" parent="." instance=ExtResource( 9 )]
+position = Vector2( 423.474, 2222.2 )
+ativo = false
+
+[node name="bebel" parent="." instance=ExtResource( 10 )]
+position = Vector2( 862.985, 2215.85 )
+ativo = false
+
+[node name="shock" parent="." instance=ExtResource( 11 )]
+position = Vector2( 388, 2638.14 )
+rotation = -1.48204
+scale = Vector2( 1, 0.644183 )
+automatico = true
+
+[node name="shock2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 766.439, 2670.66 )
+scale = Vector2( 1, 0.799995 )
+automatico = true
+
+[node name="shock3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 389.747, 2769.84 )
+rotation = 3.16973
+scale = Vector2( 1, 0.49543 )
+automatico = true
+
+[node name="shock4" parent="." instance=ExtResource( 11 )]
+position = Vector2( 767.387, 2669.37 )
+rotation = -1.55649
+scale = Vector2( 0.798045, 0.49718 )
+automatico = true
+
+[node name="shock5" parent="." instance=ExtResource( 11 )]
+position = Vector2( 773.414, 2753.52 )
+rotation = -1.55357
+scale = Vector2( 0.987395, 0.479467 )
+automatico = true
+
+[node name="shock6" parent="." instance=ExtResource( 11 )]
+position = Vector2( 531.801, 2756.69 )
+rotation = 1.57789
+scale = Vector2( 1, 0.503086 )
+automatico = true
+
+[node name="shock7" parent="." instance=ExtResource( 11 )]
+position = Vector2( 533.458, 2752.14 )
+rotation = 0.017397
+scale = Vector2( 1, 0.560078 )
+automatico = true
+
+[node name="shock8" parent="." instance=ExtResource( 11 )]
+position = Vector2( 380.959, 2881.37 )
+rotation = -1.39812
+scale = Vector2( 1, 0.55592 )
+automatico = true
+
+[node name="vanessa" parent="." instance=ExtResource( 12 )]
+pause_mode = 1
+position = Vector2( 647.256, 3367.07 )
+ativo = false
+
+[node name="vagner" parent="." instance=ExtResource( 13 )]
+position = Vector2( 426.015, 4139.26 )
+aceso = true
+ativo = false
+
+[node name="vagner2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 336.393, 4080.01 )
+aceso = true
+ativo = false
+
+[node name="vagner3" parent="." instance=ExtResource( 13 )]
+position = Vector2( 507.999, 4009.84 )
+aceso = true
+ativo = false
+
+[node name="margaret" parent="." instance=ExtResource( 14 )]
+position = Vector2( 958.361, 4041.36 )
+rotation = -3.13584
+
+[node name="larissa" parent="." instance=ExtResource( 15 )]
+position = Vector2( 449.998, 4739.06 )
+ativo = false
+
+[node name="trap" parent="." instance=ExtResource( 16 )]
+position = Vector2( 982.01, 4666.26 )
+rotation = 1.58023
+automatico = true
+
+[node name="trap2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 973.017, 4802.9 )
+rotation = 1.57049
+automatico = true
+
+[node name="RichTextLabel18" type="RichTextLabel" parent="."]
+margin_left = 495.651
+margin_top = 5030.76
+margin_right = 903.651
+margin_bottom = 5084.76
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/normal_font = ExtResource( 6 )
+custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
+text = "Rafaela the Rainha Formiga"
+
+[node name="antony" parent="." instance=ExtResource( 17 )]
+pause_mode = 1
+position = Vector2( 483.439, 5929.88 )
+ativo = false
+
+[node name="antony2" parent="." instance=ExtResource( 17 )]
+pause_mode = 1
+position = Vector2( 414.013, 6076.64 )
+ativo = false
+
+[node name="antony3" parent="." instance=ExtResource( 17 )]
+pause_mode = 1
+position = Vector2( 362.462, 5911.96 )
+ativo = false
+
+[node name="antony4" parent="." instance=ExtResource( 17 )]
+pause_mode = 1
+position = Vector2( 532.03, 6036.96 )
+ativo = false
+
+[node name="antony5" parent="." instance=ExtResource( 17 )]
+pause_mode = 1
+position = Vector2( 322.367, 6013.63 )
+ativo = false
+
+[node name="arnaldo" parent="." instance=ExtResource( 18 )]
+position = Vector2( 938.118, 5926.28 )
+vel = -1
+ativo = false
+
+[node name="arnaldo2" parent="." instance=ExtResource( 18 )]
+position = Vector2( 985.373, 6029.38 )
+vel = -1
+ativo = false
+
+[node name="arnaldo3" parent="." instance=ExtResource( 18 )]
+position = Vector2( 855.063, 6053.72 )
+vel = -1
+ativo = false
+
+[node name="larissa2" parent="." instance=ExtResource( 15 )]
+modulate = Color( 0.878431, 0.623529, 0.0352941, 1 )
+position = Vector2( 387.721, 6661.89 )
+scale = Vector2( 1, 1 )
+ativo = false
+
+[node name="barbara" parent="." instance=ExtResource( 19 )]
+position = Vector2( 880.321, 6606.04 )
+ativo = false
+
+[node name="barbara2" parent="." instance=ExtResource( 19 )]
+position = Vector2( 953.352, 6706.28 )
+ativo = false
+
+[node name="barbara3" parent="." instance=ExtResource( 19 )]
+position = Vector2( 807.29, 6720.6 )
+ativo = false
+
+[node name="bebel2" parent="." instance=ExtResource( 10 )]
+modulate = Color( 0.807843, 0.454902, 0.0745098, 1 )
+position = Vector2( 415.824, 7240.98 )
+scale = Vector2( 2, 2 )
+ativo = false
+
+[node name="bebel3" parent="." instance=ExtResource( 10 )]
+modulate = Color( 0.909804, 0.631373, 0.0627451, 1 )
+position = Vector2( 820.653, 7195.84 )
+scale = Vector2( 0.75, 0.75 )
+ativo = false
+
+[node name="bebel4" parent="." instance=ExtResource( 10 )]
+modulate = Color( 0.890196, 0.529412, 0.0156863, 1 )
+position = Vector2( 899.412, 7253.12 )
+scale = Vector2( 0.75, 0.75 )
+ativo = false
+
+[node name="bebel5" parent="." instance=ExtResource( 10 )]
+modulate = Color( 0.831373, 0.572549, 0.0392157, 1 )
+position = Vector2( 817.789, 7298.94 )
+scale = Vector2( 0.75, 0.75 )
+ativo = false
+

@@ -19,6 +19,8 @@ var dano = 10
 
 var path = PoolVector2Array()# setget set_path
 
+export var ativo = true
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -46,7 +48,7 @@ func _process(delta):
 	
 
 func _physics_process(delta):
-	if vida > 0:
+	if vida > 0 and ativo:
 		
 		if not fugindo:
 			random_negative()

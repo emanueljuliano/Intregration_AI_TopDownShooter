@@ -190,7 +190,7 @@ abrir_com_inimigos = [ "monica", "monica2", "bebel3", "bebel4", "bebel5", "bebel
 position = Vector2( 4920, -7800 )
 rotation = 1.5708
 trocar_fase = true
-nova_fase = "res://scenes/fases/fase1/boss1.tscn"
+nova_fase = "res://Dialogues/level.tscn"
 aberta = true
 
 [node name="bebel" parent="." instance=ExtResource( 10 )]

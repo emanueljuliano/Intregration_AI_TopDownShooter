@@ -130,13 +130,21 @@ func Continue():
 	elif game.level == 2:
 		get_tree().change_scene("res://scenes/fases/fase1/fase1_4.tscn")
 	elif game.level == 3:
-		get_tree().change_scene("res://scenes/fases/fase1/fase1_3.tscn")	
+		get_tree().change_scene("res://scenes/fases/fase1/boss1.tscn")
 	elif game.level == 4:
-		get_tree().change_scene("res://scenes/fases/fase 2/fase2_1.tscn")
-	elif game.level == 5:
 		get_tree().change_scene("res://scenes/fases/fase1/fase1_2.tscn")
-	elif game.level == 6:
+	elif game.level == 5:
 		get_tree().change_scene("res://scenes/fases/fase1/fase1_5.tscn")
+	elif game.level == 6:
+		get_tree().change_scene("res://scenes/fases/fase1/boss3.tscn")
+	elif game.level == 7:
+		get_tree().change_scene("res://scenes/fases/fase1/fase1_3.tscn")	
+	elif game.level == 8:
+		get_tree().change_scene("res://scenes/fases/fase 2/fase2_1.tscn")
+	elif game.level == 9:
+		get_tree().change_scene("res://scenes/fases/fase1/boss2.tscn")
+	elif game.level == 10:
+		get_tree().change_scene("res://scenes/fases/fase1/boss2.tscn")
 	else:
 		get_tree().change_scene("res://scenes/main.tscn")
 

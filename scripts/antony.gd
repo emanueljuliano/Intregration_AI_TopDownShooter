@@ -21,6 +21,9 @@ var negativo = 1
 var vida = 10
 var dano = 10
 var death = 0
+
+export var ativo = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if game.get_main().has_node("bortolomeu"):
@@ -54,7 +57,7 @@ func _process(delta):
 		atacando = false
 
 func _physics_process(delta):
-	if vida > 0:
+	if vida > 0 and ativo:
 		# TIRAR DO COMENTÁRIO SE QUISER QUE ANTONY FIQUE PARADO AO CHEGAR AO PONTO MÉDIO
 		if not (agrupado and not todos_agrupados() and get_global_position().distance_to(ponto_medio(amigos)) <= 10) or atacando:
 			move_and_slide((get_node("frente").get_global_position() - get_global_position()) * vel)
