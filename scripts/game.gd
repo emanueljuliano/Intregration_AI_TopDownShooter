@@ -10,6 +10,7 @@ var num_shoots = 0
 var exist_time = 0
 var inimigos_mortos = 0
 var auxiliar = 0
+var max_level
 
 var music_time = 0
 
@@ -23,7 +24,8 @@ var gameData={
 	num_dashs = 0,
 	num_shoots = 0,
 	exist_time = 0,
-	inimigos_mortos = 0
+	inimigos_mortos = 0,
+	max_level = 0
 	}
 
 
@@ -94,6 +96,7 @@ func save_game():
 	data.num_shoots = num_shoots
 	data.exist_time = exist_time
 	data.inimigos_mortos = inimigos_mortos
+	game.max_level = max_level
 	save.store_line(to_json(data))
 	save.close()
 	
@@ -118,7 +121,7 @@ func load_game():
 			num_shoots = data["num_shoots"]
 			inimigos_mortos = data["inimigos_mortos"]
 			exist_time = data["exist_time"]
-			
+			max_level = data["max_level"]
 			data = parse_json(file.get_line())
 
 				

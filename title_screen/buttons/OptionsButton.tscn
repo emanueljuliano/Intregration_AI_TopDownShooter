@@ -11,7 +11,6 @@ custom_styles/focus = SubResource( 1 )
 [node name="Label" parent="." index="0"]
 custom_colors/font_color = Color( 0, 0.521569, 0.0980392, 1 )
 custom_constants/shadow_offset_y = 3
-text = "cd OPTIONS"
 
 [connection signal="focus_entered" from="." to="." method="_on_OptionsButton_focus_entered"]
 [connection signal="focus_exited" from="." to="." method="_on_OptionsButton_focus_exited"]

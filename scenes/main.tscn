@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/Backgrounds/white.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=4]
 [ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=5]
 [ext_resource path="res://scenes/spawnador.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=7]
 
 [node name="main" type="Node2D"]
 
@@ -43,3 +44,8 @@ margaret_n = 2
 bebel_n = 2
 beto_n = 3
 arnaldo = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="menu" parent="CanvasLayer" instance=ExtResource( 7 )]
+
