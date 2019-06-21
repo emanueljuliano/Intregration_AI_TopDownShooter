@@ -76,25 +76,25 @@ func check_character(page):
 			shoot = false
 		
 	if dictionary[page]["tags"].size() > 1:
-		$Game_Player/Dialog/Terminal.add_color_override("default_color", Color("00a999"))
+		$Game_Player/Dialog/Terminal.add_color_override("default_color", Color("07a882"))
 		character = 0
 		voice.stream = load("res://samples/bunch_of_voices.ogg")
 		voice.play(rand_range(0.0, 8.86))
 
 func check_level():
-	if game.level == 2:
+	if game.level == 1:
 		dictionary = level_dialogs.level1
-	if game.level == 3:
+	if game.level == 2:
 		dictionary = level_dialogs.level2
-	if game.level == 4:
+	if game.level == 3:
 		dictionary = level_dialogs.level3
-	if game.level == 5:
+	if game.level == 4:
 		dictionary = level_dialogs.level4
-	if game.level == 6:
+	if game.level == 5:
 		dictionary = level_dialogs.level5
-	if game.level == 7:
+	if game.level == 6:
 		dictionary = level_dialogs.level6
-	if game.level == 8:
+	if game.level == 7:
 		dictionary = level_dialogs.level7
 	if game.level == 9:
 		dictionary = level_dialogs.level8

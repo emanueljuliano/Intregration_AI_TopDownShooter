@@ -4,7 +4,6 @@ var level_path
 
 func _ready():
 	$Back.grab_focus()
-	game.load_game()
 	game.max_level = max(game.level, game.max_level)
 	verify_level()
 	

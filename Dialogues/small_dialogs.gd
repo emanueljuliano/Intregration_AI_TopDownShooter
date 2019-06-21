@@ -53,7 +53,7 @@ var vagner=[
 	,"The way margaret follows Vagner, I can understand them, he is so shiny."]
 	
 var vida =[
-	"That purple light is like a gift, surprises me that you can recovery with that."
+	"That pink light is like a gift, surprises me that you can recovery with that."
 	,"Isn’t it strange that dead bugs can heal you?",
 	"Stay DETERMINED!"]
 	

@@ -539,25 +539,32 @@ autoplay = true
 
 [node name="sprite" parent="." instance=ExtResource( 22 )]
 position = Vector2( 1038.7, 7586.72 )
+scale = Vector2( 20, 20 )
 
 [node name="sprite2" parent="." instance=ExtResource( 23 )]
 position = Vector2( 894.629, 7582.74 )
+scale = Vector2( 20, 20 )
 
 [node name="sprite3" parent="." instance=ExtResource( 23 )]
 position = Vector2( 746.903, 7566.52 )
+scale = Vector2( 20, 20 )
 
 [node name="sprite4" parent="." instance=ExtResource( 23 )]
 position = Vector2( 601.126, 7577.49 )
+scale = Vector2( 20, 20 )
 
 [node name="sprite5" parent="." instance=ExtResource( 23 )]
 position = Vector2( 467.936, 7566.43 )
+scale = Vector2( 20, 20 )
 
 [node name="sprite7" parent="." instance=ExtResource( 23 )]
 position = Vector2( 328.902, 7578.75 )
+scale = Vector2( 20, 20 )
 
 [node name="sprite8" parent="." instance=ExtResource( 23 )]
 modulate = Color( 1, 0.74902, 0, 1 )
 position = Vector2( 171.01, 7605.41 )
+scale = Vector2( 20, 20 )
 
 [node name="Sprite" parent="sprite8" index="0"]
 visible = false

@@ -109,3 +109,4 @@ anims/idle = SubResource( 6 )
 
 [node name="grito" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+

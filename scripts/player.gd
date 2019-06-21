@@ -146,7 +146,7 @@ func atirar():
 			get_owner().add_child(tiro)
 			tiro.set_rotation(get_rotation())
 			get_node("atirar").play()
-			game.get_camera().get_node("ScreenShake").start()
+			#game.get_camera().get_node("ScreenShake").start()
 			reload = tempo
 
 

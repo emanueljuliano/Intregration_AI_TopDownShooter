@@ -6,7 +6,7 @@
 [node name="sprite" type="Sprite"]
 modulate = Color( 0.505882, 0.262745, 0.00392157, 1 )
 rotation = -1.5708
-scale = Vector2( 20, 20 )
+scale = Vector2( 10, 10 )
 texture = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -18,8 +18,8 @@ hframes = 4
 
 [node name="Sprite4" type="Sprite" parent="Sprite"]
 show_behind_parent = true
-position = Vector2( -1.23978e-005, 8.25931 )
-rotation = -8.88506e-006
+position = Vector2( -1.23978e-05, 8.25931 )
+rotation = -8.88506e-06
 texture = ExtResource( 2 )
 hframes = 4
 frame = 2
@@ -34,7 +34,8 @@ hframes = 4
 
 [node name="Sprite3" type="Sprite" parent="Sprite2"]
 show_behind_parent = true
-position = Vector2( 2.38419e-005, -7.91258 )
+position = Vector2( 2.38419e-05, -7.91258 )
 texture = ExtResource( 2 )
 hframes = 4
 frame = 2
+

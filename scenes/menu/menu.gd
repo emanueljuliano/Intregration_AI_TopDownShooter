@@ -57,4 +57,5 @@ func _on_FadeIn_fade_finished():
 	game.music_time = $music.get_playback_position() 
 	get_tree().paused = not get_tree().paused
 	visible = not visible
+	game.save_game()
 	get_tree().change_scene("res://title_screen/TitleScreen.tscn")
