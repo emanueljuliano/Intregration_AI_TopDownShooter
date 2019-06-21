@@ -136,7 +136,7 @@ func _on_Button1_pressed():
 				var newfont = load('res://title_screen/Fonts/miltown2_30.tres')
 				$"Game_Player/Dialog/Terminal".set("custom_fonts/normal_font", newfont)
 				
-			if dictionary[page]["links"][0]["link"] == "Shoot" or dictionary[page]["links"][0]["link"] == "The stranger voice" or dictionary[page]["links"][0]["link"] == ":)":
+			if dictionary[page]["links"][0]["link"] == "Shoot" or dictionary[page]["links"][0]["link"] == "The strange voice" or dictionary[page]["links"][0]["link"] == ":)":
 				self.add_child(shoot_sound)
 				shoot_sound.stream = load("res://samples/explosion.wav")
 				shoot_sound.play(0.0)
@@ -154,12 +154,12 @@ func _on_Button1_pressed():
 				
 			if dictionary[page]["links"].size() > 1:
 
-				if dictionary[page]["links"][1]["link"] == "Shoot" or dictionary[page]["links"][1]["name"] == "Kill the last bug":
+				if dictionary[page]["links"][1]["link"] == "Shoot" or dictionary[page]["links"][1]["link"] == "Kill the last bug":
 					button2_collor1 = "ff0000"
 					button2_collor2 = "850404"
 					$Game_Player/Options/Button2/option2.add_color_override("default_color", Color("850404"))
 				
-				elif dictionary[page]["links"][0]["name"] == "The stranger voice":
+				elif dictionary[page]["links"][0]["name"] == "The strange voice":
 					button1_collor1 = "ff0000"
 					button1_collor2 = "850404"
 					button2_collor1 = "009999"
@@ -254,12 +254,12 @@ func _on_Button2_pressed():
 			page = int(page) - 1
 			
 			if dictionary[page]["links"].size() > 1:
-				if dictionary[page]["links"][1]["link"] == "Shoot" or dictionary[page]["links"][1]["name"] == "Kill the last bug":
+				if dictionary[page]["links"][1]["link"] == "Shoot" or dictionary[page]["links"][1]["link"] == "Kill the last bug":
 					button2_collor1 = "ff0000"
 					button2_collor2 = "850404"
 					$Game_Player/Options/Button2/option2.add_color_override("default_color", Color("850404"))
 				
-				elif dictionary[page]["links"][0]["name"] == "The stranger voice":
+				elif dictionary[page]["links"][0]["name"] == "The strange voice":
 					button1_collor1 = "ff0000"
 					button1_collor2 = "850404"
 					button2_collor1 = "009999"

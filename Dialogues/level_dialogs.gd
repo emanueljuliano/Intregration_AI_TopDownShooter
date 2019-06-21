@@ -569,7 +569,7 @@ var level5 = [
       "text": "Oh, thanks for being comprehensive. I’ll try my best to talk about interesting things, okay? ",
       "links": [
         {
-          "name": "Shure",
+          "name": "Sure",
           "link": "Shure",
           "pid": "5"
         }
@@ -855,7 +855,7 @@ var level6= [
 
 var level7 = [
     {
-      "text": "Congratulation for defeat that giant bug.",
+      "text": "Congratulations for defeating that giant bug.",
       "links": [
         {
           "name": "It was hard for me.",
@@ -879,7 +879,7 @@ var level7 = [
       ]
     },
     {
-      "text": "I know, but you have to be fast in the next challenges.\nBut before that, why don’t we talk a little, like, to know each other.",
+      "text": "I know. But you have to be faster in the next challenges.\nBefore that, why don’t we talk a little, like, to get know each other.",
       "links": [
         {
           "name": "Sure.",
@@ -900,7 +900,7 @@ var level7 = [
       }
     },
     {
-      "text": "So, You said me early that you remember a little about science fiction right?",
+      "text": "So, you told me early that you remembered a little about science fiction right?",
       "links": [
         {
           "name": "Yeah...and?",
@@ -916,7 +916,7 @@ var level7 = [
       }
     },
     {
-      "text": "Well, I LOVE science fiction, I mean, You can make so many parameters with reality, but at the same time it’s a wonderful escapism. The best of both.",
+      "text": "Well, I LOVE science fiction, I mean, you can make so many correlations with reality, but, at the same time, it’s a wonderful escapism. The best of both.",
       "links": [
         {
           "name": "Do you have any favorite?",
@@ -937,7 +937,7 @@ var level7 = [
       }
     },
     {
-      "text": "Well, my favorite of course is Matrix, like, the whole idea of simulation and we, humans, be like the processor of the machines. It’s just amazing.",
+      "text": "Well, my favorite of course is Matrix, like, the whole idea of simulation and that we, humans, are the processor of the machines. It’s just amazing.",
       "links": [
         {
           "name": "I like Blade Runner",
@@ -958,10 +958,10 @@ var level7 = [
       }
     },
     {
-      "text": "So, it seams that you are not in the mood today, but I will say anyway, chat with an  excited always help me to talk",
+      "text": "So, it seams that you are not in the mood today. But I'll talk anyway. Chating with an excited person may help you",
       "links": [
         {
-          "name": "Whe could try",
+          "name": "We could try",
           "link": "Do you have any favorite?",
           "pid": "5"
         },
@@ -979,7 +979,7 @@ var level7 = [
       }
     },
     {
-      "text": "The cyberpunk vibe is really breathtaking. \nThe whole philosophy behind this story is so fascinating.",
+      "text": "The cyberpunk vibe is really breathtaking. \nThe whole philosophy behind the story is fascinating.",
       "links": [
         {
           "name": "Everyone should watch",
@@ -1000,7 +1000,7 @@ var level7 = [
       }
     },
     {
-      "text": "I’m Robot is an fantastic Novel, it doesn’t surprises me that in this days we still thinking about their rules.",
+      "text": "'I’m Robot' is a fantastic Novel, it doesn’t surprise me that until this day we are still thinking about it.",
       "links": [
         {
           "name": "A genius ahead of his time",
@@ -1008,7 +1008,7 @@ var level7 = [
           "pid": "12"
         },
         {
-          "name": "He was very dreamy",
+          "name": "He was daydreaming",
           "link": "asimov",
           "pid": "12"
         }
@@ -1021,7 +1021,7 @@ var level7 = [
       }
     },
     {
-      "text": "I know that feeling.\nBut about the movie, here comes a question: \nWe can trust in any of our memories to say if we are humans?",
+      "text": "I know that feeling.\nBut about the movie, here comes a question: \nCan we trust in our memories to know if we are really humans?",
       "links": [
         {
           "name": "I think so.",
@@ -1029,7 +1029,7 @@ var level7 = [
           "pid": "10"
         },
         {
-          "name": "I guess no.",
+          "name": "I guess not.",
           "link": "I guess no.",
           "pid": "11"
         }
@@ -1078,7 +1078,7 @@ var level7 = [
       ]
     },
     {
-      "text": "I’m kinda of agree with that.\nBut here comes a question:\nShould anyone smart enough to create robots, be smart enough to make sure that those robots wouldn’t attack their makers?",
+      "text": "I kind of agree with that.\nBut here comes a question:\nShould anyone smart enough to create robots, be smart enough to make sure that those robots won’t attack their makers?",
       "links": [
         {
           "name": "I think so.",
@@ -1086,7 +1086,7 @@ var level7 = [
           "pid": "10"
         },
         {
-          "name": "I guess no.",
+          "name": "I guess not.",
           "link": "I guess no.",
           "pid": "11"
         }
@@ -1102,7 +1102,7 @@ var level7 = [
 
 var level8 =[
     {
-      "text": "You are almost there, I believe that this we will stop them once for all.",
+      "text": "You are almost there. I think this will stop them once for all.",
       "links": [
         {
           "name": "You are always so kind with me Neeko, thank you",
@@ -1121,7 +1121,7 @@ var level8 =[
       ]
     },
     {
-      "text": "It's me who have to say thanks.\nEven you're not the same as before, I'm really glad to talk to you.",
+      "text": "I'm the one who should be thanking you.\nEven though you're not the same, I'm really glad you're here.",
       "links": [
         {
           "name": "I'm too",
@@ -1137,7 +1137,7 @@ var level8 =[
       }
     },
     {
-      "text": "I'ts almost like if I made a new friend hihi\nAnd to thank you, I allow you to make one question, can be anything.",
+      "text": "It's like I made a new friend. Hihi\nAnd to thank you, I'll allow you to ask one question. Anything you want.",
       "links": [
         {
           "name": "What's your relation with the Professor?",
@@ -1145,7 +1145,7 @@ var level8 =[
           "pid": "4"
         },
         {
-          "name": "Why do you helps me so much?",
+          "name": "Why do you always help me so much?",
           "link": "Why do you helps me so much?",
           "pid": "9"
         }
@@ -1158,10 +1158,10 @@ var level8 =[
       }
     },
     {
-      "text": "Oh... it's hard to say, why do you want to know it?",
+      "text": "Oh... it's hard to say. Why do you want to know about it?",
       "links": [
         {
-          "name": "It's cause I never saw you two togheter",
+          "name": "It's because I never saw you two togheter",
           "link": "It's cause I never saw you two togheter",
           "pid": "5"
         }
@@ -1174,15 +1174,15 @@ var level8 =[
       }
     },
     {
-      "text": "It's hard to explain, we...\nWe just do not get along...",
+      "text": "It's hard to explain, we...\nWe just don't get along...",
       "links": [
         {
-          "name": "But he is so great",
+          "name": "But he is great",
           "link": "But he is so great",
           "pid": "6"
         },
         {
-          "name": "There is someone who dislike you?",
+          "name": "There is someone who dislikes you?",
           "link": "There is someone who dislike you?",
           "pid": "7"
         }
@@ -1195,10 +1195,10 @@ var level8 =[
       }
     },
     {
-      "text": "It depends on the view point...\nBut that's not the problem, it's because... ehhhh... we fight?",
+      "text": "It depends on the point of view...\nBut that is not the problem, it's because... ehhhh... we fought?",
       "links": [
         {
-          "name": "It's a question?",
+          "name": "It that a question?",
           "link": "a",
           "pid": "12"
         }
@@ -1211,7 +1211,7 @@ var level8 =[
       }
     },
     {
-      "text": "Well, there is... but it doesn't matter for now...",
+      "text": "Well, there is... it doesn't matter now...",
       "links": [
         {
           "name": "Who?",
@@ -1241,7 +1241,7 @@ var level8 =[
       }
     },
     {
-      "text": "As I saw, because we were friends before you lost your memories.",
+      "text": "I think it is because you and I we were friends before you lost your memories.",
       "links": [
         {
           "name": "But, I'm not the same person as before, so...",
@@ -1289,7 +1289,7 @@ var level8 =[
       }
     },
     {
-      "text": "Ah... ehhh.... Uhhhh....\nI'm a little confuse.... calm down...",
+      "text": "Ah... Ehhh.... Uhhhh....\nI'm a little confused.... calm down...",
       "links": [
         {
           "name": "What's happening?",
@@ -1344,7 +1344,7 @@ var level8 =[
       ]
     },
     {
-      "text": "This whole time, they where fooling you...",
+      "text": "This whole time, they were fooling you...",
       "links": [
         {
           "name": "But...",
@@ -1360,10 +1360,10 @@ var level8 =[
       }
     },
     {
-      "text": "My anterior massages, remember them.",
+      "text": "My anterior messages. Remember them.",
       "links": [
         {
-          "name": "That things... what are th-",
+          "name": "That... what were th-",
           "link": "That things... what are th-",
           "pid": "17"
         }
@@ -1379,7 +1379,7 @@ var level8 =[
       "text": "Don't tell anyone about me!",
       "links": [
         {
-          "name": "I don't know what's happening, Neeko? Professor?",
+          "name": "I don't know what's happening. Neeko? Professor?",
           "link": "END",
           "pid": "18"
         }
@@ -1407,7 +1407,7 @@ var level9 = [
       "text": "Cecilia is unstoppable. Try to reach for her tail",
       "links": [
         {
-          "name": "I will, it's my last fight!",
+          "name": "I will. It's my last fight!",
           "link": "END",
           "pid": "1"
         }],

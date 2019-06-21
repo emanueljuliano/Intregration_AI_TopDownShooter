@@ -147,7 +147,7 @@ func Continue():
 	elif game.level == 9:
 		get_tree().change_scene("res://scenes/fases/fase1/boss2.tscn")
 	elif game.level == 10:
-		get_tree().change_scene("res://scenes/fases/fase1/boss2.tscn")
+		get_tree().change_scene("res://scenes/credits/credits.tscn")
 	else:
 		get_tree().change_scene("res://scenes/main.tscn")
 

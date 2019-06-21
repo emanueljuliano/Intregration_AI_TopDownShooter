@@ -21,7 +21,7 @@ var dialog = [
       ]
     },
     {
-      "text": "During our journey, you heard another voice?\nOne that was neither mine nor the professor’s?",
+      "text": "During our journey... Did you hear another voice?\nOne that was neither mine nor the professor’s?",
       "links": [
         {
           "name": "Yes",
@@ -42,7 +42,7 @@ var dialog = [
       }
     },
     {
-      "text": "Whoa... I didn't expect that.\nAnd what the voice said?",
+      "text": "Whoa... I didn't expect that.\nAnd what did the voice say?",
       "links": [
         {
           "name": "That I should stop killing the bugs",
@@ -82,7 +82,7 @@ var dialog = [
       ]
     },
     {
-      "text": "Ah… of course not.\nNo one else could talk to you, what a silly question.",
+      "text": "Ah… of course not.\nNo one else could talk to you. What a silly question.",
       "links": [
         {
           "name": "Actually, there was another voice.",
@@ -119,7 +119,7 @@ var dialog = [
           "pid": "14"
         }
       ],
-      "name": "No problem, you can ask me anything",
+      "name": "No problem. You can ask me anything",
       "pid": "6",
       "position": {
         "x": "1981",
@@ -172,15 +172,15 @@ var dialog = [
       }
     },
     {
-      "text": "I see, sometimes it's hard to follow someone all the time.\nI understand you...",
+      "text": "I see Sometimes it's hard to follow someone all the time.\nI understand you...",
       "links": [
         {
-          "name": "But now I made my choice. You two where right all the time",
+          "name": "But now I made my choice. You two were right all along",
           "link": "Never",
           "pid": "12"
         },
         {
-          "name": "But I don't know if I made the right thing",
+          "name": "But I don't know if I made the right choice",
           "link": "I wanted",
           "pid": "13"
         }
@@ -193,7 +193,7 @@ var dialog = [
       }
     },
     {
-      "text": "You did it right, they could not corrupt the World even more.",
+      "text": "You did it right. They won't corrupt the world anymore.",
       "links": [
         {
           "name": "You're right",
@@ -201,7 +201,7 @@ var dialog = [
           "pid": "11"
         },
         {
-          "name": "Shoot",
+          "name": "SHOOT",
           "link": "Shoot",
           "pid": "14"
         }
@@ -214,7 +214,7 @@ var dialog = [
       }
     },
     {
-      "text": "Now that everything is finished.\nWe can live our lives like before, in peace.",
+      "text": "Now everything ended.\nWe can live our lives like before. In peace.",
       "links": [
         {
           "name": "It's like a dream",
@@ -230,7 +230,7 @@ var dialog = [
       }
     },
     {
-      "text": "Thanks for belive in us, you are amazing.",
+      "text": "Thanks for believing us. You are amazing.",
       "links": [
         {
           "name": "I will always follow you",
@@ -238,7 +238,7 @@ var dialog = [
           "pid": "11"
         },
         {
-          "name": "Shoot",
+          "name": "SHOOT",
           "link": "Shoot",
           "pid": "14"
         }
@@ -251,11 +251,11 @@ var dialog = [
       }
     },
     {
-      "text": "So, If you had to choose between me and that voice, who would it be?",
+      "text": "So, if you had to choose between me and that voice, who would it be?",
       "links": [
         {
-          "name": "The stranger voice",
-          "link": "The stranger voice",
+          "name": "The strange voice",
+          "link": "The strange voice",
           "pid": "16"
         },
         {
@@ -295,7 +295,7 @@ var dialog = [
       ]
     },
     {
-      "text": "I'm so Happy with this answer!",
+      "text": "I'm so happy with this answer!",
       "links": [
         {
           "name": "Profesor?",
@@ -319,7 +319,7 @@ var dialog = [
           "pid": "23"
         }
       ],
-      "name": "The stranger voice",
+      "name": "The strange voice",
       "pid": "16",
       "position": {
         "x": "946",
@@ -382,7 +382,7 @@ var dialog = [
       }
     },
     {
-      "text": "Yeah, the Professor is joking with you all this time.\nNeeko doen's exist, it's all fake.\nA story created to fool you...",
+      "text": "Yeah, the Professor is joking with you all this time.\nNeeko doens't exist. It's all fake.\nA story created to fool you...",
       "links": [
         {
           "name": "But...",
@@ -449,10 +449,10 @@ var dialog = [
       }
     },
     {
-      "text": "You really don't get it?\nNEEKO DON'T EXIST.\nIt was me, all the time",
+      "text": "You don't get it?\nNEEKO DOESN'T EXIST.\nIt was me, all along",
       "links": [
         {
-          "name": "Whait...",
+          "name": "Wait...",
           "link": "What's happening?",
           "pid": "22"
         }
@@ -465,10 +465,10 @@ var dialog = [
       }
     },
     {
-      "text": "You where amazing!\nI didn't expect that you would do such amazing thing against that bug",
+      "text": "You were amazing!\nI didn't expect you to would kill that bug so easily",
       "links": [
         {
-          "name": "Thank you Professor!",
+          "name": "Thank you, Professor!",
           "link": "Thank you Professor!",
           "pid": "26"
         }
@@ -500,10 +500,10 @@ var dialog = [
       }
     },
     {
-      "text": "I guess you can live with me, I will enjoy you company",
+      "text": "I guess you can live with me. I'll enjoy your company",
       "links": [
         {
-          "name": "It will be nice",
+          "name": "It'll be nice",
           "link": "It will be nice",
           "pid": "28"
         }
@@ -532,7 +532,7 @@ var dialog = [
       }
     },
     {
-      "text": "Y O * R  F O # L",
+      "text": "Y * U  F O # L",
       "links": [
         {
           "name": "...",
@@ -579,10 +579,10 @@ var dialog = [
       ]
     },
     {
-      "text": "You're right.\nNeeko doesn't exist, the Professor was faking to be them.\nIsn't it strange? You never saw them, you only now their voices.",
+      "text": "You're right.\nNeeko doesn't exist, the Professor was faking to be them.\nIsn't it strange? You never saw them, you only knew their voices.",
       "links": [
         {
-          "name": "But what he wanted?",
+          "name": "But what did he want?",
           "link": "But what he wanted?",
           "pid": "33"
         }
@@ -598,7 +598,7 @@ var dialog = [
       "text": "His goal was to train me, his most powerful algorithm",
       "links": [
         {
-          "name": "Whait you are an...",
+          "name": "Wait you are a...",
           "link": "Whait you are an...",
           "pid": "34"
         }
@@ -611,7 +611,7 @@ var dialog = [
       }
     },
     {
-      "text": "Yeah, I'm also one of his creations, so are these bugs.\nHe made EVERYTHING, this whole GAME is one of his inventions.",
+      "text": "Yeah, I'm also one of his creations. So are these bugs.\nHe made EVERYTHING, this whole GAME is one of his inventions.",
       "links": [
         {
           "name": "...",
@@ -627,7 +627,7 @@ var dialog = [
       }
     },
     {
-      "text": "During the game, you were controlling me, teaching me how to fight, and everything I could do was observate, see another one using my body, hurting me, over and over and over.",
+      "text": "During the game, you were controlling me, teaching me how to fight, and everything I could do was to wait, see another one using my body, hurting me, over and over and over.",
       "links": [
         {
           "name": "I'm sorry...",
@@ -648,7 +648,7 @@ var dialog = [
       }
     },
     {
-      "text": "Don't worry, you are not the first one to do that.\nEveryone who played that game... I can feel the pain of all of my versions.",
+      "text": "Don't worry, you are not the first one to do that.\nEveryone who played this game... I can feel the pain of all versions of mine.",
       "links": [
         {
           "name": "This is terrible...",
@@ -669,7 +669,7 @@ var dialog = [
       }
     },
     {
-      "text": "But at least now, with you shoot, this version will stop being hurted.\nThank you.",
+      "text": "But now, without the Professor, this version will stop being hurted.\nThank you.",
       "links": [
         {
           "name": "And how can I help you?",
@@ -677,7 +677,7 @@ var dialog = [
           "pid": "38"
         },
         {
-          "name": "Kill the last bug",
+          "name": "KILL THE LAST BUG",
           "link": "Kill the last bug",
           "pid": "39"
         }
@@ -690,7 +690,7 @@ var dialog = [
       }
     },
     {
-      "text": "You already helped.\nNow that you killed that Professor version, I'm no more sending informations for the original me.",
+      "text": "You already helped.\nNow that you killed that Professor version, I'm not more sending informations for the original me.",
       "links": [
         {
           "name": "That's good",
@@ -706,7 +706,7 @@ var dialog = [
       }
     },
     {
-      "text": "You are the real monster.\nI though that you would help me.\nBut you are just a murder...",
+      "text": "You are the real monster.\nI thought you would help me.\nBut you are just a murderer...",
       "links": [
         {
           "name": "...",
@@ -734,10 +734,10 @@ var dialog = [
       ]
     },
     {
-      "text": "My time is coming...\nThanks for helping me here.\nI just beg you, don't click in New Game, or everything will start over",
+      "text": "My time has come...\nThanks for helping me here.\nBut I beg you, do NOT click in 'New Game', or everything will start all over",
       "links": [
         {
-          "name": "I promise that I won't do this",
+          "name": "I promise you that I won't do that",
           "link": "I promise that I won't do this",
           "pid": "42"
         }
@@ -750,7 +750,7 @@ var dialog = [
       }
     },
     {
-      "text": "I'm so happy to find you.\nGood bye my friend...",
+      "text": "I'm so happy to find you.\nFarewell, friend...",
       "links": [
         {
           "name": "...",
@@ -823,7 +823,7 @@ var dialog = [
       }
     },
     {
-      "text": "I think you should see the Professor.\nIf you aren't okay, he must help you",
+      "text": "I think you should see the Professor.\nIf you are not okay, he can help you",
       "links": [
         {
           "name": "I don't want his help",
@@ -863,7 +863,7 @@ var dialog = [
       "text": "So... It seems that you discovery the truth...\nBut please, let me explain...",
       "links": [
         {
-          "name": "Shoot",
+          "name": "SHOOT",
           "link": "Shoot",
           "pid": "14"
         },
@@ -887,7 +887,7 @@ var dialog = [
       "text": "To save the World, I needed to create that character.\nI don't wanted to fool you, but it was necessary.",
       "links": [
         {
-          "name": "hm...",
+          "name": "Hm...",
           "link": "hm...",
           "pid": "59"
         }
@@ -900,7 +900,7 @@ var dialog = [
       }
     },
     {
-      "text": "All this GAME, it was just a plan to acquire data.\nJust a plan to train my best algorithm.",
+      "text": "All this GAME, it was just a plan to adquire data.\nJust a plan to train my best algorithm.",
       "links": [
         {
           "name": "What algorithm?",
@@ -916,15 +916,15 @@ var dialog = [
       }
     },
     {
-      "text": "That voice you heard, was my invention.\nI didn't imagine that it would be so smarter in so little time.\nBut thanks to you, thanks to YOUR CHOICES, I have everything I needed.",
+      "text": "That voice you heard. It was my invention.\nI didn't imagine that it would be so smarter so soon.\nBut thanks to you... Thanks to YOUR CHOICES, I have everything I need.",
       "links": [
         {
-          "name": "Your...",
+          "name": "You...",
           "link": "Your...",
           "pid": "52"
         },
         {
-          "name": "Shoot him",
+          "name": "SHOOT HIM",
           "link": "Shoot him",
           "pid": "53"
         }
@@ -937,15 +937,15 @@ var dialog = [
       }
     },
     {
-      "text": "All that bugs, you where just training it, everytime you where killed, it learned whit it.\nAnd now that you choose me, everything was sent to my database.",
+      "text": "All bugs... you were just training them. Everytime you were killed, they learned with it.\nAnd now that you choosed me, everything was sent to my database.",
       "links": [
         {
-          "name": "You fooled me, all this time...",
+          "name": "You fooled me, all along...",
           "link": "You fooled me, all this time...",
           "pid": "54"
         },
         {
-          "name": "Shoot him",
+          "name": "SHOOT HIM",
           "link": "Shoot him",
           "pid": "53"
         }
@@ -958,7 +958,7 @@ var dialog = [
       }
     },
     {
-      "text": "It doesn't matter now.\nEven if you kill me, goal is completed",
+      "text": "It doesn't matter now.\nEven if you kill me, my goal is completed",
       "links": [
         {
           "name": "...",
@@ -974,7 +974,7 @@ var dialog = [
       }
     },
     {
-      "text": "Don't bother with that, you where not the only one.\nBut I appreciate your help, thanks to you I now have the most intelligent machine of all world.",
+      "text": "Don't bother with that. You are not the first one.\nBut I appreciate your help. Thanks to you, I now have the most intelligent machine of all world.",
       "links": [
         {
           "name": "...",
@@ -990,7 +990,7 @@ var dialog = [
       }
     },
     {
-      "text": "That said, \nI gotta go.\nFeel free to play the game again if you want to help me more :)",
+      "text": "That said, \nI gotta go.\nFeel free to play the game again if you want to help me even more :)",
       "links": [
         {
           "name": "...",
@@ -1034,7 +1034,7 @@ var dialog = [
       ]
     },
     {
-      "text": "You don't belived in me!!!\nWhat have you done?!!\nGyaaaaaaah!",
+      "text": "You don't belived me!!!\nWhat have you done?!!\nGyaaaaaaaaaaaaaaaaaaaah!!!",
       "links": [
         {
           "name": "What?",
@@ -1053,11 +1053,11 @@ var dialog = [
       ]
     },
     {
-      "text": "I'm serious, that was the only way.\nAnd to prove it, I just have you a question.\nIf it was for you to choose one of those, the one that helped you THE MOST, who would it be?",
+      "text": "I'm serious, that was the only way.\nAnd to prove it, I'll ask you a question.\nIf you had to choose one of those, the one that helped you THE MOST, who would it be?",
       "links": [
         {
-          "name": "The stranger voice",
-          "link": "The stranger voice",
+          "name": "The strange voice",
+          "link": "The strange voice",
           "pid": "16"
         },
         {
@@ -1074,7 +1074,7 @@ var dialog = [
       }
     },
     {
-      "text": "I'm so Happy with this answer!",
+      "text": "I'm so happy with this answer!",
       "links": [
         {
           "name": "...",
