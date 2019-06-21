@@ -48,7 +48,7 @@ func _on_NewGame_pressed():
 	visible = not visible
 
 func _on_Back_pressed():
-	game.max_level = max(game.level, game.max_level)
+	game.save_game()
 	$FadeIn.show()
 	$FadeIn.fade_in()
 
