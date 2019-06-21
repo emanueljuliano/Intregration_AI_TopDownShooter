@@ -85,6 +85,8 @@ func get_camera():
 	
 
 func save_game():
+	game.max_level = max(game.level, game.max_level)
+	
 	var save = File.new()
 	save.open(FILE, File.WRITE)
 	
