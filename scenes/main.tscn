@@ -48,4 +48,3 @@ arnaldo = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="menu" parent="CanvasLayer" instance=ExtResource( 7 )]
-

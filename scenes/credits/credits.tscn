@@ -76,7 +76,9 @@ margin_bottom = 592.334
 rect_min_size = Vector2( 100, 50 )
 custom_fonts/normal_font = ExtResource( 6 )
 custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
-text = "Marcos Vinicios          2D Artist, Sounds,            .                        Enemies designer and Programmer"
+text = "Marcos Vinicius          2D Artist, Sounds,               Caldeira Pacheco         Level and Enemies designer 
+                         Programmer
+."
 
 [node name="RichTextLabel6" type="RichTextLabel" parent="."]
 margin_left = 480.003
@@ -370,6 +372,9 @@ pause_mode = 1
 position = Vector2( 647.256, 3367.07 )
 ativo = false
 
+[node name="spawnador" parent="vanessa" index="10"]
+ativado = false
+
 [node name="vagner" parent="." instance=ExtResource( 13 )]
 position = Vector2( 411.665, 4031.63 )
 aceso = true
@@ -589,5 +594,7 @@ rotation = -1.77636
 [node name="sprite12" parent="." instance=ExtResource( 24 )]
 position = Vector2( 88.539, 6269.98 )
 rotation = -2.85651
+
+[editable path="vanessa"]
 
 [editable path="sprite8"]
