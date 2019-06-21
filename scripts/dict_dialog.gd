@@ -7,7 +7,7 @@ var key = "first"
 
 var tutorial =  [
     {
-      "text": "Oh... I didn't imagine that you where so week.\nTake this, it will help.",
+      "text": "Oh... I didn't imagine that you were so week.\nTake this, it will help.",
       "links": [
         {
           "name": "TAKE ",
@@ -23,7 +23,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Now you can move, try to survive this time.\nYou just have to run, it's like in a game, W A S D you know?",
+      "text": "Now you can move, try to survive this time.\nYou just have to run\nIt's like in a game, W A S D, you know?",
       "links": [
         {
           "name": "...",
@@ -665,7 +665,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Me neither, you should, I don't know, shoot everywhere and try to dash as faster as you can.",
+      "text": "Me neither, you should, I don't know, shoot everywhere and try to dash as fast as you can.",
       "links": [
         {
           "name": "You're right, I should have tried that ",
@@ -723,7 +723,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "But instead of kill the others, you bring light to the world.\nThat is the RIGHT CLICK.",
+      "text": "But instead of killing the others, you bring light to the world.\nThat is the RIGHT CLICK.",
       "links": [
         {
           "name": "Okay, I will try, but I have some questions for you",
@@ -739,7 +739,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "What are you whaiting for? Go ahead and kill some bugs.",
+      "text": "What are you waiting for? Go ahead and kill some bugs.",
       "links": [
         {
           "name": "But where is...? Doctor? What is going on??",
@@ -755,7 +755,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "You are weird...\nDon't waist my time, go there and kill those creatures already!",
+      "text": "You are weird...\nDon't waste my time, go there and kill those creatures already!",
       "links": [
         {
           "name": "UPGRADE",
