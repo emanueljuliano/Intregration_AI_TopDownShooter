@@ -261,8 +261,8 @@ process_material = SubResource( 7 )
 stream = ExtResource( 3 )
 
 [node name="spawnador" parent="." instance=ExtResource( 4 )]
-vet_x = 200
-vet_y = 200
+vet_x = 100
+vet_y = 100
 intervalo = 10
 antony = false
 larissa = false
@@ -272,3 +272,4 @@ barbara = false
 greg = false
 beto = false
 vagner = false
+
