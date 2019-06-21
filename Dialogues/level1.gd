@@ -96,8 +96,10 @@ func check_level():
 		dictionary = level_dialogs.level6
 	if game.level == 7:
 		dictionary = level_dialogs.level7
-	if game.level == 9:
+	if game.level == 8:
 		dictionary = level_dialogs.level8
+	if game.level == 9:
+		dictionary = level_dialogs.level9	
 	if game.level == 10:
 		dictionary = last_dialog.dialog
 	

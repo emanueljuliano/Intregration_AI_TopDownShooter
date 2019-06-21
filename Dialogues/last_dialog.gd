@@ -172,15 +172,15 @@ var dialog = [
       }
     },
     {
-      "text": "I see, sometimes is hard to follow someone all the time.\nI understand you...",
+      "text": "I see, sometimes it's hard to follow someone all the time.\nI understand you...",
       "links": [
         {
-          "name": "But now I made my choise. You two where right all the time",
+          "name": "But now I made my choice. You two where right all the time",
           "link": "Never",
           "pid": "12"
         },
         {
-          "name": "But I don't now if I made the right thing",
+          "name": "But I don't know if I made the right thing",
           "link": "I wanted",
           "pid": "13"
         }
@@ -193,7 +193,7 @@ var dialog = [
       }
     },
     {
-      "text": "You did it right, they couldn't corrupt the World even more.",
+      "text": "You did it right, they could not corrupt the World even more.",
       "links": [
         {
           "name": "You're right",
@@ -214,7 +214,7 @@ var dialog = [
       }
     },
     {
-      "text": "Now that everything is finished.\nWe can leave our lives like before, in peace.",
+      "text": "Now that everything is finished.\nWe can live our lives like before, in peace.",
       "links": [
         {
           "name": "It's like a dream",
@@ -251,7 +251,7 @@ var dialog = [
       }
     },
     {
-      "text": "So, If you have to choose between me and that voice, who would it be?",
+      "text": "So, If you had to choose between me and that voice, who would it be?",
       "links": [
         {
           "name": "The stranger voice",
@@ -366,7 +366,7 @@ var dialog = [
       }
     },
     {
-      "text": "Cause he is fooling you",
+      "text": "Because he is fooling you",
       "links": [
         {
           "name": "He?",
@@ -579,7 +579,7 @@ var dialog = [
       ]
     },
     {
-      "text": "You're right.\nNeeko doesn't exist, the Professor was faking to be her.\nIsn't it strange? You never saw them, you only now their voices.",
+      "text": "You're right.\nNeeko doesn't exist, the Professor was faking to be them.\nIsn't it strange? You never saw them, you only now their voices.",
       "links": [
         {
           "name": "But what he wanted?",
@@ -595,7 +595,7 @@ var dialog = [
       }
     },
     {
-      "text": "His goal was to train me, his most poweful algorithm",
+      "text": "His goal was to train me, his most powerful algorithm",
       "links": [
         {
           "name": "Whait you are an...",
@@ -611,7 +611,7 @@ var dialog = [
       }
     },
     {
-      "text": "Yeah, I'm also one of his creations, and so was this bugs.\nHe made EVERYTHING, all of that GAME is one of his inventions.",
+      "text": "Yeah, I'm also one of his creations, so are these bugs.\nHe made EVERYTHING, this whole GAME is one of his inventions.",
       "links": [
         {
           "name": "...",
@@ -627,7 +627,7 @@ var dialog = [
       }
     },
     {
-      "text": "During the game, you where controling me, teaching me how to fight, and everything I could do was observate, see another one using my body, hurting me over and over and over.",
+      "text": "During the game, you were controlling me, teaching me how to fight, and everything I could do was observate, see another one using my body, hurting me, over and over and over.",
       "links": [
         {
           "name": "I'm sorry...",
@@ -669,7 +669,7 @@ var dialog = [
       }
     },
     {
-      "text": "But at least now, with you shoot, this version will stop beeing hurted.\nThank you.",
+      "text": "But at least now, with you shoot, this version will stop being hurted.\nThank you.",
       "links": [
         {
           "name": "And how can I help you?",
@@ -734,7 +734,7 @@ var dialog = [
       ]
     },
     {
-      "text": "My time is comming...\nThanks for helping me here.\nI just beg you, don't click in New Game, or everything will start over",
+      "text": "My time is coming...\nThanks for helping me here.\nI just beg you, don't click in New Game, or everything will start over",
       "links": [
         {
           "name": "I promise that I won't do this",
@@ -916,7 +916,7 @@ var dialog = [
       }
     },
     {
-      "text": "That voice you heard, was my invention.\nI didn't imagine that it would be so smarter in so litle time.\nBut thanks to you, thanks to YOUR CHOICES, I have everything I needed.",
+      "text": "That voice you heard, was my invention.\nI didn't imagine that it would be so smarter in so little time.\nBut thanks to you, thanks to YOUR CHOICES, I have everything I needed.",
       "links": [
         {
           "name": "Your...",
@@ -974,7 +974,7 @@ var dialog = [
       }
     },
     {
-      "text": "Don't bother with that, you where not the only one.\nBut I apreciate your help, thanks to you I now have the most inteligent machine of all world.",
+      "text": "Don't bother with that, you where not the only one.\nBut I appreciate your help, thanks to you I now have the most intelligent machine of all world.",
       "links": [
         {
           "name": "...",
@@ -1053,7 +1053,7 @@ var dialog = [
       ]
     },
     {
-      "text": "I'm seryous, that was the only way.\nAnd to prove it, I just have you a question.\nIf it was for you to choose one of those, the one that helped you THE MOST, who would it be?",
+      "text": "I'm serious, that was the only way.\nAnd to prove it, I just have you a question.\nIf it was for you to choose one of those, the one that helped you THE MOST, who would it be?",
       "links": [
         {
           "name": "The stranger voice",

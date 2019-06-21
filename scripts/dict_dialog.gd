@@ -23,7 +23,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Now you can move, try to survive this time.\nYou just have to run, is like in a game, W A S D you know?",
+      "text": "Now you can move, try to survive this time.\nYou just have to run, it's like in a game, W A S D you know?",
       "links": [
         {
           "name": "...",
@@ -103,7 +103,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "In some cases, you can not run. You HAVE to fight!",
+      "text": "In some cases, you can't run. You HAVE to fight!",
       "links": [
         {
           "name": "But how can I do this?",
@@ -132,7 +132,7 @@ var tutorial =  [
           "pid": "10"
         }
       ],
-      "name": "But how can I do this?",
+      "name": "But, how can I do this?",
       "pid": "8",
       "position": {
         "x": "809",
@@ -198,7 +198,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "You are pissing me off.\nJust take this and go!",
+      "text": "You are pissing me off.\nJust take it and go!",
       "links": [
         {
           "name": "TAKE",
@@ -256,7 +256,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Okay, okay, I will have to use my most powerfull weapon?",
+      "text": "Okay, okay, this is my last advice!",
       "links": [
         {
           "name": "TAKE",
@@ -293,7 +293,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Oh.. it must be some memory backing to you! What a greate notice!",
+      "text": "Oh.. it must be some memory backing to you! What a great notice!",
       "links": [
         {
           "name": "Y-yeah, it must be",
@@ -301,7 +301,7 @@ var tutorial =  [
           "pid": "18"
         }
       ],
-      "name": "The different voice that spoked",
+      "name": "The different voice that spoke",
       "pid": "17",
       "position": {
         "x": "431",
@@ -468,7 +468,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "In that case, you just have to run faster right?",
+      "text": "In that case, you just have to run faster, right?",
       "links": [
         {
           "name": "But how can I do that?",
@@ -548,7 +548,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "I don't know, discover by yourself.",
+      "text": "I don't know, find out for yourself.",
       "links": [
         {
           "name": "UPGRADE",
@@ -633,7 +633,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "It's a shame, I hoped it would be useful.\nAnyway, go there and KILL some bugs.",
+      "text": "It's a shame, I hoped this would be useful.\nAnyway, go there and KILL some bugs.",
       "links": [
         {
           "name": "UPGRADE",
@@ -649,7 +649,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "I see... I don't know what it means, but thank you for tell me that.\nYou are loyal.",
+      "text": "I see... I don't know what it means, but thank you for telling me that.\nYou are trustworthy.",
       "links": [
         {
           "name": "UPGRADE",
@@ -665,10 +665,10 @@ var tutorial =  [
       }
     },
     {
-      "text": "Me neither, you should, I don't know, shoot everywhere and try dash as faster as you can.",
+      "text": "Me neither, you should, I don't know, shoot everywhere and try to dash as faster as you can.",
       "links": [
         {
-          "name": "You are right, I should've try this ",
+          "name": "You're right, I should have tried that ",
           "link": "neeko",
           "pid": "40"
         },
@@ -715,7 +715,7 @@ var tutorial =  [
           "pid": "38"
         }
       ],
-      "name": "It's like if I heard Neeko's voice",
+      "name": "It's like I've heard Neeko's voice",
       "pid": "41",
       "position": {
         "x": "3904",
@@ -739,7 +739,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "What are you whaiting for? Go on and kill some bugs.",
+      "text": "What are you whaiting for? Go ahead and kill some bugs.",
       "links": [
         {
           "name": "But where is...? Doctor? What is going on??",

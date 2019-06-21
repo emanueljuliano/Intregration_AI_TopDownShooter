@@ -2,7 +2,7 @@ extends Node
 
 var level1 = [
     {
-      "text": "Seems that you learned more than I could teach you, congratulations.",
+      "text": "It seems that you learned more than I could've taught you. Congratulations.",
       "links": [
         {
           "name": "Thank you, it was hard, but I think I made it",
@@ -21,7 +21,7 @@ var level1 = [
       ]
     },
     {
-      "text": "Now, is about time to tell you about your pass",
+      "text": "Now, is about time to tell you about your past.",
       "links": [
         {
           "name": "finally…",
@@ -37,7 +37,7 @@ var level1 = [
       }
     },
     {
-      "text": "You must notice that you have that strange power of “respawn” after die.",
+      "text": "You must've noticed that you have that strange power of “respawn” when you die.",
       "links": [
         {
           "name": "Yeah…",
@@ -53,10 +53,10 @@ var level1 = [
       }
     },
     {
-      "text": "So, before loss your memory, you used that power to fight.\nYou where an extraordinary soldier.",
+      "text": "So, before lost your memory, you used that power to fight.\nYou were an extraordinary soldier.",
       "links": [
         {
-          "name": "me…?",
+          "name": "Me…?",
           "link": "me…?",
           "pid": "5"
         }
@@ -85,10 +85,10 @@ var level1 = [
       }
     },
     {
-      "text": "In a laboratory, some scientists where making an experiments with bugs.\nBut it got out of control and the bugs started to corrupt the world.",
+      "text": "Some scientists were making experiments with bugs.\nBut it went out of control and the bugs started to corrupt the world.",
       "links": [
         {
-          "name": "And they tell me to fight against them?",
+          "name": "And they told me to fight against them?",
           "link": "And they tell me to fight against them?",
           "pid": "7"
         }
@@ -101,7 +101,7 @@ var level1 = [
       }
     },
     {
-      "text": "Exactly.\nYou  achieved your goal of exterminate the bugs.\nBut there was consequences.",
+      "text": "Exactly.\nYou succeeded to exterminate the bugs.\nBut there was a cost.",
       "links": [
         {
           "name": "…",
@@ -117,10 +117,10 @@ var level1 = [
       }
     },
     {
-      "text": "In your last fight, you where against the most terryfing bug.\nIt was such a hard battle, that after that, your respawn power didn’t work proprely",
+      "text": "In your last fight, you where against the most terryfing bug.\nIt was such a hard battle, that after that, your 'respawn' power didn’t work proprely",
       "links": [
         {
-          "name": "But if I killed all bugs, why they are back?",
+          "name": "But if I killed all bugs, why are they back?",
           "link": "But if I killed all bugs, why they are back?",
           "pid": "9"
         }
@@ -133,7 +133,7 @@ var level1 = [
       }
     },
     {
-      "text": "Seems like something bring they.\nI don’t know what, but we must discovery!",
+      "text": "It seems that something is bringing they back to life.\nI don’t know how, but we must find out!",
       "links": [
         {
           "name": "You're right!",
@@ -204,7 +204,7 @@ var level2 = [
       ]
     },
     {
-      "text": "Yeah… I have to tell you that there is a great danger here, bigger than everything you saw...",
+      "text": "Yeah… I have to tell you that there is a great danger here. Bigger than everything you've seen before...",
       "links": [
         {
           "name": "Don’t worry...",
@@ -225,7 +225,7 @@ var level2 = [
       }
     },
     {
-      "text": "But here is a tip,  they will try to mess with your brain.\nBeware of illusions.",
+      "text": "But here is a tip: they will try to mess with your brain.\nBeware of their illusions.",
       "links": [
         {
           "name": "Thanks for the advice, Neeko.",
@@ -233,7 +233,7 @@ var level2 = [
           "pid": "4"
         },
         {
-          "name": "~Scary~",
+          "name": "Scary",
           "link": "a2",
           "pid": "4"
         }
@@ -277,7 +277,7 @@ var level2 = [
 
 var level3 = [
     {
-      "text": "Vanessa is deadly. Use dash to avoid her attacks",
+      "text": "Vanessa is deadly. Dash to avoid her attacks",
       "links": [
         {
           "name": "END",
@@ -330,10 +330,10 @@ var level4 = [
       }
     },
     {
-      "text": "Yeah, the three Primordial ones,  Vanessa, who you already meet, Rafaela the Rainha Formiga and Cecilia the Centopeia.",
+      "text": "Yeah, the three Primordial ones, Vanessa, who you already meet, Rafaela the Rainha Formiga and Cecilia the Centopeia.",
       "links": [
         {
-          "name": "And would they be as difficult as Vanessa?",
+          "name": "And are they as strong as Vanessa?",
           "link": "And would they be as difficult as Vanessa?",
           "pid": "5"
         }
@@ -349,7 +349,7 @@ var level4 = [
       "text": "You must fight against another two, Rafaela the Rainha Formiga and Cecilia the Centopeia.",
       "links": [
         {
-          "name": "And would they be as difficult as Vanessa?",
+          "name": "And are they as strong as Vanessa?",
           "link": "And would they be as difficult as Vanessa?",
           "pid": "5"
         }
@@ -378,7 +378,7 @@ var level4 = [
       }
     },
     {
-      "text": "But there is a reason for all of that, Their strength comes from the terrifying bug that made it with you.",
+      "text": "But there is a reason for all of that. Their strength comes from the terrifying bug that made them with you.",
       "links": [
         {
           "name": "I though I was…",
@@ -394,7 +394,7 @@ var level4 = [
       }
     },
     {
-      "text": "I know, but something remained in you, after you killed it, some part of the bug’s soul  embedded with yours.",
+      "text": "I know, but something remained in you, after you killed it, some part of the bug’s soul embedded with yours.",
       "links": [
         {
           "name": "You mean that I’m half-",
@@ -410,7 +410,7 @@ var level4 = [
       }
     },
     {
-      "text": "It was not enough for this, but I know he used part of you to create the primordial.",
+      "text": "It was not sure about this, but I know he used part of you to create the primordial.",
       "links": [
         {
           "name": "...",
@@ -426,7 +426,7 @@ var level4 = [
       }
     },
     {
-      "text": "When someone bring the bugs back, he started with those 3\nAnd from they, all the other bugs where generated, as a mix of its parts.",
+      "text": "When something brought the bugs back, it started with those three\nAnd, from them, all the other bugs were generated, as a mixture of their parts.",
       "links": [
         {
           "name": "How do you know that much?",
@@ -447,10 +447,10 @@ var level4 = [
       }
     },
     {
-      "text": "... It doesn’t matter now...\nWhoever has done it has already paid the consequences.",
+      "text": "... It doesn’t matter now...\nWhoever has done it has already paid the price.",
       "links": [
         {
-          "name": "Do you think he is alive?",
+          "name": "Do you think he is still alive?",
           "link": "Do you think he is alive?",
           "pid": "11"
         }
@@ -482,7 +482,7 @@ var level4 = [
       "text": "gold bug poe .(‡18))‡( ?)8) :‡?",
       "links": [
         {
-          "name": "Who are you? what are those messagers?",
+          "name": "Who are you? What are those messages?",
           "link": "END",
           "pid": "13"
         }
@@ -510,7 +510,7 @@ var level4 = [
 
 var level5 = [
     {
-      "text": "Another danger is coming",
+      "text": "Another danger is coming.",
       "links": [
         {
           "name": "Neeko?",
@@ -529,7 +529,7 @@ var level5 = [
       ]
     },
     {
-      "text": "Oh, I’m sorry for appear again with bad news. It seems like if I’m only here to announce the evil.",
+      "text": "Oh, I’m sorry for appearing again with bad news. It seems like I’m only here to announce the evil.",
       "links": [
         {
           "name": "Just a little",
@@ -537,7 +537,7 @@ var level5 = [
           "pid": "3"
         },
         {
-          "name": "You helps me a lot with that",
+          "name": "You help me a lot with that",
           "link": "You helps me a lot with that",
           "pid": "4"
         }
@@ -553,7 +553,7 @@ var level5 = [
       "text": "I’m sorry, I’ll try my best to talk about better things, okay?",
       "links": [
         {
-          "name": "Shure",
+          "name": "Sure",
           "link": "Shure",
           "pid": "5"
         }
@@ -566,7 +566,7 @@ var level5 = [
       }
     },
     {
-      "text": "Oh, thanks for being comprehensive, I’ll try my best to talk about interesting things, okay? ",
+      "text": "Oh, thanks for being comprehensive. I’ll try my best to talk about interesting things, okay? ",
       "links": [
         {
           "name": "Shure",
@@ -574,7 +574,7 @@ var level5 = [
           "pid": "5"
         }
       ],
-      "name": "You helps me a lot with that",
+      "name": "You help me a lot with that",
       "pid": "4",
       "position": {
         "x": "899",
@@ -603,7 +603,7 @@ var level5 = [
       }
     },
     {
-      "text": "Ah, yes yes. It’s just…. Hmmm… \nI have to think in something…. Think, think, think...",
+      "text": "Oh, yes yes. It’s just…. Hmmm… \nI have to think about something…. Think, think, think...",
       "links": [
         {
           "name": "...",
@@ -619,7 +619,7 @@ var level5 = [
       }
     },
     {
-      "text": "Oh, no, no, no. It’s just…. Hmmm… \nI just have to think in something…. Think, think, think...",
+      "text": "Oh, no, no, no. It’s just…. Hmmm… \nI just have to think about something…. Think, think, think...",
       "links": [
         {
           "name": "...",
@@ -638,7 +638,7 @@ var level5 = [
       "text": "AH I KNOW!",
       "links": [
         {
-          "name": "Whoa, so, about what we’re going to talk?",
+          "name": "Whoa, so, what are we going to talk about?",
           "link": "Whoa, so, about what we’re going to talk?",
           "pid": "9"
         }
@@ -654,7 +654,7 @@ var level5 = [
       "text": "Let’s talk about the weather!",
       "links": [
         {
-          "name": "Wheater….?",
+          "name": "Weather….?",
           "link": "Wheater….?",
           "pid": "10"
         }
@@ -688,7 +688,7 @@ var level5 = [
       }
     },
     {
-      "text": "Ahhhhh I’m so terrible at talking to people.\nLike, before you loss you memories, you where my only friend and the only one that I could talk. But now… I don’t know.. it’s different.",
+      "text": "Ahhhhh I’m so terrible talking to people.\nBefore you lost you memories, you were my only friend and the only one that I could talk to. But now… I don’t know.. it’s different.",
       "links": [
         {
           "name": "I’m sorry...",
@@ -709,7 +709,7 @@ var level5 = [
       }
     },
     {
-      "text": "Don’t worry, that person that I used to talk don’t exists anymore. Even if the Professor somehow put all of you memories back, it still doesn’t being the same, at least it is what I think.",
+      "text": "Don’t worry, that person that I used to talk to doesn’t exist anymore. Even if the Professor somehow put all of you memories back, it still is not the same. At least, that is what I think.",
       "links": [
         {
           "name": "...",
@@ -725,10 +725,10 @@ var level5 = [
       }
     },
     {
-      "text": "But hey! Don’t be depressive, I thought of something to talk about. \nThe current challenge have so much darkness that you can easily be  swallowed by it.",
+      "text": "But hey! Don’t be sad, I thought something for us to talk about. \nThe current challenge has so much darkness that you can easily be swallowed by it.",
       "links": [
         {
-          "name": "But, seems like the light attract more enemies.",
+          "name": "But, it seems like the light attracts more enemies.",
           "link": "But, seems like the light attract more enemies.",
           "pid": "14"
         }
@@ -741,10 +741,10 @@ var level5 = [
       }
     },
     {
-      "text": "I know that, the moths are my grater weakness.\nThey follow the light and try to consume it, until there is no source.",
+      "text": "I know that. The moths are my greater weakness.\nThey follow the light and try to consume it, until there is no source.",
       "links": [
         {
-          "name": "And what I do?",
+          "name": "And what should I do?",
           "link": "And what I do?",
           "pid": "15"
         }
@@ -839,12 +839,13 @@ var level5 = [
     }
   ]
 
+
 var level6= [
     {
       "text": "These Ants must have a Queen. Try to find and kill  her",
       "links": [
         {
-          "name": "END",
+          "name": "Thanks for your help.",
           "link": "END",
           "pid": "1"
         }],
@@ -1092,7 +1093,7 @@ var level8 =[
       "text": "You are almost there, I believe that this we will stop them once for all.",
       "links": [
         {
-          "name": "You are always so kind with me Neko, thank you",
+          "name": "You are always so kind with me Neeko, thank you",
           "link": "You are always so kind with me Neko, thank you",
           "pid": "2"
         }
@@ -1174,7 +1175,7 @@ var level8 =[
           "pid": "7"
         }
       ],
-      "name": "It's cause I never saw you two togheter",
+      "name": "It's cause I never saw you two together",
       "pid": "5",
       "position": {
         "x": "585",
@@ -1228,7 +1229,7 @@ var level8 =[
       }
     },
     {
-      "text": "As I saw, cause we where friends before you lost your memories.",
+      "text": "As I saw, because we were friends before you lost your memories.",
       "links": [
         {
           "name": "But, I'm not the same person as before, so...",
@@ -1263,7 +1264,7 @@ var level8 =[
       "text": "Let's not talk about him, please...",
       "links": [
         {
-          "name": "Why you don't like to talk about him?",
+          "name": "Why don't you like to talk about him?",
           "link": "It's cause I never saw you two togheter",
           "pid": "5"
         }
@@ -1394,12 +1395,12 @@ var level9 = [
       "text": "Cecilia is unstoppable. Try to reach for her tail",
       "links": [
         {
-          "name": "END",
+          "name": "I will, it's my last fight!",
           "link": "END",
           "pid": "1"
         }],
       "tags": [
-        "IA"
+        "professor"
       ]}]
 	
 func _ready():

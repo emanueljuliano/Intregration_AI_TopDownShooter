@@ -21,7 +21,7 @@ var dialog = [
       "text": "Wake up...",
       "links": [
         {
-          "name": "uh?",
+          "name": "Uh?",
           "link": "uh?",
           "pid": "3"
         },
@@ -58,7 +58,7 @@ var dialog = [
       "text": "I know you can hear me, don’t worry.",
       "links": [
         {
-          "name": "uh?",
+          "name": "Uh?",
           "link": "uh?",
           "pid": "3"
         },
@@ -76,10 +76,10 @@ var dialog = [
       }
     },
     {
-      "text": "So... You don’t want to talk with me now?",
+      "text": "So... You don’t want to talk to me now?",
       "links": [
         {
-          "name": "That's not it ",
+          "name": "That's not it...",
           "link": " uh?2",
           "pid": "6"
         },
@@ -105,7 +105,7 @@ var dialog = [
           "pid": "8"
         }
       ],
-      "name": " uh?2",
+      "name": "uh?",
       "pid": "6",
       "position": {
         "x": "740",
@@ -113,7 +113,7 @@ var dialog = [
       }
     },
     {
-      "text": "I understand… But even so, I will help you on your journey",
+      "text": "I understand… But I will help you on your journey anyway.",
       "links": [
         {
           "name": "...",
@@ -129,7 +129,7 @@ var dialog = [
       }
     },
     {
-      "text": "Oh, you forget me?\nI’m Neeko, a longtime friend.",
+      "text": "Oh, you forgot about me?\nI’m Neeko, a longtime friend.",
       "links": [
         {
           "name": "Sorry… I can’t remember you…",
@@ -148,7 +148,7 @@ var dialog = [
       "text": "Bye",
       "links": [
         {
-          "name": "... ",
+          "name": "...",
           "link": "W-whait…",
           "pid": "12"
         }
@@ -161,7 +161,7 @@ var dialog = [
       }
     },
     {
-      "text": "Don’t worry, I imagine that would happen.",
+      "text": "Don’t worry, I thought that would happen.",
       "links": [
         {
           "name": "Why?",
@@ -193,7 +193,7 @@ var dialog = [
       }
     },
     {
-      "text": "I wonder when will he wake up?",
+      "text": "I wonder, when will he wake up?",
       "links": [
         {
           "name": "Hey?",
@@ -214,10 +214,10 @@ var dialog = [
       }
     },
     {
-      "text": "Let-me try again.",
+      "text": "Let-me try again...",
       "links": [
         {
-          "name": "Whait.... what are you doing?",
+          "name": "Wait... what are you doing?",
           "link": "Hey?",
           "pid": "14"
         },
@@ -235,7 +235,7 @@ var dialog = [
       }
     },
     {
-      "text": "Oh… you finally wake up.\nSo, how are you feeling?",
+      "text": "Oh… you finally woke up.\nSo, how are you feeling?",
       "links": [
         {
           "name": "Bad...",
@@ -277,7 +277,7 @@ var dialog = [
       }
     },
     {
-      "text": "He didn’t answer again… \nUff, I will have to start all over!",
+      "text": "He didn’t answer again… \nI'll have to start all over again!",
       "links": [
         {
           "name": "... ",
@@ -302,7 +302,7 @@ var dialog = [
       }
     },
     {
-      "text": "Makes sense, after all, I don’t be surprise with it.",
+      "text": "Makes sense, after all. I'm not surprised with it.",
       "links": [
         {
           "name": "But, what happened?",
@@ -318,7 +318,7 @@ var dialog = [
       }
     },
     {
-      "text": "… Stranger, I didn’t expect that answer,\nI mean… after all...",
+      "text": "… Strange. I didn’t expect that answer,\nI mean… after all...",
       "links": [
         {
           "name": "But, what happened?",
@@ -334,7 +334,7 @@ var dialog = [
       }
     },
     {
-      "text": "Your memory too…\nDon’t matter, I will explain it latter, but for now, you MUST fight!",
+      "text": "Your memory too…\nIt doesn’t matter, I will explain you later, but for now, you MUST fight!",
       "links": [
         {
           "name": "... ",
