@@ -38,10 +38,10 @@ Assim que o jogo inicia, alguns scripts são executados, como o roteiro dos diá
 ## Interface de Usuário:
 
 A interface de usuário compõe o conjunto das seguintes pastas:
-	* title_screen: Contém as fontes utilizadas ao longo do jogo e a tela inicial com suas funcionalidades, tais como:
-		* Gerar um texto aleatório na parte esquerda, possibilitado pelas funções random_book() e random_line() do script Story.gd;
-		* Esboça o último nível jogado e quantas vezes o jogador morreu, assim como os desenvolvedores, algoritmo encontrado no _ready() de titlescreen.gd;
-		* Apresenta botões que redirecionam para outras cenas, tais como Continue (não liberado enquanto o jogador não passar pelo tutorial), New_Game e Infinite, que redirecionam para suas respectivas cenas encontradas em game, suas cenas e funções são encontradas na pasta buttons.
+* title_screen: Contém as fontes utilizadas ao longo do jogo e a tela inicial com suas funcionalidades, tais como:
+	* Gerar um texto aleatório na parte esquerda, possibilitado pelas funções random_book() e random_line() do script Story.gd;
+	* Esboça o último nível jogado e quantas vezes o jogador morreu, assim como os desenvolvedores, algoritmo encontrado no _ready() de titlescreen.gd;
+	* Apresenta botões que redirecionam para outras cenas, tais como Continue (não liberado enquanto o jogador não passar pelo tutorial), New_Game e Infinite, que redirecionam para suas respectivas cenas encontradas em game, suas cenas e funções são encontradas na pasta buttons.
 	
 * game: Contém as cenas de seleção de New_game (novo jogo), Infinite (modo de jogo unicamente para treinamento, sem progresso na história) e Continue (cena que permite ao jogador selecionar qualquer nível já explorado e jogá-lo novamente)
 
@@ -93,41 +93,41 @@ A pasta scenes contém todas as cenas de gameplay do jogo, desde níveis a inimi
 A pasta useful foi criada após a percepção de que utilizávamos nodes similares no desenvolvimento das fazes, sendo assim, a criação dessas cenas serviu para automatizar e agilizar esse trabalho, por meio de uma função do Godot chamada export, que permite que uma variável seja modificada pelo editor.
 Os elementos desta pasta são
 	
-	*  ativador.tscn: ativa um array de inimigos definido pelo editor após o jogador passar por sua área;
-	* trap.tscn e flecha.tscn: atira, com um delay escolhido pelo editor, flechas em linha reta que causam dano;
-	*  lento.tscn: reduz a velocidade de quem passar por sua área, sendo essa redução definida pelo editor;
-	* morte.tscn: área vermelha que pode ser ativada para se mover, uma vez que o jogador encosta nele, ele morre imediatamente;
-	* parece.tscn: permite que o jogador atravesse sua área apenas uma vez, impedindo-o de voltar;
-	* TitleTest.tscb: paredes que formam o cenário, impedindo objetos com colisão de atravessarem sua área;
-	* PORTA.tscn: permite a transição entre fases e área, ela pode tanto modificar a posição do jogador e da câmera quanto transitar de cena, normalmente ela redireciona o jogador para uma cena de diálogo;
-	* shock.tscn: laser ativável de tempos em tempos (também definido pelo editor) que causa dano ao jogador;
-	* spawner.tscn e spawnador.tscn: geram de forma aleatória inimigos pelo mapa, a área de efeito, o delay e os tipos de inimigos também foram exportados para serem definidos pelo editor.
-	* vida.tscn: recupera a vida do jogador.
-	* câmera: pode estar acoplada ou não ao jogador, de modo a acompanhá-lo, tornar o cenário escuro, ou mudar o campo de visão.
+*  ativador.tscn: ativa um array de inimigos definido pelo editor após o jogador passar por sua área;
+* trap.tscn e flecha.tscn: atira, com um delay escolhido pelo editor, flechas em linha reta que causam dano;
+*  lento.tscn: reduz a velocidade de quem passar por sua área, sendo essa redução definida pelo editor;
+* morte.tscn: área vermelha que pode ser ativada para se mover, uma vez que o jogador encosta nele, ele morre imediatamente;
+* parece.tscn: permite que o jogador atravesse sua área apenas uma vez, impedindo-o de voltar;
+* TitleTest.tscb: paredes que formam o cenário, impedindo objetos com colisão de atravessarem sua área;
+* PORTA.tscn: permite a transição entre fases e área, ela pode tanto modificar a posição do jogador e da câmera quanto transitar de cena, normalmente ela redireciona o jogador para uma cena de diálogo;
+* shock.tscn: laser ativável de tempos em tempos (também definido pelo editor) que causa dano ao jogador;
+* spawner.tscn e spawnador.tscn: geram de forma aleatória inimigos pelo mapa, a área de efeito, o delay e os tipos de inimigos também foram exportados para serem definidos pelo editor.
+* vida.tscn: recupera a vida do jogador.
+* câmera: pode estar acoplada ou não ao jogador, de modo a acompanhá-lo, tornar o cenário escuro, ou mudar o campo de visão.
 
 ### Bosses e inimigos:
 Os bosses e os inimigos são aqueles que fornecem diversão ao jogo, possuindo cada um seu próprio código para permitir que se movimentem de forma única, além disso, cada um possui sons e sprites distintos, são eles:
-	* antony.tscn: Formiga que anda para direções aleatórias, porém, ao encontrar mais 4 amigos, inicia um ataque ao jogador.
-	* barbara.tscn: Barata inofensiva e anda em direções aleatórias. Ao morrer, fornece vida.
-	* bebel.tscn: Abelha que, ao avistar o jogador, anda em linha reta em sua direção, caso o acerte, seu ferrão fica preso e ela morre, causando dano, caso contrário, voa até o limite da câmera e tenta acertar o jogador mais uma vez.
-	* beto.tscn: Besouro que possui mais vida que os outros, mas anda de forma vagarosa até o jogador.
-	* greg.tscn: Grilo inofensivo, move em uma direção aleatória de forma rápida por pouco tempo, após isso, fica parado esperando para se mover de novo. Ao morrer, fornece vida.
-	* larissa.tscn: Lacraia que possui distintas cenas que a formam, cabeça e corpo. Ao avistar o jogador, move em sua direção, porém, caso seja iluminada pela lanterna, tenta fugir pelas sombras e alcançar o jogador por outro lado.
-	* margaret.tscn: Mariposa inofensiva quando não existe fonte de luz, caso exista, a persegue de forma rápida. Essa fonte pode ser tanto a lanterna do jogador, quando o vagner.
-	* monica.tscn: Mosca que voa ao redor do jogador formando uma órbita que reduz com o tempo.
-	* vagner.tscn: Vagalume inofensivo que pisca de tempos em tempos, move em direções aleatórias e, ao morrer, fornece vida.
-	* arnaldo.tscn: Formiga com asas, voa na direção do jogador em linha reta.
-	* bortolome.tscn: Rainha Formiga, Boss que cria Arnaldos e Anthonys enquanto se esconde no escuro.
-	* centipeta.tscn: Centopeia gigante, Boss similar a uma larissa, mas com mais cenas em seu corpo e possui distintas fases durante sua batalha.
-	* vanessa.tscn: Vespa, Boss que aparenta ser uma mistura de Bebel com Monica, voa em linha reta e em órbita, alternando entre ambos.
+* antony.tscn: Formiga que anda para direções aleatórias, porém, ao encontrar mais 4 amigos, inicia um ataque ao jogador.
+* barbara.tscn: Barata inofensiva e anda em direções aleatórias. Ao morrer, fornece vida.
+* bebel.tscn: Abelha que, ao avistar o jogador, anda em linha reta em sua direção, caso o acerte, seu ferrão fica preso e ela morre, causando dano, caso contrário, voa até o limite da câmera e tenta acertar o jogador mais uma vez.
+* beto.tscn: Besouro que possui mais vida que os outros, mas anda de forma vagarosa até o jogador.
+* greg.tscn: Grilo inofensivo, move em uma direção aleatória de forma rápida por pouco tempo, após isso, fica parado esperando para se mover de novo. Ao morrer, fornece vida.
+* larissa.tscn: Lacraia que possui distintas cenas que a formam, cabeça e corpo. Ao avistar o jogador, move em sua direção, porém, caso seja iluminada pela lanterna, tenta fugir pelas sombras e alcançar o jogador por outro lado.
+* margaret.tscn: Mariposa inofensiva quando não existe fonte de luz, caso exista, a persegue de forma rápida. Essa fonte pode ser tanto a lanterna do jogador, quando o vagner.
+* monica.tscn: Mosca que voa ao redor do jogador formando uma órbita que reduz com o tempo.
+* vagner.tscn: Vagalume inofensivo que pisca de tempos em tempos, move em direções aleatórias e, ao morrer, fornece vida.
+* arnaldo.tscn: Formiga com asas, voa na direção do jogador em linha reta.
+* bortolome.tscn: Rainha Formiga, Boss que cria Arnaldos e Anthonys enquanto se esconde no escuro.
+* centipeta.tscn: Centopeia gigante, Boss similar a uma larissa, mas com mais cenas em seu corpo e possui distintas fases durante sua batalha.
+* vanessa.tscn: Vespa, Boss que aparenta ser uma mistura de Bebel com Monica, voa em linha reta e em órbita, alternando entre ambos.
 
 ### Player:
 O player representa aquilo que o jogador controla, possuindo diversas cenas filhas e cenas pré-carregadas devido à sua complexidade de ações, são elas:
-	* mover: o jogador pode se movimentar pelo cenário por meio das teclas w a s d
-	* atirar: com o cursor do mouse o jogador pode mirar para onde ele quer atirar, os tiros são disparados pelo botão esquerdo do mouse, possuindo um delay entre eles.
-	* tiro.tscn: cena pré carregada que segue em linha reta na direção do mouse, causa dano ao atingir inimigos.
-	* iluminar: o jogador possui uma lanterna que, ao interagir com mapas escuros, ilumina inimigos ao redor, ela é ativada com o botão direito do mouse.
-	* dash: ao apertar espaço, o jogador anda rapidamente em uma direção por pouco tempo, mas possui um delay para ser usado.
+* mover: o jogador pode se movimentar pelo cenário por meio das teclas w a s d
+* atirar: com o cursor do mouse o jogador pode mirar para onde ele quer atirar, os tiros são disparados pelo botão esquerdo do mouse, possuindo um delay entre eles.
+* tiro.tscn: cena pré carregada que segue em linha reta na direção do mouse, causa dano ao atingir inimigos.
+* iluminar: o jogador possui uma lanterna que, ao interagir com mapas escuros, ilumina inimigos ao redor, ela é ativada com o botão direito do mouse.
+* dash: ao apertar espaço, o jogador anda rapidamente em uma direção por pouco tempo, mas possui um delay para ser usado.
 
 ### Error:
 Dentro da pasta death, existe a cena error.tscn, sempre que o jogador morre ela aparece, como se fosse uma transição entre a morte do jogador e o próximo diálogo.
