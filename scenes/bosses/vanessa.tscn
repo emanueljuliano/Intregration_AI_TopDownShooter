@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/bosses/vanessa.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Backgrounds/triangulo.png" type="Texture" id=2]
 [ext_resource path="res://samples/explosion.wav" type="AudioStream" id=3]
+[ext_resource path="res://scenes/spawnador.tscn" type="PackedScene" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( -15, -15, 15, 0, -15, 15 )
@@ -259,3 +260,15 @@ process_material = SubResource( 7 )
 [node name="audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 
+[node name="spawnador" parent="." instance=ExtResource( 4 )]
+vet_x = 200
+vet_y = 200
+intervalo = 10
+antony = false
+larissa = false
+margaret = false
+bebel_n = 7
+barbara = false
+greg = false
+beto = false
+vagner = false

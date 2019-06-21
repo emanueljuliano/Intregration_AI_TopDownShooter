@@ -133,7 +133,7 @@ var level1 = [
       }
     },
     {
-      "text": "It seems that something is bringing they back to life.\nI don’t know how, but we must find out!",
+      "text": "It seems that something is bringing them back to life.\nI don’t know how, but we must find out!",
       "links": [
         {
           "name": "You're right!",

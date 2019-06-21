@@ -14,7 +14,7 @@ var angulo = 0
 var rotacao = 4
 var negativo = 1
 
-var vida = 200
+var vida = 170
 var dano = 5
 
 var path = PoolVector2Array()# setget set_path
@@ -72,7 +72,6 @@ func _physics_process(delta):
 
 func dano(valor):
 	vida = vida - valor
-	print(vida)
 	if not fugindo:
 		medo()
 	get_node("anim").stop()

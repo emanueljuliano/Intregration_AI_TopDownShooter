@@ -1,15 +1,16 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://sprites/Backgrounds/white.png" type="Texture" id=1]
 [ext_resource path="res://scenes/useful/TileTest.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=4]
-[ext_resource path="res://samples/musicas/SOUNTRACK1.ogg" type="AudioStream" id=5]
+[ext_resource path="res://samples/musicas/vane.ogg" type="AudioStream" id=5]
 [ext_resource path="res://scenes/menu/menu.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/spawner.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/bosses/vanessa.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/useful/PORTA.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/bosses/vanessa.tscn" type="PackedScene" id=9]
+[ext_resource path="res://sprites/aurea.png" type="Texture" id=10]
+[ext_resource path="res://scenes/spawner.tscn" type="PackedScene" id=11]
 
 [node name="main" type="Node2D"]
 
@@ -37,46 +38,53 @@ autoplay = true
 
 [node name="menu" parent="pause" instance=ExtResource( 6 )]
 
-[node name="spawner" parent="." instance=ExtResource( 7 )]
-position = Vector2( 651.148, 362.661 )
-intervalo = 5
-antony = false
-larissa = false
-margaret = false
-bebel_n = 5
-barbara = false
-greg_n = 4
-beto = false
-
-[node name="vida" parent="." instance=ExtResource( 8 )]
+[node name="vida" parent="." instance=ExtResource( 7 )]
 position = Vector2( 40, 840 )
 
-[node name="vida2" parent="." instance=ExtResource( 8 )]
+[node name="vida2" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1240, 833.5 )
 
-[node name="vida3" parent="." instance=ExtResource( 8 )]
+[node name="vida3" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1240, -120 )
 
-[node name="vida4" parent="." instance=ExtResource( 8 )]
+[node name="vida4" parent="." instance=ExtResource( 7 )]
 position = Vector2( 40, -120 )
 
-[node name="vida5" parent="." instance=ExtResource( 8 )]
+[node name="vida5" parent="." instance=ExtResource( 7 )]
 position = Vector2( -120, 360 )
 
-[node name="vida6" parent="." instance=ExtResource( 8 )]
+[node name="vida6" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1400, 360 )
 
-[node name="PORTA" parent="." instance=ExtResource( 9 )]
+[node name="PORTA" parent="." instance=ExtResource( 8 )]
 position = Vector2( 644.936, 680 )
 rotation = -1.5708
 
-[node name="PORTA2" parent="." instance=ExtResource( 9 )]
+[node name="PORTA2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 638.706, 35.9169 )
 rotation = 1.5708
 trocar_fase = true
 nova_fase = "res://Dialogues/level.tscn"
 abrir_com_inimigos = [ "vanessa" ]
 
-[node name="vanessa" parent="." instance=ExtResource( 10 )]
+[node name="vanessa" parent="." instance=ExtResource( 9 )]
 position = Vector2( 643.736, -166.526 )
 
+[node name="Light2D" type="Light2D" parent="."]
+visible = false
+position = Vector2( 638.706, 40 )
+texture = ExtResource( 10 )
+texture_scale = 2.0
+energy = 3.0
+shadow_enabled = true
+
+[node name="spawner" parent="." instance=ExtResource( 11 )]
+intervalo = 8
+antony = false
+monica = false
+larissa = false
+margaret = false
+bebel = false
+barbara = false
+beto = false
+vagner = false

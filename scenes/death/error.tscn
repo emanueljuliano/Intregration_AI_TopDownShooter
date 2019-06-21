@@ -10,7 +10,7 @@ script/source = "extends Node2D
 
 # Declare member variables here. Examples:
 var tempo = 0.0
-var tempo_max = 0.0001
+var tempo_max = 0.01
 var conjunto = 0
 var linhas = 16
 
@@ -65,4 +65,3 @@ stream = ExtResource( 4 )
 volume_db = 1.0
 pitch_scale = 0.25
 autoplay = true
-
