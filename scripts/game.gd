@@ -96,7 +96,7 @@ func save_game():
 	data.num_shoots = num_shoots
 	data.exist_time = exist_time
 	data.inimigos_mortos = inimigos_mortos
-	game.max_level = max_level
+	data.max_level = max_level
 	save.store_line(to_json(data))
 	save.close()
 	
