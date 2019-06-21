@@ -111,7 +111,7 @@ nova_fase = "res://scenes/main.tscn"
 position = Vector2( 3480, 1307 )
 rotation = -4.71238
 camera_atual = "camera1"
-camera_destino = "camera21"
+camera_destino = "camera1"
 destino = "PORTA4"
 nova_fase = "res://Dialogues/level.tscn"
 
@@ -365,4 +365,3 @@ lista = [ "greg8", "greg9" ]
 
 [node name="beto3" parent="." instance=ExtResource( 9 )]
 position = Vector2( 3880.75, 6680 )
-
