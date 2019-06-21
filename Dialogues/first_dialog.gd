@@ -180,7 +180,7 @@ var dialog = [
       "text": "Oh no, the professor is coming, I gotta go…",
       "links": [
         {
-          "name": "W-whait…",
+          "name": "W-wait…",
           "link": "W-whait…",
           "pid": "12"
         }
@@ -206,7 +206,7 @@ var dialog = [
           "pid": "13"
         }
       ],
-      "name": "W-whait…",
+      "name": "W-wait…",
       "pid": "12",
       "position": {
         "x": "904",
