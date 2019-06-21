@@ -1043,6 +1043,12 @@ var level7 = [
     },
     {
       "text": "ASCII 087 114 111 110 103 032 097 110 115 119 101 114",
+	   "links": [
+        {
+          "name": "What...?",
+          "link": "END",
+          "pid": "10"
+        }],
       "name": "I think so.",
       "pid": "10",
       "position": {
@@ -1055,6 +1061,12 @@ var level7 = [
     },
     {
       "text": "ASCII 082 105 103 104 116 032 097 110 115 119 101 114",
+		"links": [
+        {
+          "name": "What...?",
+          "link": "END",
+          "pid": "10"
+        }],
       "name": "I guess no.",
       "pid": "11",
       "position": {
