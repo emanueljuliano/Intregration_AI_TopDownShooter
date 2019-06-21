@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="AITopDownProject"
+config/name="Fatal Error"
 run/main_scene="res://title_screen/TitleScreen.tscn"
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://sprites/Artesanal/icon.png"
