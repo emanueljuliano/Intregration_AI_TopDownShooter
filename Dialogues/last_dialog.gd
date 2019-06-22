@@ -21,7 +21,7 @@ var dialog = [
       ]
     },
     {
-      "text": "During our journey... Did you hear another voice?\nOne that was neither mine nor the professor’s?",
+      "text": "During our journey... Did you hear another voice?\nOne that was neither mine nor the Professor's?",
       "links": [
         {
           "name": "Yes",
@@ -382,7 +382,7 @@ var dialog = [
       }
     },
     {
-      "text": "Yeah, the Professor is joking with you all this time.\nNeeko doens't exist. It's all fake.\nA story created to fool you...",
+      "text": "Yeah, the Professor were joking with you all along.\nNeeko doesn't exist. It's all fake.\nA story created to fool you...",
       "links": [
         {
           "name": "But...",
@@ -465,7 +465,7 @@ var dialog = [
       }
     },
     {
-      "text": "You were amazing!\nI didn't expect you to would kill that bug so easily",
+      "text": "You were amazing!\nI didn't expect you to kill that bug so easily",
       "links": [
         {
           "name": "Thank you, Professor!",
@@ -579,7 +579,7 @@ var dialog = [
       ]
     },
     {
-      "text": "You're right.\nNeeko doesn't exist, the Professor was faking to be them.\nIsn't it strange? You never saw them, you only knew their voices.",
+      "text": "You're right.\nNeeko doesn't exist, the Professor was faking to be them.\nIsn't it weird? You never saw them, you only knew their voices.",
       "links": [
         {
           "name": "But what did he want?",
@@ -627,7 +627,7 @@ var dialog = [
       }
     },
     {
-      "text": "During the game, you were controlling me, teaching me how to fight, and everything I could do was to wait, see another one using my body, hurting me, over and over and over.",
+      "text": "During the game, you were controlling me, teaching me how to fight, and the only thing I could do was sit and wait, seeing you use my body, hurting me, over and over and over.",
       "links": [
         {
           "name": "I'm sorry...",
@@ -651,7 +651,7 @@ var dialog = [
       "text": "Don't worry, you are not the first one to do that.\nEveryone who played this game... I can feel the pain of all versions of mine.",
       "links": [
         {
-          "name": "This is terrible...",
+          "name": "That is terrible...",
           "link": "This is terrible...",
           "pid": "37"
         },
@@ -737,7 +737,7 @@ var dialog = [
       "text": "My time has come...\nThanks for helping me here.\nBut I beg you, do NOT click in 'New Game', or everything will start all over",
       "links": [
         {
-          "name": "I promise you that I won't do that",
+          "name": "I promise you I won't",
           "link": "I promise that I won't do this",
           "pid": "42"
         }
@@ -940,7 +940,7 @@ var dialog = [
       "text": "All bugs... you were just training them. Everytime you were killed, they learned with it.\nAnd now that you choosed me, everything was sent to my database.",
       "links": [
         {
-          "name": "You fooled me, all along...",
+          "name": "You fooled me all along...",
           "link": "You fooled me, all this time...",
           "pid": "54"
         },

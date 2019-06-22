@@ -81,7 +81,6 @@ custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 stream = ExtResource( 4 )
 volume_db = 10.0
 autoplay = true
-
 [connection signal="ready" from="Game_Player/Dialog/Terminal" to="." method="_on_Terminal_ready"]
 [connection signal="timeout" from="Game_Player/Dialog/Timer" to="." method="_on_Timer_timeout"]
 [connection signal="focus_entered" from="Game_Player/Options/Button1" to="." method="_on_Button1_focus_entered"]

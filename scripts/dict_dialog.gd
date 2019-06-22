@@ -23,7 +23,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Now you can move, try to survive this time.\nYou just have to run\nIt's like in a game, W A S D, you know?",
+      "text": "Now you can move. Try to survive this time.\nYou just have to run\nIt's like in a game, W A S D, you know?",
       "links": [
         {
           "name": "...",
@@ -124,7 +124,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Here, It's to dangerous to go alone, so take this:",
+      "text": "Here, It's dangerous to go alone, take this:",
       "links": [
         {
           "name": "TAKE",
@@ -161,7 +161,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Ok, a gun is self explanatory.\nYou just have to CLICK and shoot, it's really intuitive.",
+      "text": "Ok, a gun is self explanatory.\nYou just have to CLICK and shoot. It's really intuitive.",
       "links": [
         {
           "name": "UPGRADE",
@@ -293,7 +293,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Oh.. it must be some memory backing to you! What a great notice!",
+      "text": "Oh.. it must be some memory coming back to you!",
       "links": [
         {
           "name": "Y-yeah, it must be",
@@ -325,7 +325,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "Even if you don't remember, people that I care about, people that YOU care about are in danger, and you can only help them by getting out of this lab.",
+      "text": "Even if you don't remember, people that I care about... people that YOU care about are in danger, and you can only help them by getting out of this lab.",
       "links": [
         {
           "name": "But...",
@@ -341,7 +341,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "And the only way to do this, is by taking that gun and killing every bug that are currupting this world.\nSo, please .. take that gun.",
+      "text": "And the only way to do that, is by taking that gun and killing every single bug that is currupting this world.\nSo, please .. take the gun.",
       "links": [
         {
           "name": "TAKE ",
@@ -535,12 +535,12 @@ var tutorial =  [
       "text": "Well, when they have to go faster, they took some SPACE and dash.",
       "links": [
         {
-          "name": "And how it helps me?",
+          "name": "And how does it help me?",
           "link": "And how it helps me?",
           "pid": "32"
         }
       ],
-      "name": "Okay... I think I know what is that...",
+      "name": "Okay... I think I know what that means...",
       "pid": "31",
       "position": {
         "x": "2202",
@@ -548,7 +548,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "I don't know, find out for yourself.",
+      "text": "I don't know, find out yourself.",
       "links": [
         {
           "name": "UPGRADE",
@@ -723,7 +723,7 @@ var tutorial =  [
       }
     },
     {
-      "text": "But instead of killing the others, you bring light to the world.\nThat is the RIGHT CLICK.",
+      "text": "But instead of killing the others, you bring light upon the world.\nThat is the RIGHT CLICK.",
       "links": [
         {
           "name": "Okay, I will try, but I have some questions for you",
@@ -742,7 +742,7 @@ var tutorial =  [
       "text": "What are you waiting for? Go ahead and kill some bugs.",
       "links": [
         {
-          "name": "But where is...? Doctor? What is going on??",
+          "name": "But where is...? Professor? What is going on??",
           "link": "But where is...? Doctor? What is going on??",
           "pid": "36"
         }

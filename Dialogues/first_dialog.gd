@@ -55,7 +55,7 @@ var dialog = [
       }
     },
     {
-      "text": "I know you can hear me, don’t worry.",
+      "text": "I know you can hear me, don't worry.",
       "links": [
         {
           "name": "Uh?",
@@ -76,7 +76,7 @@ var dialog = [
       }
     },
     {
-      "text": "So... You don’t want to talk to me now?",
+      "text": "So... You don't want to talk to me now?",
       "links": [
         {
           "name": "That's not it...",
@@ -97,7 +97,7 @@ var dialog = [
       }
     },
     {
-      "text": "Phew... I'm so glad that you answered me.\nYou slept for so long… I missed you.",
+      "text": "Phew... I'm so glad you answered me.\nYou slept for so long… I missed you.",
       "links": [
         {
           "name": "Who are you?",
@@ -129,10 +129,10 @@ var dialog = [
       }
     },
     {
-      "text": "Oh, you forgot about me?\nI’m Neeko, a longtime friend.",
+      "text": "Oh. Did you forget about me?\nI'm Neeko, a longtime friend.",
       "links": [
         {
-          "name": "Sorry… I can’t remember you…",
+          "name": "Sorry… I can't remember you…",
           "link": "Sorry… I can’t remember you…",
           "pid": "10"
         }
@@ -161,7 +161,7 @@ var dialog = [
       }
     },
     {
-      "text": "Don’t worry, I thought that would happen.",
+      "text": "Don't worry, I thought that would happen.",
       "links": [
         {
           "name": "Why?",
@@ -177,7 +177,7 @@ var dialog = [
       }
     },
     {
-      "text": "Oh no, the professor is coming, I gotta go…",
+      "text": "Oh no. The Professor is coming. I gotta go…",
       "links": [
         {
           "name": "W-wait…",
@@ -277,7 +277,7 @@ var dialog = [
       }
     },
     {
-      "text": "He didn’t answer again… \nI'll have to start all over again!",
+      "text": "He didn't answer again… \nI'll have to start all over again!",
       "links": [
         {
           "name": "... ",
@@ -302,7 +302,7 @@ var dialog = [
       }
     },
     {
-      "text": "Makes sense, after all. I'm not surprised with it.",
+      "text": "It makes sense. I'm not surprised with that.",
       "links": [
         {
           "name": "But, what happened?",
@@ -318,7 +318,7 @@ var dialog = [
       }
     },
     {
-      "text": "… Strange. I didn’t expect that answer,\nI mean… after all...",
+      "text": "…Weird. I didn't expect that answer,\nI mean… after all...",
       "links": [
         {
           "name": "But, what happened?",
@@ -334,7 +334,7 @@ var dialog = [
       }
     },
     {
-      "text": "Your memory too…\nIt doesn’t matter, I will explain you later, but for now, you MUST fight!",
+      "text": "Your memory too…\nIt doesn't matter, I'll explain you later, but for now, you MUST fight!",
       "links": [
         {
           "name": "... ",

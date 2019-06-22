@@ -13,7 +13,7 @@ func _ready():
 	$musica.play(game.music_time)
 	game.load_game()
 		
-	$Menu/VersionLabel.set_text('Version ' + str(game.level) + '.' + str(game.deaths) +
+	$Menu/VersionLabel.set_text('Version ' + str(game.max_level) + '.' + str(game.deaths) +
 								'\nManel e Marrocos Studio')
 	$Menu/CenterRow/Buttons/ContinueButton.grab_focus()
 	
