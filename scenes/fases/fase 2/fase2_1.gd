@@ -59,7 +59,7 @@ func _on_death_speed3_body_entered(body):
 	if body == game.get_player():
 		$morte17.velocidade = 5
 		$morte17.ativo = true
-		$morte16.velocidade = 30
+		$morte16.velocidade = 25
 		$morte16.ativo = true
 
 

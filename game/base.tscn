@@ -41,6 +41,6 @@ custom_colors/font_color_pressed = Color( 0.00784314, 0.345098, 0.0705882, 1 )
 text = "cd .."
 flat = true
 
-[connection signal="pressed" from="Screen/Options/NewGame" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Screen/Options/NewGame" to="Screen/Options/NewGame" method="_on_NewGame_pressed"]
+[connection signal="pressed" from="Screen/Options/NewGame" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Screen/Options/Back" to="." method="_on_Button_pressed"]

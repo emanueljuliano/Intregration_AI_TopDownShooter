@@ -5,7 +5,7 @@ var data = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if game.deaths == 0 and game.level == 0:
+	if game.deaths == 0 and game.max_level == 0:
 		$Menu/CenterRow/Buttons/ContinueButton.scene_to_load = "res://title_screen/TitleScreen.tscn"
 	else:
 		$Menu/CenterRow/Buttons/ContinueButton.scene_to_load = "res://game/Continue.tscn"
@@ -13,7 +13,7 @@ func _ready():
 	$musica.play(game.music_time)
 	game.load_game()
 		
-	$Menu/VersionLabel.set_text('Version ' + str(game.level) + '.' + str(game.deaths) +
+	$Menu/VersionLabel.set_text('Version ' + str(game.max_level) + '.' + str(game.deaths) +
 								'\nManel e Marrocos Studio')
 	$Menu/CenterRow/Buttons/ContinueButton.grab_focus()
 	

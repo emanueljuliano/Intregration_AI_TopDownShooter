@@ -25,6 +25,7 @@ script/source = "extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	game.level = 1
+	game.max_level = 1
 	game.inimigos_mortos = 0
 	pass # Replace with function body.
 
@@ -365,3 +366,4 @@ lista = [ "greg8", "greg9" ]
 
 [node name="beto3" parent="." instance=ExtResource( 9 )]
 position = Vector2( 3880.75, 6680 )
+

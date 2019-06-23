@@ -3,6 +3,7 @@ extends Control
 var level_path
 
 func _ready():
+
 	$Back.grab_focus()
 	game.max_level = max(game.level, game.max_level)
 	verify_level()
