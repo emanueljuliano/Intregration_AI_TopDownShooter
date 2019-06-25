@@ -4,6 +4,10 @@ Desenvolvedores:
 Emanuel Juliano Morais Silva, emanueljulianoms@gmail.com
 Marcos Vinícios Pacheco, vinipacheco08@hotmail.com
 
+Para ter acesso completo ao jogo acesse:
+linux - https://drive.google.com/drive/folders/1inWQgj4HAEkoimnR4W96PtM8SU1vdiR6
+windows - https://drive.google.com/drive/folders/1lLhIi9C51ugcC3zTQ5LXsaqKaWwTuxcK
+
 ## Introdução:
 
 O jogo Fatal Error pode ser encontrado na Íntegra em: https://github.com/EmanuelHappy/Intregration_AI_TopDownShooter, sendo este o nosso projeto prático na disciplina de programação da Universidade Federal de Minas Gerais, criado com o auxílio do software GitKraken, uma ferramenta de visualização de versionamento git.
