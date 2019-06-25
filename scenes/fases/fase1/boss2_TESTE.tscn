@@ -508,3 +508,4 @@ lista = [ "bebel6" ]
 [node name="bebel7" parent="." instance=ExtResource( 17 )]
 position = Vector2( 4200, -440 )
 ativo = false
+

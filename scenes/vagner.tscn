@@ -190,3 +190,4 @@ texture = ExtResource( 5 )
 texture_scale = 4.0
 energy = 2.0
 shadow_enabled = true
+

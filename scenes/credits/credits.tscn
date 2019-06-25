@@ -69,16 +69,15 @@ text = "Emanuel Silva            Writer, UI Designer
 .                        and Programmer "
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
-margin_left = 316.493
-margin_top = 483.334
-margin_right = 1275.49
-margin_bottom = 592.334
+margin_left = 316.0
+margin_top = 483.0
+margin_right = 1275.0
+margin_bottom = 599.0
 rect_min_size = Vector2( 100, 50 )
 custom_fonts/normal_font = ExtResource( 6 )
 custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
 text = "Marcos Vinicius          2D Artist, Sounds,               Caldeira Pacheco         Level and Enemies designer 
-                         Programmer
-."
+.                        Programmer"
 
 [node name="RichTextLabel6" type="RichTextLabel" parent="."]
 margin_left = 480.003
@@ -88,7 +87,7 @@ margin_bottom = 974.474
 rect_min_size = Vector2( 100, 50 )
 custom_fonts/normal_font = ExtResource( 6 )
 custom_colors/default_color = Color( 0, 1, 0.243137, 1 )
-text = "Professor as Professor"
+text = "###### as Professor"
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="."]
 margin_left = 451.742
@@ -118,7 +117,7 @@ margin_bottom = 1053.0
 rect_min_size = Vector2( 100, 50 )
 custom_fonts/normal_font = ExtResource( 6 )
 custom_colors/default_color = Color( 0, 0.6, 0.6, 1 )
-text = "Professor as Neeko"
+text = "####### as Neeko"
 
 [node name="RichTextLabel4" type="RichTextLabel" parent="."]
 margin_left = 499.865
@@ -128,7 +127,7 @@ margin_bottom = 1142.89
 rect_min_size = Vector2( 100, 50 )
 custom_fonts/normal_font = ExtResource( 6 )
 custom_colors/default_color = Color( 1, 0, 0, 1 )
-text = "AI as Strange Voice"
+text = "#### as Strange Voice"
 
 [node name="RichTextLabel9" type="RichTextLabel" parent="."]
 margin_left = 283.056
@@ -594,6 +593,7 @@ rotation = -1.77636
 [node name="sprite12" parent="." instance=ExtResource( 24 )]
 position = Vector2( 88.539, 6269.98 )
 rotation = -2.85651
+
 
 [editable path="vanessa"]
 
