@@ -5,8 +5,8 @@ Emanuel Juliano Morais Silva, emanueljulianoms@gmail.com
 Marcos Vinícios Pacheco, vinipacheco08@hotmail.com
 
 Para ter acesso completo ao jogo acesse:
-linux - https://drive.google.com/drive/folders/1inWQgj4HAEkoimnR4W96PtM8SU1vdiR6
-windows - https://drive.google.com/drive/folders/1lLhIi9C51ugcC3zTQ5LXsaqKaWwTuxcK
+#### linux - https://drive.google.com/drive/folders/1inWQgj4HAEkoimnR4W96PtM8SU1vdiR6
+#### windows - https://drive.google.com/drive/folders/1lLhIi9C51ugcC3zTQ5LXsaqKaWwTuxcK
 
 ## Introdução:
 
